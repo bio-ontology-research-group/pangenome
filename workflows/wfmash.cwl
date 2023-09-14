@@ -10,16 +10,15 @@ hints:
     ramMin: $(4 * 1024)
 stdout: $(inputs.seqsFA.nameroot).paf
 baseCommand: wfmash
-arguments: [-t, $(runtime.cores),
-            -k, $(inputs.kmerSize),
-            -s, $(inputs.readsFA),
-            -p, $(inputs.readsPAF),
-            -g, $(inputs.readsPAF.nameroot).gfa]
+arguments: [-X, -Y, $(inputs.seqsFA)]
 
 inputs:
-  seqsFA: File
-  stindex: File
-  bgindex: File
+  seqsFA:
+    type: File
+    secondaryFiles:
+      - .gzi
+      - .fai
+
 outputs:
   wfmashPAF:
     type: File
