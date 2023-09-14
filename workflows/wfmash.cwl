@@ -10,7 +10,7 @@ hints:
     ramMin: $(4 * 1024)
 stdout: $(inputs.seqsFA.nameroot).paf
 baseCommand: wfmash
-arguments: [-X, -Y, $(inputs.seqsFA)]
+arguments: [-X, -Y, "|", $(inputs.seqsFA)]
 
 inputs:
   seqsFA:
