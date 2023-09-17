@@ -8,6 +8,7 @@ requirements:
   
 inputs:
   seqsFA: File
+  nHaps: int
 
 outputs:
   graphGFA:
@@ -29,3 +30,9 @@ steps:
       seqsPAF: wfmash/wfmashPAF
     out: [seqwishGFA]
     run: seqwish.cwl
+  smoothxg:
+    in:
+      GFA: seqwish/seqwishGFA
+      nHaps: nHaps
+    out: [smoothGFA]
+    run: smoothxg.cwl
