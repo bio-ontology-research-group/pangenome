@@ -36,3 +36,9 @@ steps:
       nHaps: nHaps
     out: [smoothGFA]
     run: smoothxg.cwl
+  gfaffix:
+    in:
+      GFA: smoothxg/smoothGFA
+      nHaps: nHaps
+    out: [gfafixGFA,gfatransGFA]
+    run: gfaffix.cwl
