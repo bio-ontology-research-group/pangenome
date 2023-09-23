@@ -4,7 +4,7 @@ requirements:
   InlineJavascriptRequirement: {}
 hints:
   DockerRequirement:
-    dockerPull: "coolmaksat/gfaffix:v0.1.5"
+    dockerPull: "quay.io/biocontainers/gfaffix:0.1.5--h031d066_0"
   ResourceRequirement:
     coresMin: 4
     ramMin: $(8 * 1024)
