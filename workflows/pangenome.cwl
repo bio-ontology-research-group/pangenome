@@ -17,6 +17,9 @@ outputs:
   alignment:
     type: File
     outputSource: wfmash/wfmashPAF
+  odgi_graph:
+    type: File
+    outputSource: odgi_view/odgiView
 
 steps:
   wfmash:
@@ -40,5 +43,25 @@ steps:
     in:
       GFA: smoothxg/smoothGFA
       nHaps: nHaps
-    out: [gfafixGFA,gfatransGFA]
+    out: [gfaffixGFA,gfatransGFA]
     run: gfaffix.cwl
+  odgi_build:
+    in:
+      GFA: gfaffix/gfaffixGFA
+    out: [odgiGraph]
+    run: odgi_build.cwl
+  odgi_unchop:
+    in:
+      GFA: odgi_build/odgiGraph
+    out: [odgiUnchop]
+    run: odgi_unchop.cwl
+  odgi_sort:
+    in:
+      GFA: odgi_unchop/odgiUnchop
+    out: [odgiSorted]
+    run: odgi_sort.cwl
+  odgi_view:
+    in:
+      GFA: odgi_sort/odgiSorted
+    out: [odgiView]
+    run: odgi_view.cwl

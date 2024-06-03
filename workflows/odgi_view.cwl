@@ -9,11 +9,12 @@ hints:
     coresMin: 4
     ramMin: $(8 * 1024)
 baseCommand: odgi
-arguments: [build, -g, $(inputs.GFA), -o, $(inputs.GFA.nameroot).og]
+arguments: [view, --idx, $(inputs.GFA), --to-gfa, -o,
+            $(inputs.GFA.nameroot).gfa]
 inputs:
   GFA: File
 outputs:
-  odgiGraph:
+  odgiView:
     type: File
     outputBinding:
-      glob: $(inputs.GFA.nameroot).og
+      glob: $(inputs.GFA.nameroot).gfa
