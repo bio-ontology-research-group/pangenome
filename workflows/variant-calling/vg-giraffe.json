@@ -1,0 +1,22 @@
+{
+    "graph": {
+        "class": "File",
+        "location": "/home/kulmanm/KAUST/CBRC/hguploader/workflows/variant-calling/reference/hprc-v1.1-mc-grch38.gbz"
+    },
+    "reads1": {
+        "class": "File",
+        "location": "/home/kulmanm/data/NIST1p_R1.fastq.gz"},
+    "reads2": {
+        "class": "File",
+        "location": "/home/kulmanm/data/NIST1p_R2.fastq.gz"},
+    "kff": {
+        "class": "File",
+        "location": "kmers.kff"},
+    "ref_paths": {
+        "class": "File",
+        "location": "GRCh38.path_list.txt"},
+    "hapl": {
+        "class": "File",
+        "location": "reference/hprc-v1.1-mc-grch38.hapl"
+    }
+}
