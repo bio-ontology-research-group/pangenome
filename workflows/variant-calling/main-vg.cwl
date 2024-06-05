@@ -64,6 +64,7 @@ steps:
       reads2: reads2
       kff: kmc/kff
       ref_paths: vg-paths/path_list
+      output: output_cram
     out: [aligned_reads]
     run: vg-giraffe.cwl
   samtools_sort:
