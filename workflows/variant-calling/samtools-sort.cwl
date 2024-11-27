@@ -20,12 +20,9 @@ arguments: [view, -h, $(inputs.aligned_reads),
            ]
 inputs:
   aligned_reads: File
-  output_cram:
-    type: string?
-    default: aligned_reads.cram
 
 outputs:
   aligned_reads_sorted:
     type: stdout
   
-stdout: $(inputs.output_cram)
+stdout: $(inputs.aligned_reads.nameroot + '.sorted.cram')

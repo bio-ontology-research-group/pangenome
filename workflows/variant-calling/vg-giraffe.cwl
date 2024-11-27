@@ -43,7 +43,6 @@ inputs:
       prefix: --index-basename
   output:
     type: string
-    default: aligned_reads.bam
 outputs:
   aligned_reads:
     type: stdout
