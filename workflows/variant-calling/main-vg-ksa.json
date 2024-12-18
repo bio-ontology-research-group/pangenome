@@ -1,0 +1,31 @@
+{
+    "graph": {
+        "class": "File",
+        "location": "reference/ksa_hg38.gbz"
+    },
+    "reads1": {
+        "class": "File",
+        "location": "input/NIST1p_R1.fastq.gz"},
+    "reads2": {
+        "class": "File",
+        "location": "input/NIST1p_R2.fastq.gz"},
+    "hapl": {
+        "class": "File",
+        "location": "reference/ksa_hg38.hapl"
+    },
+    "ref_prefix": "GRCh38",
+    "model_type": "WGS",
+    "ref": {
+        "class": "File",
+        "location": "reference/hg38_ksa.fa",
+        "secondaryFiles": [
+            {
+                "class": "File",
+                "location": "reference/hg38_ksa.fa.fai"
+            }
+        ]
+    },
+    "output_cram": "aligned_reads_ksa.cram",
+    "output_vcf": "NIST1p_ksa.vcf",
+    "output_gvcf": "NIST1p_ksa.gvcf"
+}

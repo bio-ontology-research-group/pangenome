@@ -1,6 +1,8 @@
 cwlVersion: v1.1
 class: Workflow
 requirements:
+  InlineJavascriptRequirement: {}
+  ShellCommandRequirement: {}
   ResourceRequirement:
     ramMin: $(8 * 1024)
     coresMin: 2
@@ -11,6 +13,7 @@ inputs:
     type: File
     secondaryFiles:
       - .fai
+  ref_prefix: string
   graph:
     type: File
   hapl:
@@ -50,6 +53,7 @@ steps:
   vg-paths:
     in:
       graph: graph
+      ref_prefix: ref_prefix
     out: [path_list]
     run: vg-paths.cwl
   vg-giraffe:
@@ -60,6 +64,7 @@ steps:
       reads2: reads2
       kff: kmc/kff
       ref_paths: vg-paths/path_list
+      output: output_cram
     out: [aligned_reads]
     run: vg-giraffe.cwl
   samtools_sort:
