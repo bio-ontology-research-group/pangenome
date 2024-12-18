@@ -88,8 +88,6 @@ output_gvcf: sample.gvcf
 ## Citation
 If you use this pipeline in your research, please cite:
 
-[Add relevant citations for minigraph, Progressive Cactus, and your work]
-
 ## License
 The data is available under CC0
 
