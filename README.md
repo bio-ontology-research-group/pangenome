@@ -40,7 +40,7 @@ pip install cwltool
 
 ### Repository Setup
 ```bash
-git clone https://github.com/JaSaPaGe/pangenome-cwl
+git clone https://github.com/bio-ontology-research-group/pangenome
 ```
 
 ## Usage
@@ -56,7 +56,7 @@ Create a YAML file with your inputs:
 ```yaml
 graph:
   class: File
-  location: reference/ksa_jpn_hg38.gbz
+  location: reference/ksa_hg38.gbz
 reads1:
   class: File
   location: input/sample_R1.fastq.gz
@@ -65,7 +65,7 @@ reads2:
   location: input/sample_R2.fastq.gz
 hapl:
   class: File
-  location: reference/ksa_jpn_hg38.hapl
+  location: reference/ksa_hg38.hapl
 ref_prefix: GRCh38
 model_type: WGS
 ref:
