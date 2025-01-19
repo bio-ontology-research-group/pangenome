@@ -1,9 +1,9 @@
-# JASAPAGE: Phased genome assemblies and pangenome graphs of human populations of Japan and Saudi Arabia
+# A population-specific pangenome for Saudi Arabia
 
-# Saudi and Japanese Pangenome Analysis Pipeline
+# Saudi Pangenome Analysis Pipeline
 
 ## Overview
-This repository contains workflows and data for constructing pangenomes from Saudi and Japanese population genomic data using the minigraph-cactus pipeline. The workflows are implemented using Common Workflow Language (CWL), enabling reproducible and portable execution across different computing environments.
+This repository contains workflows and data for constructing pangenomes from Saudi population genomic data using the minigraph-cactus pipeline. The workflows are implemented using Common Workflow Language (CWL), enabling reproducible and portable execution across different computing environments.
 
 ## Background
 
