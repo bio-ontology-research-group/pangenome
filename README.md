@@ -17,6 +17,13 @@ Minigraph-cactus is a state-of-the-art pipeline that combines the efficiency of 
 
 The pipeline first uses minigraph to create initial graphs, followed by Progressive Cactus's sophisticated algorithms for multiple genome alignment, resulting in high-quality pangenome representations.
 
+
+| <sub>**Description**</sub> | <sub>**KSA Graph**</sub> |
+| :-------- | :------ |
+| <sub> Full Graph </sub> | <sub>[gfa](https://bio2vec.cbrc.kaust.edu.sa/data/pangenome/ksa_hg38.gfa.gz) &nbsp; &nbsp; [gbz](https://bio2vec.cbrc.kaust.edu.sa/data/pangenome/ksa_hg38.gbz)</sub> | 
+| <sub> VG Indexes </sub> | <sub>[hapl](https://bio2vec.cbrc.kaust.edu.sa/data/pangenome/ksa_hg38.hapl) &nbsp; &nbsp; [dist](https://bio2vec.cbrc.kaust.edu.sa/data/pangenome/ksa_hg38.dist) &nbsp; &nbsp; [min](https://bio2vec.cbrc.kaust.edu.sa/data/pangenome/ksa_hg38.min) </sub> | 
+
+
 ### Common Workflow Language (CWL)
 CWL is a specification for describing analysis workflows and tools. Its key features include:
 
