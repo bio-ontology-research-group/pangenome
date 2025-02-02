@@ -23,6 +23,7 @@ The pipeline first uses minigraph to create initial graphs, followed by Progress
 | <sub> Full Graph </sub> | <sub>[gfa](https://bio2vec.cbrc.kaust.edu.sa/data/pangenome/ksa_hg38.gfa.gz) &nbsp; &nbsp; [gbz](https://bio2vec.cbrc.kaust.edu.sa/data/pangenome/ksa_hg38.gbz)</sub> | 
 | <sub> VG Indexes </sub> | <sub>[hapl](https://bio2vec.cbrc.kaust.edu.sa/data/pangenome/ksa_hg38.hapl) &nbsp; &nbsp; [dist](https://bio2vec.cbrc.kaust.edu.sa/data/pangenome/ksa_hg38.dist) &nbsp; &nbsp; [min](https://bio2vec.cbrc.kaust.edu.sa/data/pangenome/ksa_hg38.min) </sub> | 
 
+The assemblies that are used to build the graph can be downloaded from [here](https://bio2vec.cbrc.kaust.edu.sa/data/pangenome/assembly/)
 
 ### Common Workflow Language (CWL)
 CWL is a specification for describing analysis workflows and tools. Its key features include:
