@@ -1,8 +1,8 @@
-# HLA pangenome study plan — v1.1.0
+# HLA pangenome study plan — v1.1.1
 
 Read the three-day [high-level plan](plan.pdf) or its [LaTeX source](plan.tex).
-It includes a workflow figure, responsibilities for Robert, Dawn, Hassan and
-agents, a cluster execution schedule, and a feasibility/value assessment.
+It includes a workflow figure, a three-day cluster execution schedule, and a
+feasibility/value assessment. The team will decide task assignments.
 
 The [technical design notes](technical-notes.pdf) ([source](technical-notes.tex))
 retain the detailed methods for implementation and conditional follow-up work.

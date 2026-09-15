@@ -68,31 +68,28 @@ count missing calls, and inspect discordant cases.
 \section*{3. Three-day timeline: parallel work, early compute}
 Plan for agent-assisted implementation at approximately one conventional week
 per day, as a working assumption. The critical path is data access, graph
-construction/indexing, and cluster runs. Owners below are proposed.
+construction/indexing, and cluster runs. The team will decide task assignments.
 
 \renewcommand{\arraystretch}{1.12}
 \begin{tabularx}{\textwidth}{@{}p{1.0cm}XX@{}}
 \toprule
 Day & Concurrent workstreams & Checkpoint and output \\
 \midrule
-\textbf{1} & \textbf{Dawn + agents:} panel QC, graph build/indexes, subset jobs.
-\textbf{Hassan + agents:} experimental truth, read extraction, three typer
-wrappers. \textbf{Robert + agents:} scoring, inference prototype, experiment
-manifest.
+\textbf{1} & Panel QC, graph build/indexes, and subset jobs; experimental
+truth, read extraction, and three typer wrappers; scoring, inference prototype,
+and experiment manifest.
 & First hours: verify data, exclusions, and one end-to-end sample. Launch pilot
 and expensive graph jobs immediately; submit bulk runs once the pilot passes.
 Leave the cluster processing overnight. \\
 \addlinespace
-\textbf{2} & \textbf{Dawn:} mapping and subset runs.
-\textbf{Hassan:} typing and paired evaluation.
-\textbf{Robert:} error review and inference validation.
-\textbf{Agents:} expand job arrays, test the prototype, and analyse existing bundles
-while compute runs.
+\textbf{2} & Mapping and subset runs; typing and paired evaluation; error
+review and inference validation. Expand job arrays, test the prototype, and
+analyse existing bundles while compute runs.
 & First accuracy/cost comparison; full matrix submitted where resources allow.
 Freeze settings before held-out evaluation. Test matched long reads if already
 available. Schedule failed-job retries overnight. \\
 \addlinespace
-\textbf{3} & \textbf{All three owners + agents:} complete runs, inspect discordant
+\textbf{3} & Complete runs, inspect discordant
 calls, analyse population effects and subset sizes, assess haplotype and bundle
 results, and write the report.
 & Versioned graph, workflows, comparison matrix, uncertainty estimates,
