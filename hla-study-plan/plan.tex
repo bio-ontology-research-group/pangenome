@@ -1,0 +1,254 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,booktabs,tabularx}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\planversion}{\input{VERSION}}
+\title{HLA pangenome construction and benchmarking\\\large Study plan, v\planversion}
+\author{Robert Hoehndorf}
+\date{15 September 2026}
+\begin{document}
+\maketitle
+\vspace{-1.5em}
+
+\section{Objective and design review}
+We will construct a pangenome graph from more than 700 phased major
+histocompatibility complex (MHC) haplotypes, including the planned Korea and CRC
+additions. The study emphasises Asian diversity within a mixed-ancestry panel.
+We will test whether the graph improves HLA typing from 1000 Genomes Project
+(1000G) short reads relative to GRCh38 (hg38). The principal endpoint is HLA
+genotype concordance with independent experimental typing. Secondary endpoints
+are haplotype reconstruction, ancestry-specific performance, and computational
+cost. Long-read comparisons and sequence-based classification extend this core
+benchmark.
+
+The local analysis snapshot contains 610 distinct haplotype identifiers:
+106 APR, 464 HPRC release 2, 20 Japanese and 18 Saudi JaSaPaGe haplotypes,
+and two references. Adding Korea and CRC is expected to bring the panel above
+700 haplotypes. HPRC includes Asian and non-Asian donors; determine ancestry
+per donor and quantify the final composition in an accession-level inventory.
+Existing bundle plots and Immuannot
+annotations provide starting materials. The current CWL mapping workflow already
+performs k-mer-based haplotype sampling and produces reference-projected BAM;
+this study also requires graph-native alignments. Existing annotations describe
+the assemblies and will serve as graph metadata. Experimental typing supplies
+the independent benchmark. These distinctions, together with donor exclusion
+and matched read inputs, determine how an improvement can be attributed.
+
+\section{Graph, samples, and ground truth}
+\textbf{Graph construction.}
+Define one MHC interval and homologous flanking anchors in a versioned BED file,
+with explicit GRCh38 coordinates and coordinate convention. Extract phased
+assembly sequence across these anchors; retain sample, donor, haplotype, cohort,
+and accession provenance. Audit completeness, gaps, orientation, gene copy
+number, contamination, duplicate donors across projects, and duplicated assembled
+haplotypes. Distinguish supported biological homozygosity from assembly collapse.
+Build the alignment graph with Minigraph--Cactus, preserving phased donor paths
+and a GRCh38 path. Use existing PGGB/ODGI and pgr-tk analyses for structural
+inspection. Validate sequence recovery and the topology required for Giraffe
+indexing and haplotype sampling before scaling. Catalogue classical HLA genes,
+secondary DRB genes, paralogues, and gene presence/absence.
+
+\textbf{Evaluation cohort.}
+Intersect 1000G sequence accessions with experimental HLA types and sample
+metadata. Prefer high-coverage whole-genome data for the primary experiment;
+keep legacy low-coverage data as a separate stratum. Reconcile sample aliases
+and relatedness across all source projects. Exclude evaluation donors, their
+alternative assemblies, and close relatives from graph construction and subset
+selection. Keep development and final evaluation families separate; freeze
+parameters on the development set. Where necessary, rebuild donor-excluded
+graphs per evaluation fold, with identical folds for every method.
+
+\textbf{Truth audit.}
+Inventory the experimental HLA data reported as partially downloaded on the
+DDBJ cluster, including paths, download completeness, source publications,
+assays, loci, resolution, ambiguity, and sample overlap. This plan has reviewed
+local files; cluster availability remains to be verified. The Gourraud et al.
+Sanger dataset provides an experimental source for HLA-A, -B, -C, -DRB1, and
+-DQB1~\cite{truth}. IGSR also distributes later HLA datasets; establish the
+experimental or computational provenance of each before assigning its role~\cite{igsr}.
+Freeze an IPD-IMGT/HLA release and allele-name conversion tables. Preserve
+ambiguous allele sets and expression suffixes. Score each locus at the resolution
+supported by its assay; use additional independently typed loci when available.
+
+\section{Read recruitment and alignment}
+Decode each CRAM with its exact reference, restoring original read orientation,
+qualities, and read groups into paired FASTQ plus explicit singleton files.
+Verify that unmapped reads are present. Emit each sequenced read once, avoiding
+copies from secondary and supplementary alignment records. Define two inputs:
+\begin{enumerate}
+\item \textbf{All reads:} all recoverable reads in the complete CRAM.
+\item \textbf{Prefiltered reads:} read templates with any hg38 alignment overlapping
+      the declared MHC interval and flanks or relevant HLA alternate/decoy
+      sequences, plus every unmapped read. Retrieve both mates for every selected
+      template, including mates mapped elsewhere. Deduplicate by read group,
+      query name, and mate; retain singletons explicitly.
+\end{enumerate}
+Use the same extraction policy across conditions and audit read counts and mate
+retention. Filtering can miss HLA reads assigned elsewhere by the original
+aligner; quantify this loss against the all-read condition and simulated reads
+with known origins. Avoid a mapping-quality threshold during initial recruitment.
+
+Align both inputs afresh to hg38 with BWA-MEM2 and to the HLA graph with Giraffe.
+Keep the existing 1000G alignments as an additional provenance baseline.
+For comparable locus specificity, embed the MHC graph in a fixed GRCh38 genomic
+background, retaining appropriate paralogous and decoy sequence and replacing
+the corresponding primary MHC segment. Use that same background in every graph
+condition. Treat an HLA-only graph as a labelled sensitivity analysis because
+whole-genome reads can map spuriously into a regional reference. Archive
+Giraffe GAM alignments and their graph/index identities; derive projected BAM
+for compatible downstream tools and quantify projection loss. Include Giraffe
+on a GRCh38-only graph as a mapper control. Match read preprocessing and
+computational resources across arms.
+
+\section{Haplotype inference and HLA typing}
+\textbf{Sequence inference.}
+First infer two supported sequences per diploid HLA locus. For graph alignments,
+fit candidate path pairs to read and paired-fragment likelihoods, allowing
+multi-mapping and sequencing error; retain posterior ambiguity and low-coverage
+masks. Use local variant calling, phasing, and assembly to recover supported
+sequence absent from the donor panel. For hg38 alignments, use local variant
+calling and read-backed phasing with the same coverage and confidence criteria.
+Apply the same sequence-to-allele annotation procedure to both outputs. Report
+per-gene haplotypes, phase-block spans, and supported inter-gene links separately;
+short-read support will determine how much of the extended MHC can be phased.
+Validate this inference stage on held-out simulated diplotypes before real-data
+benchmarking. Model variable-copy DRB loci separately from the primary diploid
+loci.
+
+\textbf{Multiple typers.}
+Benchmark HLA*LA, T1K, and SpecHLA on short reads~\cite{hlala,t1k,spechla}.
+For reconstructed sequences, compare Immuannot with SpecHLA's assembly-typing
+mode using compatible database releases. For genuine long-read datasets, use
+SpecImmune and HLAminer, with SpecHLA as an optional additional method~\cite{specimmune,hlaminer}.
+HLA*LA's long-read mode is an exploratory G-group-resolution comparator~\cite{hlala}.
+
+Separate the common sequence-inference experiment from each typer's native
+end-to-end pipeline. Many typers recruit and realign reads internally; provide
+their supported FASTQ or reference-coordinate BAM inputs and explicitly identify
+which upstream alignment information they retain. A FASTQ-based caller using
+identical reads and its own reference runs once per read set. Compare
+alignment-dependent recruitment by exporting reads and mates from each upstream
+alignment. Label this as a recruitment comparison. Register a compatibility table
+of input type, loci, output resolution, and internal realignment before running
+the benchmark; unsupported combinations receive an explicit unavailable entry.
+
+\textbf{Short versus long reads.}
+Our hypothesis is that accurate long reads improve full-gene sequence recovery,
+paralogue assignment, and phase continuity by spanning informative variants.
+The gain in common two-field typing may be smaller. Read accuracy, allele balance,
+coverage, and caller design determine the outcome. Compare real PacBio HiFi and,
+where available, ONT data from the same independently typed individuals; analyse
+technologies separately at native and matched effective HLA coverage. Report
+sequencing cost alongside accuracy. Assembly-derived reads belong to simulation
+experiments. Haplotype FASTA inferred from short reads remains a short-read
+result. If matched long-read samples are scarce, define a separate external
+validation cohort and report its composition.
+
+\section{Comparison matrix and evaluation}
+Table~\ref{tab:matrix} defines the reference axis. Cross every row with all-read
+and prefiltered input. Apply compatible typers and the common sequence-inference
+procedure as described above.
+\begin{table}[ht]
+\centering\small
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\toprule
+Reference family & Levels and selection rule \\
+\midrule
+Linear controls & hg38/BWA-MEM2; GRCh38-only graph/Giraffe. \\
+Full HLA graph & All eligible donor haplotypes after evaluation exclusions. \\
+Whole-donor subsets & 4, 8, 16, 32 individuals, retaining both available phased
+haplotypes (nominally 8, 16, 32, 64 paths). Compare read-k-mer-ranked donors with
+ancestry-stratified random subsets; use five fixed random seeds. \\
+Blockwise personalisation & 4, 8, 16, 32 haplotypes per block selected from read
+k-mers; optional diploid selection from 32 candidates. \\
+\bottomrule
+\end{tabularx}
+\caption{Planned reference conditions. Reference/background paths are additional
+to the stated donor or haplotype counts.}\label{tab:matrix}
+\end{table}
+The cited personalisation method samples \emph{haplotypes per approximately
+10-kb block}, and assumes adequate k-mer coverage (at least 20-fold in its
+design)~\cite{personal}. Whole-individual subsetting is a separate experiment.
+Select donors using sequence evidence with a fixed scoring rule and tie-breaker.
+For the main matrix, derive selection k-mers from the same input read set used
+for mapping. A secondary experiment holds all-read k-mer selection fixed while
+varying mapping input to separate selection loss from mapping loss. Freeze
+blocks, seeds, donor lists, indexes, and coverage rules. Final-test truth labels
+remain hidden during selection and tuning.
+
+\textbf{Primary analysis.}
+Pre-specify full graph versus hg38 on all reads as the main contrast. Measure
+exact unordered diploid genotype concordance at two-field resolution where
+experimentally resolved, with a separate G-group analysis where that is the
+available resolution. Include no-calls in the eligible denominator. Report
+call rate and accuracy among calls, allele-copy accuracy, and ambiguity-compatible
+concordance with predicted-set size. Evaluate each locus and a macro-average
+over a fixed shared locus set. Report all supported loci separately for broader
+typers. Resolve nomenclature differences before scoring; preserve uncertain
+experimental labels as sets.
+
+\textbf{Secondary analysis.}
+Stratify by ancestry, graph representation, allele frequency, coverage, and
+structural complexity. Measure filtering retention, locus misassignment in
+simulation, allelic balance, sequence error over callable bases, phase-block
+completeness, and switch error where phased truth exists. Experimental HLA
+labels assess typing; independent phased sequence is required to assess extended
+haplotype reconstruction. Report wall time, CPU time, peak memory, and storage,
+including extraction, selection, indexing, and typing. Use paired comparisons
+and confidence intervals from resampling individuals or families; pre-specify
+multiplicity control for secondary tests. Establish the required test-set size
+from development-set discordance and a declared minimum useful improvement.
+
+\section{Exploratory sequence and functional classification}
+Begin with label-blind, per-locus clustering of principal bundles: recurrent
+sequence segments shared along haplotype paths. Represent each haplotype by
+bundle presence, copy number, order, and intervening sequence. Compare a
+length-weighted bundle distance with nucleotide and peptide distances. Analyse
+whole genes, peptide-binding exons, and extended class II separately to distinguish
+coding similarity from linkage and structural variation. Select clustering
+parameters by stability under resampling and graph-parameter perturbation;
+then test recovery of allele groups, two-field types, and DRB structures on
+held-out donors using adjusted Rand index and adjusted mutual information.
+The existing pgr-tk bundle analyses provide a feasibility starting point.
+
+Prioritise functional interpretation through translated binding-site residues
+and peptide-binding profiles on a fixed peptide panel, followed by independent
+experimental binding evidence where available. Test whether sequence clusters
+add information beyond named HLA alleles. Population frequencies provide
+descriptive context with sample-size uncertainty and ancestry stratification.
+Phenotype associations require individual-level outcomes, ancestry and kinship
+adjustment, comparison against conventional HLA predictors, multiple-testing
+control, and external replication. Population disease incidence can motivate
+hypotheses; individual-level cohorts provide the association test.
+
+\section{Execution and deliverables}
+First reconcile the assembly and truth manifests, then complete a small,
+ancestry-diverse development pilot spanning all-read and prefiltered inputs,
+hg38, and the full graph. Verify graph integrity, donor exclusion, recruitment,
+typing interfaces, and resource requirements before expanding to the subset
+matrix. Freeze the evaluation cohort and analysis specification before final
+benchmarking. Deliver versioned manifests and configuration, reproducible CWL
+workflows, graphs and indexes, per-sample calls with uncertainty, benchmark
+summaries, and a separate exploratory classification analysis. Pin tools,
+containers, database releases, seeds, and source checksums in machine-readable
+provenance. This document specifies proposed work and expected tests.
+
+\begin{thebibliography}{9}\small
+\bibitem{personal} Sir\'en J et al. Personalized pangenome references.
+\emph{Nature Methods} 21, 2017--2023 (2024).
+\href{https://doi.org/10.1038/s41592-024-02407-2}{doi:10.1038/s41592-024-02407-2}.
+\bibitem{truth} Gourraud P-A et al. HLA diversity in the 1000 Genomes dataset.
+\emph{PLOS ONE} 9, e97282 (2014).
+\href{https://doi.org/10.1371/journal.pone.0097282}{doi:10.1371/journal.pone.0097282}.
+\bibitem{igsr} IGSR. \href{https://www.internationalgenome.org/faq/was-hla-diversity-studied-in-igsr/}{Was HLA diversity studied in IGSR?}
+\bibitem{hlala} Dilthey Lab. \href{https://github.com/DiltheyLab/HLA-LA}{HLA*LA documentation};
+\href{https://pmc.ncbi.nlm.nih.gov/articles/PMC6821427/}{HLA typing from linearly projected graph alignments} (2019).
+\bibitem{t1k} Song L et al. Efficient and accurate KIR and HLA genotyping with massively parallel sequencing data (2023).
+\href{https://doi.org/10.1101/gr.277585.122}{doi:10.1101/gr.277585.122}; \href{https://github.com/mourisl/T1K}{T1K documentation}.
+\bibitem{spechla} DeepOmics Lab. \href{https://github.com/deepomicslab/SpecHLA}{SpecHLA documentation}.
+\bibitem{specimmune} DeepOmics Lab. \href{https://github.com/deepomicslab/SpecImmune}{SpecImmune documentation}.
+\bibitem{hlaminer} Birol Lab. \href{https://github.com/BirolLab/HLAminer}{HLAminer documentation}.
+\end{thebibliography}
+\noindent\footnotesize Web documentation consulted 15 September 2026. Software versions will be frozen in the execution manifest.
+\end{document}
