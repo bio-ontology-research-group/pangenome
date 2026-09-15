@@ -1,18 +1,27 @@
-# HLA pangenome study plan — v1.0.0
+# HLA pangenome study plan — v1.1.0
 
-Read [the PDF](plan.pdf) or [the LaTeX source](plan.tex).
+Read the three-day [high-level plan](plan.pdf) or its [LaTeX source](plan.tex).
+It includes a workflow figure, responsibilities for Robert, Dawn, Hassan and
+agents, a cluster execution schedule, and a feasibility/value assessment.
+
+The [technical design notes](technical-notes.pdf) ([source](technical-notes.tex))
+retain the detailed methods for implementation and conditional follow-up work.
+The sprint targets the full matrix where cluster throughput permits, plus an
+inference prototype and initial bundle analyses. Agents accelerate implementation;
+data access and heavy compute determine completion. Independent functional
+validation remains conditional on suitable evidence.
 
 ## Build
 
-Requires a TeX installation with `latexmk`, `pdflatex`, and the packages declared
-in `plan.tex`.
+Requires a TeX installation with `latexmk`, `pdflatex`, TikZ/PGF, and the packages declared
+in the two LaTeX sources.
 
 ```sh
 cd hla-study-plan
 make
 ```
 
-`make clean` removes auxiliary files and preserves the PDF.
+`make` builds both PDFs. `make clean` preserves both PDFs.
 
 ## Document versioning
 
@@ -63,5 +72,6 @@ The principal design refinements are:
 6. Use label-blind bundle clustering before HLA-label comparison; develop
    functional interpretation through binding profiles and independent evidence.
 
-Citations and the complete experiment specification are in the LaTeX document.
+Citations and the full proposed experiment specification are in the technical
+notes; the high-level plan defines the sprint priorities.
 This release contains a study plan; the proposed experiments have not been run.
