@@ -1,0 +1,8 @@
+{
+  "n": 88,
+  "cn_correct": 88,
+  "pair_correct": 73,
+  "unique_calls": 88,
+  "calibration": "18 pilot donors, excluded overlapping query families",
+  "evaluation": "88 additional donors; no evaluation-outcome tuning"
+}

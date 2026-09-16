@@ -1,0 +1,66 @@
+[
+  {
+    "gene": "WHR1",
+    "accession": "NR_026717.1",
+    "start0": 31971174,
+    "end0": 31981446,
+    "strand": "+",
+    "sha256": "4b3ec8056fcaceb5385f682b8314179ab7ac3e7dccf7c16ea046ce9a0e5e5cc9"
+  },
+  {
+    "gene": "C4A",
+    "accession": "NM_001252204.2",
+    "start0": 31982056,
+    "end0": 32002681,
+    "strand": "+",
+    "sha256": "600f8ec2ed5da0c0a8908dd463d8e31daa9b58dda47aad677a2df05422a2a358"
+  },
+  {
+    "gene": "C4B",
+    "accession": "NM_001002029.4",
+    "start0": 32014794,
+    "end0": 32035418,
+    "strand": "+",
+    "sha256": "14b3c641396e21ef3d5612af69ee9fed73a2421fd10fdc6a7d8e52a9f7ac9fd6"
+  },
+  {
+    "gene": "CYP21A1P",
+    "accession": "NR_040090.1",
+    "start0": 32005635,
+    "end0": 32008909,
+    "strand": "+",
+    "sha256": "ad4483c563a10a6aabf6b39603d17b4a74d5398ba8f38fc5a2441e6b02f0bac8"
+  },
+  {
+    "gene": "CYP21A2",
+    "accession": "NM_000500.9",
+    "start0": 32038414,
+    "end0": 32041644,
+    "strand": "+",
+    "sha256": "cc17af1a5287e77c8cd7209623cfe06eff5a4e3314d9d4336235a87d908bba58"
+  },
+  {
+    "gene": "TNXA",
+    "accession": "NR_001284.2",
+    "start0": 32008419,
+    "end0": 32013023,
+    "strand": "-",
+    "sha256": "b61e4fab53d76591e2fd2104fe7e8a237031cd6915694333613243089655ad5c"
+  },
+  {
+    "gene": "TNXB",
+    "accession": "NM_001428335.1",
+    "start0": 32041152,
+    "end0": 32109338,
+    "strand": "-",
+    "sha256": "0896ffd9549155ec956f6d864f8efc5662775cf1e1234c5909ebef726dac3bfd"
+  },
+  {
+    "gene": "WHR1B",
+    "accession": "ENSG00000250535.1",
+    "start0": 32013269,
+    "end0": 32013787,
+    "strand": "+",
+    "sha256": "d9311fd5c2b8846aa791e39c1cd86dba37a8a2664abf1ca05d29eaace881017b"
+  }
+]

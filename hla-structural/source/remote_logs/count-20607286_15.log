@@ -1,0 +1,4 @@
+[M::bam2fq_mainloop] discarded 0 singletons
+[M::bam2fq_mainloop] processed 1660133 reads
+records=1660133 fragments=843759 markers=11917
+COMPLETE HG01167

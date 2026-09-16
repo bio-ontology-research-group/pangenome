@@ -1,0 +1,98 @@
+[
+  {
+    "name": "chin2023_pgrtk",
+    "format": "xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10406601/fullTextXML",
+    "status": 200,
+    "saved": true,
+    "bytes": 150519
+  },
+  {
+    "name": "chin2023_pgrtk",
+    "format": "pdf",
+    "url": "https://www.nature.com/articles/s41592-023-01914-y.pdf",
+    "status": 200,
+    "saved": false,
+    "bytes": 3038
+  },
+  {
+    "name": "zhou2024_immuannot",
+    "format": "xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11610593/fullTextXML",
+    "status": 200,
+    "saved": true,
+    "bytes": 145059
+  },
+  {
+    "name": "zhou2024_immuannot",
+    "format": "pdf",
+    "url": "https://genome.cshlp.org/content/early/2024/10/23/gr.278985.124.full.pdf",
+    "status": 403,
+    "saved": false,
+    "bytes": 18661
+  },
+  {
+    "name": "li2024_pangene",
+    "format": "xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11286280/fullTextXML",
+    "status": 200,
+    "saved": true,
+    "bytes": 162175
+  },
+  {
+    "name": "li2024_pangene",
+    "format": "pdf",
+    "url": "https://arxiv.org/pdf/2402.16185",
+    "status": 200,
+    "saved": true,
+    "bytes": 932164
+  },
+  {
+    "name": "dilthey2019_hlala",
+    "format": "xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6821427/fullTextXML",
+    "status": 200,
+    "saved": true,
+    "bytes": 48776
+  },
+  {
+    "name": "ukb2023_hla",
+    "format": "xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10624861/fullTextXML",
+    "status": 200,
+    "saved": true,
+    "bytes": 221217
+  },
+  {
+    "name": "ukb2023_hla",
+    "format": "pdf",
+    "url": "https://www.nature.com/articles/s42003-023-05496-5.pdf",
+    "status": 200,
+    "saved": false,
+    "bytes": 3038
+  },
+  {
+    "name": "lee2018_kourami",
+    "format": "pdf",
+    "url": "https://d-nb.info/1166227952/34",
+    "status": 200,
+    "saved": true,
+    "bytes": 1199201
+  },
+  {
+    "name": "wang2026_1kcp",
+    "format": "pdf",
+    "url": "https://www.nature.com/articles/s41586-026-10315-y.pdf",
+    "status": 200,
+    "saved": false,
+    "bytes": 3038
+  },
+  {
+    "name": "huijse2023_panmhc",
+    "format": "pdf",
+    "url": "https://www.biorxiv.org/content/10.1101/2023.09.01.555813v1.full.pdf",
+    "status": 200,
+    "saved": true,
+    "bytes": 2373801
+  }
+]

@@ -1,0 +1,103 @@
+# HLA recovery and additional MHC variation in the 754-haplotype panel
+
+## Conclusions
+
+Classical HLA types can be recovered from the observed gene sequences represented by this panel. The tested binary bundle representations retain useful HLA information but do not outperform an unsampled coding-sequence baseline. This experiment types supplied assemblies; it is not an end-to-end read typer and does not duplicate the hackathon Giraffe mapping project.
+
+The panel also captures information beyond all available classical numeric two-field calls: two matched HLA backgrounds differ in C4/RCCX component number, and one selected flanking SNP contrast has local read support. Such sequence/structural variation is not itself evidence of regulatory function or disease association. Three database-absent protein candidates have local read support for their distinguishing SNPs, but no novel HLA allele is established.
+
+These are the completed analysis deliverables: a frozen QC panel, fixed-panel benchmark, within-type variation catalogue, evidence-ranked candidate assessment and post-hackathon UKB plan. Unresolved candidates and technical limits are results, not positive discoveries. UKB execution and full functional/clinical validation are future work.
+
+## Prior work and novelty boundary
+
+Direct precedents include [PGR-TK MHC analysis](https://doi.org/10.1038/s41592-023-01914-y), [pangene gene-content graphs](https://doi.org/10.1093/bioinformatics/btae456), [Immuannot assembly annotation](https://doi.org/10.1101/gr.278985.124), and [Logsdon et al. 2025 MHC/RCCX analysis](https://doi.org/10.1038/s41586-025-09140-6). Graph-based HLA typing, assembly-based novel-allele discovery and MHC structural analysis therefore are not new ideas. See the [archived literature review](../literature/2026-09-16/README.md) for typing, panMHC, C4 and Asian-panel precedents and downloaded full texts.
+
+The contribution supported here is the controlled assessment and candidate catalogue for this particular panel. A new bundle cluster is not a new HLA allele. The first structural positive control, DRB1*15:03-associated DRB5 absence, is already documented in [1997](https://pubmed.ncbi.nlm.nih.gov/9027966/) and [2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12336363/). It adds to DRB1–DQ labels, but typing that includes DRB5 already captures that distinction.
+
+## Panel and quality control
+
+All 754 graph entries were reconciled with source sequences, paths and annotations. Excluding two references and five duplicate donor assembly pairs leaves 742 haplotypes from 371 name-reconciled donors. Public pedigree records cover 228 retained donors; conservative APR and Korean trio groupings are also excluded jointly. Genome-wide kinship was not estimated, so unidentified relatives remain a limitation.
+
+The audit distinguishes 816 source/full-graph paths from 819 clipped paths and records downstream clipping loss. The 144 CPC/Korean entries originating from upstream-clipped graphs are flagged separately. Fragmented or clipped sources are not interpreted as biological gene loss. NA18952 JaSaPaGe has duplicated assembled haplotype content and is excluded in favour of its HPRC source.
+
+IPD-IMGT/HLA 3.65.0 is frozen at commit `5b915f27f7f620361cf83cb626eeac8a03c0247c`; original calls used 3.55.0. Sources, software versions, coordinates and hashes are preserved. There are 6,670 annotated gene sequences at 11 classical loci. Coding extraction checks strand, interval union, terminal codons and abnormal/partial CDS flags. The partial apr003 HLA-A annotation is not accepted as a complete novel allele. HG02717 DQB1, formerly labelled `02:new`, now exactly matches registered DQB1*02:180.
+
+Eligibility is explicit for every haplotype/locus in [endpoint_eligibility.tsv](results/endpoint_eligibility.tsv), with donor and source QC in [frozen_panel.tsv](results/frozen_panel.tsv). Gene absence, abnormal/incomplete sequence, ambiguous/unmatched current labels and missing comparison features are distinct exclusions. Known null alleles can fail the conservative completeness filter; this is a scope limitation, not a claim that they are erroneous.
+
+## Classical typing benchmark
+
+Target donors, duplicate assemblies and linked known/provisional families cannot supply reference labels. All methods at each locus use the same eligible queries and reference haplotypes. Bundle decomposition used the entire frozen panel, including query assemblies: this is an explicitly fixed-panel/transductive experiment, not a graph rebuilt from training donors. Canonical k-mer features are sequence-local; no vocabulary weighting, thresholds or hyperparameters are trained on query labels.
+
+The endpoint is numeric two-field identity, without expression suffixes. Labels require a complete, single annotated gene and an unambiguous exact current-CDS match. Unresolved novel candidates and absent/abnormal genes are therefore outside this benchmark. Nearest-neighbour ties across labels remain ambiguous; no-calls count against all-evaluated agreement. This estimates recovery of eligible assembly-derived labels, not clinical accuracy.
+
+| Locus | Eligible haplotypes | All coding 31-mers | Sampled gene sequence | Gene bundles | DRA–DMA bundles | Gene content |
+|---|---:|---:|---:|---:|---:|---:|
+| HLA-A | 726 | 98.2% | 75.2% | 21.9% | — | 6.6% |
+| HLA-B | 741 | 96.4% | 92.4% | 33.5% | — | 1.5% |
+| HLA-C | 739 | 99.1% | 94.9% | 34.8% | — | 2.0% |
+| HLA-DPA1 | 735 | 99.9% | 99.7% | 42.2% | 31.2% | 5.2% |
+| HLA-DPB1 | 738 | 97.8% | 85.9% | 17.2% | 13.4% | 0.9% |
+| HLA-DQA1 | 738 | 99.6% | 98.1% | 84.4% | 94.6% | 7.6% |
+| HLA-DQB1 | 733 | 99.6% | 99.6% | 64.5% | 93.9% | 7.4% |
+| HLA-DRB1 | 712 | 98.9% | 96.1% | 42.4% | 83.7% | 6.2% |
+| HLA-DRB3 | 302 | 99.7% | 94.4% | 45.4% | 96.4% | 8.6% |
+| HLA-DRB4 | 180 | 99.4% | 99.4% | 47.8% | 97.8% | 42.2% |
+| HLA-DRB5 | 124 | 99.2% | 99.2% | 0.0% | 98.4% | 19.4% |
+
+The gene/CDS/flank sampled baselines retain canonical 31-mers at a fixed 1/32 content-hash rate. The stronger coding baseline retains all 31-mers. Binary bundle presence is a lossy representation; these results do not rule out richer graph/path models. Gene-content features are annotation counts, not independently measured CN. DRA–DMA features for DPA1/DPB1 measure regional correlation rather than direct locus coverage.
+
+Rare/unseen reference alleles, cohort transfer, ambiguity/call rates and a training-majority baseline are reported in [typing_metrics.tsv](results/typing_metrics.tsv). Cohort exclusion uses recorded ancestry/cohort subgroups, not strict leave-study-out validation. [Family-cluster bootstrap intervals](results/typing_uncertainty.tsv) use 2,000 fixed-seed draws and paired method comparisons; they condition on the fixed predictions/panel and do not capture graph-construction or unknown-relatedness uncertainty.
+
+An exploratory rule that used bundles to narrow ambiguous all-CDS-kmer calls rescued zero correct calls. It introduced one false unambiguous call per exclusion scheme for gene bundles and one/two for regional bundles under family/cohort exclusion. [Per-query results](results/bundle_increment_predictions.tsv) are preserved. This tested combination provides no demonstrated incremental typing benefit.
+
+### Independent experimental comparison
+
+The public [Gourraud et al. 2014](https://doi.org/10.1371/journal.pone.0097282) Sanger table supplies ambiguous, unordered diploid calls at five loci. Comparisons retain both haplotype pairings and published ambiguity lists. Evaluated donors require two eligible current-CDS labels; these denominators do not represent all panel donors.
+
+| Locus | Current exact-CDS calls vs experimental | Family-excluded coding baseline vs experimental |
+|---|---:|---:|
+| HLA-A | 62/64 | 61/64 |
+| HLA-B | 64/64 | 59/64 |
+| HLA-C | 58/63 | 59/63 |
+| HLA-DRB1 | 59/63 | 58/63 |
+| HLA-DQB1 | 58/61 | 58/61 |
+
+There are 14 numeric two-field discrepancies between current exact-CDS calls and historical experimental calls. Ten have possible antigen-binding-exon compatibility under frozen G-group definitions. This is not whole-gene agreement, and G groups can infer unsequenced regions. Of the four remaining discrepancies, NA18943 A/DRB1 have cross-source assembly and local read support for the assembly bases; NA19007 A has local read support; NA18608 DRB1 remains unresolved because several probes are nonunique. These checks do not establish why the historical assay differs. Details: [discordance table](results/experimental_discordances.tsv) and [read evidence](results/read_validation.md).
+
+## Information beyond conventional labels
+
+The catalogue distinguishes matches at DRB1–DQA1–DQB1 from matches at all eight core loci plus annotated DRB3/4/5 states. All-classical matching is numeric two-field matching, not four-field or complete-genomic identity; no-annotation DRB states are provisional absence states. Signed gene order requires a common contig and an orientation anchor.
+
+After conservative source/contiguity QC, full-classical-label comparisons retain 34 flanking, 24 unresolved genomic and 14 already-registered genomic sequence contrasts, plus six correlated content/order/C4 contrasts describing two structural backgrounds. These are feature comparisons, not independent variant counts. All retained flanks contain 2 kb on each side and no ambiguous bases. There is no demonstrated regulatory function. See [contrast evidence](results/within_type_evidence.tsv) and [sequence catalogue](results/sequence_catalogue.tsv).
+
+The selected HLA-C downstream-flank difference between HG03195 and HG03130 has local read support. The selected DRB1 downstream-flank difference is discordant in HG03195 (two assembly-probe versus six alternative-probe fragments) and remains unresolved as a possible assembly/phasing artefact. Neither is promoted as a novel regulatory allele. [Additional validation](results/additional_validation.md) records coordinates, counts and limitations.
+
+### Separate C4/RCCX analysis
+
+Homology screening of WHR1/STK19, CYP21 and TNX components alongside original C4 annotations covers all 754 entries. There are 591 retained non-clipped, single-contig, gap-free entries with matching component counts, an order signature and ≥1 kb distance from contig ends. Their one/two/three/four-component counts are 65/466/56/4. These describe this panel, not population frequencies.
+
+Within otherwise matching full classical calls, ksa006#1/ksa008#1 have three/two RCCX components, and HG02735#2/NA21144#2 have one/two. These established module classes are additional information beyond the HLA labels. The known DRB5-absence positive control is a separate finding beyond DRB1–DQ only.
+
+![RCCX differences within matching HLA types](results/rccx_matched_hla.png)
+
+Nearest prototype similarity does not establish CYP21/TNX functional identity, fusion genes, gene conversion or exact duplication junctions. Four entries with clipping, fragmentation or inconsistent components remain unresolved. Original-read C4 exon depth gives rough diploid estimates of about 4.3–4.5 copies for NA21144 and HG03195, whose assemblies each annotate four; normalization bias prevents a validated CN claim and does not phase modules. HG02735 lacks a local CRAM. The [RCCX report](results/rccx_report.md) retains all source flags and [read-depth evidence](results/additional_validation.md) retains the assay limitations.
+
+## Evidence-ranked coding candidates
+
+The 50 complete-CDS entries without exact protein matches to the frozen database represent 47 distinct protein candidates. Stable sequence-hash IDs, actual protein sequences, nearest-reference distances, donor recurrence and source flags are preserved in [coding_candidates.tsv](results/coding_candidates.tsv).
+
+Three candidates—NA18620 HLA-C, HG02976 DRB1 and NA19159 DRB1—have at least five supporting fragments for each tested distinguishing SNP and a unique observed-probe match within their donor MHC assemblies. They are plausible candidates, not confirmed new alleles. All remaining candidates remain unresolved, including recurrent candidates without local CRAMs. Nearby markers can share fragments. Recruitment, genomic uniqueness beyond MHC, full-allele phase, expression and functional effects are not validated.
+
+A direct comparison to the published HGSVC3 allele archive found no exact ordered-CDS-block match for these 47 candidates, while 1,005 registered panel genomic sequences match that archive as positive controls. This negative search does not establish unpublished novelty: synonymous variants, alternative annotation boundaries and other sequence archives are not exhausted. Classification and limitations are in [candidate_evidence_ranking.tsv](results/candidate_evidence_ranking.tsv) and [published-sequence checks](results/published_candidate_sequence_check.tsv).
+
+## UK Biobank follow-up
+
+UKB individual WGS/WES/phenotypes are available to the project but not operationally accessible during the hackathon. No UKB analysis has run. The [validation plan](UKB_VALIDATION_PLAN.md) specifies phenotype-blind technical validation, candidate genomic/path definitions, callable-marker and paralog checks, ancestry/batch/relatedness controls, conditional tests against comprehensive classical HLA labels, multiplicity and replication.
+
+WGS is required for most flanking and arrangement candidates; WES can support covered coding bases but generally cannot resolve complete alleles, flanks or module structures. Association tests must distinguish absence of a signal from poor genotypability, low frequency or insufficient power. Conditional association or predictive gain is the required test of added disease information; no such gain is established here.
+
+## Reproducibility and scope of completion
+
+Run `python3 hla-analysis/run_analysis.py` from the repository root to recompute the analytic results from frozen inputs and archived DDBJ measurements. [REPRODUCIBILITY.md](REPRODUCIBILITY.md) explains dependencies, input provenance, remote stages and output contracts. [COMPLETION_AUDIT.md](COMPLETION_AUDIT.md) maps the five requested deliverables to evidence. The historical pilot and intermediate report remain separate from this final report.
+
+Completion means these analyses and evidence classifications are delivered. It does not mean every candidate is real, every module is functionally resolved, bundles improve typing, or a new allele/disease association was discovered. Whole-genome kinship, unseen-graph validation, stronger orthogonal allele/CNV validation, functional assays and UKB execution are explicitly prospective.

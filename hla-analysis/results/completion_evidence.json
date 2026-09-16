@@ -1,0 +1,42 @@
+{
+  "1_frozen_panel": {
+    "haplotypes": 754,
+    "locus_endpoint_rows": 8294,
+    "remote_source_records": 768,
+    "unknown_kinship": "explicitly unresolved"
+  },
+  "2_benchmark": {
+    "prediction_rows": 86140,
+    "methods": [
+      "classII_bundles_fixed_panel",
+      "coding_sequence",
+      "coding_sequence_all_31mers",
+      "flanks_only",
+      "gene_bundles_fixed_panel",
+      "gene_content",
+      "gene_sequence"
+    ],
+    "loci": 11,
+    "truth_loci": 5,
+    "scope": "fixed panel, numeric two-field, eligible annotated genes"
+  },
+  "3_beyond_labels": {
+    "contrasts": 1929,
+    "rccx_entries": 754,
+    "functional_module_and_regulatory_identity": "not established"
+  },
+  "4_candidate_assessment": {
+    "protein_candidates": 47,
+    "categories": {
+      "plausible_novel_allele_candidate": 3,
+      "unresolved": 44
+    },
+    "validated_new_alleles": 0,
+    "validation_scope": "local SNPs, cross-source assemblies, known DRB5 control; structural depth exploratory"
+  },
+  "5_report_workflow": {
+    "reproduced_stages": 19,
+    "ukb_execution": "prospective, not run",
+    "final_report": "FINAL_REPORT.md"
+  }
+}

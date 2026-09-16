@@ -1,0 +1,9 @@
+Wed Sep 16 12:29:33 AM UTC 2026
+asianhla-vm
+2.28-r1209
+samtools 1.21
+/home/leechuck/hla/ref1kg/GRCh38_full_analysis_set_plus_decoy_hla.fa: No such file or directory
+[E::refs_load_fai] Failed to open reference file '/home/leechuck/hla/ref1kg/GRCh38_full_analysis_set_plus_decoy_hla.fa'
+[E::hts_open_format] Failed to open file "/home/asianhla/data/upload/1000G_MHC/cram/HG03139.mhc.cram" : Invalid argument
+samtools collate: Cannot open input file "/home/asianhla/data/upload/1000G_MHC/cram/HG03139.mhc.cram": Invalid argument
+Failed to read header for "-"

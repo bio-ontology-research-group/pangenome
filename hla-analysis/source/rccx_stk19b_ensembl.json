@@ -1,0 +1,18 @@
+{
+  "logic_name": "havana_homo_sapiens",
+  "db_type": "core",
+  "version": 1,
+  "assembly_name": "GRCh38",
+  "description": "winged helix repair factor 1B (pseudogene) [Source:HGNC Symbol;Acc:HGNC:21668]",
+  "start": 32013270,
+  "end": 32013787,
+  "object_type": "Gene",
+  "species": "homo_sapiens",
+  "canonical_transcript": "ENST00000512515.1",
+  "display_name": "WHR1B",
+  "seq_region_name": "6",
+  "biotype": "transcribed_unprocessed_pseudogene",
+  "source": "havana",
+  "strand": 1,
+  "id": "ENSG00000250535"
+}

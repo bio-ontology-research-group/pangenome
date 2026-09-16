@@ -1,0 +1,57 @@
+{
+  "version": "6.9",
+  "hitCount": 1,
+  "request": {
+    "queryString": "DOI:10.1038/s41586-026-10315-y",
+    "resultType": "lite",
+    "cursorMark": "*",
+    "pageSize": 25,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "41922767",
+        "source": "MED",
+        "pmid": "41922767",
+        "pmcid": "PMC13233627",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC13233627"
+          ]
+        },
+        "doi": "10.1038/s41586-026-10315-y",
+        "title": "The 1000 Chinese Pangenome empowers medical and population genetics.",
+        "authorString": "Wang Y, Duan Z, Chen D, Shi D, Ding Y, Wang Z, Li B, Wang Z, Guo M, Yang W, Hou J, Chen W, Guo Y, Wei W, Cao Y, Sun X, Bai W, Lu M, Qi T, Shen X, Yang J.",
+        "journalTitle": "Nature",
+        "issue": "8117",
+        "journalVolume": "654",
+        "pubYear": "2026",
+        "journalIssn": "0028-0836; 1476-4687; ",
+        "pageInfo": "121-130",
+        "pubType": "research-article; journal article",
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "citedByCount": 0,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "go",
+            "doi"
+          ]
+        },
+        "firstIndexDate": "2026-04-03",
+        "firstPublicationDate": "2026-04-01"
+      }
+    ]
+  }
+}

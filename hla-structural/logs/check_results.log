@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "catalogue_intervals": 1182,
+  "donors": 106,
+  "primary_predictions": 848,
+  "calibrated_validation_predictions": 88,
+  "markers": 11917,
+  "checks": [
+    "graph_sequence_concordance",
+    "no_dropped_donors",
+    "query_family_exclusion",
+    "flat_path_equivalence",
+    "copy_number_truth_consistency",
+    "complete_read_measurements",
+    "depth_baseline_denominators",
+    "pilot_validation_disjoint",
+    "calibration_family_exclusion",
+    "calibration_code_frozen_before_validation",
+    "original_model_snapshot_hash"
+  ]
+}

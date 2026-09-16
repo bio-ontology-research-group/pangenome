@@ -1,0 +1,1030 @@
+Lee and Kingsford Genome Biology (2018) 19:16
+DOI 10.1186/s13059-018-1388-2
+
+
+
+
+ M ET HO D                                                                                                                                 Open Access
+
+Kourami: graph-guided assembly for
+novel human leukocyte antigen allele
+discovery
+Heewook Lee and Carl Kingsford*
+
+
+  Abstract
+  Accurate typing of human leukocyte antigen (HLA) is important because HLA genes play important roles in immune
+  responses and disease genesis. Previously available computational methods are database-matching approaches and
+  their outputs are inherently limited by the completeness of already known types, making them unsuitable for
+  discovery of novel alleles. We have developed a graph-guided assembly technique for classical HLA genes, which can
+  construct allele sequences given high-coverage whole-genome sequencing data. Our method delivers highly
+  accurate HLA typing, comparable to the current state-of-the-art methods. Using various data, we also demonstrate
+  that our method can type novel alleles.
+
+
+Background                                                                        probe hybridization, sequence-specific primer amplifica-
+Human leukocyte antigen (HLA) genes are crucial in the                            tion, and sequence-based typing (SBT), have been devel-
+regulation of the immune system as they encode for the                            oped [7]. The SBT method can be used with either Sanger
+major histocompatibility complex (MHC) consisting of                              sequencing or next-generation sequencing (NGS) tech-
+cell surface proteins that control the adaptive immune                            niques. By using specific primers for target enrichment
+response. HLA genes are also known to play important                              prior to sequencing, SBT delivers accurate and reliable
+roles in transplant rejection as well as infectious and                           typing of HLA alleles. However, all of the above molecular
+autoimmune diseases [1–4]. For these reasons, accurate                            typing assays require a specially designed set of probes or
+HLA typing is important both in clinical and research                             primers.
+settings. HLA typing is considered challenging because                              With the increasing availability of personal whole-
+of the hyper-polymorphic nature of the HLA region in                              genome sequencing (WGS) services, the availability of
+the human genome. Such high polymorphism in the HLA                               accurate computational HLA typing methods that do not
+region is thought to be maintained by strong balanc-                              require additional experiments can be valuable. Chal-
+ing selection promoting genetic diversity [5, 6]. Espe-                           lenges in computational HLA typing are mainly driven by
+cially with personal genome sequencing becoming widely                            the high level of polymorphism found in the HLA region
+common, better computational methods are needed to                                in the human genome. Over 30 genes are maintained in
+provide rapid and inexpensive typing with high accuracy.                          the IPD-IMGT/HLA database [8] and six to eight classical
+  Traditionally, HLA typing or categorization was done                            HLA genes (HLA-A, -B, -C, -DQA, -DQB, and -DRB) are
+by laborious serology-based methods that screen for HLA                           routinely used for HLA typing in clinical settings. More
+antibodies in a donor/receiver pair. With the birth of DNA                        than 15,000 known alleles (just for these classical genes)
+sequencing and the polymerase chain reaction (PCR),                               have been reported in the database and the number of
+molecular typing assays, such as specific oligonucleotide                         alleles is growing rapidly (Fig. 1). Also, the known alleles
+                                                                                  share high sequence similarities, where many alleles dif-
+                                                                                  fer just by a base-pair substitution. Thus, it is challenging
+                                                                                  to pinpoint correctly an individual’s HLA types among the
+*Correspondence: carlk@cs.cmu.edu
+Computational Biology Department, School of Computer Science, Carnegie            known alleles using WGS data [9].
+Mellon University, Pittsburgh, PA, USA
+
+
+                                      © The Author(s). 2018 Open Access This article is distributed under the terms of the Creative Commons Attribution 4.0
+                                      International License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, distribution, and
+                                      reproduction in any medium, provided you give appropriate credit to the original author(s) and the source, provide a link to the
+                                      Creative Commons license, and indicate if changes were made. The Creative Commons Public Domain Dedication waiver
+                                      (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated.
+Lee and Kingsford Genome Biology (2018) 19:16                                                                                                  Page 2 of 16
+
+
+
+
+                                     Number of HLA alleles in IMGT/HLA database              HLA-VBSeq [17] uses variational Bayesian inference to
+                                                                                             assign reads correctly to alleles based on alignment, as
+                      14000
+
+
+
+
+                                                                                             done in solutions to the RNA-seq quantification prob-
+                                                                                             lem [18]. OptiType [19] also uses alignment; however,
+                      12000
+
+
+
+
+                                                                                             it formulates the typing problem as an optimization
+                                                                                             problem via integer linear programming (ILP), where
+                      10000
+
+
+
+
+                                                                                             the objective is to find a solution set of alleles such
+                                                                                             that the number of mapped reads is maximized with
+  Number of Alleles
+                      8000
+
+
+
+
+                                                                                             constraints that each locus requires at least one allele
+                                                                                             (homozygous) and at most two alleles (heterozygous). The
+                      6000
+
+
+
+
+                                                                                             recently published xHLA [20] also adopts OptiType’s
+                                                                                             ILP formulation but uses protein-level alignment of the
+                      4000
+
+
+
+
+                                                                                             typing exons as it focuses on four-digit resolution typ-
+                                                                                             ing (protein-level). After solving the optimization prob-
+                      2000
+
+
+
+
+                                                                                             lem restricted to just the typing exons, it uses itera-
+                                                                                             tive refinement steps to select alleles that further maxi-
+                                                                                             mize the number of mapped reads when considering all
+                      0
+
+
+
+
+                              1999   2001   2003   2005   2007   2009   2011   2013   2015
+                                                          Year
+                                                                                             exons. Assembly-based methods, such as HLAminer [21]
+                                                                                             and HLAreporter [22], first construct longer-than-read
+ Fig. 1 The number of alleles in the IPD-IMGT/HLA database by year
+ from 1999 to 2016. The database releases updates four times a year                          contigs using de novo assembly techniques and search for
+ (January, April, July, and October) and the plot is based on the numbe                      best matches among known alleles. Direct assembly of
+ r of alleles from all the April releases reported on the statistics page of                 haplotypes by traditionally available de novo or reference-
+ the IPD-IMGT/HLA website (http://www.ebi.ac.uk/ipd/imgt/hla/stats.                          based assemblers is severely confounded by the high level
+ html). HLA human leukocyte antigen
+                                                                                             of polymorphisms. Often, assembly-based methods com-
+                                                                                             bine the techniques used in alignment-based methods.
+                                                                                             For example, HLAreporter first uses read alignment
+                                                                                             to known alleles and identifies reads that are likely from
+  Previously developed enrichment-free computational                                         HLA regions prior to its assembly step. Most recently,
+methods can use WGS, whole-exome sequencing (WES),                                           HLA*PRG [11] improved the accuracy of alignment-based
+or transcriptome sequencing (RNA-seq) without the use                                        methods by representing the database alleles as graphs
+of HLA-enriched data, unlike SBT. However, many do not                                       and using a more sensitive alignment on the graphs. It first
+provide typing accuracy comparable to what SBT pro-                                          aligns extracted reads likely from the HLA region to pop-
+vides [10], with the exception of a recently developed                                       ulation reference graphs [23] that encode all known alleles
+method, HLA*PRG [11]. However, the high accuracy of                                          and it outputs the most likely alleles from the database.
+HLA*PRG comes at the cost of speed.                                                            One common aspect of the enrichment-free computa-
+  These computational methods either use one or both of                                      tional HLA typing methods is that they are all primarily
+two major techniques (alignment and assembly) to com-                                        driven by the finding-the-nearest-match paradigm. Their
+pare reads accurately when correcting HLA genes and                                          goal is to find the best-matching alleles to HLA genes of a
+inferring allele types. For computational HLA typing of                                      test individual in a preexisting database of known entries.
+NGS data, an alignment-based method was first devel-                                         Given the sequencing data of an individual, such a typing
+oped for HLA typing using targeted sequencing of class I                                     scheme outputs the best-matching alleles for each HLA
+genes [12]. This method incorporated the Bayesian geno-                                      gene. This typing strategy is limited by the completeness
+typing information from a widely used toolkit GATK [13]                                      of the collection of known alleles, as it cannot detect novel
+and additionally modeled the phasing by considering                                          alleles missing in the database of known types. We col-
+pairs of adjacent variant sites. Other computational typ-                                    lectively refer to these approaches as database-matching
+ing methods that can work with enrichment-free data                                          methods. Novel alleles can possibly have protein-coding
+were developed later. Alignment-based methods, such as                                       changes that may have a profound impact for organ
+seq2HLA [14], HLAforest [15], and PHLAT [16], first                                          transplantation and disease association. One might argue
+attempt to assign NGS reads correctly to HLA loci using                                      that there are already many known alleles and that the
+various stringent quality filtering procedures to selec-                                     chance of finding novel alleles is low. However, the num-
+tively discard erroneous reads with low alignment scores,                                    ber of known alleles in the IPD-IMGT/HLA database is
+then use probabilistic variant-calling approaches simi-                                      still increasing rapidly (Fig. 1). There is continuing effort
+lar to that in [12] to infer the closest matching allele                                     among immunogenetics communities to study rare and
+in the database. Unlike most alignment-based methods,                                        novel alleles. For example, the International HLA and
+Lee and Kingsford Genome Biology (2018) 19:16                                                                      Page 3 of 16
+
+
+
+
+Immunogenetics Workshop has been organizing projects           hierarchies. From the highest to the lowest category,
+to investigate and collect rare and novel alleles since the    it annotates allele groups (two-digit resolution), protein
+15th workshop in 2002. Immunogenetics-related journals,        sequence (four-digit resolution), exon sequence (six-digit
+such as the International Journal of Immunogenetics and        resolution), and intron sequence (eight-digit resolution).
+HLA (formerly known as Tissue Antigens), have a dedi-          For example, if two alleles encode an identical protein,
+cated section where new alleles are announced in every         they will have the same numbers for the first two lev-
+issue.                                                         els of (four-digit) hierarchies. In practice, HLA typing
+  For these reasons, it is important to be able to recover     is often carried out at either the protein or exon level.
+HLA sequences at 1-bp resolution to enable novel allele        Furthermore, the current gold standard, SBT, types just
+discovery as done in SBT. To achieve this goal, we present     the exons that are responsible for encoding the peptide-
+a graph-guided assembly technique called Kourami that          binding domain (exons 2 and 3 for class I genes and exon
+constructs full sequences for the peptide-binding domain       2 for class II genes). Using only the subset of exons creates
+(exons 2 and 3 for class I and exon 2 for class II HLA         ambiguous alleles where two or more alleles share an iden-
+genes, which are regions typed by the SBT methods) using       tical sequence over these exons but differ in other regions.
+a modified partial-order graph (POG) [24] as a guide. The      These ambiguous sequences are grouped as a six-digit G
+graph representation compactly captures variant regions        allele. Similarly, four-digit P grouping is used for the alleles
+among related sequences to take advantage of known             that share the same amino acid sequence over these exons.
+alleles, and it also provides a framework in which to incor-   Our method provides a fully assembled sequence covering
+porate information from the sequencing reads to encode         these exons and also outputs a six-digit G resolution typ-
+novel alleles.                                                 ing result by selecting known alleles that have the smallest
+  In fact, graphs have long been used to represent varying     edit distance to the assembled sequences. Like many other
+regions. For example, de Bruijn graphs [25] and string         HLA tools, we focus on the routinely typed classical genes
+graphs [26] have been extensively used in fragment assem-      (HLA-A, -B, -C, -DQA1, -DQB1, and -DRB1).
+bly. More recently, graph-based representations of popu-
+lations of genomes, which are also related to POG, have        Overview of method
+been an active research area [23, 27–30]. Our method is        Our method takes advantage of POGs to capture all
+the first that directly assembles both haplotypes of HLA       known alleles and further modifies the graph to include
+genes rather than inferring the best-matching alleles in the   variants found in the sequencing data so that the graph
+database. For known alleles, we show that Kourami can          include the paths of true alleles. An overview of our
+correctly type with high accuracy (>98%), equaling that        method is illustrated in Fig. 2, and the major steps are
+of the state-of-the-art database-matching method, across       labeled from (a) to (e). More details are given in “Methods”.
+various WGS data sets, such as simulated data, Illumina        We first create a comprehensive reference panel from a
+Platinum Genomes, and high coverage WGS from the               combined multiple sequence alignment (MSA) of both
+1000 Genomes Project. At the same time, Kourami takes          full-length and exon-only known alleles for each HLA
+only a fraction of the time compared to other available        locus (step a). Reads mapped to all known HLA loci
+methods with a moderate use of memory.                         in the human reference genome (GRCh38) are extracted
+  Kourami is the first HLA typer to be able to assemble        (step b) and aligned to the comprehensive reference panel
+novel alleles that do not appear in the database. It does      (step c). Gene-wise POGs are constructed using the com-
+this by treating the HLA typing problem as an instance         bined MSAs. The alignments of the extracted reads are
+of graph-guided assembly, where the known alleles are          projected onto the graphs so that each read alignment is
+combined into a graph that is used to guide the assem-         stored as a path in the graphs and the read depths on
+bly of new alleles. Kourami, therefore, also represents an     the edges naturally become edge weights (step d). When
+early example of how a population of reference sequences       these read- or read-pair-backed paths connect two or
+can be used during genome assembly. We systematically          more neighboring heterozygous sites of two alleles, they
+show that Kourami is very accurate in constructing novel       provide phasing information. During the alignment pro-
+alleles by performing leave-one-out experiments where          jection, the graphs are modified by adding nodes and
+a known allele is artificially removed from the allele         edges to incorporate differences found by the alignment,
+database. Kourami is able to reconstruct 98% of these          such as substitutions and indels. Note that a sequence of
+alleles perfectly.                                             an allele is encoded as a path through the entire graph.
+                                                               Finally, using the weighted graphs with alignment paths,
+Results                                                        we formulate the problem of constructing the best pair of
+HLA typing nomenclature                                        HLA allele sequences as finding the pair of paths through
+The current HLA allele nomenclature [31] uses a hier-          the graph. When finding the pair, we consider consistent
+archical numbering system with four major levels of            phasing information from the reads and coverage using
+Lee and Kingsford Genome Biology (2018) 19:16                                                                                           Page 4 of 16
+
+
+
+
+                                                                                      b
+
+
+
+
+                                                             a
+
+
+
+
+                                                                                       c
+                                d
+
+
+
+
+                                                         e
+
+
+
+
+ Fig. 2 Overview of our method. a A gene-wise MSA is obtained from the IMGT/HLA database. The reads aligning to HLA regions are extracted
+ b from the input BAM and they are realigned c to the sequences in the MSA. d A POG is constructed from MSA and further modified via alignment
+ projection. e Haplotype assembly of two alleles is obtained by finding two paths (drawn in red and blue; overlap in purple) through the graph. DB
+ database, HLA human leukocyte antigen, MSA multiple sequence alignment, POG partial-order graph, WGS whole-genome sequencing
+
+
+
+
+base quality scores. Additionally, the pair of paths may be                 alleles (2 alleles × 6 genes × 100 replicates). However, not
+identical, to permit homozygous alleles.                                    all alleles could be used for the evaluation of PHLAT and
+                                                                            HLA*PRG, as both tools use their own digested format of
+Simulation                                                                  the HLA database, which is built in, so that the content of
+To check that our method performs well, we tested it                        the database cannot be updated by a user. The database
+on simulated data (see “Methods” section). For each of                      versions used by PHLAT and HLA*PRG are older com-
+the six HLA genes, two alleles from the set of full-length                  pared to the version (v3.24.0) used for Kourami. Given a
+gene sequences in the IPD-IMGT/HLA database were                            set of WGS data of an individual with an allele that is not
+randomly chosen. We repeated this for a total of 100 repli-                 in the database built into PHLAT and HLA*PRG, both tools
+cates, resulting in 200 randomly selected alleles across all                will fail to type the allele correctly as they are designed
+replicates. For each replicate, we simulated 50× cover-                     strictly to find the nearest match among the known alleles.
+age (25× for each haplotype) of paired-end WGS data.                        For this reason, the evaluations of PHLAT and HLA*PRG
+We compared Kourami, PHLAT, and HLA*PRG on the                              are based only on the subset of simulated alleles (1011 for
+simulated data. Our method was evaluated using all 1200                     PHLAT and 990 for HLA*PRG) that are in the database
+Lee and Kingsford Genome Biology (2018) 19:16                                                                                                             Page 5 of 16
+
+
+
+
+versions they use. For PHLAT, four-digit P resolution was                                individual is shown in Additional file 1: Tables S1, S2,
+used and six-digit G resolution was used for HLA*PRG                                     and S3. We removed corresponding rows for the alleles
+and Kourami for evaluation.                                                              from both the full-length MSA and exon-only MSA and
+   Table 1 shows the number of correctly inferred alle-                                  obtained a new reference panel by combining the mod-
+les as well as the accuracy for each HLA gene tested.                                    ified MSAs. The number of G group alleles removed is
+For our method, we report both the typing and assembly                                   shown in Table 2. The extracted paired-end reads were
+accuracy. We define the assembly accuracy as the percent-                                aligned to the newly obtained reference panel, and the
+age of assembled alleles with sequence identical to the                                  BAM files obtained were used as inputs to Kourami.
+true allele sequence (no mismatch or indel). Even when                                   Note that this experiment cannot be done with PHLAT
+an assembled allele is not identical to its expected true                                and HLA*PRG, as the database of known alleles is built
+sequence, the typing of the allele may be correct if the                                 into the tools.
+closest sequence (minimum edit distance) in the database                                    Kourami correctly assembled 98.3%, 100%, and 98.3%
+is the true allele. PHLAT achieves 93.6% accuracy across all                             of the removed alleles for the simulation data, the Plat-
+HLA genes tested (89.8% for class I and 96.6% for class II).                             inum trio, and 11 samples from the 1000 Genomes
+HLA*PRG and our method perform equally well, achiev-                                     Project, respectively (Table 2). Among 1000 Genomes
+ing 99.8% typing accuracy across all genes (99.5% for class                              samples, the only incorrectly assembled allele (sup-
+I and 100% for class II). Additionally, Kourami achieves                                 posed to be B*38:01:01) had a 1-bp difference from
+99.3% assembly accuracy.                                                                 the correct sequence. When the 59 correctly assem-
+                                                                                         bled allele sequences are aligned to the newly con-
+Novel allele detection                                                                   structed reference panel, many alleles were aligned
+The major benefit of our method is that it can assemble                                  equally well to a large number of known alleles. For
+novel alleles across the typing exons. Therefore, its typing                             example, C*05:01:01 alleles aligned to 122 other alle-
+ability is not limited by known alleles as is the case with                              les with just 1-bp substitution. Among them, a sig-
+other database-matching methods. Unlike these methods,                                   nificant portion contained base differences that result
+Kourami uses the known alleles in the input database                                     in protein-coding changes in typing exons. This shows
+only to construct the HLA graph that serves as a template                                that the database-matching methods such as PHLAT
+for the reference-based assembly and it does not discrim-                                and HLA*PRG cannot be relied upon to select a closely
+inate between the paths that encode known alleles and                                    related allele sequence in the presence of novel alle-
+novel alleles.                                                                           les. The database-matching methods often provide qual-
+  To demonstrate its ability to assemble novel alleles, we                               ity metrics for inferred alleles. Whether such quality
+evaluated Kourami across various data for which the                                      metrics are effective when novel alleles are involved
+ground truth is known. We tested with simulated data and                                 is still an open question. Recently, this was explored
+real data with previously validated HLA types (NA12878–                                  by the authors of HLA*PRG, and it was shown that
+NA12891–NA12892 Platinum trio and 11 samples from                                        their metrics were not effective in distinguishing novel
+the 1000 Genomes Project) with a modified database                                       alleles [11].
+of known alleles so that Kourami is not aware of the
+true allele sequences. For each sample, we randomly                                      Illumina Platinum Genomes
+selected one allele from each of the six HLA genes and                                   Platinum trio with validated results
+removed the selected alleles from the reference MSAs                                     Among the Illumina Platinum Genomes, we first ran
+(full-length and exon-only) provided by release 3.24.0 of                                Kourami, PHLAT, and HLA*PRG on the trio (NA12891,
+the IPD/IMGT-HLA database. When removing an allele,                                      NA12878, and NA12892) with the previously validated
+we removed all entries in the G group to which the allele                                four-digit HLA types for six HLA genes (HLA-A, -B,
+belongs. The entire list of alleles removed from each                                    -C, -DQA1, -DQB1, and -DRB1) [11, 12]. Kourami
+
+
+Table 1 HLA typing performance on simulated data
+                                  Class I                                                                   Class II
+                                  A                       B                        C                        DQA1                     DQB1                DRB1
+PHLAT (four-digit P)              0.85 (147/172)          0.91 (135/149)           0.95 (122/129)           0.93 (178/191)           0.98 (169/173)      0.99 (195/197)
+HLA*PRG (six-digit G)             1.00 (174/174)          0.99 (143/144)           0.99 (115/116)           1.00 (197/197)           1.00 (159/159)      1.00 (200/200)
+Kourami (type)                    1.00 (199/200)          1.00 (200/200)           0.99 (198/200)           1.00 (200/200)           1.00 (200/200)      1.00 (200/200)
+Kourami (sequence)                0.99 (198/200)          1.00 (200/200)           0.98 (195/200)           1.00 (200/200)           1.00 (199/200)      1.00 (200/200)
+Accuracy is shown as a fraction. The fraction of the number of correctly typed alleles and the total number of alleles tested are shown in parentheses
+Lee and Kingsford Genome Biology (2018) 19:16                                                                          Page 6 of 16
+
+
+
+
+Table 2 Novel allele recovery                                          typing results are consistent. Low trio-consistency ratios
+                               Simulation Platinum trio 1000 Genomes   for PHLAT in Table 3 are mainly due to mistyped alle-
+Number of removed alleles      596        15           60              les in HLA-A, HLA-B, and HLA-DRB1 for the NA12877
+Number of recovered alleles    586        15           59              individual (which affects all 12 trios being evaluated).
+                                                                       Trio-consistency measures the level of consistency rather
+Percentage of recovered alleles 98.3      100          98.3
+                                                                       than accuracy. PHLAT’s overall typing accuracy (four-
+                                                                       digit) on all of the Platinum individuals (17 members) is
+and HLA*PRG perfectly called the correct types whereas                 0.907, assuming the HLA types inferred by Kourami and
+PHLAT missed a call in the HLA-C gene in NA12891.                      HLA*PRG are true. Assuming the predicted HLA types for
+In a previously published article [11], PHLAT called all               the pedigree are correct, no recombination seems to have
+12 alleles correctly and the difference may be because                 occurred, leaving no disruption in ancestral haplotypes. In
+in our evaluation, all software was run on the set of                  Fig. 4, we labeled the haplotypes that originated from the
+reads that aligned to the extended MHC (xMHC)/HLA                      first-generation members as paternal grandfather 1 or 2
+region of chromosome 6 and unmapped reads. Extracting                  (PGF1 or PGF2), paternal grandmother 1 or 2 (PGM1 or
+a subset of reads by read mapping location and including               PGM2), maternal grandfather 1 or 2 (MGF1 or, MGF2),
+unmapped reads are common for reducing the computa-                    and maternal grandmother 1 or 2 (MGM1 or MGM2).
+tional time, and a similar technique was used in [10].                 The haplotypes that are passed to second-generation indi-
+                                                                       viduals are numbered 1 to keep the numbering consistent
+Trio consistency and inferred haplotypes                               in the third generation. Among 11 third-generation off-
+The pedigree of Illumina Platinum Genomes includes                     spring, all four possible pairs of haplotypes were observed
+many third-generation offspring and only the top right-                (two PGF+MGF, two PGF+MGM, four PGM+MGF, and
+hand trio in Fig. 3 has previously validated HLA typing                three PGM+MGM).
+results. Since this trio includes the mother (NA12878) of
+all third-generation offspring, if HLA typing results are              1000 Genomes
+trio-consistent across all trios and all second-generation             We tested all three methods on this data set and the result
+haplotypes are present in one of the children, we can                  is summarized in Table 4. PHLAT called 93 out of 122 alle-
+theoretically infer the HLA haplotypes of the second-                  les correctly, resulting in 76% accuracy when evaluated at
+generation male (NA12877) as well as the half of HLA                   four-digit P resolution, and 89% when evaluated at two-
+haplotypes in the first-generation individuals (NA12889                digit resolution. The results for HLA*PRG were consistent
+and NA12890).                                                          with what has previously been reported [11], resulting in
+  We tested all three methods to determine whether                     one error (99.2% accuracy). Our method correctly called
+predictions are trio-consistent across all trios (trio con-            all of the alleles without any differences in bases. Note
+sistency is shown in Table 3). Kourami and HLA*PRG                     that the total number of alleles tested for DQA1 is 12
+agreed on all 204 alleles at six-digit G resolution and the            instead of 22 (2 alleles × 11 individuals) because the
+predicted alleles were trio-consistent. The inferred haplo-            validation data for 1000 Genomes [32] does not report
+types across HLA genes (intra-gene phased) are shown in                DQA1 types. DQA1 type validation is only available for
+Fig. 4. PHLAT’s predictions were trio-consistent only for              six individuals [12].
+HLA-C and HLA-DQB1 when evaluated at four-digit P
+resolution, and additionally for HLA-A when evaluated at               CPU and memory usage
+two-digit resolution. Although, we do not know the true                Kourami is able to assemble and type HLA alleles given
+HLA types for the rest of the 14 individuals, it is very likely        WGS data in a fraction of the time compared to the
+that the predicted HLA types are correct given that all                state-of-art methods such as PHLAT and HLA*PRG with
+                                                                       a moderate use of memory. We compared the CPU and
+                                                                       memory usage using the WGS of NA12878 from Plat-
+                                                                       inum Genomes data (2 × 101 bp, 55×). All tests were
+                                                                       run on the input of the reads aligning to the xMHC
+                                                                       region and unmapped reads. HLA*PRG was the slowest,
+                                                                       taking 54.62 CPU hours, while PHLAT took 10.73 CPU
+                                                                       hours and Kourami took only 0.09 CPU hours (611×
+                                                                       speedup compared to HLA*PRG). HLA*PRG required the
+                                                                       most amount of memory, consuming peak memory of
+                                                                       78.9 Gbytes, while PHLAT and Kourami used 3.6 Gbytes
+ Fig. 3 CEPH/Utah pedigree 1463. The family pedigree of Illumina       and 4.3 Gbytes, respectively. HLA*PRG requires many
+ Platinum Genomes is shown                                             more CPU hours and a larger amount of memory because
+Lee and Kingsford Genome Biology (2018) 19:16                                                                                                   Page 7 of 16
+
+
+
+
+Table 3 Trio consistency over 12 trios in Platinum Genomes
+                                     Class I                                                                      Class II
+                                     A                        B                        C                          DQA1           DQB1           DRB1
+PHLAT (two-digit)                    1.00 (24/24)             0.71 (17/24)             1.00 (24/24)               0.79 (19/24)   1.00 (24/24)   0.96 (23/24)
+PHLAT (four-digit P)                 0.67 (16/24)             0.42 (10/24)             1.00 (24/24)               0.79 (19/24)   1.00 (24/24)   0.46 (11/24)
+HLA*PRG (six-digit G)                1.00 (24/24)             1.00 (24/24)             1.00 (24/24)               1.00 (24/24)   1.00 (24/24)   1.00 (24/24)
+Kourami                              1.00 (24/24)             1.00 (24/24)             1.00 (24/24)               1.00 (24/24)   1.00 (24/24)   1.00 (24/24)
+Trio consistency is shown as a fraction. The number of consistent alleles is shown as a fraction in parentheses
+
+
+
+of the expensive dynamic-programming-based alignment                                          Notably, the ability to discover novel alleles from the
+to the graph. Kourami relies on fast NGS aligners to                                       highly accurate HLA assembly is achieved by using a
+align reads against known alleles first and projects the                                   flexible graph structure to represent all known alleles
+alignment obtained to the HLA graph to reduce the com-                                     and allowing systematic modification to encode variants
+putational time significantly without sacrificing assembly                                 present in reads. This unique ability is instrumental in
+or typing accuracy.                                                                        both research and clinical settings. Importantly, previ-
+                                                                                           ously available computational methods using untargeted
+Discussion                                                                                 sequencing data cannot discover novel alleles because
+We have shown that our HLA assembly method can                                             they are designed to find the best-matching allele among
+accurately reconstruct both haplotypes that span the typ-                                  the known alleles.
+ing exons of HLA genes using a graph representation of                                        The ability to discover novel alleles is especially benefi-
+known alleles as a guide. The haplotype sequences pro-                                     cial when studying an understudied group of individuals
+duced can be used successfully for HLA typing given high                                   harboring many novel alleles, such as African populations,
+coverage (>30-fold) paired-end WGS data. WGS carried                                       which are known to exhibit a higher level of genetic diver-
+out for another analysis can be used to type an individual’s                               sity [33] compared to other ethnic populations. Disease
+HLA types without requiring another experiment (SBT or                                     pressure in a population causes a positive and balancing
+other molecular assays).                                                                   selection of HLA alleles, producing high diversity [34].
+
+
+
+
+  Fig. 4 HLA haplotypes in the Illumina Platinum pedigree. Shown is the Illumina Platinum pedigree with the predicted HLA haplotype information.
+  Four haplotypes (PGF1, PGM1, MGF1, and MGM1) of the second generation are intermixed in third-generation offspring. Only the haplotypes that
+  are passed down to the second and third generations are colored. A haplotype drawn on the left is always inherited from the father. For the first
+  generation, this information is missing and the haplotypes that are passed to the next generation are arbitrarily drawn on the left
+Lee and Kingsford Genome Biology (2018) 19:16                                                                                                            Page 8 of 16
+
+
+
+
+Table 4 HLA typing performance on 11 individuals from the 1000 Genomes Project
+                                    Class I                                                                    Class II
+                                    A                        B                        C                        DQA1                     DQB1             DRB1
+PHLAT (two-digit)                   0.82 (18/22)             0.82 (18/22)             0.91 (20/22)             0.83 (10/12)             1.00 (22/22)     0.95 (21/22)
+PHLAT (four-digit P)                0.68 (15/22)             0.55 (12/22)             0.77 (17/22)             0.83 (10/12)             0.95 (21/22)     0.82 (18/22)
+HLA*PRG (six-digit G)               1.00 (22/22)             1.00 (22/22)             1.00 (22/22)             1.00 (12/12)             1.00 (22/22)     0.95 (21/22)
+Kourami (six-digit G)               1.00 (22/22)             1.00 (22/22)             1.00 (22/22)             1.00 (12/12)             1.00 (22/22)     1.00 (22/22)
+Accuracy is shown as a fraction. The fraction of the number of correctly typed alleles and the total number of alleles tested are shown in parentheses
+
+
+
+
+   Especially with the continuously decreasing cost of                                    (0.94). At 20× coverage, the accuracy for both data sets
+obtaining a personal genome, personal WGS data will                                       dropped below 0.90 (0.87 for Platinum and 0.83 for 1000
+only become more widely available, and our method can                                     Genomes across the HLA genes). This should not be
+deliver accurate HLA typing without additional experi-                                    a surprise, as haplotype-resolved assemblies of human
+ments and cost. Also, Kourami is able to assemble and                                     genomes used ≈ 100× coverage of NGS data [39, 40]. The
+type at six-digit G resolution in a fraction of the time                                  database-matching state-of-the-art HLA*PRG was shown
+compared to other methods with a moderate amount of                                       to be more stable, even at 20× coverage [11], indicat-
+memory usage.                                                                             ing that database-matching techniques are more sensitive
+   One limitation of our method is that it primarily sup-                                 when high-coverage sequencing data are not available. It
+ports high-coverage WGS as it needs enough reads to                                       is known that accurate assembly or genotyping using NGS
+cover both haplotypes for each typing locus, and may not                                  data with short read lengths requires high sequencing cov-
+work as well on other NGS assays, such as WES or RNA-                                     erage, especially for human genome resequencing [41, 42].
+seq data. Since WES is being used widely, as the cost for                                 Overall, the 1000 Genomes samples had lower accuracy
+WES is lower compared to WGS, it is useful to be able                                     compared to the Platinum Genomes samples, resulting
+to type HLA genes using WES. To assess Kourami’s abil-                                    in the largest difference in accuracy at the lowest cover-
+ity to work with WES data, we tested Kourami on 29                                        age setting of 20× (Additional file 1: Table S5). Sample-
+HapMap individuals [35] (Additional file 1: Table S4). It                                 specific accuracies across different coverage settings are
+was able to assemble and type 284 alleles out of 345 alleles                              shown in Additional file 1: Figure S1 (Platinum Genomes)
+with previously confirmed types. Kourami did not out-                                     and Additional file 2: Figure S2 (1000 Genomes). The
+put an assembled sequence or typing results for the other                                 larger dips in accuracy for 30× and below coverage set-
+61 alleles as some regions of these alleles were not covered                              tings observed in the 1000 Genomes samples are largely
+by reads, causing the graph to be disconnected within the                                 contributed by the HG01112, NA19625, and NA20502
+typing exons. Among the 284 alleles that were assembled,                                  samples. The longer Illumina reads (2 × 250 bp) used in
+Kourami was able to assemble and type 269 alleles cor-                                    1000 Genomes samples are known to be more error prone,
+rectly, achieving 94.7% accuracy. Among the 15 erroneous                                  exhibiting increasingly higher error rates towards the 3
+calls, seven were called as homozygous alleles instead of                                 end of the reads [43, 44] and this may be why the accuracy
+heterozygous. Reference allele bias due to capture bias                                   is more sensitive to the changes in coverage for the 1000
+may be the direct cause for erroneous homozygous calls.                                   Genomes data set.
+It is a known bias in WES along with other biases, such                                      One of the main reasons for the requirement of high-
+as GC bias. Moreover, coverage fluctuations have been                                     coverage WGS data by Kourami is because the lower the
+reported [36, 37]. Collectively, these can cause a decrease                               coverage, the higher the chance for an allele-specific path
+in effectiveness in detecting variants when using WES                                     to have a region with a local drop in coverage, resulting in
+compared to WGS [37, 38].                                                                 a prohibitively low number of reads covering the region.
+   Additionally, Kourami requires high-coverage WGS                                       This can be difficult for assembly methods. To investigate
+data to ensure accurate HLA assembly or typing. We                                        the effect of a local drop in coverage on the accuracy of
+randomly sampled coverages of 20×, 25×, 30×, 35×,                                         Kourami, we extracted the minimum depth across the
+and 40× for five replicates from each of the Platinum                                     entire allele path for each allele call and investigated the
+Genomes and the 1000 Genomes, and tested Kourami                                          fraction of incorrect calls that occur at various minimum
+on these samples. Its accuracy is shown in Additional                                     depths (Additional file 2: Figure S3 for Platinum Genomes
+file 1: Table S5. The accuracy was high at 35× and 40×                                    and Additional file 2: Figure S4 for 1000 Genomes). As
+coverages, being above 0.97 for both data sets. The accu-                                 expected, a higher fraction of calls made at smaller min-
+racy stayed respectable down to 25× coverage (0.94) for                                   imum depth were incorrect. Minimum depths of 1 and 2
+Platinum Genomes and down to 30× for 1000 Genomes                                         caused Kourami to make mistakes. With a coverage of
+Lee and Kingsford Genome Biology (2018) 19:16                                                                                          Page 9 of 16
+
+
+
+
+30× or higher, the minimum depth rarely plunged to              time greatly without sacrificing accuracy. Such improve-
+1 or 2, allowing Kourami to assemble alleles accurately.        ments are necessary when used in high-demand clinical
+   In a typical HLA typing experiment, only a few clas-         settings, although it may take some time for WGS-based
+sical HLA genes are typed, even though there are other          typing to be widely used. Our approach can also be
+classical HLA genes as well as non-classical HLA genes,         extended as a general method of using graph structures to
+which have also been shown to be disease-associated             guide the reference-based assembly of high-diversity gene
+[45, 46]. There may be clinical and research importance         families.
+in typing other HLA genes in addition to the six classical
+genes that Kourami mainly assembles. Since Kourami’s            Methods
+framework is sufficiently general to run on the additional      Input alignment and extraction of HLA reads
+HLA loci, we tested Kourami on 11 additional HLA                Kourami takes alignment of WGS to the human genome
+genes by looking at trio-consistency for the Platinum trio      as an input in BAM format. For many experiments
+and the Yoruban trio from 1000 Genomes (Additional              used here, we used pre-computed alignments down-
+file 1: Table S6). For the Platinum trio, we found all of the   loaded from the European Bioinformatics Institute and
+typing results to be trio-consistent. However, there were       Google Cloud Platform. If there were missing alignment
+four loci where the assembled sequences were not identi-        files, we followed the 1000 Genomes procedures (see the
+cal to the typed allele at the sequence level. For HLA-H,       GRCh38DH alignment “readme” file available from the
+HLA-J, and HLA-L genes, the mismatches to the typed             1000 Genome FTP server) to align reads using BWA-kit
+database alleles were consistent across the trio, indicat-      v0.7.15 [47] and further processed the BAM files using
+ing that there may be novel allele sequences for these          other tools, such as BioBamBam [48] and GATK [13].
+loci. For HLA-F, the child (NA12878) had a 1-bp mis-               From the alignments, we extracted paired-end reads
+match to the corresponding allele of her parents. For the       aligned to all known HLA loci in chromosome 6, alter-
+Yoruban trio, we also found all of the typed alleles to be      nate sequences of xMHC regions, and HLA sequences
+trio-consistent. Like the Platinum trio, HLA-J and HLA-L        (the complete set of coordinates used is in Additional
+alleles across the trio had consistent sequences but there      file 1: Table S7) included in the human reference genome
+were mismatches to the closest alleles in the database.         (hs38DH packaged in BWA-kit v0.7.15). In the GRCh38
+HLA-F had a discrepancy of a 1-bp mismatch between the          assembly, regions that exhibit sufficient variability are rep-
+child (NA19240) and the parental alleles.                       resented in the primary chromosomal sequence as well as
+   To validate Kourami further, we typed three addi-            the alternate sequence loci scaffolds.
+tional individuals from the 1000 Genomes Project that
+were not benchmarked in [11] and a Korean individual,           Known HLA alleles and construction of a comprehensive
+AK1 [40]. We tested Kourami, HLA*PRG, and PHLAT                 reference panel
+on these additional data. For these 1000 Genomes sam-           Immuno Polymorphism Database (IPD) periodically
+ples, we tested five validated loci (HLA-A, -B, -C, -DQB1,      updates known HLA alleles in the IPD-IMGT/HLA
+and -DRB1). For AK1, we tested six loci (by adding locus        database [8]. IPD-IMGT/HLA Release 3.24.0 (April 2016)
+HLA-DQA1). Out of 42 alleles tested, PHLAT did not give         was used for all experiments here. A detailed breakdown
+a typing result for HLA-C on AK1 data and achieved an           of the numbers of alleles included in this release is shown
+accuracy of 0.88 (35/40). All 42 calls were correct for both    in Table 5. The other methods compared here use ear-
+Kourami and HLA*PRG. One of the HLA-B alleles of                lier versions of the database because the content of the
+the HG00268 individual that Kourami assembled had a
+single-nucleotide difference, although the typing was cor-      Table 5 Number of known HLA alleles used
+rect. For the AK1 genome, Kourami and HLA*PRG typed               Genes                                   Full-length                            Total
+all six alleles correctly for the three additional validated                                              (exonic + full-length)
+loci (HLA-DRB3, -DPA1, and -DPB1).
+                                                                                     A                    218                                    3399
+                                                                Class I              B                    337                                    4242
+Conclusion
+The highly accurate results from Kourami signify the                                 C                    301                                    2950
+recent advances in handling genetic variation using graph                            DQA1                 45                                     69
+structures to encode variations found in multiple refer-
+                                                                Class II             DQB1                 27                                     911
+ence genomes [23, 27–29]. Specifically, in Kourami, the
+minimal representation of a POG allows the consistent                                DRB1                 40                                     1883
+graph modification via alignment projection and this in         Release 3.24.0
+                                                                Full-length denotes the total of number full-length alleles in the release and total
+turn enables the capture of novel alleles as paths through      number includes the full-length alleles and the alleles with only exon sequences
+the graph. At the same time, this reduces computational         reported
+Lee and Kingsford Genome Biology (2018) 19:16                                                                              Page 10 of 16
+
+
+
+
+database is built into their software, and there is no way
+to update or swap their databases at the user level. Using
+a later version of the database does not give advantages as                               b
+long as the earlier version also contains the true alleles of
+the individual tested.
+  Many alleles in the database have only partial sequences,
+often just covering the few exons responsible for the
+peptide-binding domain of HLA genes (Table 5). For this            a                      c
+reason, the IPD provides a set of pre-computed MSAs of
+full-length alleles (Mgene ) and the coding regions (Mcoding )
+separately for each HLA gene. Like HLA*PRG [11], for
+each HLA gene, we combine these two MSAs by aligning
+them at corresponding columns to obtain a comprehen-
+sive reference panel of known alleles. This can help in                                   d
+recruiting reads that span intron–exon junctions. The
+combined MSA (Mpanel ) has the same number of rows
+as Mcoding . The number of columns in Mpanel is equal to          Fig. 5 MSA to construction of a partial-order graph for HLA assembly.
+                                                                  Given a pre-computed MSA (a), each sequence is constructed as a
+the sum of the number of columns in Mcoding and the
+                                                                  chain of vertices connected by directed edges. Corresponding
+number of intronic columns in Mgene . For each row in             positional vertices are aligned vertically (b). For each column,
+Mcoding , if the allele for the row has a corresponding row       redundant vertices are grouped together, drawn within dotted boxes
+in Mgene , intronic columns are inserted into Mcoding , oth-      in (c). When they are merged, the corresponding partial-order
+erwise, intronic columns of the reference allele in Mgene         graph (d) is obtained. HLA human leukocyte antigen, MSA multiple
+                                                                  sequence alignment
+are inserted.
+  Non-polymorphic HLA genes DQA2 and DQB2 are
+paralogous copies of DQA1 and DQB1. They are often
+regarded as being poorly polymorphic. In addition to             to construct the graph. The graph often encodes a larger
+the HLA genes that are included in the IPD-IMGT/HLA              number of paths and this flexibility is the foundation that
+database, DQA2 and DQB2 were added to the reference              allows us to model this family of sequences and cap-
+panel as decoys to filter out reads that originated from         ture novel alleles. For example, a simple graph shown in
+them and aligned incorrectly to other class II genes. In         Fig. 5d encodes all sequences in the given MSA as well as
+our analysis, we noticed that reads from DQA2 or DQB2            AGGT-A, ACGTCA, and ACCTCA. Each path through
+can make the assembly of typing exons of class II genes          the constructed graph encodes a possible allele.
+difficult, as previously reported [16].
+                                                                 Modification of the HLA graph via alignment projection
+HLA graph construction                                           Consider an example novel allele sequence, AGCTCA. It
+To capture all information contained in Mpanel in a mini-        is easy to see that there is no path encoding such an allele
+mal manner as well as to allow flexibility to enable novel       in the HLA graph shown in Fig. 5d. In this example, sim-
+sequence discovery, we use POGs, a compact graphical             ply adding an edge from the vertex G at column 2 to the
+representation for MSA [24]. From each Mpanel , we can           vertex C at column 3 is the only modification needed for
+directly construct a gene-specific POG similar to those          the graph to include the path that encodes the novel allele.
+typically used in MSA [24, 49]. An example of a MSA of           If a novel allele exists in the data, there must be sequenc-
+three known sequences (Mpanel ) is shown in Fig. 5a. Each        ing reads that contain the differences the novel allele has
+sequence is first drawn as a chain of vertices connected by      compared to known alleles. Assuming the sequence diver-
+directed edges (Fig. 5b), where each vertex vi represents a      gence is small enough for pairwise alignment of the read
+base symbol bvi (bvi ∈ {A,C,G,T,N,-}) and is positioned at       and a known allele to capture the differences, we can
+column i in the graph. For each column, vertices with an         obtain the novel variants. For this reason, we further mod-
+identical base symbol at a column are merged as a single         ify the HLA graph to include additional paths that encode
+vertex and duplicate edges are removed (Fig. 5c,d). The          for novel alleles in a test individual. We achieve this by
+gap symbol (-) is used to restrict edges to connect ver-         modifying the previously constructed HLA graph by pro-
+tices only from consecutive columns in the input MSA.            jecting the alignments of the reads likely coming from
+An edge between two vertices (evi ,vi+1 ) exists if Mpanel has   HLA region to known HLA genes.
+a row with consecutive bases bvi and bvi+1 at columns i             We first align the extracted reads to the set of refer-
+and i + 1. Note that this graph contains at least the same       ence panel sequences obtained from Mpanel using BWA
+number of paths as the number of rows in Mpanel used             (v0.7.15-r1140) [47]. The linear alignments obtained are
+Lee and Kingsford Genome Biology (2018) 19:16                                                                                            Page 11 of 16
+
+
+
+
+then projected onto gene-specific POGs. For example, if a                    example of an alignment with insertion not requiring a
+read is mapped to the HLA-A gene, then the alignment is                      column shifting is shown in Fig. 6c. The read is aligned to
+projected onto the HLA graph of the gene. Given a read r,                    H3 with an insertion at position 5 instead of aligning to an
+a subsequence h of a known allele H, and a pairwise align-                   allele H1 with a mismatch at the same position because the
+ment of r and h, by projection of the alignment to the HLA                   alignment score with one insertion is higher than the score
+graph, our goals are: (1) to modify the graph to encode the                  with three mismatches (positions 2, 3, and 5 if aligned to
+exact sequence of r within the range of columns h encoded                    H1 ). Because H1 is in the MSA, the graph already has the
+in the graph, (2) to increment the weight of each edge of                    column for handling an insertion at this particular col-
+the path by 1, and (3) to preserve preexisting paths at the                  umn. In this case, we simply insert a vertex of G into the
+same time. When r and h are identical, the graph must                        corresponding column and connect the edges to complete
+already contain a path that exactly encodes r because H is                   the path for r.
+in the MSA used to construct the graph. When there are                         Finally, an insertion requiring a shift of columns is
+few differences identified by the pairwise alignment of r                    depicted as an example in Fig. 6d. The read is aligned to
+and h, such as mismatches, deletions, or insertions, there                   allele H1 with an insertion of A at position 4. To insert a
+are two cases: (1) r is already encoded in the graph or (2)                  new column between the third and fourth columns (also
+r is not, thereby the graph must be modified to encode r.                    denoted as the left and right columns), we first insert
+For example, ACGTCA does not align perfectly to any of                       a new vertex with a - symbol and need to reroute all
+the sequences in Fig. 6a but it is encoded in the graph                      edges between the left and right columns through the
+as a path. On the other hand, there is no path encoding                      newly inserted gap symbol and redistribute edge weights
+ACCTGA.                                                                      to preserve the preexisting paths. Adjusted weights are
+  Examples of graph modification by alignment projec-                        shown on the edges in the example. To describe this for-
+tion are shown in Fig. 6. Panel (a) shows a MSA with                         mally, let L and R be sets of vertices for the left and right
+three known alleles and the corresponding POG. Modifi-                       columns respectively and E be the set of directed edges
+cations for mismatches and deletions are simple because                      from vl ∈ L to vr ∈ R with the weight of each edge as
+they require only the addition of a vertex for the mis-                      w({vl , vr }). Additionally, let Evout  ⊆ E be the set of all out-
+                                                                                                                 l
+matched base or a gap (-) symbol. Figure 6b illustrates an
+                                                                             going edges of vl and Evr ⊆ E be the set of all incoming
+                                                                                                         in
+example where r has a deletion of T at position 4. A gap
+                                                                             edges of vr . Note that there are always one or more outgo-
+vertex is added to the corresponding column and edges
+                                                                             ing edges from vl and one or more incoming edges to vr .
+are added to connect the newly added vertex to the pre-
+                                                                             After disconnecting all {vl , vr } ∈ E, we make a new vertex
+vious and next base in r to obtain a path encoding r.
+                                                                             vgap with the - symbol and add an edge {vl , vgap } for each
+Normally, an insertion requires a shifting of columns in                                                    
+the MSA and graph because extra columns are required                         vl and assign a weight of e∈Evout w(e). Similarly, we add
+                                                                                                                    l            
+for the inserted bases to be encoded. However, some align-                   an edge {vgap , vr } for each vr with a weight of e∈Evin w(e).
+                                                                                                                                        r
+ments with insertions do not require a column shift. An                      Once the column shift is done, we can actually process the
+
+
+
+
+                            a
+
+
+
+
+                        b                                c                                       d
+ Fig. 6 Modification by alignment projection. The multiple sequence alignment and its corresponding POG from Fig. 5 are shown (a). Three
+ examples of graph modification operations (deletion or mismatch (b), insertion into a gap column (c), and insertion into a new column (d)) are
+ shown with respect to the initial POG constructed. For each operation, an alignment of read r to one of the known alleles Hi is used to modify the
+ graph. Each operation is applied to the POG and the resulting graph is shown. The nodes and edges that are newly added or changed during the
+ operation are shown in red. The nodes that the read path maps are shown as bold circles. For an insertion into a new column, the newly assigned
+ edge weights are explicitly drawn in using x and y variables. POG partial-ordered graph
+Lee and Kingsford Genome Biology (2018) 19:16                                                                                         Page 12 of 16
+
+
+
+
+insertion of the base exactly as we handled the insertion                  in sequence assembly graphs [50–53]. In a HLA graph,
+into a gap column.                                                         we define a bubble as a region (three or more consec-
+                                                                           utive columns) where there is only one vertex each in
+Finding paths through the HLA graph                                        the leftmost and rightmost columns and the rest of the
+Given an HLA graph with weights, assembling HLA alle-                      columns must have two or more vertices. Let s and t be
+les can be formulated as the problem of finding two                        the vertices in the leftmost and the rightmost columns of
+(diploid) paths (they can be identical) that explain the read              the bubble, respectively. Any vertex in the bubble is reach-
+mapping data (weights and phasing) best. When consid-                      able from s and one or more paths exists from any vertex
+ering only the weights (number of reads), we can find two                  in the bubble to t. Any two distinct paths that go through
+paths where the sum of their minimum weights is maxi-                      a bubble must go through s and t. Bubbles naturally cap-
+mized. However, this formulation does not handle phasing                   ture the variation of sites between two alleles in the graph.
+information embedded by reads or read pairs. There-                        The regions that are enclosed by the dotted line in Fig. 7a
+fore, it can possibly select erroneous paths that are not                  are examples of bubbles. On the other hand, a region that
+consistent with the phasing information. For this reason,                  is completely shared by all paths through the HLA graph
+we want our objective to take both weights as well as                      represents a conserved region. Without any loss of gen-
+phasing information into account. Since read information                   erality, the HLA graph can then be thought of as a chain
+is embedded in the HLA graph, we can check if two neigh-                   of bubbles, where two neighboring bubbles are connected
+boring variant sites can be phased directly by a read or                   by a linear path of length 0 or longer (Fig. 7). For simplic-
+read pair. For example, given two heterozygous sites with                  ity, we can connect the bubbles without the linear paths
+A/T and G/C, a read or a read pair carrying A followed by                  as they do not play any role in determining the phase of a
+G at these sites indicates the chromosomal phase of AG                     haplotype. We call this a bubble graph. Bubbles can easily
+since the sequencing read is assumed to come from a con-                   be recognized in a HLA graph because of its structure.
+tiguous segment in a chromosome. In our method, we first
+investigate variant regions individually to select locally                 Finding the best set of paths in a bubble
+phased paths with strong read support and construct a set                  Ideally, we want to find exactly two paths per bubble since
+of full-length paths through the HLA graph by connect-                     the ploidy number is two for humans. The paths can be
+ing the locally phased paths that can be further phased                    identical for homozygous alleles. However, bubbles may
+by a read or read pair. Each of these full-length paths is                 contain more than two paths because of sequencing errors
+considered as a candidate allele and the best pair among                   or misalignment. Therefore, we first identify all paths that
+the candidates with maximum read and phasing support                       are phased by a read or read pair. For each bubble, we can
+is selected as the output. To consider only nonzero-weight                 use a modified breadth-first search technique to obtain all
+full-length paths, we remove all zero-weight edges and                     paths that go through the bubble. To avoid enumerating
+disconnected vertices prior to finding paths.                              over all paths through a bubble, we prune any path with-
+                                                                           out a read backing the sequence encoded by the path at
+HLA graph to bubble graph                                                  each iteration of the breadth-first search. For a path in the
+We first focus on the parts of the HLA graph where varia-                  bubble to be retained, it must be supported by at least one
+tions are captured, which are often referred to as bubbles                 read phasing the entire path. We can simply compute the
+
+
+
+
+                             a
+
+
+
+
+                             b
+
+
+ Fig. 7 HLA graph to bubble graph. Show is an example of an HLA graph with three bubbles (in dotted boxes) (a) and its corresponding bubble
+ graph (b). The best paths through the bubbles can be thought of as a pair of distinct colored paths (shown in red and blue). HLA human leukocyte
+ antigen
+Lee and Kingsford Genome Biology (2018) 19:16                                                                         Page 13 of 16
+
+
+
+
+set of phased reads for a path by taking a series of inter-      a pair of bubble paths Pb that jointly gives the maximum
+sections of read sets maintained by each edge in the path.       probability:
+Each phased path through a bubble is a called a bubble
+path.                                                                               |d|                        
+                                                                                      P di | Hb1
+                                                                                                i      P di | Hb2
+                                                                                                               i
+  Given multiple bubble paths from a bubble, our goal is             Pb = argmaxGb                   +              .
+to select the best pair of paths. We iterate over all possible                               2              2
+                                                                                       d∈D i
+pairs of bubble paths to calculate the posterior probability
+of each pair given all reads aligned to the bubble to find       Phasing paths
+the pair that gives the maximum probability. We write the        We now have an ordered list of bubbles, and a list of the
+posterior probability of a given genotype as                     best read-backed phased bubble paths for each bubble.
+                                                                 The goal here is to find a set of candidate paths through
+                   P(Gb )P(D | Gb )                              all the bubbles by merging one bubble at a time itera-
+    P(Gb | D) =                     ,
+                        P(D)                                     tively from left to right, connecting bubble paths that are
+                                                                 phased by a read or read pair. Two paths are said to be
+where Gb is a genotype and D is the alignments of all            phase-consistent if there is a read or read pair spanning
+reads aligned over the bubble. The genotype is a pair of         both paths. This can be checked easily by taking an inter-
+bubble paths Gb = (Hb1 , Hb2 ). Each d ∈ D is an align-          section, since each bubble path maintains a set of phasing
+ment string of a segment of a read and di is the ith symbol      reads. Given a set of already merged bubble paths Pm from
+in segment d. Similarly, Hb1  i is the ith symbol in H .
+                                                          b1     the first i−1 bubbles and a set of bubble paths Pbi from the
+P(D) is constant, and we assume that the prior probability       ith bubble, we look at all pairs of paths Pm × Pbi and keep
+P(Gb = (Hb1 , Hb2 )) is uniformly distributed over all geno-     only pairs that are phase-consistent and connect each of
+types. We can then compute the conditional probability           such pairs as one path. We also update the phasing-read
+P(D | Gb ) by adopting widely used formulations [13, 54]         set for each merged path.
+with small variations to allow multiple positions and the
+base N case that can be present from sequence data. We           Selecting the best pair of candidate alleles
+iterate over each read and compute P(D | Gb ) as a product       Once the assembly by bubble merging is finished, we have
+of the conditional probability of each read d.                   a set of merged bubble paths through all bubbles. By plac-
+  Since a read must come from one of the two chromo-             ing the linear chains that were ignored during bubble
+somes, and we assume that d is equally likely to come            merging back to their original positions (between bub-
+from either one of them, we can rewrite it as a sum of the       bles), we have a full-length candidate allele Hi for each
+average of two cases where d is from Hb1 and Hb2 :               merged bubble path. Let C be the set of all candidate alle-
+                   1                 1
+                                                                les and B be a set of all bubbles. Our goal is to select a pair
+    P(D | Gb ) =          P(d | Hb1 ) + P(d | Hb2 ) .            of alleles (H1 , H2 ) ∈ C × C that has the most consistent
+                        2              2
+                  d∈D                                            phasing support over all bubbles. We first define a scor-
+                                                                 ing metric that checks for the strength of phasing support
+  To compute the conditional probability of each d given a
+                                                                 jointly for a pair of alleles H1 and H2 between a pair of
+bubble path Hb , we iterate over each pair of corresponding
+                                                                 consecutive bubbles bi and bi+1 . It is defined as
+positions di and Hbi jointly, assuming each di is condition-
+ally independent of each other given Hbi . Therefore, the                           ⎧
+probability of each base di given a pair of corresponding                           ⎨ fi (H1 ) × fi (H2 ), if H1  = H2
+                  i and H i is                                       Fi (H1 , H2 ) = fi (H1 ) fi (H2 )                  ,
+genotype bases Hb1          b2                                                      ⎩ 2 ×                , if H1 = H2
+                                                                                                     2
+    1  i    i
+                 1  i   i
+                             
+      P d | Hb1  + P d | Hb2   .
+    2             2                                              where fi (H) is the inter-bubble phasing fraction. This frac-
+                                                                 tion fi (H) is the ratio of the number of phasing reads for
+  The probability of seeing a base given an allele is defined
+                                                                 allele H between bi and bi+1 and the number of total phas-
+as
+                                                                 ing reads. When considering two paths at the same time,
+                 
+                  1 − , if di = Hbi (match)                   there can be regions where the paths overlap (homozy-
+   P di | Hbi =                                        ,
+                    /3, if di = Hbi (mismatch)                 gous; shown as purple edges in Fig. 2e) and separate
+                                                                 (heterozygous; shown as blue or red edges in Fig. 2e). For
+where  of base symbol di is the error probability obtained      homozygous sections of the paths, that is H1 = H2 , fi (H)
+from the phred score of the base. For di = N, we sim-            is halved to keep the balance between calling homozygous
+ply estimate the probability as 1/4. Instead of selecting        and heterozygous alleles. We can calculate the product of
+Hb from all possible |d|-mers, we limit to only the bubble       Fi over all pairs of neighboring bubbles to check the con-
+paths found in the bubble and iterate over all pairs to select   sistency of phasing support for the pair. Finally, we select
+Lee and Kingsford Genome Biology (2018) 19:16                                                                                    Page 14 of 16
+
+
+
+
+the pair of alleles P that maximizes the product over all      test on. The BAM files aligned to the GRCh38 version
+pairs of alleles:                                              of the human genome were downloaded from the 1000
+                            ⎡                    ⎤             Genomes data portal (http://www.internationalgenome.
+                              |B|−1
+                                                              org/data-portal). For the Utah resident trio and the
+    P = argmax{H1 ,H2 }∈C×C ⎣       Fi (H1 , H2 )⎦ .           Yoruban trio, we downloaded fastq files and realigned to
+                                   i
+                                                               the GRCh38 version because GRCh38 BAM files were not
+                                                               available. There are three additional individuals with vali-
+Description of data used for evaluation
+                                                               dated HLA typing results [32] whose high-coverage WGS
+Simulated data
+                                                               data are available. Pre-aligned BAM files of the additional
+For each of the six HLA genes tested (HLA-A, -B, -
+                                                               individuals were downloaded.
+C, -DQA1, -DQB1, and -DRB1), we randomly selected
+two full-length alleles from the IPD-IMGT/HLA database         Whole-exome sequencing of 29 HapMap individuals
+(v3.24.0) and repeated this for 100 replicates, resulting in   Altogether, 29 HapMap [35] samples (WES) that were
+a total of 200 alleles to simulate. The exact number of        used as a benchmarking data set for HLA*PRG [11] were
+full-length alleles in the database is reported in Table 5.    selected to test Kourami’s ability to assemble and type
+For each replicate, we simulated 25× coverage of paired-       WES data. The 1000 Genomes data portal provides the
+end WGS data for each allele, giving 50× coverage for          BAM/CRAM files aligned to the GRCh38 version of the
+each locus. For the simulation of paired-end reads, we         human genome for this set of WES data. The complete
+used an Illumina read simulator, pIRS [55], which simu-        list of individual identifiers and the sources where the
+lates using empirical base-calling and GC%-depth profiles      data were downloaded from are given in Additional file 1:
+trained from Illumina re-sequencing of known samples.          Table S8.
+We used 2 × 100 bp for the read length and 500 ±
+50 bp for the mean and the standard deviation of the           AK1 Korean genome
+insert size.                                                   De novo assembly of the Korean individual AK1 has been
+                                                               published [40]. Both the validated HLA types (Supple-
+Illumina Platinum Genomes                                      mentary Table 20 in [40]) and high-coverage WGS data
+Illumina has sequenced 17 individuals (CEPH/Utah pedi-         (2 × 150 bp) are publicly available. We downloaded fastq
+gree 1463) in a three-generation family using their high-      files and realigned to the GRCh38 version of the human
+coverage PCR-free paired-end WGS assay (2 × 101 bp).           genome. There is a link to the downloaded data in Addi-
+These genomes are often referred to as the Illumina Plat-      tional file 1: Table S8.
+inum Genomes [56]. The family pedigree is shown in
+Fig. 3. Many individuals in this family have been exten-
+                                                               Additional files
+sively investigated by the genomics community, especially
+the NA12891–NA12892–NA12878 trio as well as the
+                                                                Additional file 1: Supplementary tables with descriptions. (XLSX 70 kb)
+NA12889–NA12890–NA12877 trio. The validated HLA
+                                                                Additional file 2: Supplementary figures with descriptions. (PDF 84 kb)
+types for the two trios were obtained from [11, 32]. The
+read alignments to the GRCh37 version of the human
+                                                               Acknowledgments
+genome for all 17 individuals were downloaded from             We thank S. Kim of Illumina for helping us in the early stage of this research.
+the Illumina Platinum Genomes page hosted on Google            We would also like to thank D. DeBlasio, C. Ma, G. Marçais, N. Sauerwald, M.
+Cloud Platform (Additional file 1: Table S8) and they were     Shao, B. Solomon, T. Wall, H. Wang, and H. Xin for valuable discussions and
+                                                               comments on the manuscript.
+realigned to the GRCh38 version of the human genome.
+                                                               Funding
+1000 Genomes                                                   This research was funded in part by the Gordon and Betty Moore Foundation’s
+The 1000 Genomes Project [57] has produced various per-        Data-Driven Discovery Initiative through grant GBMF4554 to CK, by the U.S.
+                                                               National Science Foundation (CCF-1256087 and CCF-1319998) and by the U.S.
+sonal genomic data. Among these, there are 11 individuals      National Institutes of Health (R01HG007104). This work was partially funded by
+used in [11] whose high-coverage WGS data along with           The Shurl and Kay Curci Foundation.
+validated HLA typing results [11, 32] are available. This
+                                                               Availability of data and materials
+data set covers a wide ethnic diversity (one Colombian         The WGS data for Illumina Platinum Genomes (17 individuals from CEPH/Utah
+from Medellín, three Utah residents with Northern and          pedigree 1463) are available from the European Nucleotide Archive under
+Western European ancestry in a trio, one Japanese from         accession PRJEB3381 [58]. The WGS data for 14 individuals from the 1000
+                                                               Genomes Project [57] and the WES data of 29 HapMap samples [35] are
+Tokyo, Japan, three Yoruban from Ibadan, Nigeria in a          available through the data portal of the International Genome Sample
+trio, one person of African ancestry from the southwest-       Resource website [59]. The WGS data for AK1 [40] are available from the Short
+ern United States, one person of Mexican ancestry from         Read Archive of the National Center for Biotechnology Information under
+                                                               accession number SRP068953 [60]. The complete list of direct links used to
+Los Angeles, and one Toscani from Italy) covering vari-        download the data is in Additional file 1: Table S8. Kourami (version
+ous different HLA types, making it an ideal data set to        0.9.6 [61]) is open source under the 3-Clause BSD license (OSI-compliant) and
+Lee and Kingsford Genome Biology (2018) 19:16                                                                                                  Page 15 of 16
+
+
+
+
+freely available at https://github.com/Kingsford-Group/kourami. It is           18. Nariai N, Hirose O, Kojima K, Nagasaki M. TIGAR: transcript isoform
+implemented in Java and supported on Linux and Mac OS X.                            abundance estimation method with gapped alignment of RNA-seq data
+                                                                                    by variational Bayesian inference. Bioinformatics. 2013;29(18):2292–9.
+Authors’ contributions                                                          19. Szolek A, Schubert B, Mohr C, Sturm M, Feldhahn M, Kohlbacher O.
+CK and HL designed the method and wrote the manuscript. HL wrote the                OptiType: precision HLA typing from next-generation sequencing data.
+software and carried out the experiments. Both authors read and approved            Bioinformatics. 2014;30(23):3310–16.
+the final manuscript.                                                           20. Xie C, Yeo ZX, Wong M, Piper J, Long T, Kirkness EF, et al. Fast and
+                                                                                    accurate HLA typing from short-read next-generation sequence data
+Ethics approval and consent to participate                                          with xHLA. Proc Natl Acad Sci USA. 2017;114(30):8059–64.
+Not applicable.                                                                 21. Warren RL, Choe G, Freeman DJ, Castellarin M, Munro S, Moore R, et al.
+                                                                                    Derivation of HLA types from shotgun sequence datasets. Genome Med.
+Competing interests                                                                 2012;4(12):95.
+The authors declare that they have no competing interests.                      22. Huang Y, Yang J, Ying D, Zhang Y, Shotelersuk V, Hirankarn N, et al.
+                                                                                    HLAreporter: a tool for HLA typing from next generation sequencing
+Publisher’s Note                                                                    data. Genome Med. 2015;7(1):25.
+Springer Nature remains neutral with regard to jurisdictional claims in         23. Dilthey A, Cox C, Iqbal Z, Nelson MR, McVean G. Improved genome
+published maps and institutional affiliations.                                      inference in the MHC using a population reference graph. Nat Genet.
+                                                                                    2015;47(6):682–8.
+Received: 17 May 2017 Accepted: 8 January 2018                                  24. Lee C, Grasso C, Sharlow MF. Multiple sequence alignment using partial
+                                                                                    order graphs. Bioinformatics. 2002;18(3):452–64.
+                                                                                25. Pevzner PA, Tang H, Waterman MS. An Eulerian path approach to DNA
+                                                                                    fragment assembly. Proc Natl Acad Sci USA. 2001;98(17):9748–53.
+References                                                                      26. Myers EW. The fragment assembly string graph. Bioinformatics.
+1. Sollid LM, Pos W, Wucherpfennig KW. Molecular mechanisms for                     2005;21(suppl_2):ii79–85.
+    contribution of MHC molecules to autoimmune diseases. Curr Opin             27. Paten B, Novak A, Haussler D. Mapping to a reference genome structure.
+    Immunol. 2014;31:24–30.                                                         arXiv.2014;1404.5010v1.
+2. Miyadera H, Tokunaga K. Associations of human leukocyte antigens with        28. Nguyen N, Hickey G, Zerbino DR, Raney B, Earl D, Armstrong J, et al.
+    autoimmune diseases: challenges in identifying the mechanism. J Hum             Building a pan-genome reference for a population. J Comput Biol.
+    Genet. 2015;60(11):697–702.                                                     2015;22(5):387–401.
+3. Simmonds M, Gough S. The HLA region and autoimmune disease:                  29. Church DM, Schneider VA, Steinberg KM, Schatz MC, Quinlan AR,
+    associations and mechanisms of action. Curr Genom. 2007;8(7):453–65.            Chin CS, et al. Extending reference assembly models. Genome Biol.
+4. Matzaraki V, Kumar V, Wijmenga C, Zhernakova A. The MHC locus and                2015;16(1):13.
+    genetic susceptibility to autoimmune and infectious diseases. Genome        30. Paten B, Novak AM, Eizenga JM, Garrison E. Genome graphs and the
+    Biol. 2017;18(1):76.                                                            evolution of genome inference. Genome Res. 2017;27(5):665–76.
+5. Hedrick PW, Thomson G. Evidence for balancing selection at HLA.              31. Marsh SGE, Albert ED, Bodmer WF, Bontrop RE, Dupont B, Erlich HA,
+    Genetics. 1983;104(3):449–56.                                                   et al. Nomenclature for factors of the HLA system, 2010. Tissue Antigens.
+6. Black FL, Hedrick PW. Strong balancing selection at HLA loci: evidence           2010;75(4):291–455.
+    from segregation in South Amerindian families. Proc Natl Acad Sci USA.      32. Gourraud PA, Khankhanian P, Cereb N, Yang SY, Feolo M, Maiers M, et al.
+    1997;94(23):12452–6.                                                            HLA diversity in the 1000 Genomes dataset. PLoS ONE. 2014;9(7):e97282.
+7. Ferrer A, Fernández ME, Nazabal M. Overview on HLA and DNA typing            33. Campbell MC, Tishkoff SA. African genetic diversity: implications for
+    methods. Biotecnología Aplicada. 2005;22(2):91–101.                             human demographic history, modern human origins, and complex
+8. Robinson J, Halliwell JA, Hayhurst JD, Flicek P, Parham P, Marsh SGE.            disease mapping. Annu Rev Genomics Hum Genet. 2008;9:403–33.
+    The IPD and IMGT/HLA database: allele variant databases. Nucleic Acids      34. Prugnolle F, Manica A, Charpentier M, Guégan JF, Guernier V, Balloux F.
+    Res. 2015;43:D423–31.                                                           Pathogen-driven selection and worldwide HLA class I diversity. Curr Biol.
+9. Major E, Rigó K, Hague T, Bérces A, Juhos S. HLA typing from 1000                2005;15(11):1022–7.
+    Genomes whole genome and whole exome Illumina data. PLoS ONE.               35. International HapMap Consortium, et al. A haplotype map of the human
+    2013;8(11):e78410.                                                              genome. Nature. 2005;437(7063):1299.
+10. Bauer DC, Zadoorian A, Wilson LO, Thorne NP, et al. Evaluation of           36. Asan, Xu Y, Jiang H, Tyler-Smith C, Xue Y, Jiang T, et al. Comprehensive
+    computational programs to predict HLA genotypes from genomic                    comparison of three commercial human whole-exome capture
+    sequencing data. Brief Bioinform. 2016. https://doi.org/10.1093/bib/            platforms. Genome Biol. 2011;12(9):R95.
+    bbw097.                                                                     37. Meienberg J, Bruggmann R, Oexle K, Matyas G. Clinical sequencing: is
+11. Dilthey AT, Gourraud PA, Mentzer AJ, Cereb N, Iqbal Z, McVean G.                WGS the better WES? Hum Genet. 2016;135(3):359–62.
+    High-accuracy HLA type inference from whole-genome sequencing data          38. Belkadi A, Bolze A, Itan Y, Cobat A, Vincent QB, Antipenko A, et al. Whole-
+    using population reference graphs. PLoS Comput Biol. 2016;12(10):               genome sequencing is more powerful than whole-exome sequencing for
+    e1005151.                                                                       detecting exome variants. Proc Natl Acad Sci USA. 2015;112(17):5473–8.
+12. Erlich RL, Jia X, Anderson S, Banks E, Gao X, Carrington M, et al.          39. Cao H, Wu H, Luo R, Huang S, Sun Y, Tong X, et al. De novo assembly of
+    Next-generation sequencing for HLA typing of class I loci. BMC Genomics.        a haplotype-resolved human genome. Nat Biotechnol. 2015;33(6):617–22.
+    2011;12:42.                                                                 40. Seo JS, Rhie A, Kim J, Lee S, Sohn MH, Kim CU, et al. De novo assembly
+13. McKenna A, Hanna M, Banks E, Sivachenko A, Cibulskis K, Kernytsky A,            and phasing of a Korean human genome. Nature. 2016;538:243–7.
+    et al. The Genome Analysis Toolkit: a MapReduce framework for analyzing     41. Ajay SS, Parker SC, Abaan HO, Fajardo KVF, Margulies EH. Accurate and
+    next-generation DNA sequencing data. Genome Res. 2010;20(9):                    comprehensive sequencing of personal genomes. Genome Res.
+    1297–303.                                                                       2011;21(9):1498–505.
+14. Boegel S, Löwer M, Schäfer M, Bukur T, De Graaf J, Boisguérin V, et al.     42. Ekblom R, Wolf JB. A field guide to whole-genome sequencing, assembly
+    HLA typing from RNA-seq sequence reads. Genome Med. 2012;4(12):102.             and annotation. Evol Appl. 2014;7(9):1026–42.
+15. Kim HJ, Pourmand N. HLA haplotyping from RNA-seq data using                 43. Sameith K, Roscito JG, Hiller M. Iterative error correction of long
+    hierarchical read weighting. PLoS ONE. 2013;8(6):e67885.                        sequencing reads maximizes accuracy and improves contig assembly.
+16. Bai Y, Ni M, Cooper B, Wei Y, Fury W. Inference of high resolution HLA          Brief Bioinform. 2017;18(1):1–8.
+    types using genome-wide RNA or DNA sequencing reads. BMC                    44. Schirmer M, DAmore R, Ijaz UZ, Hall N, Quince C. Illumina error profiles:
+    Genomics. 2014;15:325.                                                          resolving fine-scale variation in metagenomic sequencing data. BMC
+17. Nariai N, Kojima K, Saito S, Mimori T, Sato Y, Kawai Y, et al. HLA-VBSeq:       Bioinform. 2016;17(1):125.
+    accurate HLA typing at full resolution from whole-genome sequencing         45. Lefebvre S, Antoine M, Uzan S, McMaster M, Dausset J, Carosella ED,
+    data. BMC Genomics. 2015;16(Suppl 2):S7.                                        et al. Specific activation of the non-classical class I histocompatibility
+Lee and Kingsford Genome Biology (2018) 19:16                                                                                                Page 16 of 16
+
+
+
+
+      HLA-G antigen and expression of the ILT2 inhibitory receptor in human
+      breast cancer. J Pathol. 2002;196(3):266–74.
+46.   Bukur J, Jasinski S, Seliger B. The role of classical and non-classical HLA
+      class I antigens in human tumors. Semin Cancer Biol. 2012;22(4):350–8.
+47.   Li H, Durbin R. Fast and accurate short read alignment with
+      Burrows–Wheeler transform. Bioinformatics. 2009;25(14):1754–60.
+48.   Tischler G, Leonard S. biobambam: Tools for read pair collation based
+      algorithms on BAM files. Source Code Biol Med. 2014;9:13.
+49.   Löytynoja A, Vilella AJ, Goldman N. Accurate extension of multiple
+      sequence alignments using a phylogeny-aware graph algorithm.
+      Bioinformatics. 2012;28(13):1684–91.
+50.   Fasulo D, Halpern A, Dew I, Mobarry C. Efficiently detecting
+      polymorphisms during the fragment assembly process. Bioinformatics.
+      2002;18(suppl 1):S294—302.
+51.   Iqbal Z, Caccamo M, Turner I, Flicek P, McVean G. De novo assembly
+      and genotyping of variants using colored de Bruijn graphs. Nat Genet.
+      2012;44(2):226–32.
+52.   Sacomoto GA, Kielbassa J, Chikhi R, Uricaru R, Antoniou P, Sagot MF,
+      et al. KISSPLICE: de-novo calling alternative splicing events from RNA-seq
+      data. BMC Bioinform. 2012;13(Suppl 6):S5.
+53.   Nijkamp JF, Pop M, Reinders MJ, de Ridder D. Exploring variation-aware
+      contig graphs for (comparative) metagenomics using MaryGold.
+      Bioinformatics. 2013;29(22):2826–34.
+54.   Li H. A statistical framework for SNP calling, mutation discovery,
+      association mapping and population genetical parameter estimation
+      from sequencing data. Bioinformatics. 2011;27(21):2987–93.
+55.   Hu X, Yuan J, Shi Y, Lu J, Liu B, Li Z, et al. pIRS: Profile-based Illumina
+      pair-end reads simulator. Bioinformatics. 2012;28(11):1533–5.
+56.   Eberle MA, Fritzilas E, Krusche P, Källberg M, Moore BL, Bekritsky MA,
+      et al. A reference data set of 5.4 million phased human variants validated
+      by genetic inheritance from sequencing a three-generation 17-member
+      pedigree. Genome Res. 2017;27(1):157–64.
+57.   The 1000 Genomes Project Consortium. A global reference for human
+      genetic variation. Nature. 2015;526(7571):68–74.
+58.   Illumina Cambridge Ltd. Whole genome sequencing and variant calls for
+      the Coriell CEPH/UTAH 1463 family. The European Nucleotide Archive.
+      2012. https://www.ebi.ac.uk/ena/data/view/PRJEB3381.
+59.   IGSR: The International Genome Sample Resource data portal. http://
+      www.internationalgenome.org/data-portal.
+60.   Seo JS, Rhie A, Kim J, Lee S, Sohn MH, Kim CU, et al. Homo sapiens, AK1
+      genome sequencing and de novo assembly of an Asian individual. NCBI
+      Short Read Archive. 2016. https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.
+      cgi?study=SRP068953.
+61.   Lee H. Kourami: graph-guided HLA assembler. 2017. https://doi.org/10.
+      5281/zenodo.1122533.
+
+
+
+
+                                                                                    Submit your next manuscript to BioMed Central
+                                                                                    and we will help you at every step:
+                                                                                     • We accept pre-submission inquiries
+                                                                                     • Our selector tool helps you to find the most relevant journal
+                                                                                     • We provide round the clock customer support
+                                                                                     • Convenient online submission
+                                                                                     • Thorough peer review
+                                                                                     • Inclusion in PubMed and all major indexing services
+                                                                                     • Maximum visibility for your research
+
+                                                                                     Submit your manuscript at
+                                                                                     www.biomedcentral.com/submit
+

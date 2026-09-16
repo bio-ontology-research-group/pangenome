@@ -1,0 +1,23 @@
+{
+  "utc": "2026-09-16T02:54:21.171461+00:00",
+  "note": "Frozen before any typing predictions were inspected. Additional 88 donor evaluation uses same prototype, no outcome-driven parameter tuning.",
+  "files": {
+    "test_contracts.py": "0ae1bd44211b8a5627d99ae145e3ab8d8a6e13eff409188816a30906bdb2f981",
+    "report.py": "bcbb693a5f7521e0c2f49ee20eca76c60fd98c9a7cd1373297449ac36077f41b",
+    "prepare_catalogue.py": "9c4875442505f072dd70b1bcd7bc29036d6675a722401e8530f5dc85905e346e",
+    "prepare_markers.py": "5824c63fb844ab4415f406d75882dcbe3bd71df5ee487761b57284a566983a91",
+    "benchmark.py": "2d9d97efac85e475cadbd79814256dac4a24ffe2af32555cac68676917740b45",
+    "extract_paths.py": "3ee7c5bfe626dce3ec5688d3f1dd925f9f02697066d3491fae69fd9641feba52",
+    "count_markers.cpp": "18b63f53f5bb1a2f8e80d3fcc5f28dde0be15927555e3b84d644c325c2a61b48",
+    "PROTOCOL.md": "673a5ad947039b951d44d5372147737439f85ee8f96d25d5ab17114b4416bc35",
+    "source/design.json": "9d0be47771bc016657ef3ad98ad71b4ed9e1b2c45fde02403d6acdf6381845aa",
+    "source/donors.txt": "14f8c9b0ff7170b85142c78b2266752a43d648349070689c5d11f75aa16c8468",
+    "source/validation_donors.txt": "890dab1cbe7ea033ad1e352b52a7fbeb306f22deae018d6a07922c564a3e12a8",
+    "source/evaluation_donors.txt": "75095fecae5e02b683c06d6b7144b410faa2d4ae7692d588a9bb889aade1bb8e"
+  },
+  "diagnostic_addendum": {
+    "utc": "2026-09-16T02:55:45.834522+00:00",
+    "note": "Before predictions: add perfect assembly-profile oracle as diagnostic, not a deployable caller. Original read-inference parameters unchanged.",
+    "benchmark_sha256": "bf1f73420be0802ca7d27cdd7a2a36ea8abf858c73dc91c1b232387faaec0f59"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "drdq_label": {
+    "known_variation_class_structural_candidate": 152,
+    "known_database_genomic_sequence_variation": 141,
+    "known_database_sequence_variation": 578,
+    "unresolved_flanking_sequence_difference": 425,
+    "unresolved_genomic_sequence_difference": 292,
+    "unresolved_sequence_difference": 17,
+    "excluded_after_strict_source_qc": 223
+  },
+  "all_classical_label": {
+    "unresolved_flanking_sequence_difference": 34,
+    "unresolved_genomic_sequence_difference": 24,
+    "known_database_genomic_sequence_variation": 14,
+    "excluded_after_strict_source_qc": 23,
+    "known_variation_class_structural_candidate": 6
+  }
+}

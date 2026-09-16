@@ -1,0 +1,6 @@
+
+Contact: Alexander Dilthey, Stephan Scholz
+
+This file contains (sense) alleles of the genes in the HLA region as collected by IMGT for the haplotypes in HGSVC release 3.
+Coordinates and typing where taken from annotation by ImmuAnnot v3 [https://github.com/YingZhou001/Immuannot],
+a border of 1Kbp next to the UTRs on both sides was included for potential submission to IMGT.

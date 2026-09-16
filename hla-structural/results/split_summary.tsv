@@ -1,0 +1,13 @@
+locus	evaluation_set	method	n	cn_correct	pair_correct	unrepresented_truth
+RCCX	pilot	path_multiplicity	18	8	4	4
+RCCX	pilot	binary_paths	18	10	8	4
+RCCX	pilot	assembly_profile_oracle	18	18	13	4
+RCCX	additional_validation	path_multiplicity	88	44	34	2
+RCCX	additional_validation	binary_paths	88	66	56	2
+RCCX	additional_validation	assembly_profile_oracle	88	88	77	2
+DRB	pilot	path_multiplicity	18	18	18	0
+DRB	pilot	binary_paths	18	18	18	0
+DRB	pilot	assembly_profile_oracle	18	18	18	0
+DRB	additional_validation	path_multiplicity	88	88	88	0
+DRB	additional_validation	binary_paths	88	88	88	0
+DRB	additional_validation	assembly_profile_oracle	88	88	88	0

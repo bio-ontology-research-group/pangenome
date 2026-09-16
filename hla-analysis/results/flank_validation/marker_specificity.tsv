@@ -1,0 +1,5 @@
+marker_id	donor	assembly_mhc_hits	assembly_locations	alternative_mhc_hits	alternative_locations
+HLA-WITHIN-456a27fd141204be-HG03195	HG03195	1	"[{""contig"": ""HG03195#1#JBHDVU010000053.1:28475373-33604548"", ""start_1based"": 2846170, ""strand"": ""-""}]"	1	"[{""contig"": ""HG03195#2#JBHDVV010000014.1:28451324-33606358"", ""start_1based"": 2849953, ""strand"": ""-""}]"
+HLA-WITHIN-456a27fd141204be-HG03130	HG03130	2	"[{""contig"": ""HG03130#1#JBHDWI010000052.1:28368259-33497302"", ""start_1based"": 2846149, ""strand"": ""-""}, {""contig"": ""HG03130#2#JBHDWJ010000015.1:28300492-33501344"", ""start_1based"": 2916253, ""strand"": ""-""}]"	0	[]
+HLA-WITHIN-f7a4b2ab22ceb184-HG03195	HG03195	1	"[{""contig"": ""HG03195#1#JBHDVU010000053.1:28475373-33604548"", ""start_1based"": 4131192, ""strand"": ""-""}]"	0	[]
+HLA-WITHIN-f7a4b2ab22ceb184-HG03130	HG03130	1	"[{""contig"": ""HG03130#1#JBHDWI010000052.1:28368259-33497302"", ""start_1based"": 4131109, ""strand"": ""-""}]"	0	[]

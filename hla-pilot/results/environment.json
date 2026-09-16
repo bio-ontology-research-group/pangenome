@@ -1,0 +1,13 @@
+{
+  "python": "3.13.5",
+  "packages": {
+    "numpy": "2.2.4",
+    "scipy": "1.15.3",
+    "pandas": "3.0.3",
+    "matplotlib": "3.10.1+dfsg1",
+    "biopython": "1.85"
+  },
+  "recorded_utc": "2026-09-16T00:30:40.929043+00:00",
+  "read_support_job": 20604529,
+  "failed_initial_job": 20604506
+}

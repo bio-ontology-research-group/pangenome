@@ -1,0 +1,63 @@
+{
+  "graph_input_haplotype_entries": 754,
+  "graph_input_contigs": 816,
+  "annotation_haplotype_entries": 754,
+  "cohort_counts": {
+    "REF": 2,
+    "HPRC-Rest": 360,
+    "HPRC-EastAsian": 70,
+    "CPC-Chinese": 116,
+    "KPanRef-Korean": 28,
+    "HPRC-Japanese": 32,
+    "JaSaPaGe-Japanese": 20,
+    "APR": 106,
+    "HPRC-Jewish": 2,
+    "JaSaPaGe-Saudi": 18
+  },
+  "biological_sample_labels": 376,
+  "provisional_unique_donor_ids": 371,
+  "cross_cohort_duplicate_donors": {
+    "NA18940": [
+      "NA18940",
+      "NA18940.JaSaPaGe"
+    ],
+    "NA18943": [
+      "NA18943",
+      "NA18943.JaSaPaGe"
+    ],
+    "NA18945": [
+      "NA18945",
+      "NA18945.JaSaPaGe"
+    ],
+    "NA18952": [
+      "NA18952",
+      "NA18952.JaSaPaGe"
+    ],
+    "NA18970": [
+      "NA18970",
+      "NA18970.JaSaPaGe"
+    ]
+  },
+  "classII_span_entries": 753,
+  "missing_classII_span": [
+    "HIFI032450D#2"
+  ],
+  "DR_DQ_one_copy_same_contig": 750,
+  "DR_DQ_numeric_twofield_labels": 727,
+  "full_graph_paths": 816,
+  "clipped_graph_paths": 819,
+  "downstream_clipped_bp": 144220,
+  "flag_counts": {
+    "reference_not_independent_donor": 2,
+    "DR_DQ_candidate_novel_annotation": 504,
+    "downstream_graph_clipping_loss": 198,
+    "upstream_clipped_graph_source": 144,
+    "DR_DQ_core_missing_or_multiple_annotations": 4,
+    "absent_from_existing_DRA_DMA_span": 1,
+    "cross_cohort_duplicate_donor": 20,
+    "previously_reported_duplicated_haplotype": 2
+  },
+  "status": "Metadata screening only; no held-out accuracy, novel-allele validation or pedigree verification",
+  "tree_tip_count": 753,
+  "tip_positions_changed_by_ladderize": 752
+}

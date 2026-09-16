@@ -1,0 +1,12 @@
+[
+  {
+    "file": "logsdon2025_complex_genetic_variation.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12350169/fullTextXML",
+    "sha256": "0c75465611bc2f67544cda73c87af0d102b63d399ed70170b1ac479f02ce8dd7"
+  },
+  {
+    "file": "logsdon2025_supplementary_tables.xlsx",
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41586-025-09140-6/MediaObjects/41586_2025_9140_MOESM3_ESM.xlsx",
+    "sha256": "98817dea9842c4ec9f5a616ef66b98b6b977fc202199cd481419f4d5f2d4499f"
+  }
+]

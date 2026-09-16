@@ -1,0 +1,18 @@
+{
+  "host": "ddbj",
+  "workdir": "/home/leechuck/hla/codex-structural",
+  "jobs": {
+    "extract": 20607054,
+    "compile": 20607191,
+    "background": 20607205,
+    "pilot_reads": 20607206,
+    "additional_reads": 20607286,
+    "provenance": 20607687
+  },
+  "input_graph": "/home/asianhla/data/upload/HLA/mhc_graph/MHC.full.gfa.gz",
+  "input_assemblies": "/home/leechuck/hla/mhc_all",
+  "reads": "/home/asianhla/data/upload/1000G_MHC/cram",
+  "decode_reference": "/home/leechuck/hla/ref1kg/local/GRCh38_full_analysis_set_plus_decoy_hla.fa",
+  "initial_array_concurrency": 4,
+  "additional_array_concurrency": 8
+}

@@ -1,0 +1,5 @@
+contrast_id	donor	gene	flank_offset_1based	assembly_fragments	alternative_fragments	assembly_mhc_hits	alternative_mhc_hits	assessment
+HLA-WITHIN-456a27fd141204be	HG03130	HLA-C	1564	17	0	2	0	local_base_supported_phase_not_independently_validated
+HLA-WITHIN-f7a4b2ab22ceb184	HG03130	HLA-DRB1	1812	12	0	1	0	local_base_supported_phase_not_independently_validated
+HLA-WITHIN-456a27fd141204be	HG03195	HLA-C	1564	13	11	1	1	local_base_supported_phase_not_independently_validated
+HLA-WITHIN-f7a4b2ab22ceb184	HG03195	HLA-DRB1	1812	2	6	1	0	unresolved_read_assembly_discordance

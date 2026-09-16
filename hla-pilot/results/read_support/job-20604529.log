@@ -1,0 +1,57 @@
+Wed Sep 16 12:31:16 AM UTC 2026
+asianhla-vm
+2.28-r1209
+samtools 1.21
+[M::bam2fq_mainloop] discarded 16067 singletons
+[M::bam2fq_mainloop] processed 1399375 reads
+[M::mm_idx_gen::0.272*1.02] collected minimizers
+[M::mm_idx_gen::0.366*1.26] sorted minimizers
+[M::main::0.366*1.26] loaded/built the index for 3 target sequence(s)
+[M::mm_mapopt_update::0.366*1.26] mid_occ = 1000
+[M::mm_idx_stat] kmer size: 21; skip: 11; is_hpc: 0; #seq: 3
+[M::mm_idx_stat::0.386*1.25] distinct minimizers: 818424 (13.48% are singletons); average occurrences: 2.081; average spacing: 5.986; total length: 10194028
+[M::worker_pipeline::7.807*2.09] mapped 333334 sequences
+[M::worker_pipeline::14.154*2.11] mapped 333334 sequences
+[M::worker_pipeline::20.863*2.10] mapped 333334 sequences
+[M::worker_pipeline::27.096*2.10] mapped 333334 sequences
+[M::worker_pipeline::27.506*2.09] mapped 49972 sequences
+[M::main] Version: 2.28-r1209
+[M::main] CMD: minimap2 -t2 -ax sr competitive.fa HG03139/r1.fq.gz HG03139/r2.fq.gz
+[M::main] Real time: 27.523 sec; CPU: 57.565 sec; Peak RSS: 0.565 GB
+[M::mm_idx_gen::0.271*1.01] collected minimizers
+[M::mm_idx_gen::0.361*1.25] sorted minimizers
+[M::main::0.361*1.25] loaded/built the index for 3 target sequence(s)
+[M::mm_mapopt_update::0.361*1.25] mid_occ = 1000
+[M::mm_idx_stat] kmer size: 21; skip: 11; is_hpc: 0; #seq: 3
+[M::mm_idx_stat::0.381*1.24] distinct minimizers: 818424 (13.48% are singletons); average occurrences: 2.081; average spacing: 5.986; total length: 10194028
+[M::worker_pipeline::2.416*1.85] mapped 16067 sequences
+[M::main] Version: 2.28-r1209
+[M::main] CMD: minimap2 -t2 -ax sr competitive.fa HG03139/unpaired.fq.gz
+[M::main] Real time: 2.432 sec; CPU: 4.485 sec; Peak RSS: 0.084 GB
+[M::bam2fq_mainloop] discarded 15284 singletons
+[M::bam2fq_mainloop] processed 1275678 reads
+[M::mm_idx_gen::0.260*1.02] collected minimizers
+[M::mm_idx_gen::0.383*1.33] sorted minimizers
+[M::main::0.383*1.33] loaded/built the index for 3 target sequence(s)
+[M::mm_mapopt_update::0.383*1.33] mid_occ = 1000
+[M::mm_idx_stat] kmer size: 21; skip: 11; is_hpc: 0; #seq: 3
+[M::mm_idx_stat::0.402*1.31] distinct minimizers: 818424 (13.48% are singletons); average occurrences: 2.081; average spacing: 5.986; total length: 10194028
+[M::worker_pipeline::8.129*2.07] mapped 333334 sequences
+[M::worker_pipeline::14.722*2.09] mapped 333334 sequences
+[M::worker_pipeline::21.398*2.08] mapped 333334 sequences
+[M::worker_pipeline::26.147*2.04] mapped 260392 sequences
+[M::main] Version: 2.28-r1209
+[M::main] CMD: minimap2 -t2 -ax sr competitive.fa HG03195/r1.fq.gz HG03195/r2.fq.gz
+[M::main] Real time: 26.169 sec; CPU: 53.450 sec; Peak RSS: 0.561 GB
+[M::mm_idx_gen::0.241*1.01] collected minimizers
+[M::mm_idx_gen::0.372*1.34] sorted minimizers
+[M::main::0.373*1.34] loaded/built the index for 3 target sequence(s)
+[M::mm_mapopt_update::0.373*1.34] mid_occ = 1000
+[M::mm_idx_stat] kmer size: 21; skip: 11; is_hpc: 0; #seq: 3
+[M::mm_idx_stat::0.393*1.33] distinct minimizers: 818424 (13.48% are singletons); average occurrences: 2.081; average spacing: 5.986; total length: 10194028
+[M::worker_pipeline::2.805*1.87] mapped 15284 sequences
+[M::main] Version: 2.28-r1209
+[M::main] CMD: minimap2 -t2 -ax sr competitive.fa HG03195/unpaired.fq.gz
+[M::main] Real time: 2.821 sec; CPU: 5.260 sec; Peak RSS: 0.092 GB
+Wed Sep 16 12:33:19 AM UTC 2026
+COMPLETE

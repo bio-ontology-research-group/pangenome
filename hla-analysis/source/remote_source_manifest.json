@@ -1,0 +1,4607 @@
+{
+  "recorded_utc": "2026-09-16T01:37:52.194187+00:00",
+  "files": [
+    {
+      "path": "/home/leechuck/hla/mhc_all/GRCh38_0.mhc.fa",
+      "status": "present",
+      "bytes": 5234444,
+      "sha256": "b684a706e77e292d0d68f594b0dc6e8d9be0e4d135cd70764977b0358755632e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00097_1.mhc.fa",
+      "status": "present",
+      "bytes": 5237407,
+      "sha256": "e02605a60c549057d5f34b0e37aecebc4a4490cee220b8feb3649a3bdc835381"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00097_2.mhc.fa",
+      "status": "present",
+      "bytes": 5173728,
+      "sha256": "03b520037ddae119a73e2e29f1b052f2f84972353e8ba49361464c7d429a5694"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00099_1.mhc.fa",
+      "status": "present",
+      "bytes": 5186286,
+      "sha256": "848cb6917af439ab629631b7cb69d6872c2a134d9be2b9b6b64d1bd964299983"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00099_2.mhc.fa",
+      "status": "present",
+      "bytes": 5160417,
+      "sha256": "3156eafc59fbadc89d822a40030c0b7709a8438130a4463208ee2b601d7907b0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00126_1.mhc.fa",
+      "status": "present",
+      "bytes": 5144759,
+      "sha256": "fd76d94ec4c545f45896faca44b43708a7568ce660bf115b3ac1a7f928d9fd00"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00126_2.mhc.fa",
+      "status": "present",
+      "bytes": 5314868,
+      "sha256": "6baaad9fb2534c4d740d09071192fae35aacd547ae905a206ee1eda41b32ad1c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00128_1.mhc.fa",
+      "status": "present",
+      "bytes": 5245233,
+      "sha256": "4917f90cd5543eabd3bcc4afd33d3650ff647909a5c039e17dc79ab3021e659d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00128_2.mhc.fa",
+      "status": "present",
+      "bytes": 5183581,
+      "sha256": "fb9a5917ce517ccb4dc8e668e3ef33669a9b9570cda82811f909b26d88fd75a8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00133_1.mhc.fa",
+      "status": "present",
+      "bytes": 5198664,
+      "sha256": "be60a1170b9bfc2564e1e6259b11f4ef634a2da5eaf8e42b645cdbe3be65803b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00133_2.mhc.fa",
+      "status": "present",
+      "bytes": 5311084,
+      "sha256": "d44df7786e5022d88c3ce564a9a6cae0095cc5e33a3e9b06317cb4991bf743a6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00140_1.mhc.fa",
+      "status": "present",
+      "bytes": 5296986,
+      "sha256": "b411d6f40d826b629e70c700c7d06bce759c1c5b9c6d754b71d85047f0a3bd4a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00140_2.mhc.fa",
+      "status": "present",
+      "bytes": 5194109,
+      "sha256": "c130daf9f717681db45f093fcc933a0cc9abb17714262a6dade5f733dd811f75"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00146_1.mhc.fa",
+      "status": "present",
+      "bytes": 5161525,
+      "sha256": "539f267b7d3e7c8b226a630044913ffa908378841a3785b471a7d72e256d7110"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00146_2.mhc.fa",
+      "status": "present",
+      "bytes": 5192539,
+      "sha256": "68c1c9e62675ee724f99e6ab6ff72d6fd3a05b0e2480f3a724479f986402d976"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00232_1.mhc.fa",
+      "status": "present",
+      "bytes": 5235928,
+      "sha256": "f639db25265ee19265933d488e5f15db726bf43e50ee6aa6f6a59a254c26f771"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00232_2.mhc.fa",
+      "status": "present",
+      "bytes": 5239931,
+      "sha256": "e1b9fd5ca399c557a4c967b8adf39013b14186a56f551667213ed0e6d49fc560"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00235_1.mhc.fa",
+      "status": "present",
+      "bytes": 5307600,
+      "sha256": "81ffef65f718fd1d14e8ae04c5b271839efb134344733a81a5385e03339bd791"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00235_2.mhc.fa",
+      "status": "present",
+      "bytes": 5312136,
+      "sha256": "a81f5823399c1b57e06d59d04b20c7b6e35b63af052d677f1731f38ddecb758f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00253_1.mhc.fa",
+      "status": "present",
+      "bytes": 5212896,
+      "sha256": "90c537ad40508a48f79cc81cb5c8cc4cb09e95f6f620b603c2dcdcbbaf196068"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00253_2.mhc.fa",
+      "status": "present",
+      "bytes": 5228023,
+      "sha256": "fa556e40fc50c8fbff993d3607c9dbe46c48229959a20d0d002fcdc4baa82755"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00272_1.mhc.fa",
+      "status": "present",
+      "bytes": 5218529,
+      "sha256": "cb111410dbdcc2db6f83b75904498802dc02a9d4c98888dc11ad71f2a9688c4b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00272_2.mhc.fa",
+      "status": "present",
+      "bytes": 5160373,
+      "sha256": "fc853cf5005a9a22a6d696c141ee1ee1f38d2fdfa8b696e5786c84344f5e9f55"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00280_1.mhc.fa",
+      "status": "present",
+      "bytes": 5201821,
+      "sha256": "ffb24f62412e113ca19ee8c376a7ab915f131c4e1bea9b4e8797f0c8ed9616fd"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00280_2.mhc.fa",
+      "status": "present",
+      "bytes": 5169712,
+      "sha256": "bee4f753e339a9c69e3c032d49f3906b11f06e00ecdc529044addaeaab63db53"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00290_1.mhc.fa",
+      "status": "present",
+      "bytes": 5204178,
+      "sha256": "0398e43c6bbc99cedb568eb92a6fca636cd443d4242e1d6e1ae690f6e59df94d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00290_2.mhc.fa",
+      "status": "present",
+      "bytes": 5226780,
+      "sha256": "53fb41be24ce43670761879f7fac0f5df4479709b6c09891a01930898affe450"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00320_1.mhc.fa",
+      "status": "present",
+      "bytes": 5176634,
+      "sha256": "a7d426a581fcdecd3ae532cf3e73a0b5a398c73d88343eac12b1c069c9d938f3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00320_2.mhc.fa",
+      "status": "present",
+      "bytes": 5144034,
+      "sha256": "95f7d121490089e2a474e4753f5700e3582084145269e622b55334679d9b2fe4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00321_1.mhc.fa",
+      "status": "present",
+      "bytes": 5221171,
+      "sha256": "93b1ffb7b6c70e8525cfe9b9c6eca4684eee21b525faea332d449ac0197b3bb1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00321_2.mhc.fa",
+      "status": "present",
+      "bytes": 5104564,
+      "sha256": "c77d384148ad56796f2879a4b2cb10dd4a83aeac9c5951ae124428296ebcaa22"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00323_1.mhc.fa",
+      "status": "present",
+      "bytes": 5147620,
+      "sha256": "135ba761a873a6a0b3363e3b52292c5cde6265e22f7f3b94f88fffbe36352c07"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00323_2.mhc.fa",
+      "status": "present",
+      "bytes": 5164528,
+      "sha256": "4357dbd90588d2d4a23d9f73c2f6afb3d78182a1245e1d5f1737e3771ca49c3f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00329_1.mhc.fa",
+      "status": "present",
+      "bytes": 5237818,
+      "sha256": "793fac8c5eae399aca52580dfabd73bd2fb29fbe22c5b9564304dabb83fcee72"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00329_2.mhc.fa",
+      "status": "present",
+      "bytes": 5230324,
+      "sha256": "0c2104fbb9beb4af1eba2631d01a43369e6ac72310a78a9a41fe22311b148b56"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00344_1.mhc.fa",
+      "status": "present",
+      "bytes": 5229923,
+      "sha256": "c946f85f4c1fedc6dd2076a0b7422e7e9a12be6359a47e854e514cc4492d197b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00344_2.mhc.fa",
+      "status": "present",
+      "bytes": 5237338,
+      "sha256": "9047f3f0e4129b42dace51340291499aa15f240e6a454c6bd05ae9b1c1cf37f6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00350_1.mhc.fa",
+      "status": "present",
+      "bytes": 5226271,
+      "sha256": "1be8326cb3331e6d2e22f3074a6c5ddf9fa18284dd33a0a10fed76dc7895f018"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00350_2.mhc.fa",
+      "status": "present",
+      "bytes": 5308904,
+      "sha256": "5f9e741439b54346850337c8217f2e4f24da91cea89514a34ad0ef276731bf47"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00408_1.mhc.fa",
+      "status": "present",
+      "bytes": 5235277,
+      "sha256": "bfafbadd11c78c084fa78c823de41ab3db35ddeb126b72f784d6965d600259e3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00408_2.mhc.fa",
+      "status": "present",
+      "bytes": 5212957,
+      "sha256": "153b1b2090e97e9e459214a31bc01e700db0ff5b03d891702f977bc6e132148d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00423_1.mhc.fa",
+      "status": "present",
+      "bytes": 5305545,
+      "sha256": "5a69160080e2a20d2af232a6071533ad6d299afd40cc51d7dbeb2a8f39e5aa8f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00423_2.mhc.fa",
+      "status": "present",
+      "bytes": 5138722,
+      "sha256": "337aa11b70edf9806160f02bd779845da05590225edc8325644a7a6e3ebbdad3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00438_1.mhc.fa",
+      "status": "present",
+      "bytes": 5119209,
+      "sha256": "558f677d64da3f296000d5404f221278955d63dba2494396729e2ca61f3e4a15"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00438_2.mhc.fa",
+      "status": "present",
+      "bytes": 5285536,
+      "sha256": "409cd27bc92aae03c185bb3905b47c8eb2790d4fd3d1dbdfafb1f70851d7b68e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG005_1.mhc.fa",
+      "status": "present",
+      "bytes": 5262430,
+      "sha256": "a68de81dec4da51ab2df19b56c43f5a5d46ef8e25b90f341f89847a1c53930d0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG005_2.mhc.fa",
+      "status": "present",
+      "bytes": 5263487,
+      "sha256": "fa1aed46f76b0757fa3687c7c8cb3cd50a8778b3604d5745076f67bf25c11736"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00544_1.mhc.fa",
+      "status": "present",
+      "bytes": 5318500,
+      "sha256": "36fe885f71aa99c303203264b430fc78c94dae0e407babcf56251f27fffcfd15"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00544_2.mhc.fa",
+      "status": "present",
+      "bytes": 5305232,
+      "sha256": "e326d05a899d1a4042ffbbd163b47f44aa1cde61dd297d1d58d0eac70a36c80d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00558_1.mhc.fa",
+      "status": "present",
+      "bytes": 5297572,
+      "sha256": "d707aa86758f55c071a5d4d619b7e2f7562070993c8923b8b58811e42808e66d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00558_2.mhc.fa",
+      "status": "present",
+      "bytes": 5196224,
+      "sha256": "14f3b75dc5f25e0447ddd015857e81ee3165113d12e49f785d86e22a98d5af27"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00597_1.mhc.fa",
+      "status": "present",
+      "bytes": 5230081,
+      "sha256": "17680379532e2fd41da1fb5e90cd7c6afb3aa8b64e2cc49a2951c90486f05938"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00597_2.mhc.fa",
+      "status": "present",
+      "bytes": 5149300,
+      "sha256": "06e3d33fad6ac93deb304a682d5f89a68a92faf9a73035979aadf480afceffbd"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00609_1.mhc.fa",
+      "status": "present",
+      "bytes": 5218267,
+      "sha256": "272da156f2891aee7511be0fddf9605795709160612216d547aea15447411376"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00609_2.mhc.fa",
+      "status": "present",
+      "bytes": 5254612,
+      "sha256": "b91a9448467bd508e39d31bda6b73e668ef9f0cef318fa88d48f3b436c916564"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00621_1.mhc.fa",
+      "status": "present",
+      "bytes": 5304937,
+      "sha256": "66a5040b93b39b7a693330a8de7a31fda79779a06d0984db8cbf07e6d56dd18c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00621_2.mhc.fa",
+      "status": "present",
+      "bytes": 5202502,
+      "sha256": "80a85fd529344834bbf0180636eeb10da5e5748a30a9454e854c070d464213dd"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00639_1.mhc.fa",
+      "status": "present",
+      "bytes": 5308070,
+      "sha256": "0752fa5cb0235e1791db49230b5147436838ef95b98da79f73b6296d463f7497"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00639_2.mhc.fa",
+      "status": "present",
+      "bytes": 5321264,
+      "sha256": "e1fda80b968b28c34b88b42d676245b174052aa37f24beff3e6dafe0f18be7a1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00642_1.mhc.fa",
+      "status": "present",
+      "bytes": 5171582,
+      "sha256": "05977c0e59862f561da84aa0d48770f4e67af8310c067b1b2f4795a72bea6842"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00642_2.mhc.fa",
+      "status": "present",
+      "bytes": 5161780,
+      "sha256": "7f9e306b21349a8552e043730811f7d839652c1d180251b59bd3da883ce75458"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00658_1.mhc.fa",
+      "status": "present",
+      "bytes": 5137144,
+      "sha256": "265185db5fc0f142c874f9db9d57f5f80264f851b2ee886f5a43769999761fe4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00658_2.mhc.fa",
+      "status": "present",
+      "bytes": 5246969,
+      "sha256": "790addac7f494e34caa4ef904fabf77778b8f414ed59e9749fdcf19adcdb399b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00673_1.mhc.fa",
+      "status": "present",
+      "bytes": 5095550,
+      "sha256": "cf27190dca5d5dd6b8d794e740c9e7da162873db23c9559c0dbf4693f897976c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00673_2.mhc.fa",
+      "status": "present",
+      "bytes": 5126595,
+      "sha256": "505aed8b4150fd64bef60246cd66f6a574f8da0cfb3cda6737eb18d6702ae60d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00706_1.mhc.fa",
+      "status": "present",
+      "bytes": 5222025,
+      "sha256": "f4ef1c530590ede2e582836eafee349fc169ece9e3c48ea981bf7005fd5ce75d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00706_2.mhc.fa",
+      "status": "present",
+      "bytes": 5224723,
+      "sha256": "56e6d612937fe1a4e9b8bef0fe3b97461f7f8a4a6f7d0f56f282dcfb394d34b7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00733_1.mhc.fa",
+      "status": "present",
+      "bytes": 5146204,
+      "sha256": "bb059e7bcce660323fa4abb9dab01b8240a12bc769d3f2c5a8edf56e7a3a346e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00733_2.mhc.fa",
+      "status": "present",
+      "bytes": 5170311,
+      "sha256": "7b479f392696b9f66460a58f8fb648074a697137ce3e0fefa25feeca838a7377"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00735_1.mhc.fa",
+      "status": "present",
+      "bytes": 5291483,
+      "sha256": "f580f86a25d6dce68003f8d41c854760b763394b058156d420c03f04ccd16db1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00735_2.mhc.fa",
+      "status": "present",
+      "bytes": 5371650,
+      "sha256": "a044c251b7935bbb91c1621e1781beac59839882c058c3b6c5aae184caccebb7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00738_1.mhc.fa",
+      "status": "present",
+      "bytes": 5160742,
+      "sha256": "ada2a57b8d82badbc71c7e6c247b87ec299b0a548224281104b5413c62b3cc91"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00738_2.mhc.fa",
+      "status": "present",
+      "bytes": 5219045,
+      "sha256": "464d464c2c9b995bbff46f45e2ebb4caa99aae44819ad1a438dc5c4642db8b01"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00741_1.mhc.fa",
+      "status": "present",
+      "bytes": 5197229,
+      "sha256": "2554ad618c37bf47ae989c3539d36b411a14405439f618fec4961dac22b85d35"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG00741_2.mhc.fa",
+      "status": "present",
+      "bytes": 5256543,
+      "sha256": "f90774b3d1010ac174d3537d5244fe60f61fcc177071cbb30f92c5b98f1c88cf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01071_1.mhc.fa",
+      "status": "present",
+      "bytes": 5270196,
+      "sha256": "4612dd5961635b2d200acd6dd5857c3f0fb754507ad807dc448c0ded0a8df6fd"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01071_2.mhc.fa",
+      "status": "present",
+      "bytes": 5223941,
+      "sha256": "3f7754ae9cf0506fcbe9840ee7d8ac25cea21c373dc5a456c6cf966423b1be7c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01074_1.mhc.fa",
+      "status": "present",
+      "bytes": 5210867,
+      "sha256": "9b5bda10bd824a17a9169c899bf3c6564ccbb9279414c7fe887409c90acc2929"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01074_2.mhc.fa",
+      "status": "present",
+      "bytes": 5314575,
+      "sha256": "1290d829a03967f282185b1a80096edcd1bf4a0afdd15644f78df033d85f42ef"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01081_1.mhc.fa",
+      "status": "present",
+      "bytes": 5173218,
+      "sha256": "c606c82384a8eb432126a2c7cd41150fc95adc1b911c872c22ff07b661e95198"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01081_2.mhc.fa",
+      "status": "present",
+      "bytes": 5161742,
+      "sha256": "9596be5740ed4ca6778a829855ecf1464b51056ce18e40146cdcae90c239b5b5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01099_1.mhc.fa",
+      "status": "present",
+      "bytes": 5319436,
+      "sha256": "d9979ae6356c8dc775429e96bc38fec975af42b8d27119bdea3ae68139b5396a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01099_2.mhc.fa",
+      "status": "present",
+      "bytes": 5316014,
+      "sha256": "503c9ffdb87847851c9f8facec758c6859c1d542f680df03eee1756a36652e64"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01106_1.mhc.fa",
+      "status": "present",
+      "bytes": 5226034,
+      "sha256": "32748a5215c495f8d60b77b190c9821c80faaf109520a34529b030c19af77692"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01106_2.mhc.fa",
+      "status": "present",
+      "bytes": 5223171,
+      "sha256": "b8fa2a26506f9458bab98379e5944d1befcd712b1772cb987f291f17447beedf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01109_1.mhc.fa",
+      "status": "present",
+      "bytes": 5205418,
+      "sha256": "53df923abc867e6493a06fe33ffb161c7ce89f45e01a85cca23ae95aea2b9d39"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01109_2.mhc.fa",
+      "status": "present",
+      "bytes": 5200670,
+      "sha256": "354e98b556693f8ed0988bc2de7deb30f5427ee2ce89c060b478ca38bb0a0646"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01123_1.mhc.fa",
+      "status": "present",
+      "bytes": 5320878,
+      "sha256": "8f514c0309c6e42407de92066c0dea24a1c4387b9ece806402b3bf1ce61a3aa2"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01123_2.mhc.fa",
+      "status": "present",
+      "bytes": 5212040,
+      "sha256": "e36924e8fcb8d021ba08a903102b05059d15ea9899ea7819c6142b4fcea6acd0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01150_1.mhc.fa",
+      "status": "present",
+      "bytes": 5223066,
+      "sha256": "a253da1786513ea2ac5d53d0ac211d8906a1f3c667457007e702815b123ff9a7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01150_2.mhc.fa",
+      "status": "present",
+      "bytes": 5271796,
+      "sha256": "f8350d34c9ceac3988881f8b52c8d918c2731cb7b05ddcc33b9d05e5f00e90c6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01167_1.mhc.fa",
+      "status": "present",
+      "bytes": 5206273,
+      "sha256": "62791e308ae544797bc55919b713fe7df6b3bf1d6ed3a120155383fef863916c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01167_2.mhc.fa",
+      "status": "present",
+      "bytes": 5230012,
+      "sha256": "88f4651c0e8d24bfbb03cb01d92fc5ecd0a4da1817697bde3d4c55ae65015741"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01175_1.mhc.fa",
+      "status": "present",
+      "bytes": 5236046,
+      "sha256": "35b54f14ed056cc028503840c1a685294faa3440aa9aa97d7fcf168226a25e0b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01175_2.mhc.fa",
+      "status": "present",
+      "bytes": 5233055,
+      "sha256": "5987de792844310d0e072031f935be119170d134a412455a7d5f8a1ada43ee21"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01192_1.mhc.fa",
+      "status": "present",
+      "bytes": 5137340,
+      "sha256": "cf870801465ecfcbd3b2154f3f21672f9a6264e726ac7a74283ae0af06cb7a63"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01192_2.mhc.fa",
+      "status": "present",
+      "bytes": 5195410,
+      "sha256": "89320a91f920afc720e7b36c1340a9f13592567c7d7bf5c01b457e5014b20008"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01243_1.mhc.fa",
+      "status": "present",
+      "bytes": 5198268,
+      "sha256": "3f58e80c7b772840077510615f47488392e340fcc70414a887846938636caa31"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01243_2.mhc.fa",
+      "status": "present",
+      "bytes": 5288501,
+      "sha256": "5c0d2a6de01929ec2a81e91a8fe949df72986ccaf9ae4c0714a1125bae8f6b17"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01252_1.mhc.fa",
+      "status": "present",
+      "bytes": 5263636,
+      "sha256": "9fedcc3697ea27d71d83f8941f0e6c820fbc657a9646fdd00cbf5784b8a93ac5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01252_2.mhc.fa",
+      "status": "present",
+      "bytes": 5263180,
+      "sha256": "89bec1cd248df88f27a9234740c51ba702e28626d5829382eb6af82637cff692"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01255_1.mhc.fa",
+      "status": "present",
+      "bytes": 5215434,
+      "sha256": "2f8f3a54ac17d2718a30e0275addcb8003d97cc148d75ffaee8c0822a86d4161"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01255_2.mhc.fa",
+      "status": "present",
+      "bytes": 5240673,
+      "sha256": "0e89b0c28acdbb49c63fe9a98559ee21f7315a650c639c204868e6c2bcc23a30"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01258_1.mhc.fa",
+      "status": "present",
+      "bytes": 5196783,
+      "sha256": "aedc0b4fb68a1e7066359ad5c618b8b0f4956bfb43ff6aaf50e6bf947dc19e4f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01258_2.mhc.fa",
+      "status": "present",
+      "bytes": 5216323,
+      "sha256": "af1f3f186aa3e21c7e351e7f1825b91526691c313846b090c344dcf8c7b9ab45"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01261_1.mhc.fa",
+      "status": "present",
+      "bytes": 5318630,
+      "sha256": "0be003a9ee5587dd430fda10fb6271c91ad381b48b841031c89405477b4050db"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01261_2.mhc.fa",
+      "status": "present",
+      "bytes": 5180842,
+      "sha256": "db0bd3d26fa14ad66c8e0bcba64e4813a7f655bd53da9e347418bcee43586122"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01346_1.mhc.fa",
+      "status": "present",
+      "bytes": 5170244,
+      "sha256": "1e946366dc65ace4366f673762e48066b91e07795ea11108c5adc64ff8897868"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01346_2.mhc.fa",
+      "status": "present",
+      "bytes": 5209355,
+      "sha256": "a52e6ed918ccedfc7828476f604d74fcabaa0e71ec16865097b876ea74bedb6c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01358_1.mhc.fa",
+      "status": "present",
+      "bytes": 5262903,
+      "sha256": "4d36115e8f84739475c71dbff6940d33c59e33b1bf9819c02d3197a276bd4fbc"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01358_2.mhc.fa",
+      "status": "present",
+      "bytes": 5119793,
+      "sha256": "b34fed1d0e9b410a57471513d4a31c76303075a9d9f58cc8b0a327a958fa8c5e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01361_1.mhc.fa",
+      "status": "present",
+      "bytes": 5182494,
+      "sha256": "409e7df9fd739477a4d43640455a7e686cee8c58c6e69ccc9cca7fe649466ed1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01361_2.mhc.fa",
+      "status": "present",
+      "bytes": 5313410,
+      "sha256": "6ee7239d5a1ac26e5a349739d9067528f8b4bd6ad2b091372907d60a7a9c8d5d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01433_1.mhc.fa",
+      "status": "present",
+      "bytes": 5308029,
+      "sha256": "12179a22084207311aad6620dcf5027a784e92db3b8a179a67ac2bc5354a10cc"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01433_2.mhc.fa",
+      "status": "present",
+      "bytes": 5313144,
+      "sha256": "1fd1505f7c8c1e47a944833524e04d8c6b6e9dbe82a02ac85e39adba9985a9c7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01496_1.mhc.fa",
+      "status": "present",
+      "bytes": 5217447,
+      "sha256": "09e2af6a83670cbeae0f4cfd9bfba50472a9730bd4f1c8a07344ea7727cc2f8e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01496_2.mhc.fa",
+      "status": "present",
+      "bytes": 5292209,
+      "sha256": "22eefcdf3f7253ba046a67ea53ed3ec007904dfba860c7550b07d3d80cb0a7be"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01530_1.mhc.fa",
+      "status": "present",
+      "bytes": 5218708,
+      "sha256": "f2cff1b274d7cd8b51cd7efa28d6aa513f65cf1008bd7ef7c84050e034055929"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01530_2.mhc.fa",
+      "status": "present",
+      "bytes": 5258603,
+      "sha256": "f71c2e4c6441ad2c8d47294ff7847f915b6825b4ccecc2b4dc89b60c6fbc2ecb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01784_1.mhc.fa",
+      "status": "present",
+      "bytes": 5315678,
+      "sha256": "ef7101c84ce916f390628867e4f1668fdd8fb6b790d615f525789a961f18f457"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01784_2.mhc.fa",
+      "status": "present",
+      "bytes": 5253216,
+      "sha256": "95dcfe667f4babf52089d9e479626524ce8e7dc77742346cd4bc5fb10b86534b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01786_1.mhc.fa",
+      "status": "present",
+      "bytes": 5189504,
+      "sha256": "265b5a908af986d95d783dece154ac07f6fe4d3defd9f3f5070874a0d9ab031a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01786_2.mhc.fa",
+      "status": "present",
+      "bytes": 5200347,
+      "sha256": "ba5177664d1e2540b0e700aea9026c8242303593f75f29ad02147eca6bca41c6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01884_1.mhc.fa",
+      "status": "present",
+      "bytes": 5265722,
+      "sha256": "0babc5e48ee81cf22949a8bf470021a203d7199fff15a5811120b21e9f2a2dc9"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01884_2.mhc.fa",
+      "status": "present",
+      "bytes": 5306908,
+      "sha256": "1f5ab8b0a942f893c58dc1fdb1698468a230fed37debcd64bc147586455b845f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01891_1.mhc.fa",
+      "status": "present",
+      "bytes": 5290061,
+      "sha256": "c227ed2375cb74ca05f25a027135d11e597c2e709d8729e5c868224118b59c3a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01891_2.mhc.fa",
+      "status": "present",
+      "bytes": 5266951,
+      "sha256": "9f470530b0280666f7a405d5b0b3570ff4a2997e24d0000b9cf15da4bfc0b252"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01928_1.mhc.fa",
+      "status": "present",
+      "bytes": 5312942,
+      "sha256": "262bbc5f97b16aab303b1072f8f4f1b91f9f62db91f7a98cc4e025fb05fbe4c4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01928_2.mhc.fa",
+      "status": "present",
+      "bytes": 5316090,
+      "sha256": "754193d6ac82e8f9daf3179c9abf826d8274e7a8d93defc3062374a894994eb6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01934_1.mhc.fa",
+      "status": "present",
+      "bytes": 5225958,
+      "sha256": "bbf3402807705c46e3159f36ecefdec12ce2bd5b562aa5d84a2bcf04444f3c91"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01934_2.mhc.fa",
+      "status": "present",
+      "bytes": 5293211,
+      "sha256": "f1b01d7d78fd0c93936a723306eab901d91c25ce6626a6fbe5eb097adf38ee9a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01940_1.mhc.fa",
+      "status": "present",
+      "bytes": 5198534,
+      "sha256": "e3ea7242ef7024b69f7f6f1ee0d8aad37fe0c138810a0bfb7db7814543de0124"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01940_2.mhc.fa",
+      "status": "present",
+      "bytes": 5191593,
+      "sha256": "3922d64aa8293c923012ebf1cdb93923ceea080907fa4a4f425eb8b026106d9b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01943_1.mhc.fa",
+      "status": "present",
+      "bytes": 5311756,
+      "sha256": "ea7c27297335c6f3a67b8a45cd2800e4b6d70e18a6bdf69cc8b6a5c83feecf24"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01943_2.mhc.fa",
+      "status": "present",
+      "bytes": 5207827,
+      "sha256": "572d7b9f836aec997fddd3262f2e655695b5bc077bdd04d09427edebc0709d60"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01952_1.mhc.fa",
+      "status": "present",
+      "bytes": 5281462,
+      "sha256": "39faff4ecf94b017f31ce114f9a02e1980d5da4d3a13ccaa154b23d6d8ef5f2b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01952_2.mhc.fa",
+      "status": "present",
+      "bytes": 5298301,
+      "sha256": "70596dfcb6ad8e3d2fe06c7cd46ac58edca82ef759c9104104e20ce055a1759e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01960_1.mhc.fa",
+      "status": "present",
+      "bytes": 5319962,
+      "sha256": "63eaaaeaa8c81691a66cedfe848762eb746a9c668c68ab7980e98cdead7686f9"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01960_2.mhc.fa",
+      "status": "present",
+      "bytes": 5193788,
+      "sha256": "45197ed6fc8292e7581b1ca3e86e4b2c7769261d0322c92459d7a1a2e16d6096"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01969_1.mhc.fa",
+      "status": "present",
+      "bytes": 5312109,
+      "sha256": "4bd3701ad3152fa86502eec25406edb4805a5f03081bd9c38bbe779390c9e469"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01969_2.mhc.fa",
+      "status": "present",
+      "bytes": 5221307,
+      "sha256": "79b434feddc9e1f106f5c9884e63ae12e70bb2ebad9c1530a0794262a4eba854"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01975_1.mhc.fa",
+      "status": "present",
+      "bytes": 5411892,
+      "sha256": "9eb284320155dd363aa0ccf788178bbed70ed7a392b5bf498ddb8f1382b627f8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01975_2.mhc.fa",
+      "status": "present",
+      "bytes": 5293663,
+      "sha256": "ccf6cb452f39699a79a72dbc28f197da524f80effd00652f115682104af45276"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01978_1.mhc.fa",
+      "status": "present",
+      "bytes": 5282256,
+      "sha256": "2810f5c1abc402619ec194057c81c954a8c0ac093f5dcd65a749201f2a653ae6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01978_2.mhc.fa",
+      "status": "present",
+      "bytes": 5342185,
+      "sha256": "6c3ed1f1228a7945e6929876c0ff34f6d51feaae3b8fe0d4b607c396a975135a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01981_1.mhc.fa",
+      "status": "present",
+      "bytes": 5311254,
+      "sha256": "1a2978023d67a6960b990ddd71d1d564f1b764ebf83eddb6359a75f4720e3012"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01981_2.mhc.fa",
+      "status": "present",
+      "bytes": 5336598,
+      "sha256": "8b6a1d9c2d97cb95df0a0efc96dbb3c4a5578d67d6a5d9fa13af6d91b173824d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01993_1.mhc.fa",
+      "status": "present",
+      "bytes": 5274193,
+      "sha256": "abef00ae7b86e152c8176bdeaa86d88446a8dfb341623dca7fd4fd0704e198cf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG01993_2.mhc.fa",
+      "status": "present",
+      "bytes": 5227079,
+      "sha256": "bb64cfae4a3c77ff24ce5c31021dacf99599fe8bd75f8214d372c802ab71f4a0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02004_1.mhc.fa",
+      "status": "present",
+      "bytes": 5296641,
+      "sha256": "3e9b8c7afa0eddc57b6dafda1dcf7a359c796a68bb6d02b8cb4921cc5dee594d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02004_2.mhc.fa",
+      "status": "present",
+      "bytes": 5341250,
+      "sha256": "e793c5e36740b1936da328c38a1b3c9ddff6e7c315693a017732001dad8389d0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02015_1.mhc.fa",
+      "status": "present",
+      "bytes": 5248384,
+      "sha256": "5fe089dc835b17aebe669cf4e4b152f892d500d6959750e267ccdde5d9989f9c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02015_2.mhc.fa",
+      "status": "present",
+      "bytes": 5400410,
+      "sha256": "9683ca77a4679a5af247d3d30e47b07465810170a2c585e3e5df1840de156d75"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02027_1.mhc.fa",
+      "status": "present",
+      "bytes": 5228163,
+      "sha256": "2ef375b641bb893f615d6b83fbd6a8598d5f42d0ba2697670edcc35883303d33"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02027_2.mhc.fa",
+      "status": "present",
+      "bytes": 5196389,
+      "sha256": "d5f2d1cbdf2c03d82a2c29dabccd7c0c2392a662820f0ec1ea978ff084105fe1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02040_1.mhc.fa",
+      "status": "present",
+      "bytes": 5273226,
+      "sha256": "2ce0e0474ec024d2f0c81e750063458f12ccd9f1d31619399268e61b21e84e7e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02040_2.mhc.fa",
+      "status": "present",
+      "bytes": 5306436,
+      "sha256": "70eb3dae62cd9af89b70ddcda28ebd1ad148455368a574609018f569dc5b0b5c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02055_1.mhc.fa",
+      "status": "present",
+      "bytes": 5192169,
+      "sha256": "d2b5991f0ec5479084ca71c0c9321d7af2e0c06d10544a084b3ea9e5e052734f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02055_2.mhc.fa",
+      "status": "present",
+      "bytes": 5112091,
+      "sha256": "49c08d85c0a9e53bc46c6cee7b0f90979a593d7478076bff1575fd2b4a38aef5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02056_1.mhc.fa",
+      "status": "present",
+      "bytes": 5267470,
+      "sha256": "ceff6cd3ec8915c435861e5a1b4186555e0e2e55575ef4db605a903c6b07a197"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02056_2.mhc.fa",
+      "status": "present",
+      "bytes": 5172716,
+      "sha256": "56c5456135475380bc2ea7a32525f36a943fd43040d5f27fade0112821a5b348"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02071_1.mhc.fa",
+      "status": "present",
+      "bytes": 5198542,
+      "sha256": "772792be6d27c260e7453327fcce7cbfe668c7c8fddc52e2e7ddac74f477cc9d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02071_2.mhc.fa",
+      "status": "present",
+      "bytes": 5144777,
+      "sha256": "045d546828ce050582277a4ed5ecf943ed824756e943baf37e75f4c108380082"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02074_1.mhc.fa",
+      "status": "present",
+      "bytes": 5194976,
+      "sha256": "d7b304d5352f4ae37792559bfeda73c0ab5185a3a145d31cd24c2283b82383d0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02074_2.mhc.fa",
+      "status": "present",
+      "bytes": 5319635,
+      "sha256": "152d2489ca744581c233bba1804b5cb32502cfa421bcb9b2eb58d6ec9a402b2f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02080_1.mhc.fa",
+      "status": "present",
+      "bytes": 5232287,
+      "sha256": "eb5f5d072c22e404ad2c27246d5b35ea5567ca31133667ead0281efb564f0bab"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02080_2.mhc.fa",
+      "status": "present",
+      "bytes": 5311480,
+      "sha256": "8fb48aefa2a4b928ada4b75dae841bfb9a265cb66b291df3088dd42eb34b50a3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02083_1.mhc.fa",
+      "status": "present",
+      "bytes": 5230617,
+      "sha256": "fa98cdcdf9b832806b415e91b92ddf33f4c417e6d8583fa8c3b9f999c2da1c71"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02083_2.mhc.fa",
+      "status": "present",
+      "bytes": 5304693,
+      "sha256": "50bfc262de22e82fcacb6c279e981d4a4650b34486c81be0435162ddfeac4351"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02109_1.mhc.fa",
+      "status": "present",
+      "bytes": 5164883,
+      "sha256": "965a68d767ba65226d323f6c3888059fa1edb46605230fb3dcdbbc3c0e37d50b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02109_2.mhc.fa",
+      "status": "present",
+      "bytes": 5225127,
+      "sha256": "c75bf4bd847b424c7e6a0bafc1bcd5ff6d9f9306684ecb873c0dcf3f6a4534fb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02129_1.mhc.fa",
+      "status": "present",
+      "bytes": 5258932,
+      "sha256": "900bf5c7a83ea02ea58367b3991f9a01cc4e1cccac2121a324013a81c7608bd6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02129_2.mhc.fa",
+      "status": "present",
+      "bytes": 5191444,
+      "sha256": "f9608e3b29aca3e87a018b344b41511c296bce9fc6821f952f6304352e3518fc"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02132_1.mhc.fa",
+      "status": "present",
+      "bytes": 5313076,
+      "sha256": "c713ac9c50422d61cc91507ceb1077165185bf1f254339e33fd2478be0585508"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02132_2.mhc.fa",
+      "status": "present",
+      "bytes": 5387380,
+      "sha256": "75e8689d191fd738736645e508eb053dc506ea7f9c8582d01f2c25f0b25c05e7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02135_1.mhc.fa",
+      "status": "present",
+      "bytes": 5173557,
+      "sha256": "0c956fe22e3016b72a04535b580b2faf05143a95d17e46bd98b75393ff5944c1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02135_2.mhc.fa",
+      "status": "present",
+      "bytes": 5302989,
+      "sha256": "5aa59792b4c0d22458aef777e6e2fde3178798e4b5f43d2a985f6e5a5943f0ea"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02145_1.mhc.fa",
+      "status": "present",
+      "bytes": 5230642,
+      "sha256": "3a3f4779e576abc05aba523f474bce6cd22ed4c8c741589f52889908abaccf5d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02145_2.mhc.fa",
+      "status": "present",
+      "bytes": 5281591,
+      "sha256": "d410b3abdbe32ebe1b02230f5defb20de01a50b2ddc1733c77842fe0fb974753"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02148_1.mhc.fa",
+      "status": "present",
+      "bytes": 5190883,
+      "sha256": "3bc84d7e423f87e5d574883c26f119d7ef283b4774753893c0d244b81cea2586"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02148_2.mhc.fa",
+      "status": "present",
+      "bytes": 5172452,
+      "sha256": "13fcee7a71bad2351b5102c7d378339e0c7277664ab6dc739fd162fb3dba3ee6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02155_1.mhc.fa",
+      "status": "present",
+      "bytes": 5203185,
+      "sha256": "a574bc6c5dc05f7353b06f09b20db364fdb346d9c06f7ae1f47d408867df56d5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02155_2.mhc.fa",
+      "status": "present",
+      "bytes": 5293798,
+      "sha256": "a88212d352d9f2c46a75684a9941c235026fa0f98680a8956d6ddfbf00eaac6e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02165_1.mhc.fa",
+      "status": "present",
+      "bytes": 5201873,
+      "sha256": "62c0f73fd9e72aa3a7730f4d3788dbc4c3521b2cad05826eda49e49b5ff1a3f4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02165_2.mhc.fa",
+      "status": "present",
+      "bytes": 5194786,
+      "sha256": "33d9f4d13c7f95418ff16d665e21d95010e2c4076176b72def3b6f6fc0c00141"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02178_1.mhc.fa",
+      "status": "present",
+      "bytes": 5311979,
+      "sha256": "152d580dfde3b9c6dadeaec111438269af195fd4e03aafc63679ce57a77badeb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02178_2.mhc.fa",
+      "status": "present",
+      "bytes": 5260768,
+      "sha256": "d283a85e71d8618ff989512402bf5d8fef323abb607d89d92a71191293d78364"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02257_1.mhc.fa",
+      "status": "present",
+      "bytes": 5191325,
+      "sha256": "54b66ce438655408e3765ec980b7c698b8a110152b91bd911b8c7491b206592f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02257_2.mhc.fa",
+      "status": "present",
+      "bytes": 5195085,
+      "sha256": "18f3f3c9d025b88e31b6317207603efb04c474a6bd17b0b4b803b9435d5e03ba"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02258_1.mhc.fa",
+      "status": "present",
+      "bytes": 5228421,
+      "sha256": "3aac1d7e2ca14db27829cb8b1c89d596c0f91294de32738d6af18805d12fa89f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02258_2.mhc.fa",
+      "status": "present",
+      "bytes": 5187764,
+      "sha256": "0e97d219b1bb0505b80b99b7086414413928750c5e733976770672b8a22c782b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02273_1.mhc.fa",
+      "status": "present",
+      "bytes": 5312719,
+      "sha256": "4c7f3d0dd0c6e9b962de31d5c1e9d95c26ec66614721bc56783024e2b84e8f67"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02273_2.mhc.fa",
+      "status": "present",
+      "bytes": 5203206,
+      "sha256": "2bd452c06532fd66a6c6f42370fb2a7cfdbf26567ee238b89be5c94337599dc1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02280_1.mhc.fa",
+      "status": "present",
+      "bytes": 5283081,
+      "sha256": "55f085f29123a1dfa6f90ddec403fb580157c4e2e0c6b9c43383bb605a14fd06"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02280_2.mhc.fa",
+      "status": "present",
+      "bytes": 5098137,
+      "sha256": "1702ce9384259f021a94a0ade50d3f42229c73c9162fad2e12cdf6cb757676d3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02293_1.mhc.fa",
+      "status": "present",
+      "bytes": 5373793,
+      "sha256": "e023ad5807207a894b42efe98df49c94a2df609cb4ea04ed9d99507619da7aeb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02293_2.mhc.fa",
+      "status": "present",
+      "bytes": 5300554,
+      "sha256": "d99f7d5e70e74a0b03c44db4427bda544901111c3e1f57c30ce9cb58c9fb5001"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02300_1.mhc.fa",
+      "status": "present",
+      "bytes": 5313714,
+      "sha256": "34ee17bd1901ffa4fa66a9d911228f18b8c4503e8a9662f10c6b6b5506692669"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02300_2.mhc.fa",
+      "status": "present",
+      "bytes": 5206194,
+      "sha256": "ca82d34b59a8472b7f8e21bdb49bebea9657b0af958ea6e4af93597c2d4dd363"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02391_1.mhc.fa",
+      "status": "present",
+      "bytes": 5233828,
+      "sha256": "14c44fd3caf6131ba7a308b3c99344a84cf8c2ca8927e8942c98a7de9eed77c6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02391_2.mhc.fa",
+      "status": "present",
+      "bytes": 5241118,
+      "sha256": "285a7f26d65d2b8afcb781d83fc165f70b8afd29cf11480770d9286d6bd77cc0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02392_1.mhc.fa",
+      "status": "present",
+      "bytes": 5291681,
+      "sha256": "c85861ae0b526c8a85c33197adf8a480e0906ff0104d37e2cf10214322c38679"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02392_2.mhc.fa",
+      "status": "present",
+      "bytes": 5171351,
+      "sha256": "19a62b56b86ca5788db620f07378b572f4fa4a79da1a48334278459a4bbfd223"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02451_1.mhc.fa",
+      "status": "present",
+      "bytes": 5143241,
+      "sha256": "9d92ac53ad0b69ee1e921da463166cb564cea8ea4a84b2c3015e07459dc7e582"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02451_2.mhc.fa",
+      "status": "present",
+      "bytes": 5219320,
+      "sha256": "b78c0922b5c6fc84f491832a7ebe75d0747ca6e58ae05153655f5b7126b17dcf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02486_1.mhc.fa",
+      "status": "present",
+      "bytes": 5222374,
+      "sha256": "46297bdc5c93b77622c60ad16526cb6d50e83b031e9d29a172beda0bd8ccee0f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02486_2.mhc.fa",
+      "status": "present",
+      "bytes": 5259284,
+      "sha256": "5a37962603004c09c19c19e8792cee37a4250a0fe79fd759867f29f6bc0a380a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02514_1.mhc.fa",
+      "status": "present",
+      "bytes": 5403848,
+      "sha256": "d18640b989850c51aa5fd6c783af285ebf94bec8f416b8d680c6dd76979a19f3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02514_2.mhc.fa",
+      "status": "present",
+      "bytes": 5228152,
+      "sha256": "a5e525559d74b569ce45a4338b968b7b730bf1d8dff89f3b521ec57615cd4c93"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02523_1.mhc.fa",
+      "status": "present",
+      "bytes": 5212420,
+      "sha256": "7c02e082fb33ffdb7e4673ac82a8351b68ee152ff5806295d6ae0e1adf1c96be"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02523_2.mhc.fa",
+      "status": "present",
+      "bytes": 5304589,
+      "sha256": "bb95c90ba046a69ef0a3daa2508cf70601706466ca6be34643669070fecdf92a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02559_1.mhc.fa",
+      "status": "present",
+      "bytes": 5308605,
+      "sha256": "108bc4868af6b439124fc6e99c7ce9f8b6442556cdb97efdd751bd16220af0ee"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02559_2.mhc.fa",
+      "status": "present",
+      "bytes": 5217018,
+      "sha256": "8009bb3c3cefcf9262ca99ca254e1dbeff9887dfe2d3daf1ae737a60e34437b0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02572_1.mhc.fa",
+      "status": "present",
+      "bytes": 5256413,
+      "sha256": "a09649f433a39e28f213802b33c31bfa7990762dafb9b32616a20dd499d2f77f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02572_2.mhc.fa",
+      "status": "present",
+      "bytes": 5164070,
+      "sha256": "449ce229cdca502a3d0a7d69d6a71aabe7c9e7acef0740e4424e844d6498ccc2"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02583_1.mhc.fa",
+      "status": "present",
+      "bytes": 5274698,
+      "sha256": "f04c6e4a4c6fa4d7d357e58ef6928a18c07fbf75ea3fe305f458601f44ee47fb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02583_2.mhc.fa",
+      "status": "present",
+      "bytes": 5169697,
+      "sha256": "aad07d3a9f9878a8fdff09480365328176a26285999e4047b0ae0af97e2d9b69"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02602_1.mhc.fa",
+      "status": "present",
+      "bytes": 5310668,
+      "sha256": "10c636e337b7f087cb3ce31f3d8f474e8c5ac65d3c0eb5a5d05a146c2f2641ce"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02602_2.mhc.fa",
+      "status": "present",
+      "bytes": 5192630,
+      "sha256": "5766729288a97aa8acf4535f0c0621a2483e341a58f5e5b8acab3691dbd27bb0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02615_1.mhc.fa",
+      "status": "present",
+      "bytes": 5277935,
+      "sha256": "4e7d631067efb742a8a6eedf19129a24d070f7b04ceecb6d4f573abdd74a2b0f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02615_2.mhc.fa",
+      "status": "present",
+      "bytes": 5130766,
+      "sha256": "d5e7ecfe6288ebe38143cd30072689bb7b3294e08e6903c34afe6a7d8421b0a0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02622_1.mhc.fa",
+      "status": "present",
+      "bytes": 5409480,
+      "sha256": "e85e247c11cf577d0aa76ddb97ed4ee498753e031356adb2cff2aa7c7da70cc3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02622_2.mhc.fa",
+      "status": "present",
+      "bytes": 5281487,
+      "sha256": "d744a177df2cb576549d0989028f7d770cf70aa67b055605d8bd6c8712b08ebb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02630_1.mhc.fa",
+      "status": "present",
+      "bytes": 5305620,
+      "sha256": "15de61fee0ba7b49dbde6eb68ef629a2409ecfc2bbf54feae4326e956a95e5ea"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02630_2.mhc.fa",
+      "status": "present",
+      "bytes": 5316716,
+      "sha256": "e9b48524d3d469a6892568e5e05a53fc6099edfa35af819b9dd0d1b6299591dc"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02647_1.mhc.fa",
+      "status": "present",
+      "bytes": 5198138,
+      "sha256": "547fd42982262c11ebdc79ab3b4801da3cccc76478386b2cc23b155f4c3d922e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02647_2.mhc.fa",
+      "status": "present",
+      "bytes": 5239307,
+      "sha256": "283f05fe2c8d5856194e9d3d5c21216eec6f291ee5201e8d9e24f28afeef293f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02668_1.mhc.fa",
+      "status": "present",
+      "bytes": 5205870,
+      "sha256": "bda745d634309c746a1064bd7e0738dcc41e76857c60f0e3a0d0e8e7cdc84350"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02668_2.mhc.fa",
+      "status": "present",
+      "bytes": 5196932,
+      "sha256": "77ae3ccf5728086ace7a82e1ac21117eb17f1d8687637d646bea09d13e568cda"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02698_1.mhc.fa",
+      "status": "present",
+      "bytes": 5242117,
+      "sha256": "01422bdfbf16fa038c01c2c3fe6ece067a078008f4a0143941c9c1cf490b553a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02698_2.mhc.fa",
+      "status": "present",
+      "bytes": 5199904,
+      "sha256": "d749ebd3f3cd6525723ea5365910934a447a4e552f36f33f7dd5704ec4cadd91"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02717_1.mhc.fa",
+      "status": "present",
+      "bytes": 5219421,
+      "sha256": "15fc411ad2d5556c83fc695fb63d580e376a1cb8bd6fc09298538da414757e5a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02717_2.mhc.fa",
+      "status": "present",
+      "bytes": 5332621,
+      "sha256": "9e4043857a25e261dfb0423adaddad5b38d4850ffff39357502145566b860558"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02723_1.mhc.fa",
+      "status": "present",
+      "bytes": 5189450,
+      "sha256": "09903f09597009301fcea19dbb81ec7a85fc3a0458443a262503bdf5eeb83d8f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02723_2.mhc.fa",
+      "status": "present",
+      "bytes": 5378658,
+      "sha256": "08306eef133e2a088bd3a3a14da2af63f2f2be6ab42d8180c8ea886a955142e7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02735_1.mhc.fa",
+      "status": "present",
+      "bytes": 5321512,
+      "sha256": "9e4621592fd81ccd384174f48b3c3616ca404e3801c243348640caa5a9aa83e3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02735_2.mhc.fa",
+      "status": "present",
+      "bytes": 5232830,
+      "sha256": "6e9532b6a4b82cece77d2ec678f270db83e3ddde57ce7b4adaedda0f8bdc1569"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02738_1.mhc.fa",
+      "status": "present",
+      "bytes": 5186418,
+      "sha256": "af4f6b824afb8fc6f89390920ffdb46014a78c3c57d59fdaa0d070f92f02ac57"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02738_2.mhc.fa",
+      "status": "present",
+      "bytes": 5150119,
+      "sha256": "e316ad9df8d0b99df7d975ef9da9e9b4ae8b49fd6ffd95c340dcc2d91dca14ee"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02809_1.mhc.fa",
+      "status": "present",
+      "bytes": 5188681,
+      "sha256": "cb0a4192c96bb9d940e30f94056f2a4a14a962fbcb18391beb42040f31d42704"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02809_2.mhc.fa",
+      "status": "present",
+      "bytes": 5302808,
+      "sha256": "f0ca5d352e15036053305c3b384a31022c214276c58c895a462adbdfcaa0c252"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02818_1.mhc.fa",
+      "status": "present",
+      "bytes": 5284964,
+      "sha256": "18cf0f004b14c56b4c0505ec9d2f2ddb6613e0883674847543579a308ce020ca"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02818_2.mhc.fa",
+      "status": "present",
+      "bytes": 5190133,
+      "sha256": "2cafa771ae2fda7d82501f83404c1b1bd20aa1aa8f7764b9a44f64444305c4d4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02841_1.mhc.fa",
+      "status": "present",
+      "bytes": 5193480,
+      "sha256": "8d3f18ce0ca869f9524ed947fa3d05cd982bcaa1478565eddb5e6b7ff9899b1b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02841_2.mhc.fa",
+      "status": "present",
+      "bytes": 5365182,
+      "sha256": "6728bf75f09be4d9a9ba1034c9a4e6fbc36d9b6dc894cf62b82f80873f2782e1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02886_1.mhc.fa",
+      "status": "present",
+      "bytes": 5194853,
+      "sha256": "e5ca4a4f7e8a50e6e14217e56a8fd8bf7762943a629abbef139d4873128c1fb4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02886_2.mhc.fa",
+      "status": "present",
+      "bytes": 5362394,
+      "sha256": "93f8268d9cceb22ead3c0e032cd614861682b5924e07a3c00d20aab485f7f48a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02922_1.mhc.fa",
+      "status": "present",
+      "bytes": 5208431,
+      "sha256": "44745e658c5c75041f8fba9601e39418262ae4e439c7c38d73145e844ca3c0e3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02922_2.mhc.fa",
+      "status": "present",
+      "bytes": 5200658,
+      "sha256": "ecb026d4c5a5035748c462994869cbba260731a68e41156129caa2ec02282360"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02965_1.mhc.fa",
+      "status": "present",
+      "bytes": 5267225,
+      "sha256": "e7c4494d2c21c78d2b01510967b74f507b89d1281ea5e91af43ef8f088722b9a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02965_2.mhc.fa",
+      "status": "present",
+      "bytes": 5128518,
+      "sha256": "47517e961dcaff2055bade6e5e9e6952cd3fe9b0b955a8a7f794a4233730e4bf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02976_1.mhc.fa",
+      "status": "present",
+      "bytes": 5201794,
+      "sha256": "18971225c61f73ba89fde1322805383bda80ca0d9cb61b387c4175b104e1ba70"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02976_2.mhc.fa",
+      "status": "present",
+      "bytes": 5215619,
+      "sha256": "e8cf7ece7698971fa51517f29894b4192eadc855032ca7eeae829382b7ed7a64"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02984_1.mhc.fa",
+      "status": "present",
+      "bytes": 5194375,
+      "sha256": "cca22c119851e89a48dfe23ab6ac95a26520765edbd5a1084904999e5048ca53"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG02984_2.mhc.fa",
+      "status": "present",
+      "bytes": 5211314,
+      "sha256": "2e5bae5077568d0141202284fb024e0a4f2909c758b990bc27e80b129b4943b6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03017_1.mhc.fa",
+      "status": "present",
+      "bytes": 5050991,
+      "sha256": "98bb9ca7699dec4a0d3f25324e3a40111a8d7b10ea84d8e25caaf90f19ef5281"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03017_2.mhc.fa",
+      "status": "present",
+      "bytes": 5195701,
+      "sha256": "b3e1b200bba04240184661a68d10fa0d2de1582fb92f4537f2ea27f382eb8e23"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03041_1.mhc.fa",
+      "status": "present",
+      "bytes": 5206072,
+      "sha256": "48021d5ebcb8ccf87e90e1c59e798ccea6168d3e274c2e91ee548d4b317717e8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03041_2.mhc.fa",
+      "status": "present",
+      "bytes": 5221210,
+      "sha256": "b7ec31b78b4d4f53ff4989686bccc48c42bb88ee94d82abd87aec1e13d0f8f75"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03050_1.mhc.fa",
+      "status": "present",
+      "bytes": 5248819,
+      "sha256": "be72f1d17b72327a81cce2be68e13cd98a4992e19de3ba5e0da63c63e6457f9a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03050_2.mhc.fa",
+      "status": "present",
+      "bytes": 5263521,
+      "sha256": "82b54e89ecb164be4dd77ad366bf410f37ffc3c6fa395b696a8296e11390b98e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03098_1.mhc.fa",
+      "status": "present",
+      "bytes": 5393953,
+      "sha256": "13fa6fdc95e7cd79766344398fbcbbe8dde71bff755e972c51c011ccd9301501"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03098_2.mhc.fa",
+      "status": "present",
+      "bytes": 5273621,
+      "sha256": "c5d025605a1518ec1d5345a19ae757cf5ac615431a32f3d885e4a88c0178f679"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03130_1.mhc.fa",
+      "status": "present",
+      "bytes": 5193205,
+      "sha256": "d8bd3625b094fddc0f7af62847d1822b97cf9802e0607ed0988df923d551cc27"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03130_2.mhc.fa",
+      "status": "present",
+      "bytes": 5265911,
+      "sha256": "f981390db18b2440429c0c856246c03a549692151bf748487ba6a75a41968263"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03139_1.mhc.fa",
+      "status": "present",
+      "bytes": 5105373,
+      "sha256": "1456c83f926babd18026cc3add145c6607dd9d51aeddb2ab1f0127ffca969c0f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03139_2.mhc.fa",
+      "status": "present",
+      "bytes": 5199078,
+      "sha256": "2b6fc18dbb6ad31575a51f175a486f5274bea6638ae981e891cacafc164261e1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03195_1.mhc.fa",
+      "status": "present",
+      "bytes": 5193338,
+      "sha256": "269f482445f8b55be855a75fda5ce5d32337539c6ffbdc723b9aac3a486b0b3a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03195_2.mhc.fa",
+      "status": "present",
+      "bytes": 5219520,
+      "sha256": "bda2845e3b4146b5f76591eeaaffab2f10122d012b9af09c39707d89b8816871"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03209_1.mhc.fa",
+      "status": "present",
+      "bytes": 5305495,
+      "sha256": "c8ed5fc8c9a46e40dd531553d55b06f205bafca5994443186e1b308c3c049316"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03209_2.mhc.fa",
+      "status": "present",
+      "bytes": 5137898,
+      "sha256": "6ce38944e20120f6a9d57d96fa46c33995df9459fb2bdf7b05a1c6ca53261299"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03225_1.mhc.fa",
+      "status": "present",
+      "bytes": 5197506,
+      "sha256": "d384d6a19528164cc34503748cb4c25dbd94d9e3a3da94dc426ed1eed2d2d0c3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03225_2.mhc.fa",
+      "status": "present",
+      "bytes": 5269840,
+      "sha256": "91d9ed9f50a8995803f92d3385b9ad6bad605e5115e7b617165907a7a9d490bb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03239_1.mhc.fa",
+      "status": "present",
+      "bytes": 5228197,
+      "sha256": "da3da552890e42c4e48b354194bdd8768dbb58c05d88ddf51b5afb2d3ecb984d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03239_2.mhc.fa",
+      "status": "present",
+      "bytes": 5339709,
+      "sha256": "cec7ab96f1d8cae6aca428fad33e34c2456b96dc05e62c4a29e54e45d3a2f904"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03270_1.mhc.fa",
+      "status": "present",
+      "bytes": 5227189,
+      "sha256": "79347b7d7270f1ad2d0c6b0822f05df5c2a266afb7b8c07afdeb1a06634c5f58"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03270_2.mhc.fa",
+      "status": "present",
+      "bytes": 5202717,
+      "sha256": "fe1b54e5b71bfd4ebf8a0b1e63e62a845387345dee364fe4f9e54bb776639ab2"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03369_1.mhc.fa",
+      "status": "present",
+      "bytes": 5212075,
+      "sha256": "38f5897e83f57b6143d511211cee6999c4c713645b235165f872e819bd7b1d28"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03369_2.mhc.fa",
+      "status": "present",
+      "bytes": 5279000,
+      "sha256": "db1ee26a19b2af20c72473cc1eaba8172da668556e06c98ab0049cdacaaf9618"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03453_1.mhc.fa",
+      "status": "present",
+      "bytes": 5273421,
+      "sha256": "798bedc99a9720257733650c87d446796d895f70bb258118374dec4927c81069"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03453_2.mhc.fa",
+      "status": "present",
+      "bytes": 5160035,
+      "sha256": "3b59944a4c3f3eaa0cbdfcf213c289224dd2751ac929ba1a0dee29cc19d5d2f3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03470_1.mhc.fa",
+      "status": "present",
+      "bytes": 5326945,
+      "sha256": "e5b4f11734565d4e88ee202c20430d579c05ed3949fc76bde4f4980f68b38d2d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03470_2.mhc.fa",
+      "status": "present",
+      "bytes": 5157178,
+      "sha256": "48ddf74993814bc65ded9d6cca6d3c55c648bf02da8827a42b18a4ce7274a290"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03471_1.mhc.fa",
+      "status": "present",
+      "bytes": 5280765,
+      "sha256": "3ab09eba2a17e8de2f3cd7c3097f33d64461c6d6930f3de7bd8f25f82c67a417"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03471_2.mhc.fa",
+      "status": "present",
+      "bytes": 5259361,
+      "sha256": "82184e60e0285354529f92dc0044173e3739b320ba3608fa54ffaf60c3c0ba8f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03486_1.mhc.fa",
+      "status": "present",
+      "bytes": 5190356,
+      "sha256": "980ab9f4174b591743d6c7c26e13af14844bac62955b285511b31c3f3a15716c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03486_2.mhc.fa",
+      "status": "present",
+      "bytes": 5200514,
+      "sha256": "d6fc5ae938a204dfdfac251ae4378f0264e54172e536d4f9a5eee7782168e4cb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03516_1.mhc.fa",
+      "status": "present",
+      "bytes": 5202772,
+      "sha256": "5d936282b3c6920af714b374cf2868872ea60aa68a78630478665d66258f19a0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03516_2.mhc.fa",
+      "status": "present",
+      "bytes": 5282921,
+      "sha256": "dcffce6e7e081ff12e6bf19be0120434d0f81d546c13f991cec1db00a20f10c7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03521_1.mhc.fa",
+      "status": "present",
+      "bytes": 5188364,
+      "sha256": "0a2cd7b4100a6077c947bf8d74425cb61d795d1db560f7973c8958b491e20025"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03521_2.mhc.fa",
+      "status": "present",
+      "bytes": 5203989,
+      "sha256": "ef2895cc0a235ce3c699005b6db0a5da27dcd72ab5dadd7487010d1135dbe386"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03540_1.mhc.fa",
+      "status": "present",
+      "bytes": 5303078,
+      "sha256": "5c81d937a7a1ba86d6564efe50bc418176a7f0f3b7685832d2af8476dd760d16"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03540_2.mhc.fa",
+      "status": "present",
+      "bytes": 5155047,
+      "sha256": "5a68b62593a9746e0d2144426d3ffee113fb629d7767e450ca634d2e1c4be1ef"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03579_1.mhc.fa",
+      "status": "present",
+      "bytes": 5149685,
+      "sha256": "8c36cfdd24f7e182a9e42b48c99273dd9469e4e612cf4a4139cec1ba4c81957b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03579_2.mhc.fa",
+      "status": "present",
+      "bytes": 5253292,
+      "sha256": "5f614ada40a55b5fb6e01c9e0725b10d9067227f646e9efeb79b2d04e50849a2"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03583_1.mhc.fa",
+      "status": "present",
+      "bytes": 5401939,
+      "sha256": "3cf38873f6ccd4273a8b49774690a7925997d21e991f0d10ca0e7ecdf4b8f3a6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03583_2.mhc.fa",
+      "status": "present",
+      "bytes": 5135255,
+      "sha256": "5c90800e99458c60489ad5a6ce18e6579093e8b063d8edd2f157f3aa78779feb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03654_1.mhc.fa",
+      "status": "present",
+      "bytes": 5207771,
+      "sha256": "05f65112e1178fc8f6ac846cf1348fb5d816814bb463fcf56922688749fe3d6e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03654_2.mhc.fa",
+      "status": "present",
+      "bytes": 5189532,
+      "sha256": "486000e1a50d80302f4c805fffe9291ce3dbd5bb56343c7c83f1934fa66b1a60"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03669_1.mhc.fa",
+      "status": "present",
+      "bytes": 5246335,
+      "sha256": "fbd06e39d0d154cef97ec5bea7d73f238f82f1b1b0d6eb7fed81529f3e811bf9"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03669_2.mhc.fa",
+      "status": "present",
+      "bytes": 5294604,
+      "sha256": "431b684334200b4626ad3a676b250eeb975b650f91557a36c04b0758ed64a9a1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03688_1.mhc.fa",
+      "status": "present",
+      "bytes": 5311993,
+      "sha256": "084ab3c3497826205efbbadd14184ef48083e1d56ae88e89979e060cf624a4dd"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03688_2.mhc.fa",
+      "status": "present",
+      "bytes": 5227205,
+      "sha256": "96216238fd2ab6cfd9646118421d80ff6da5f32386b0b05d654606260615839d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03704_1.mhc.fa",
+      "status": "present",
+      "bytes": 5223296,
+      "sha256": "45911c9540ecb95872bd682323863ac9c2dbc9b1bdf6cf5ed74ae29a6533e985"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03704_2.mhc.fa",
+      "status": "present",
+      "bytes": 5311507,
+      "sha256": "7cbd22596b26c15df1f164995427ab89fd6a9025dd837c113dfea86257946396"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03710_1.mhc.fa",
+      "status": "present",
+      "bytes": 5323450,
+      "sha256": "6f8bc2b4c945e31904933fea7486ee26d0d88632513051ab8ef2864966423b8e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03710_2.mhc.fa",
+      "status": "present",
+      "bytes": 5204475,
+      "sha256": "bd29fc71c56fe294e5f58321b2751a84edd8811ab8fc6b081a85ff6bc5c0e78b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03742_1.mhc.fa",
+      "status": "present",
+      "bytes": 5308902,
+      "sha256": "a278761fe5010f038e7f5e1bd3454c0c72735b947d6833532f974c42fb5fc560"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03742_2.mhc.fa",
+      "status": "present",
+      "bytes": 5195617,
+      "sha256": "d4099a96a4539f1c00d2f6dbdfb22d676d5cf147991be861d272ce450e65b6d0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03784_1.mhc.fa",
+      "status": "present",
+      "bytes": 5202454,
+      "sha256": "08794345f9854376fcbc303bad4e58d23fbdea487078984a0ca8e46550f1453b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03784_2.mhc.fa",
+      "status": "present",
+      "bytes": 5232110,
+      "sha256": "8910be28ec28751a480414fca74e1faa1c7aa9619c2b6d49567b879da6f31269"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03804_1.mhc.fa",
+      "status": "present",
+      "bytes": 5246043,
+      "sha256": "773db4249ddc424df448975aa4d37e3ce619adeecc70547bb768ca017ece81c4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03804_2.mhc.fa",
+      "status": "present",
+      "bytes": 5168753,
+      "sha256": "28e7b0a5b16c9e670ba3ae336d838d1878ac0b1736d3641f45930171f14557ba"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03816_1.mhc.fa",
+      "status": "present",
+      "bytes": 5353044,
+      "sha256": "43a749ff4aaaf51d6c8ac9b7aa316f74eee7a35858c4f9d5b235d397f54d9ca6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03816_2.mhc.fa",
+      "status": "present",
+      "bytes": 5294996,
+      "sha256": "cbc81f5044d4838e1073716354a3caa662c96657f625631db243cb1bf53c78e7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03831_1.mhc.fa",
+      "status": "present",
+      "bytes": 5293069,
+      "sha256": "192a062997af45dbe73727e599cb72c6b6434882e103185779cbc6620a4e9d6b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03831_2.mhc.fa",
+      "status": "present",
+      "bytes": 5340326,
+      "sha256": "ca8865d553ccaae75c5f192d0de6890e4470f3444216ad21910d99cc8deb0558"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03834_1.mhc.fa",
+      "status": "present",
+      "bytes": 5374400,
+      "sha256": "e6e8dee08aca1ea636a7c8c3ed8d3d9ad15e5a0cd245b626b89ebcec94ebd8ab"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03834_2.mhc.fa",
+      "status": "present",
+      "bytes": 5207073,
+      "sha256": "31e9b7d375d28850e7f8a386654299fdad722a4a4243ff801d0c639e726c74e6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03874_1.mhc.fa",
+      "status": "present",
+      "bytes": 5218852,
+      "sha256": "85ca46a2113af0935d81637dd9045e3309fd711f2ec18a876f17bdd18b61cfab"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03874_2.mhc.fa",
+      "status": "present",
+      "bytes": 5311091,
+      "sha256": "86736c7758c501da92d2c3c1abef48b71f159e813748b2df6bea07b58e20c7e0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03927_1.mhc.fa",
+      "status": "present",
+      "bytes": 5149444,
+      "sha256": "799e0936f6eb93685b7513553ffe3b926db9a52bda95043fc2e0e3d3b8462e4e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03927_2.mhc.fa",
+      "status": "present",
+      "bytes": 5381433,
+      "sha256": "95dffa11e502bb24caa37b8274c849a5769ff2f90fac066e90a50ff0a050665e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03942_1.mhc.fa",
+      "status": "present",
+      "bytes": 5220583,
+      "sha256": "6069e1adb5c4bb1c6595645dd26f8411fe16e526e7e3ff41c67264d05bbbd5b0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG03942_2.mhc.fa",
+      "status": "present",
+      "bytes": 5239319,
+      "sha256": "8f38918d2e5bf0f677e4355b17828d72fbd13efb7af8e5c7076680e1e4e6effb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04115_1.mhc.fa",
+      "status": "present",
+      "bytes": 5212475,
+      "sha256": "7ab90182380e3224a79a14c6f09a4b5770ff3d01bac9ba6c1d9b088a754cba3d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04115_2.mhc.fa",
+      "status": "present",
+      "bytes": 5312769,
+      "sha256": "148657953348f329af46301b4756e6f14e80ac302dc962db0716043b0ea3d7b6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04157_1.mhc.fa",
+      "status": "present",
+      "bytes": 5403856,
+      "sha256": "16c9b784e78ad2fcf64b1d8b3d027c027029821d83b70c8d94c26bd785b0462f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04157_2.mhc.fa",
+      "status": "present",
+      "bytes": 5197572,
+      "sha256": "72a70b784b1a4b98ec89e356f2a838a7ff9ce86ee0ed106042d5e72f929b71cf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04160_1.mhc.fa",
+      "status": "present",
+      "bytes": 5273026,
+      "sha256": "e3ce8bd3e42035b6f8a20e7c788f98ce0b87b9f4209cbba4e170ae22c40f8478"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04160_2.mhc.fa",
+      "status": "present",
+      "bytes": 5287327,
+      "sha256": "8c5b3ca2830daab511cd8f462e271626bc559b22f68b4da8668392ac06e26baa"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04184_1.mhc.fa",
+      "status": "present",
+      "bytes": 5310905,
+      "sha256": "d9f32d7746cb88b40b317d988f28ab7e3dc6251296f10a1bcf010a0f49320a48"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04184_2.mhc.fa",
+      "status": "present",
+      "bytes": 5403572,
+      "sha256": "2cf4b290bf2cab26917d2cbd06f528536174542bf0cf56b99397081758ba5a3c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04187_1.mhc.fa",
+      "status": "present",
+      "bytes": 5258443,
+      "sha256": "d9922f813f250160d5c8f555553e1b1d2a10d811bb02f4b25d7e213057865d4e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04187_2.mhc.fa",
+      "status": "present",
+      "bytes": 5196748,
+      "sha256": "8cf0b2b67292e72cf6c357d64aea6aadcc7b5f732361e48c9616af398511b1b1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04199_1.mhc.fa",
+      "status": "present",
+      "bytes": 5351702,
+      "sha256": "7689405711d5953b712403b0811cce17ba44a857f9d4f66a5b98831bd5f3e496"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04199_2.mhc.fa",
+      "status": "present",
+      "bytes": 5235761,
+      "sha256": "9e4dfe0959704d0f0b70f6f22b2315b80e31bd6399070110cd23834dd3f9a100"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04204_1.mhc.fa",
+      "status": "present",
+      "bytes": 5198201,
+      "sha256": "51f512307aa854f782af9662bbf5b0dde57cd6ba69653dc0624df68e6be47b80"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04204_2.mhc.fa",
+      "status": "present",
+      "bytes": 5312070,
+      "sha256": "f1a9e521baf139ac8223cae278d4586a7fb4878c167c06685907d85c9dedb64f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04228_1.mhc.fa",
+      "status": "present",
+      "bytes": 5224251,
+      "sha256": "1c69fb2bfc8452c9bcdb5e47ff785708ee160fd7f9f34659942a33081fdc48c5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG04228_2.mhc.fa",
+      "status": "present",
+      "bytes": 5221398,
+      "sha256": "c75da9d671c83b2c75550cfb300227ef82fafbd2c80a882ba49d81c084953c78"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG06807_1.mhc.fa",
+      "status": "present",
+      "bytes": 5220358,
+      "sha256": "0a8cbd84a8897ed0019133ad6f6748b3b683aeccebd3b0c72a9f7561f7b04a12"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HG06807_2.mhc.fa",
+      "status": "present",
+      "bytes": 5255011,
+      "sha256": "c102b13f6b66418f7ff908dc81ca5a20b23ee895908e781a90fe6e35bae2098d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032007D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5216607,
+      "sha256": "b3aba8079f95f0e104eb86b0228972400285603e6eedd7c862460344e068370a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032007D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5180456,
+      "sha256": "15c64ab021f7652b83700dee05dd31762867b9a5bb4c9e593f67d3b55dba04ce"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032018D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5142125,
+      "sha256": "464eddf2edca255615c339533009309e5765515ad5625e21508e2e5454b29912"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032018D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5321401,
+      "sha256": "b3a5e3062c4de25afd6eb40295bbc497da24ee17d5d3dbcb6faf53f7a921f6dc"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032069D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5197101,
+      "sha256": "cee98f21050a969084a1f79bafedaaecae16891286bde56635642cc9a2dad762"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032069D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5175639,
+      "sha256": "3e1c6631182e5f8fe83f86c95fcd25ebefe91b66db6f36ce91f69e53648c8354"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032097D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5251616,
+      "sha256": "9ce9db774c344221c293d9b54a23abb004fdd17bbc431ae209a479a464ef3061"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032097D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5219216,
+      "sha256": "2bc5fde4b5cd53746074a9b8adf10009ea0e5d43828229eed9300a8d650ac8f1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032103D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5203437,
+      "sha256": "20e27d928ebb46fbe7cb2e4b7bfb58f0b29a4bfd53a816b6af21a5aaf43ac7c0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032103D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5370881,
+      "sha256": "f9672ab6e3644d655a5894b8f9ea48c04749fbbf53d69162b37a4642e2543690"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032161D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5208726,
+      "sha256": "b850c2cfdc898c0e960b70e0cd80ce7800a7e84e48d9b8558a966925992ff741"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032161D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5210850,
+      "sha256": "605cf92633a6f398d564cedaf86e55ebafdb45de601c013468724a3bce622574"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032164D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5597700,
+      "sha256": "e376418a54ed18006991c17d7ac1c0f1f7f5afb4584c82930a54afb1366110dd"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032164D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5233120,
+      "sha256": "7be7c2cfcbdcd3ea7ee24c02db6f0437823601e790fe6c8f4691e962d768b0c8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032167D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5228446,
+      "sha256": "2d14926781488a110d78364b969acc518d52cd9c36aa517c740b7bff450572b5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032167D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5077023,
+      "sha256": "6e58219c69f43b666fd8144fea942f1049f54ba4a3fbdce13ba5047b76c19b5d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032182D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5230147,
+      "sha256": "3ecdf5f9fd1f35ee267139b1d54ba483cf17f293cbbd2e72d9365bad91e90cba"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032182D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5211286,
+      "sha256": "a178664bbfe89b2590f578e3c2e4e3ddc5154cd5724ca63f3adf35cfd5f6cdd6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032289D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5349973,
+      "sha256": "29a271dff4de2ec4dfe7df7e7c54e6683521c1214c2a748f8cc8e70ca6ee17a1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032289D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5310463,
+      "sha256": "e5322ebdaf693288b39951319a31956db4838d013d2a0f85007c1e9b5a748f11"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032292D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5142541,
+      "sha256": "731fb98b0e708e0290781680af3bd1661f9c837db29dfe8aa199b533a7786a36"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032292D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5205541,
+      "sha256": "b6a7a47bdac607797e4a9cdc5de3824a4d95d9210cda9bfc5c2e23504c86c45f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032302D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5189991,
+      "sha256": "2527c70fcbab48274cbfc5d18d53d5333fe75b4200d58dc6c9959b08a8fe2943"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032302D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5169882,
+      "sha256": "b1a132241d059a98483e59d8ff2125b6486755e7684323e30aef77716f299fd8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032306D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5222573,
+      "sha256": "9de20abc15a2cae37c106bc30b54dafbaa13027c7455390a260511ec646616f4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032306D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5308973,
+      "sha256": "a3e788a97683682ad1b8f24a2bc0958e4a2de38586474410de23a8f6ae67549e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032335D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5264189,
+      "sha256": "a0a8e41b2ba12519ecbcc788a50cfef410cb89abb9e6c2f5f6fb4976ea757d19"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032335D_2.mhc.fa",
+      "status": "present",
+      "bytes": 4709448,
+      "sha256": "68facdaaf2b08046d04bccac736fa475f4011a227a8863a7c4732673459699a3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032349D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5330784,
+      "sha256": "0012ec87c6be701c942f7e6dc52f31d04ed4ad5776dc0c5d9b774e8a2f67b846"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032349D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5195589,
+      "sha256": "84bf328b264427425d3ca99ed2ec85a8da69190aa1bcca96f5a76dee5fb939ae"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032373D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5195361,
+      "sha256": "0cb562290cb76b810a70e3aa2b4bcbf6a9db5358fcb9bfb437e58cf304352d5d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032373D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5193211,
+      "sha256": "15c5558986412089d15f3d46fd5fc2994bbef922fe806798eb411be0a1dd68d7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032420D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5262343,
+      "sha256": "715051a47f4486b7814e662ed141b7994a5d42edfd008f9df0abe57b2690f2ee"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032420D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5325325,
+      "sha256": "e9b1962ed22db9472c5bea304f4cfb3992d2bb1aaeb32cfc9038d597d7cbfe53"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032422D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5118354,
+      "sha256": "1aa5eeb83c4224163f024e0965eb88136e5f11a2dacd4cc2df6f510a92b56bdf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032422D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5221303,
+      "sha256": "76dd8e749f2b668b83133f33bffbc69a6eeef82ab25b7cae268b50219d6ca9c6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032429D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5273152,
+      "sha256": "d035bc0c3f1c88df7e183a1fb6532c218bc611181f02c5855aee7c5b3ca91844"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032429D_2.mhc.fa",
+      "status": "present",
+      "bytes": 4994710,
+      "sha256": "c4f83c1e8fa452b56bc209b7d3c110106d230524a108aa52358ed36b10a1b9ba"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032440D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5210278,
+      "sha256": "add01ffaa1c1a51d6d6e6056217e56cffafd9f2c2bef16fd06de7e901057351e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032440D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5053363,
+      "sha256": "8e8e6134931e4192a2b53b0ca8d91e3c6fec2d055e83fb1853c9341d1d0c48cc"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032450D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5206239,
+      "sha256": "e48227e92ab414bb1d4e0dc7181cc7f31d5167aeafa0a6c83e444cde9c865b4b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032450D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5258439,
+      "sha256": "67758634540c9439b9ccae20246ccc61248c77e63e781778341074fa2b04ec41"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032453D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5193618,
+      "sha256": "8ac34249e6b8bc6fc428a2cd6f26d24d89dc4cf91bbe3594dfa765c5d8397aa4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032453D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5142606,
+      "sha256": "a58ad431dafbf0e3a94030c16d554a405bb6bf0613644827ee5c21cd98d29bb4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032454D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5140712,
+      "sha256": "d5a6dc2ec4cd15cee33b60f970c0af7f6f36e89e11ddb878d8dcfe7e03960c4c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032454D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5103845,
+      "sha256": "9a2106c4229bdf12a47600b0603795eabb15bf1aa23426a44d4fd447b360bad2"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032462D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5305263,
+      "sha256": "f603ae73bd439e76af8cd0ef5c2be9c668a0bf112e3c62f78ec4a9c741884047"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032462D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5128051,
+      "sha256": "dffa0d61e2ad28787bc5bf0c008c54b613f9faff368211faa22ce5bd2c26cc6b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032473D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5302304,
+      "sha256": "7e86f3fedb0e1f1c8da6685dbda6ca2dbacd207a07fe73efa12204f87372efda"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032473D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5230819,
+      "sha256": "e6d6ca16d70d1d8592ac95bd675beb8822c1977d46a47cfe1b58ea48024d1b61"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032487D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5259514,
+      "sha256": "380b5f245c2ee141364c71a0af7a2a6b694c6a219ccb07592af36cdb9b585f7e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032487D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5126346,
+      "sha256": "1c5009c78d3b715c53546bb66c88b18dc00c41ef2850492db8d38f285387e80c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032501D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5315396,
+      "sha256": "7adcdbcaa57af169f9f8777352d3d966e35098db2524cee690d9103101cf7881"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032501D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5269545,
+      "sha256": "23277534dd4e7e173292d7a6bd0ca2365efdd9988aaad963e93ec584ecdb05a5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032510D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5227174,
+      "sha256": "3c2dcb9d12d7278b9bd9b7b2d9050107b8f0d0238205e82d735b9a808dbad63d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032510D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5187354,
+      "sha256": "0a4c3e7cd1e30d9c277938f53ccd0f469cb6e36100b28caff19ce05c6c096d5a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032513D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5354726,
+      "sha256": "20c7dc36346f7f83ebc5a677f5702f58fc8275cc388aa9a8e1749915a91fc4df"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032513D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5220289,
+      "sha256": "ede8294c587f3649e0334f302c5c429e17f5639366c29a32e3ae8ea9c3de003f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032529D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5244464,
+      "sha256": "10d3c0e71e51c504292d51d142ba70f1b40d0dbd806955798ca4945f2bc1ac76"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032529D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5141002,
+      "sha256": "3b9e4145d6496fd25c789f9e1117e7942f676595d19a96789b094fdc0ca9a940"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032566D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5160188,
+      "sha256": "81e1d881739028b99684e683ffaf8fd61f5006b4063057ab5cff18dc1ab5f182"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032566D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5146361,
+      "sha256": "c459afcf2b77de33cac0176475613bafc8fbcce22ffa9be9c199f7f5ae17af3f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032567D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5189983,
+      "sha256": "989142e4125f651af92d47a67688cd7240a42200174804e7568207e52dd97300"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032567D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5379046,
+      "sha256": "db5d7a3a0ec8bf69d6f6c5523babf7386e85290b3c78dc5d169acf15cedd4e59"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032585D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5244277,
+      "sha256": "e0d3610b33f236e1a4a94b42e75b2e87e07d0a061fcf8e6efec51118b74a7898"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032585D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5228653,
+      "sha256": "e739ffa312e2055a53d9ba20dea695fe3033be5bee315433670b8d586d76d9e8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032586D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5319737,
+      "sha256": "8eee165db4d815e8015705a45ef3efb0610165512472c927bd547ba9b73971eb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032586D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5134481,
+      "sha256": "fdfe126ddbfb9a57f5ae1721dd95865316fd0f58d2ebdd9459e302e6401823ff"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032591D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5296824,
+      "sha256": "32fcc9e02328a8813569a3be2c76bc034c66f1a31a2ecb21c80dcbea83a8df02"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032591D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5083175,
+      "sha256": "222cb5087f273de4826be73f09a00b9b68d61164cae572521c697df0d04d85e6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032604D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5295573,
+      "sha256": "ad5f9e2daff819794e44910893962e943d7b5402c18f7c9e612d053562cf1571"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032604D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5196766,
+      "sha256": "c0c6df1e22d1776130c45fef1943b21ca137b58e637dad2f4cd9d3a2d4c7c2e8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032607D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5366756,
+      "sha256": "c25174b87a51e75b160214cd7179582f0ec2dd9cb611dd3ebf8ad9d372ef1312"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032607D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5196133,
+      "sha256": "7891674f4071298dcdf94041a587d6d1f0e442e4f472ce13c6649a18d4db3f20"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032662D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5262078,
+      "sha256": "794756b374420f7e8121b2c6e72504a5a96597cb652014f660d684e00822e350"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032662D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5146659,
+      "sha256": "dfe42a06d75e8bfc00388ca3df0805ea7e78c14d2ef3e95b33cd7a473ed63657"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032668D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5374414,
+      "sha256": "cce43e74053810a4dcfe73fd263cc20aba18c138eda53f1d5baa8890568fa45f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032668D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5175485,
+      "sha256": "1bdb9fad20db0be7d12bf1b2bb77171be33423ea19dacc001de0033df43c82e8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032682D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5205819,
+      "sha256": "59f078700de9c877b0fc5b2029f1057a3fe94398ef102cffaf4ae061e8f27549"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032682D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5197354,
+      "sha256": "db4d347adbf4d7409293c16d1abf021efe2ee67f1081a62040163d5beadada56"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032685D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5229860,
+      "sha256": "030915a120353c050cd4f1b2a2d65b6df76934d61e6c9264b090e43f4a201e33"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032685D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5083525,
+      "sha256": "94dacb6e2e04bf7a717ba8a6882f61f789aaf1ecc87afd2e0a0a002ff5e2c10a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032692D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5231439,
+      "sha256": "c5551589587756cb783b60a7ac7cd31fc0fa1a62e554b831b66a9fba7e61d51c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032692D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5374602,
+      "sha256": "b07195892929de30aae244eb71d334aa526af6126544ad6a42a44500905babef"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032693D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5189133,
+      "sha256": "3e0a16fa6969a8524c8787bb884fd6f64c7f1883f5cd93f786a4063398a4fe28"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032693D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5270862,
+      "sha256": "6df58e3f90fa73a05150c6a7039e8390849acbfc3e164454b207aa4df3f8eeb0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032698D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5272302,
+      "sha256": "4f5939be7473524bedae7cf50efe9b494e7de4486ae843aed37826dd864a6549"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032698D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5198077,
+      "sha256": "3311b122cd1f281714637538e6ccfd804492a9c737190a9f4ee4fceb83424e53"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032706D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5070990,
+      "sha256": "b32a273f798986b8a4441f66dc43bda29fb0ec5b72f5e20bfd4038a31880d74f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032706D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5146637,
+      "sha256": "1de751193ff5eacfb083216c278b1429631c1d7f12c6c43dea35fe1adce55a57"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032711D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5208830,
+      "sha256": "191b1c61d7aaf94d33e1015d6a58cae7d0fa316af836c2e5715d36b3f4b0d01b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032711D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5216438,
+      "sha256": "2adca581e0aa7787ab822ed5d864674417ea0b79c3234829cc4077d7e8d77a9c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032731D_1.mhc.fa",
+      "status": "present",
+      "bytes": 5229529,
+      "sha256": "c3209cfa51988ae3212733a3db9ee0a7b4dea04663c79db71476e1b279b3bfac"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/HIFI032731D_2.mhc.fa",
+      "status": "present",
+      "bytes": 5228636,
+      "sha256": "212d62392bb3fc96e5a8226b295ba1b4a90668b5fa8fff430edc42c0ce20c85f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KOREF1_1.mhc.fa",
+      "status": "present",
+      "bytes": 5305312,
+      "sha256": "2a349c72e537797a57a4b36473c51db4b57d58f70937cacbfb0f75093e51bdfe"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KOREF1_2.mhc.fa",
+      "status": "present",
+      "bytes": 5251873,
+      "sha256": "1b7129234e4ed9de91d3b238a5506422f27554e79126e7c2cef7dca68699d95e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KOREF2_1.mhc.fa",
+      "status": "present",
+      "bytes": 5258738,
+      "sha256": "91c1883aa48b87d67123947983df2b8657b70dead6720dbac0380270828563d8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KOREF2_2.mhc.fa",
+      "status": "present",
+      "bytes": 5194196,
+      "sha256": "895cfb8466512a4bc8361c0cef9be02b49925e646514c6c3439742c719879331"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-071_1.mhc.fa",
+      "status": "present",
+      "bytes": 5129633,
+      "sha256": "4d5d5e115529b1d526f671cd9679ecfc06e89d80fdab0d2e556d4107fb56eccd"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-071_2.mhc.fa",
+      "status": "present",
+      "bytes": 5296771,
+      "sha256": "2aeca2f245f1d97f5f4122619f2cdf0959c9326c652f7001e1328e5da7af89c0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-072_1.mhc.fa",
+      "status": "present",
+      "bytes": 5373649,
+      "sha256": "9f416d7dba750d8b01ed4b4f274b086cfad67803f6944616638576b6b4e721c8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-072_2.mhc.fa",
+      "status": "present",
+      "bytes": 5304245,
+      "sha256": "532fc6f3aae471d18997ea6a689e1cd787bc45f16a238f1ccbb3e3fd4dcc57ee"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-073_1.mhc.fa",
+      "status": "present",
+      "bytes": 5196984,
+      "sha256": "ad45615922cfd244594d7eb7f947307002001589124300f9cef1efb314de5d62"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-073_2.mhc.fa",
+      "status": "present",
+      "bytes": 5218115,
+      "sha256": "f1ff182f9f0f06d6e4e23a1eb36b10156ff37afe92a6ef186e82a7842f34f638"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-074_1.mhc.fa",
+      "status": "present",
+      "bytes": 5142195,
+      "sha256": "3a4b22d232f0796fb192169aa5f9c6b0371d001039769911dd24d88cbcf6adf0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-074_2.mhc.fa",
+      "status": "present",
+      "bytes": 5312959,
+      "sha256": "721d005200258c560c5538e9e663aa2fb9d0d1035c6ee693d1b2d3deed34561c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-075_1.mhc.fa",
+      "status": "present",
+      "bytes": 5228020,
+      "sha256": "4c607f36953bb36361816a2f00b653aedd7c54051c7a2cc81ffdf4327773709f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-075_2.mhc.fa",
+      "status": "present",
+      "bytes": 5129521,
+      "sha256": "79a6c63dacd6d837bf03a53a8dfcb7e22edbe521e70ba5f9a5342eaeafcbafe8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-076_1.mhc.fa",
+      "status": "present",
+      "bytes": 5241857,
+      "sha256": "760ac318ba833db37aff9ebfabdbdbe7b108581579d773d3eb5f9453741e33b0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-076_2.mhc.fa",
+      "status": "present",
+      "bytes": 5260805,
+      "sha256": "eb20ae946ef671e3ae8eb744b807563828819b303840e4251efae0e10df8b3a8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-076-M_1.mhc.fa",
+      "status": "present",
+      "bytes": 5373259,
+      "sha256": "8c6fa8497894a5d18181162b28fb678d5e92461f4069fdbf31d065a4da89dd12"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-076-M_2.mhc.fa",
+      "status": "present",
+      "bytes": 5261759,
+      "sha256": "b673b2f4bf61687a767b206782ad542fab0bd09172383f96dc96e397a46a09aa"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-076-P_1.mhc.fa",
+      "status": "present",
+      "bytes": 5138866,
+      "sha256": "2b94b9661de598caa755ddb43d984a0bbc4fc5d55f23f0e2d953ac1fcee6250f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-076-P_2.mhc.fa",
+      "status": "present",
+      "bytes": 5241888,
+      "sha256": "ff11687678021303d7ad2fbd47e9d3b80a8c8bbb319a74f74b6c272d7c85801f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-077_1.mhc.fa",
+      "status": "present",
+      "bytes": 5273200,
+      "sha256": "8259f00d40c505a339e95c1328770d88064545ae9c3090bfb570ad48e071f4a9"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-077_2.mhc.fa",
+      "status": "present",
+      "bytes": 5132228,
+      "sha256": "30bde1380035a748e2b7803ebae32098a327d1e8d53434a0cfdbc5814e7fda2b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-078_1.mhc.fa",
+      "status": "present",
+      "bytes": 5133674,
+      "sha256": "8ebffb0baa7d8880db409a8c090aeb9f0c0db57da4a2f3c6a29dfe9418dd0dc7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-078_2.mhc.fa",
+      "status": "present",
+      "bytes": 5228840,
+      "sha256": "35ecafa87d63059477d94c8df0b6e07a0c443e4e42597094aef9c2102d0df9ef"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-079_1.mhc.fa",
+      "status": "present",
+      "bytes": 5401031,
+      "sha256": "f976ea17704341767c58bc96385eddb5bbea74b7f0d2115ecafba4941b5e8435"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-079_2.mhc.fa",
+      "status": "present",
+      "bytes": 5173492,
+      "sha256": "4809ff032064da5988e2f1e64863ebd95bb465469c64da49d927c08642c830ae"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-080_1.mhc.fa",
+      "status": "present",
+      "bytes": 5309373,
+      "sha256": "165e610d31d0656f2b5fad77d1f20ad4fddcdb7af6564067372a017f061f1530"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/KPanRef-080_2.mhc.fa",
+      "status": "present",
+      "bytes": 5269516,
+      "sha256": "95c78f0971e059f8f6ea0290fcccbb96d95c073bef58261a3d7e3c0bd437b829"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18505_1.mhc.fa",
+      "status": "present",
+      "bytes": 5160773,
+      "sha256": "aafd8c7da4daca63e253516830ed8cbdff4b7b4d6881ef6153b81cd996e8df87"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18505_2.mhc.fa",
+      "status": "present",
+      "bytes": 5219808,
+      "sha256": "48046fba431a908e02968daa8b6847b857b9c17cbd6cb8a1c21add7320a25434"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18508_1.mhc.fa",
+      "status": "present",
+      "bytes": 5269614,
+      "sha256": "d7c76f043d537856e4defbf701e3d6bc7bff110e73218b27efc198d326505981"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18508_2.mhc.fa",
+      "status": "present",
+      "bytes": 5274958,
+      "sha256": "f6bab1c47d89f72ac50852e7eefcb950d7b58ef681f62d7a1757420bf1bc4eb5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18522_1.mhc.fa",
+      "status": "present",
+      "bytes": 5214580,
+      "sha256": "9e3824a8aca229cfed64dcafc491cffdf020e9a7738bded6ebf223d430f83ae5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18522_2.mhc.fa",
+      "status": "present",
+      "bytes": 5224478,
+      "sha256": "7cdcd3e33baa6a8b6e9cc3f48bb54ac234c3358dd7fbe3c53b3d9d863b843ea4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18565_1.mhc.fa",
+      "status": "present",
+      "bytes": 5248279,
+      "sha256": "0019f410fb81d71ee6062888e3c823bbf8dbf48c0bb8c94c869b853213f3a769"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18565_2.mhc.fa",
+      "status": "present",
+      "bytes": 5195759,
+      "sha256": "01eab307c7ad88cedf6493a490161ce153b5f388e4a839163c803fc47cb20678"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18570_1.mhc.fa",
+      "status": "present",
+      "bytes": 5190015,
+      "sha256": "5e99aba063f1761ce5a0efbc3efcf5134c75755feac28a2657f02d4f7762c698"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18570_2.mhc.fa",
+      "status": "present",
+      "bytes": 5304013,
+      "sha256": "dd5b5729bd24f8e6bd4cb880f8431e956f9e35943e3f92fdf93f1058e431f2c2"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18608_1.mhc.fa",
+      "status": "present",
+      "bytes": 5151191,
+      "sha256": "615f98b106a35799467e6bbf330c8c259e018272eb549e1a6438e35fd96140be"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18608_2.mhc.fa",
+      "status": "present",
+      "bytes": 5275203,
+      "sha256": "cea5399f5f2a4bcf5bdb99b3ee8620aa036c99057aceeb7da7e18233d00a76db"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18620_1.mhc.fa",
+      "status": "present",
+      "bytes": 5189622,
+      "sha256": "4cb4a8b009c3691950ca5c89dd7b97e2876674285b318b983b6cbd47eb9c2918"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18620_2.mhc.fa",
+      "status": "present",
+      "bytes": 5106883,
+      "sha256": "e2c346bbb7a09e5d8a6fa626f5000e2bb940a17f6714a25c95202e48b98c571d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18747_1.mhc.fa",
+      "status": "present",
+      "bytes": 5199018,
+      "sha256": "21e942d982cb9f37a995281b456458addda265b17ebc35985f3beb136ae21660"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18747_2.mhc.fa",
+      "status": "present",
+      "bytes": 5224606,
+      "sha256": "b33907392fc682174e0b4cff5c6a9ec79563d5938c8482dbf4f7ef0aeea572bb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18879_1.mhc.fa",
+      "status": "present",
+      "bytes": 5115287,
+      "sha256": "02e402ba70c0015714a70c18276fd7af06bd314e4f2a40bfaf6d695c19d57158"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18879_2.mhc.fa",
+      "status": "present",
+      "bytes": 5221332,
+      "sha256": "e9266db0ceaf3cca08afdfb2ba1075a5f1fa12f77c882668d8c239e84e573194"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18906_1.mhc.fa",
+      "status": "present",
+      "bytes": 5201540,
+      "sha256": "e7253b1250076aa259939612167d7dbe5b6926dd8e5cee8247552836bc0a57ce"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18906_2.mhc.fa",
+      "status": "present",
+      "bytes": 5212811,
+      "sha256": "56db1daf547915f198f95df57fe101f114764d148e598c793b76c33458282320"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18940_1.mhc.fa",
+      "status": "present",
+      "bytes": 5198424,
+      "sha256": "1e6d99690a1206c12147702eecc7c55218c2dfea1e53c216febe619ee237c80d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18940_2.mhc.fa",
+      "status": "present",
+      "bytes": 5083298,
+      "sha256": "36b628cbd9cf4af06da36057226d047994c23451c13511a6c8baabe1ed9691d8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18940.JaSaPaGe_1.mhc.fa",
+      "status": "present",
+      "bytes": 5198566,
+      "sha256": "01aac8ad4ce564bfaf4a950976c7050b8e02a44b2a04dd36deaae913cf04bee7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18940.JaSaPaGe_2.mhc.fa",
+      "status": "present",
+      "bytes": 5069237,
+      "sha256": "91686c9360261d61d5d0a2947dd1de8eb11f0a606d09d3f69c68b136948343aa"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18943_1.mhc.fa",
+      "status": "present",
+      "bytes": 5128564,
+      "sha256": "3ee18ceaf384a758163d156bff9923da913f85e70caae5e91a84be166293a02b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18943_2.mhc.fa",
+      "status": "present",
+      "bytes": 5127069,
+      "sha256": "2747ce9bb8acb20bc68bd52ee95f8cbab5bb8f777fe400eee617ce4d7f261101"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18943.JaSaPaGe_1.mhc.fa",
+      "status": "present",
+      "bytes": 5128573,
+      "sha256": "bd27f7b6803b37e7014a730793a98be0c1041068af1253ca9fbac5f70317f956"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18943.JaSaPaGe_2.mhc.fa",
+      "status": "present",
+      "bytes": 5127078,
+      "sha256": "2f3d73ef84ab07a8ea0e833d237aebd19d2ee8978c7e6126b248c63e6e5ad8f5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18944_1.mhc.fa",
+      "status": "present",
+      "bytes": 5205374,
+      "sha256": "59b08a87de4808c6a51ad1760caffbb4eec0d16fa0be6fb31cf2e180567d103e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18944_2.mhc.fa",
+      "status": "present",
+      "bytes": 5090060,
+      "sha256": "5d649551b01679e54d28b7b48ba0b842b3df55de90c2f0f92f5d49456a6bccbb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18945_1.mhc.fa",
+      "status": "present",
+      "bytes": 5251759,
+      "sha256": "3f015d6b4fcb5265a57048a60913d31909c14b97f77a61fd7a692f05044a33ab"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18945_2.mhc.fa",
+      "status": "present",
+      "bytes": 5365848,
+      "sha256": "abb2c67d954fd2cf9d4d196dacf8aa84ed00de444cf32e698ac38c99f11949fe"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18945.JaSaPaGe_1.mhc.fa",
+      "status": "present",
+      "bytes": 5365897,
+      "sha256": "7eb46e336bcd930930207c20f04148b219b42f8699d931bd110625d280766788"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18945.JaSaPaGe_2.mhc.fa",
+      "status": "present",
+      "bytes": 5251802,
+      "sha256": "1166926a0a04bf2056a485310abd9ac63428e01413686f733bae8b9d63210897"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18948_1.mhc.fa",
+      "status": "present",
+      "bytes": 5373560,
+      "sha256": "3fd91d2070d30ee99fde7895dca8b1266f73ca48beb80732ea438ab5a53b13bf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18948_2.mhc.fa",
+      "status": "present",
+      "bytes": 5291306,
+      "sha256": "865731fce88a5d64342e66f2d84d3d82e01688bbf9076c01d9284a751527068f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18952_1.mhc.fa",
+      "status": "present",
+      "bytes": 5236529,
+      "sha256": "a972ff120c43d9fda1fe28c935196f987c18a9cd2aea42b89a1d2769b8385257"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18952_2.mhc.fa",
+      "status": "present",
+      "bytes": 5371466,
+      "sha256": "57931f5926b3de8bbabac50098f1eb8f88c0827d78fe18d04b1a0cf8ba0f0329"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18952.JaSaPaGe_1.mhc.fa",
+      "status": "present",
+      "bytes": 5371492,
+      "sha256": "f12e55e1e007f87a351182187c6bcbaa7269997cb580a47e27709a9700491482"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18952.JaSaPaGe_2.mhc.fa",
+      "status": "present",
+      "bytes": 5371475,
+      "sha256": "abe6b2a8dffbd02e25be92626b1a444f2342abbdc52c50203c9dc3d11df4debf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18959_1.mhc.fa",
+      "status": "present",
+      "bytes": 5197656,
+      "sha256": "137a0d11d9611c7d44013cf66767b945359a00c9eef0800fb9a571fb735518f7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18959_2.mhc.fa",
+      "status": "present",
+      "bytes": 5186709,
+      "sha256": "ac8a3cb019adc09ddef5441d0e03bcc24eeded7803b624025236af6db9fac99c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18960_1.mhc.fa",
+      "status": "present",
+      "bytes": 5258806,
+      "sha256": "48a49867bd944a700d7d7bfac33f6236e71ecef9b3f6cdc19ca7101268f23913"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18960_2.mhc.fa",
+      "status": "present",
+      "bytes": 5270817,
+      "sha256": "3693c11f94fc3ca14bd8e996b2aeaf165b2d2a1c48de2d2cebedc9ee519a3a90"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18967_1.mhc.fa",
+      "status": "present",
+      "bytes": 5148232,
+      "sha256": "139cbcf25323ae0383835e2bfc86a7f5e6f7e41cb977dac91751d71c94ae42a7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18967_2.mhc.fa",
+      "status": "present",
+      "bytes": 5222629,
+      "sha256": "4444a99f5a54bdbdc2659f45dec601304f95e1f196446dd6cfa2e79540a797b6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18970_1.mhc.fa",
+      "status": "present",
+      "bytes": 5198883,
+      "sha256": "45350b106525dc242f4c94ad21bd3a2d5356eae907d7524333d2c8848e0e6b05"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18970_2.mhc.fa",
+      "status": "present",
+      "bytes": 5255635,
+      "sha256": "475a2e4c3bb6dc9baae6fd917d3d8c98c1680232a076d8acc6407fe3b978e5ff"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18970.JaSaPaGe_1.mhc.fa",
+      "status": "present",
+      "bytes": 5198892,
+      "sha256": "7d3038c6b474006f24f12db1d6e32474c0a08c1c4b4bfcac94194bd3b0f9a0d2"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18970.JaSaPaGe_2.mhc.fa",
+      "status": "present",
+      "bytes": 5255644,
+      "sha256": "5e118d6f033d7520e1ceb87baae4338d39ffbf841df221b690dbf08a975c1b9c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18971_1.mhc.fa",
+      "status": "present",
+      "bytes": 5252074,
+      "sha256": "aaa89332d4b96519b424f4daa6c69a7ee687797c4a96ede106d06d8acd8b9fe9"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18971_2.mhc.fa",
+      "status": "present",
+      "bytes": 5251630,
+      "sha256": "7b0c4e8367dc6222ecd9c9dc0f800d9ed036e6f09f9e7cc8dfb1ea9c7e8d6d74"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18974_1.mhc.fa",
+      "status": "present",
+      "bytes": 5329552,
+      "sha256": "73567a66ed761bf8583df7517a3e5ccbddfdd84a1944cc38da777c2c4ce3415f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18974_2.mhc.fa",
+      "status": "present",
+      "bytes": 5242708,
+      "sha256": "2ba5f3b482158edc92a6610887dba87c97d6c7831e84cad8f178be19d1ed33aa"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18976_1.mhc.fa",
+      "status": "present",
+      "bytes": 5251637,
+      "sha256": "1403123a0cd1723775d32f5e43fe30d31e67d2876e62bbae6d1699711a5aafd0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18976_2.mhc.fa",
+      "status": "present",
+      "bytes": 5251638,
+      "sha256": "54b0dc4f1aa3a5d08f0b68e4fc7692a8a10e2b5c6461387a72999d42ef1d2353"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18982_1.mhc.fa",
+      "status": "present",
+      "bytes": 5197652,
+      "sha256": "80773a60f8b85eab97b4eff6ed2e8a12ed90bff652cd1cdb474008f9aefb4da6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18982_2.mhc.fa",
+      "status": "present",
+      "bytes": 5064310,
+      "sha256": "327661fccbdb3d164ec1569c56cfdb5bb10a6102d7f69690e8feb85c4217413d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18983_1.mhc.fa",
+      "status": "present",
+      "bytes": 5214169,
+      "sha256": "89d5e4d52056f7c6c84f3150f7d7491d95fa714135bf1dcdca55482e980c0b73"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18983_2.mhc.fa",
+      "status": "present",
+      "bytes": 5317819,
+      "sha256": "29de403c2f2518f18c8244f8812c14c4b9ff505efbb30191df0cfdff07f1a0fc"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18990_1.mhc.fa",
+      "status": "present",
+      "bytes": 5251306,
+      "sha256": "b623f792e3317187d97167a4f91c65655951234934c4c05bc0427d6f65f6dbc5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA18990_2.mhc.fa",
+      "status": "present",
+      "bytes": 5255502,
+      "sha256": "fcf19ff45f828ede9f79e7ba66a0a761cd627a0e13a5c89b1a926489be46fdc8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19007_1.mhc.fa",
+      "status": "present",
+      "bytes": 5280322,
+      "sha256": "24de0d0fea71857fbd174525d78a7cb6ff567ed3346c19e8bad02828ec4c09bc"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19007_2.mhc.fa",
+      "status": "present",
+      "bytes": 5129486,
+      "sha256": "52645a2ca228dda3e39ff666c64da14a2a1921209160ede36565a3376ab97e13"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19036_1.mhc.fa",
+      "status": "present",
+      "bytes": 5208486,
+      "sha256": "6d6353310a156037a9a4836cb2496166e88bc3ad66e5c82b2cd8644cd0c65999"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19036_2.mhc.fa",
+      "status": "present",
+      "bytes": 5203211,
+      "sha256": "2c991187b15529b9c63459236454821ad3bc37722c84beb4a56ba9f9078cae04"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19043_1.mhc.fa",
+      "status": "present",
+      "bytes": 5210788,
+      "sha256": "6cb89b7a51e0142addf6fe733b05352f2e0f1a8b7e87cdb5014d095126f3cf5f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19043_2.mhc.fa",
+      "status": "present",
+      "bytes": 5212983,
+      "sha256": "d5f4cd5432db98f29f70a2864b68971d60104a7c69e157df78b144a6b5ebcc4b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19066_1.mhc.fa",
+      "status": "present",
+      "bytes": 5197243,
+      "sha256": "9580a85d197bbf1e1657667fefca3060d12fce4d56a612f9d5bee22d2c1f3b1d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19066_2.mhc.fa",
+      "status": "present",
+      "bytes": 5376160,
+      "sha256": "617be40688de7edf8ed43e429f430e933a1a5a49880cf681096bb741ca26ebf5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19079_1.mhc.fa",
+      "status": "present",
+      "bytes": 5084122,
+      "sha256": "d67881936be7c78b158a9070d53e9b406092e0aa76655fd021fa94ab9f49eb84"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19079_2.mhc.fa",
+      "status": "present",
+      "bytes": 5250708,
+      "sha256": "fca2110346591a394f4156344185b8029aae7bd516aefb920e3edee721c4e558"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19087_1.mhc.fa",
+      "status": "present",
+      "bytes": 5310345,
+      "sha256": "b43d92206acc0ef4829b4cdb9d32272ae45b3844add337867da6b6c721b22c66"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19087_2.mhc.fa",
+      "status": "present",
+      "bytes": 5250481,
+      "sha256": "c67b7bb5d6616c1febe1ad5a48046881bbb93986f8de0eef40bbd7a577b07e8f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19088_1.mhc.fa",
+      "status": "present",
+      "bytes": 5199868,
+      "sha256": "cb067daffed9b826917e1a6d40fe6f61d4b5859be5607b6ad7b71b943cfa03fb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19088_2.mhc.fa",
+      "status": "present",
+      "bytes": 5299610,
+      "sha256": "10cfb7e838d329b9e220e607c74d0700dcb274cff6b6ed0c8d25c141792e4799"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19159_1.mhc.fa",
+      "status": "present",
+      "bytes": 5186951,
+      "sha256": "73509240599aca9f9b808d38bcf3e7591c5be90326c1ed9694570434c5bc14e0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19159_2.mhc.fa",
+      "status": "present",
+      "bytes": 5354527,
+      "sha256": "f368ec1c23ea5bb6de0b22400743abd0e02e139809f77804439fb48077629ab5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19185_1.mhc.fa",
+      "status": "present",
+      "bytes": 5212241,
+      "sha256": "f4ba4ecf366082b0ba21a4035358daa70c704a866a55242d1b196b8534ffab30"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19185_2.mhc.fa",
+      "status": "present",
+      "bytes": 5258973,
+      "sha256": "5666fbafef202817f64f403d4f0e6440bbb931c7aafa8827b62547775a46ace4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19240_1.mhc.fa",
+      "status": "present",
+      "bytes": 5259024,
+      "sha256": "02385964e5110a2f1f8ce676550df434d841569eb9a75a33232360563da8c4d0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19240_2.mhc.fa",
+      "status": "present",
+      "bytes": 5333356,
+      "sha256": "28df12131d651debcce52482ca62b116b87a4e55c67c6dad7dd1c2b40b70feb2"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19338_1.mhc.fa",
+      "status": "present",
+      "bytes": 5195115,
+      "sha256": "37df1ceef89bca85fb85b49a9a4f971d6665b9745fd0c5b20767ad65d26332eb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19338_2.mhc.fa",
+      "status": "present",
+      "bytes": 5216858,
+      "sha256": "f2aedcd1672aadec6b40e41b9c8f44df5e0a37a043cde51cc273baeb59dcbacb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19391_1.mhc.fa",
+      "status": "present",
+      "bytes": 5167485,
+      "sha256": "dd0c00ccefe46447313e4cf8ea13aa5734d008ea82fbf3da6af7611438cbec82"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19391_2.mhc.fa",
+      "status": "present",
+      "bytes": 5164412,
+      "sha256": "694707a663bc110f7f046f401d491b8ec1b344efa9ad74049fc8069359c02770"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19443_1.mhc.fa",
+      "status": "present",
+      "bytes": 5240509,
+      "sha256": "6a2fbd4f3193268eae3b0ebb2680d1009d3ed50c6e43a32670189ea71e79161c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19443_2.mhc.fa",
+      "status": "present",
+      "bytes": 5195254,
+      "sha256": "8965e118f24a683fd3b5e103679d21e59bf619d6a7330ca38088e01c469b474e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19468_1.mhc.fa",
+      "status": "present",
+      "bytes": 5209517,
+      "sha256": "e66c727632557dcf97decccc4424441f7a55c077e632e2915ee16fa4d99662b1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19468_2.mhc.fa",
+      "status": "present",
+      "bytes": 5181334,
+      "sha256": "539d71e0355ea2b43919ac6ab1d28944a5b16a7d8ec0e60be868ef1d63e72615"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19682_1.mhc.fa",
+      "status": "present",
+      "bytes": 5221776,
+      "sha256": "03041c7743ac59f6c84339b9d28c2c698e2fac9d0e394d74665f3dba021cd5eb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19682_2.mhc.fa",
+      "status": "present",
+      "bytes": 5245732,
+      "sha256": "5d4c01cdaa0974f3f247dcf3cd47ebe31aeab59b4136df9f72ad02a4d2ac7251"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19700_1.mhc.fa",
+      "status": "present",
+      "bytes": 5205014,
+      "sha256": "0744af4b352319130661cf9354ee234e762c5426d94df4b6333d275cb4b1f404"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19700_2.mhc.fa",
+      "status": "present",
+      "bytes": 5348701,
+      "sha256": "07ca5607ca1d7176a333f259f94ccf651af3804418345bdff55a4956fbc9aeb5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19776_1.mhc.fa",
+      "status": "present",
+      "bytes": 5383493,
+      "sha256": "8ae178ce917066175a55266f1ba2582572f251e6ba67a3ed255ea62d06e0ba84"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19776_2.mhc.fa",
+      "status": "present",
+      "bytes": 5170876,
+      "sha256": "a77ddb067c7b57c3ab2521181477ddc27cdb6864f80c0244248a75f8b9507bb1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19835_1.mhc.fa",
+      "status": "present",
+      "bytes": 5131707,
+      "sha256": "1ba46c917d7dd9e84de8a993164b2e9a4ef0bf61b12639ec0f0dfdd2eb8b3f90"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19835_2.mhc.fa",
+      "status": "present",
+      "bytes": 5134772,
+      "sha256": "e2fa1f159ce9e809ce83aaa23e01f408e0fc7b416340f9a06fe085795a58b1fa"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19909_1.mhc.fa",
+      "status": "present",
+      "bytes": 5271325,
+      "sha256": "7d19a41df1028538b753bd97528e8a72e803561fd796bf7f466cf213d6a72640"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA19909_2.mhc.fa",
+      "status": "present",
+      "bytes": 5271296,
+      "sha256": "c927d4180d634425d5fb1d460536f2544892bc37e6dfd375f5a72ecdb60ea1d5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20129_1.mhc.fa",
+      "status": "present",
+      "bytes": 5170116,
+      "sha256": "e1c42bf37061f6fc2ad6e54cb4e39b910ca263e1d559a72aa36ed7474aeedbdd"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20129_2.mhc.fa",
+      "status": "present",
+      "bytes": 5166952,
+      "sha256": "34ceb1f1b617a4c00e872e27616610bdecb5eff816bb068f0a3dbe1dc42ce1d8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20282_1.mhc.fa",
+      "status": "present",
+      "bytes": 5163371,
+      "sha256": "0341ddecbeac18dde1158603a503e8feee7300c540651ac364e11bc6a609253b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20282_2.mhc.fa",
+      "status": "present",
+      "bytes": 5144125,
+      "sha256": "55269bb27b19d24abb9174cca66182cda096d7d21e9022bad61a27ee2a038157"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20346_1.mhc.fa",
+      "status": "present",
+      "bytes": 5274355,
+      "sha256": "1b602afdd022e56dfdcdc85cfbfe5dc2e2b84f7ba39649c61b5893fbcaad9a07"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20346_2.mhc.fa",
+      "status": "present",
+      "bytes": 5195540,
+      "sha256": "e024bd3902c6a440e766d68d5d75ae2916810de414bdcb28b0c7f229c9c9d9d6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20503_1.mhc.fa",
+      "status": "present",
+      "bytes": 5226539,
+      "sha256": "0ed381116f2a34d43ef7471b6c63b14c743e30525935ca951e25d96deecfae74"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20503_2.mhc.fa",
+      "status": "present",
+      "bytes": 5195873,
+      "sha256": "cb26df9a6dc9b6be647a4910c55d2fb77c7b8bc35d0756f2dd4e5de38d802b60"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20752_1.mhc.fa",
+      "status": "present",
+      "bytes": 5211897,
+      "sha256": "35064b5c3b912fbcb0c662bf49c39eca1977b62fae48094cda852c35f4f88d9f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20752_2.mhc.fa",
+      "status": "present",
+      "bytes": 5253037,
+      "sha256": "11b380e7087c0c98831ec1ad082e49c0b191caed1c2724b2e275263c7db53e1d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20762_1.mhc.fa",
+      "status": "present",
+      "bytes": 5232674,
+      "sha256": "a3277b74d72f2e6e7836d87a1121a11a2f0aeab14d7ee541f4e691520ed4d846"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20762_2.mhc.fa",
+      "status": "present",
+      "bytes": 5203062,
+      "sha256": "2e7c12bbffbd32a72c9ec19882473a0b6045b48464dca59a716574f2b2f60bfc"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20799_1.mhc.fa",
+      "status": "present",
+      "bytes": 5201361,
+      "sha256": "ead75861f66f00f579b2a31bb9c0f19f2980b29a09b75d3816c83c4380417a73"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20799_2.mhc.fa",
+      "status": "present",
+      "bytes": 5215036,
+      "sha256": "b5e2c06e49a1205caccd452044c18079745715ebddd77bbb279003f8516b84e8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20805_1.mhc.fa",
+      "status": "present",
+      "bytes": 5173977,
+      "sha256": "7730fc4630acb2329cd14fb025c0a3f65303ffb35e5834547aecd44473c403ab"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20805_2.mhc.fa",
+      "status": "present",
+      "bytes": 5144590,
+      "sha256": "896408747aa775d316843a81f7d678b1cd616cf6f2f79f344538cff8ab778987"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20806_1.mhc.fa",
+      "status": "present",
+      "bytes": 5224772,
+      "sha256": "e304f62dbdeea5943789e61917bf30d889ebfafb74bb25de0f7045202a284430"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20806_2.mhc.fa",
+      "status": "present",
+      "bytes": 5226723,
+      "sha256": "b75763d5f89ba92f4192b861d073a73492907658db6d8f452281a11b6bc5fb8d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20809_1.mhc.fa",
+      "status": "present",
+      "bytes": 5305904,
+      "sha256": "c93deb329b43e4f8e3ba124f1d7bac6f33f3917324ca22765308d7ea28a427be"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20809_2.mhc.fa",
+      "status": "present",
+      "bytes": 5235738,
+      "sha256": "86dff25c199c9fb4553f81817f1b2bfbed15dff752df499ddffd924533f8f248"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20827_1.mhc.fa",
+      "status": "present",
+      "bytes": 5305811,
+      "sha256": "ae3005ee7d25c105aa87fd419f3178b2495fa4fd549da041b14c12b0a57d9a80"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20827_2.mhc.fa",
+      "status": "present",
+      "bytes": 5351998,
+      "sha256": "15ff540735cb99668a2a50f79d09af18a22a46e560622eae6528da73ee2d9739"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20850_1.mhc.fa",
+      "status": "present",
+      "bytes": 5311328,
+      "sha256": "7234f3012c532143feccebad9cd54e7d08913fd534b52e448888bf5d95754261"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20850_2.mhc.fa",
+      "status": "present",
+      "bytes": 5215934,
+      "sha256": "61b3ca68ea33226856d0ab3c7b48a298424a1d08b6575abe9a9b86ca0a39674e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20870_1.mhc.fa",
+      "status": "present",
+      "bytes": 5192758,
+      "sha256": "f8c1b79a128804518e1cfb5cf2b311867fed268e2054e3a465e1a7a344212a82"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20870_2.mhc.fa",
+      "status": "present",
+      "bytes": 5215453,
+      "sha256": "7d4d0469131e1b58551635df17b24c6b0d333fb201005e62d3a773b97eba37c8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20905_1.mhc.fa",
+      "status": "present",
+      "bytes": 5171548,
+      "sha256": "7f3a9c36fcfc6abdb63c57eeefbb7e2320b3e1110764ca9b7b5815fb0a1a54ce"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA20905_2.mhc.fa",
+      "status": "present",
+      "bytes": 5244885,
+      "sha256": "45b7f058edf906198eec6e223dbd3ac9c35691a10de28fcc43e89dd2ba567c70"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21093_1.mhc.fa",
+      "status": "present",
+      "bytes": 5312550,
+      "sha256": "4e6bf9b7868631a6a69a94e35da1ad012354c141379b4a68f617b54386f22646"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21093_2.mhc.fa",
+      "status": "present",
+      "bytes": 5194997,
+      "sha256": "969c14ad662f15933bbdfb4c8ed8cf9b93369a323a1a6fb2990ba47b402ec354"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21102_1.mhc.fa",
+      "status": "present",
+      "bytes": 5237471,
+      "sha256": "2094a50d68aed5851c630fea8580786192c8340c95676975c6263eb7a9ec07b3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21102_2.mhc.fa",
+      "status": "present",
+      "bytes": 5189593,
+      "sha256": "fa8e970d66b7e254087a61065c8e3cb0ee6e32d7c95c8b9786e75664c170c94f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21106_1.mhc.fa",
+      "status": "present",
+      "bytes": 5227041,
+      "sha256": "6e4efbd203349e8f4df547300f70561a90286fc70c9c519498c01ba63eea819a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21106_2.mhc.fa",
+      "status": "present",
+      "bytes": 5253446,
+      "sha256": "d076213bd423f4da2415be30b56af6c25e0e4dd94b06c33ee1c4db2fc5f54a09"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21110_1.mhc.fa",
+      "status": "present",
+      "bytes": 5145995,
+      "sha256": "d7d4de633d07b59e05cf1a788a7a4c46a499de891d8e76ebb47dafb96104610c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21110_2.mhc.fa",
+      "status": "present",
+      "bytes": 5247192,
+      "sha256": "153a29c28b854be6962801bf74b53fd9082b5d006b5dea747d33bb08c1d9968c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21144_1.mhc.fa",
+      "status": "present",
+      "bytes": 5311361,
+      "sha256": "9f2c41dfa4edb04c5f52807c97aef61a0ba537f5a20673efca35b2ce833f43e8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21144_2.mhc.fa",
+      "status": "present",
+      "bytes": 5252349,
+      "sha256": "271f7f5f13506d958a43d3fc8f5980eaf50ded7e1105bc6f1c5d0c0162ced11b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21309_1.mhc.fa",
+      "status": "present",
+      "bytes": 5220377,
+      "sha256": "6f9b673da7e978b26cf202982d9f9431f1b2a745dc340706cb810a69cbac056f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/NA21309_2.mhc.fa",
+      "status": "present",
+      "bytes": 5189645,
+      "sha256": "0a6120791fef3e675b26f719d8c2de05fbe09054460adf7aff08b619134f4b69"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY01_1.mhc.fa",
+      "status": "present",
+      "bytes": 5189411,
+      "sha256": "3af32771c3e0b71a220251d20ba306543d28f867721a4ec2c4303a01f0290812"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY01_2.mhc.fa",
+      "status": "present",
+      "bytes": 5303436,
+      "sha256": "1e972dbf443565a78a6f7d8c432e98313b101dbe3f3e53b44524cc0a4377b75a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY02_1.mhc.fa",
+      "status": "present",
+      "bytes": 5220949,
+      "sha256": "557dfee84fab2b855ac7784fc6447149504a78e005ec4846ee10c6a45ee2aca9"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY02_2.mhc.fa",
+      "status": "present",
+      "bytes": 5238581,
+      "sha256": "badfebd97d99c9cb148838c463e6a030339338556b010d182cb04d413b3b9858"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY03_1.mhc.fa",
+      "status": "present",
+      "bytes": 5373424,
+      "sha256": "25af87f501843792ef86ba28b620d9920c8656d35087b9f86d219cefc1a08b69"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY03_2.mhc.fa",
+      "status": "present",
+      "bytes": 5196302,
+      "sha256": "49459cd9e52c5a9b859dca6d863946931e077da25b545560463dc346b2dedbd3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY04_1.mhc.fa",
+      "status": "present",
+      "bytes": 5215097,
+      "sha256": "74e4da0d170292fab09572fb2ab93ec9d54727816ba2afe25f5bec744befc100"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY04_2.mhc.fa",
+      "status": "present",
+      "bytes": 5171967,
+      "sha256": "223b132433594fe3fb801678c4ef7f368aac40db4ea2c92189dd08db9f6f52a1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY05_1.mhc.fa",
+      "status": "present",
+      "bytes": 5211773,
+      "sha256": "dad5858911ae394cc30f8146f9331e309714f2c4990c3e5d494b53b8e4ff9896"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY05_2.mhc.fa",
+      "status": "present",
+      "bytes": 5176305,
+      "sha256": "b8b8b03a6bc25b28c27fc5a50df8ff5543242b9b8f2d43b18b2f7a2fcee352a8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY06_1.mhc.fa",
+      "status": "present",
+      "bytes": 5186662,
+      "sha256": "3d35f00723bb694719a8496622a7c7dbdfd5249b7f45da1a145ee8e7671699d7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY06_2.mhc.fa",
+      "status": "present",
+      "bytes": 5227951,
+      "sha256": "2d7ae6497db1ba0439c250d906a0c1e6cd76c1c0a96fcf216e0f704b1c2d3e16"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY07_1.mhc.fa",
+      "status": "present",
+      "bytes": 5082339,
+      "sha256": "db26e4094e3235c210004e004ee1f1a3cd81fb81d7e3697a02217bccafccba89"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY07_2.mhc.fa",
+      "status": "present",
+      "bytes": 5311752,
+      "sha256": "39a911a6415612df90ba19f35344dcdcd3175fff2ae03fa6a7ecaa5c002f50a7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY08_1.mhc.fa",
+      "status": "present",
+      "bytes": 5231400,
+      "sha256": "5b1f941125c1d31bf0d844814e6cf37a6aa7ce45c011501c50960af249724ddd"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY08_2.mhc.fa",
+      "status": "present",
+      "bytes": 5313746,
+      "sha256": "0a3c8205540061dc68ab5c6b2daa2f420a0d75d18b452b7536d83587089dfb3e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY09_1.mhc.fa",
+      "status": "present",
+      "bytes": 5337887,
+      "sha256": "876d70ce40209352024f5a34774632bdc216fcf4c10ddf950bad620802ef975a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY09_2.mhc.fa",
+      "status": "present",
+      "bytes": 5373390,
+      "sha256": "e8f0a99a789f63e6ce3627d95b9c7cc579c7997631dae79be5d92b211e86d421"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY10_1.mhc.fa",
+      "status": "present",
+      "bytes": 5198713,
+      "sha256": "0d5db0a8387e5c6a844f104af80c9fd30afd2d590108f8f5035b0ff254e0c50e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY10_2.mhc.fa",
+      "status": "present",
+      "bytes": 5265988,
+      "sha256": "4bfd075a3b995b5fca8dff8bf1cb88ba1578a235f8327a623c2f28a0f5528128"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY11_1.mhc.fa",
+      "status": "present",
+      "bytes": 5291404,
+      "sha256": "ff98c8e088e85d930ff84955833e5ba665ff0990eec4d64b1c6e64027507dd7f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/RY11_2.mhc.fa",
+      "status": "present",
+      "bytes": 5293405,
+      "sha256": "1fd6284ef134ef207ebc8737910a9c232bce9003a40ff1b48658fa9736d7ab5d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr-f_1.mhc.fa",
+      "status": "present",
+      "bytes": 5243809,
+      "sha256": "68f71b10c882d1d17e48417e8a91323b9576f36bc6b4b2b6d5d4a69bf18ed8aa"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr-f_2.mhc.fa",
+      "status": "present",
+      "bytes": 5216226,
+      "sha256": "4c0ba01a34cbacdb816be292f53cd1a4b751ff086119f9d9d5cc7fa0cdad334b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr-m_1.mhc.fa",
+      "status": "present",
+      "bytes": 5187830,
+      "sha256": "220be454349dddf45830f8a554218677b41313fcbe4c9de7674a6731537860cd"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr-m_2.mhc.fa",
+      "status": "present",
+      "bytes": 5200597,
+      "sha256": "723ad873f6539ec010ee900292219a43e5fc84af0bd484407a21d56434108313"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr-s_1.mhc.fa",
+      "status": "present",
+      "bytes": 5200529,
+      "sha256": "1d657ac660b995169b3aa757fae284c307e631e7734f4a7d99146acbaf83e2ef"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr-s_2.mhc.fa",
+      "status": "present",
+      "bytes": 5238344,
+      "sha256": "56ca5ea786f3487a5213b46d612edab37112763089e602d3c07d9191a9c40422"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr001_1.mhc.fa",
+      "status": "present",
+      "bytes": 5222793,
+      "sha256": "6e96310501b0f735f2df98376bf297fcc05b84dfc11a5546a0580e0ec44ef25b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr001_2.mhc.fa",
+      "status": "present",
+      "bytes": 5156908,
+      "sha256": "ca86004abcc5fa6d741e36924b88d2484e2be16487309c2e8612802e8759b3f5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr002_1.mhc.fa",
+      "status": "present",
+      "bytes": 5324508,
+      "sha256": "71e099b3dd0f5946b1ada686866d5a7f6c2a485b23bef764689987d56e2424ab"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr002_2.mhc.fa",
+      "status": "present",
+      "bytes": 5212434,
+      "sha256": "eecf1fd0a089ebb0689ae9ed7f705634dfc26e1cb3d5acb2255257a66c69a1a0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr003_1.mhc.fa",
+      "status": "present",
+      "bytes": 5260950,
+      "sha256": "d85d33cb2504154eec41e13bc8a438ae128692ee7cf981c2e145ff8588d075d5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr003_2.mhc.fa",
+      "status": "present",
+      "bytes": 5220460,
+      "sha256": "311b7960c3925a5b614b8529378184cddf262aa3176023e98b513aa18e0df779"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr004_1.mhc.fa",
+      "status": "present",
+      "bytes": 5202247,
+      "sha256": "d2be57cfa7639cd9ea9858c6c798bc4214f410ee1d93024fa34dc64c7787d9cf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr004_2.mhc.fa",
+      "status": "present",
+      "bytes": 5141639,
+      "sha256": "1ec5be58e2656fbe733c6812c8af59ba48bc5c311297be59d53a9b2851d07d69"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr005_1.mhc.fa",
+      "status": "present",
+      "bytes": 5170830,
+      "sha256": "ab22d9b832771bdfae5f1223441dfdb508b51e950c91979b511b56d2f33527ee"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr005_2.mhc.fa",
+      "status": "present",
+      "bytes": 5191014,
+      "sha256": "ec686e9cbef80111c112723ee0db019bd7af98e4d270b113ad8c3baad46c12c1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr006_1.mhc.fa",
+      "status": "present",
+      "bytes": 5199208,
+      "sha256": "bf3f569ed97e14196e08450730c78534984947c755f42a6f2e7ec7574073810b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr006_2.mhc.fa",
+      "status": "present",
+      "bytes": 5215624,
+      "sha256": "2a8d96830cf2e67af4ccd5f0d9872aab5f0c849551b85e03c5f793059d7406d0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr007_1.mhc.fa",
+      "status": "present",
+      "bytes": 5223977,
+      "sha256": "e2832993d56d9a0a83703ce01dff9abe024c726dac4c3100d4244c0508f4d094"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr007_2.mhc.fa",
+      "status": "present",
+      "bytes": 5203487,
+      "sha256": "be21b343ab28401464504c1ffb773f162be8165c87438dcfdef6dbcbd0f75022"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr008_1.mhc.fa",
+      "status": "present",
+      "bytes": 5230661,
+      "sha256": "105be262603d7f0b19c9bafd0d1c774b3cf38531de1198f6645c138749f8cbe5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr008_2.mhc.fa",
+      "status": "present",
+      "bytes": 5192462,
+      "sha256": "d2bc7f0e65873d40227ad236a0696d74e1868480ba7155aaf1e847020f14d5fe"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr009_1.mhc.fa",
+      "status": "present",
+      "bytes": 5325144,
+      "sha256": "8003e5f17e97ce3a21fd784a0b8ddabb56739d7dc9b49e338179c38d638446b4"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr009_2.mhc.fa",
+      "status": "present",
+      "bytes": 5178844,
+      "sha256": "d83abf9060baeee0bc2180d8c244519f069cb6c03b5fa14cca98d7c3a8a86b86"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr010_1.mhc.fa",
+      "status": "present",
+      "bytes": 5325431,
+      "sha256": "806a802742dc1238a5bfcb68eb4dc377b1dd51b0b5ca30371f86131a64bc5463"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr010_2.mhc.fa",
+      "status": "present",
+      "bytes": 5244277,
+      "sha256": "a9ce878dfdd4ef32bc0415cda5f97d45378c55ac455afd649537c3f65ac138cf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr011_1.mhc.fa",
+      "status": "present",
+      "bytes": 5232585,
+      "sha256": "c40dfd8f3a7baa648b1ac87bd5b9076533a2a6816cecd8fd9e472fd9346886a1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr011_2.mhc.fa",
+      "status": "present",
+      "bytes": 5185727,
+      "sha256": "7e420ffa4d8264c6c25ca8a25056a588107c8422d96c79d15b677a48784316a8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr012_1.mhc.fa",
+      "status": "present",
+      "bytes": 5179306,
+      "sha256": "416c893c5a5c75abeac4b82ef0285a073d1432996d4dc97a996d1ae39dede67c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr012_2.mhc.fa",
+      "status": "present",
+      "bytes": 5233397,
+      "sha256": "087c7f408986b0a30a6a97a366a3bc5ff71567ab1527eb838575eaaacdc503c9"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr013_1.mhc.fa",
+      "status": "present",
+      "bytes": 5137494,
+      "sha256": "cc93a8af3a3a1136caa243ce673fc8e976e4f672f4f840f4c052829787d62d0f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr013_2.mhc.fa",
+      "status": "present",
+      "bytes": 5238817,
+      "sha256": "3234bd77db4e5883d5a87f29f56a51c29d6091062a7aa7f5946fae0596d9e123"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr014_1.mhc.fa",
+      "status": "present",
+      "bytes": 5253289,
+      "sha256": "ca123d3adc42f3e50ed502862eb14a56e9e1632ca24057173a21a4e06ebcc188"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr014_2.mhc.fa",
+      "status": "present",
+      "bytes": 5258755,
+      "sha256": "14ebc8238cfad6777ef46d4d8c4c4d31af650bc9388fe97ea576992493e35770"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr015_1.mhc.fa",
+      "status": "present",
+      "bytes": 5188649,
+      "sha256": "aeafea33a987b0d4c24ccc51d48f17bf3f4f27708e95195b6b09fe1b811a1951"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr015_2.mhc.fa",
+      "status": "present",
+      "bytes": 5154713,
+      "sha256": "d2f7608717aac9d2dff18a98417b8761465e55f8092027d474b0095aa3fc5f3b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr016_1.mhc.fa",
+      "status": "present",
+      "bytes": 5215651,
+      "sha256": "57f2430027482556eea2412cd23fd7d18b390d8ac90cece1f37f0680a4210bff"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr016_2.mhc.fa",
+      "status": "present",
+      "bytes": 5178439,
+      "sha256": "0c6507e964afc57a04412535f26593de627f56657f487ae2f1c2d4dc53ba6122"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr018_1.mhc.fa",
+      "status": "present",
+      "bytes": 5137305,
+      "sha256": "0a3bcebb0496a40a87b6de099f8b4ef8a63253d575f08235d8fdddd4ce4f7474"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr018_2.mhc.fa",
+      "status": "present",
+      "bytes": 5195788,
+      "sha256": "07c0d9e05db23fd504f339b7831e7a033ba02ddaebc77cab07e27571c2d95e63"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr019_1.mhc.fa",
+      "status": "present",
+      "bytes": 5268201,
+      "sha256": "72a3c569d2af830bae136defbd5e58fd4ceec3c0057d27233b8a2f651006fb4f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr019_2.mhc.fa",
+      "status": "present",
+      "bytes": 5182316,
+      "sha256": "95e8ffca8c19f14097085c7c22bca43da4080d15482442c814cb1a9190ff9b9d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr020_1.mhc.fa",
+      "status": "present",
+      "bytes": 5221321,
+      "sha256": "8baad4589ad36b9a4a105b270097d9f035fe8e4141b5b32d8996585cd503c32d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr020_2.mhc.fa",
+      "status": "present",
+      "bytes": 5160768,
+      "sha256": "ea4fbfaef95d21dc15b80a7ac4abd2bdaf808d33fdd1f85fd417f93078e37a7c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr021_1.mhc.fa",
+      "status": "present",
+      "bytes": 5192130,
+      "sha256": "278bd120080990001a9c413a2b28cf74f9251118798969b8b05b5f3169c82c69"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr021_2.mhc.fa",
+      "status": "present",
+      "bytes": 5223197,
+      "sha256": "fa99a29c47bbe02027aa1760059d62902ff4e7c05ff37cfecfab2b16fcd43ce0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr022_1.mhc.fa",
+      "status": "present",
+      "bytes": 5217907,
+      "sha256": "8c449f2389e063513be7f1e7df0e07314d3b3c64bc9e33bf85d3f6e6c35f2d85"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr022_2.mhc.fa",
+      "status": "present",
+      "bytes": 5217380,
+      "sha256": "4f310d27f6c692674673848d0aef76e01b1d4f4d0c04f661ef680f947e96d7df"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr023_1.mhc.fa",
+      "status": "present",
+      "bytes": 5221732,
+      "sha256": "54ccc0c1da51c5755c873fc4306912c906b4ae42aa41df447deab7fbcaeb0dd1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr023_2.mhc.fa",
+      "status": "present",
+      "bytes": 5078119,
+      "sha256": "c1a57f825f551653a2c5842b26c10b288d386b2e978c3d3f551011e5e167fb41"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr024_1.mhc.fa",
+      "status": "present",
+      "bytes": 5222526,
+      "sha256": "818d4033377d6a42b4def5afe2e6a88be4565de8b7fbaf0ca90839e860e36f14"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr024_2.mhc.fa",
+      "status": "present",
+      "bytes": 5241390,
+      "sha256": "f0e1b44189b97f91729d164b9ecb0d462d8ce80c0d36044a38916054114cd76b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr025_1.mhc.fa",
+      "status": "present",
+      "bytes": 5214151,
+      "sha256": "31e5a531e882c9a1c8a2a14f156e72a4f1bfc28284758242325e214cabc567b5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr025_2.mhc.fa",
+      "status": "present",
+      "bytes": 5303544,
+      "sha256": "ca04aa6fc25f87526845f3804062e7f6c38eb7f883329c12c5f16980d3875751"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr026_1.mhc.fa",
+      "status": "present",
+      "bytes": 5374762,
+      "sha256": "654da3dc35c72eee1670aa837fbea7454f11d5c068ac33d73375200f604ef24c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr026_2.mhc.fa",
+      "status": "present",
+      "bytes": 5279914,
+      "sha256": "e28e0394ca51606e60a677190371ee35fe87dea9350f07129276a726eed23e9d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr027_1.mhc.fa",
+      "status": "present",
+      "bytes": 5344286,
+      "sha256": "e25441455a706d3ac2c17e969930f9935aefe1b8489949794a238d63dec08152"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr027_2.mhc.fa",
+      "status": "present",
+      "bytes": 5286763,
+      "sha256": "65dd2693eefc5adeca13d60e6ef0f3f8bb0d4ec140e68809c8c4fe9a316c87b3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr029_1.mhc.fa",
+      "status": "present",
+      "bytes": 5307752,
+      "sha256": "c486522285a16926a5bc8fd49de01cdb56bd2b792078b58f0dfd190142c6f5a5"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr029_2.mhc.fa",
+      "status": "present",
+      "bytes": 5188493,
+      "sha256": "65932887784e8b9464c904aa1e82e4f5a69ed1926183148ed576c1e5461c93d1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr030_1.mhc.fa",
+      "status": "present",
+      "bytes": 5122744,
+      "sha256": "7b7714d931d576dd35d0bd01c29e2e30807e9eb5a9e1ce33ecd79c0efdb66115"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr030_2.mhc.fa",
+      "status": "present",
+      "bytes": 5212400,
+      "sha256": "9ae3d438d90d5e57c4416681cd58b86ef40b7471962e7ac5d5a51160dc6e3fc2"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr031_1.mhc.fa",
+      "status": "present",
+      "bytes": 5280131,
+      "sha256": "500d8146f65ac71fb3d8fc352c05470fb4c16d678c162b0a25e3f32f05d984bc"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr031_2.mhc.fa",
+      "status": "present",
+      "bytes": 5180722,
+      "sha256": "3c00e4d3aa41e3b545fe0b4c4e39e17a59253108dc5ff3e6467c55859e874596"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr032_1.mhc.fa",
+      "status": "present",
+      "bytes": 5307533,
+      "sha256": "5edc2d7d7ee54bf07fedfe2851c1c6674586915efec12f1462245834e28354e6"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr032_2.mhc.fa",
+      "status": "present",
+      "bytes": 5334374,
+      "sha256": "16bd5f10f0bfaddb7397d3ddd49b98673315d73d40f0d629afa6f3ff26cc9d87"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr033_1.mhc.fa",
+      "status": "present",
+      "bytes": 5282614,
+      "sha256": "4f51e070234875a03b5fc2b8531fea53448ee1f22111244d1c870e3676c55574"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr033_2.mhc.fa",
+      "status": "present",
+      "bytes": 5166812,
+      "sha256": "88fa4829d28f26e64f1f61d1a43b83cc519195f7c876035ea38f53e7ced307ae"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr034_1.mhc.fa",
+      "status": "present",
+      "bytes": 5193559,
+      "sha256": "f9663e65cb0e6732103c31dee0a188d89b2b1739c42fcbddb1430c6e7152ac1a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr034_2.mhc.fa",
+      "status": "present",
+      "bytes": 5189211,
+      "sha256": "634e56532aa87b4a63bb2a33a59ce082934c493ce03da846383a0ff17b04078b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr035_1.mhc.fa",
+      "status": "present",
+      "bytes": 5207540,
+      "sha256": "0e6e0530ddb4ec29f45f95d5686ab947b5df3aa7d92308ba4d123c781f1d3fb0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr035_2.mhc.fa",
+      "status": "present",
+      "bytes": 5211192,
+      "sha256": "5eb2c8806906fbb25adaf0da7e365c501a8e4b5c533218cbb9343efd1e6c145d"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr036_1.mhc.fa",
+      "status": "present",
+      "bytes": 5191045,
+      "sha256": "02a4b44ee6533a9b96c3943edfe9a29e2686f5fda04341cea9ebe3df1452a65a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr036_2.mhc.fa",
+      "status": "present",
+      "bytes": 5203175,
+      "sha256": "b236e666244f62c16f08e8f29318d59d14f022a27ffdb305f75ef9ac2ecd8fde"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr037_1.mhc.fa",
+      "status": "present",
+      "bytes": 5225553,
+      "sha256": "d49b7708302ea7d591f260483f4b6b55bff4160cbbd73406f4dde18e344b9e79"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr037_2.mhc.fa",
+      "status": "present",
+      "bytes": 5282073,
+      "sha256": "5d5c7d0aa691d52421542a54350321d5d590c3cbcfc3553a00bb02753a4e8e7b"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr038_1.mhc.fa",
+      "status": "present",
+      "bytes": 5208541,
+      "sha256": "23ea1fda5b311e9d899fb7352cbd0a70ced73978b4d71d51384c964cd6206975"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr038_2.mhc.fa",
+      "status": "present",
+      "bytes": 5200047,
+      "sha256": "7b5095a2fbac3e67ffce2a4bef01d8c5e68259b143b4cf1a8a7844013e7a6600"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr039_1.mhc.fa",
+      "status": "present",
+      "bytes": 5260177,
+      "sha256": "ccadb8f07b5581b2fc96c94863939d225f5e842ba55b3103c0e97393da21b561"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr039_2.mhc.fa",
+      "status": "present",
+      "bytes": 5267717,
+      "sha256": "cfd7cfacf39f3858783abb052e267b6582ede50091c35a41d19f88dc83b35db7"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr040_1.mhc.fa",
+      "status": "present",
+      "bytes": 5189029,
+      "sha256": "6d25ab6b3146a21dc8aa5f64498c38900bc88580dee9abb43f626eeb3548c422"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr040_2.mhc.fa",
+      "status": "present",
+      "bytes": 5191060,
+      "sha256": "e65904b39b6b0bdc5dcba133396feb7092365cdcc9e508e391f5d4f665111506"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr041_1.mhc.fa",
+      "status": "present",
+      "bytes": 5193225,
+      "sha256": "7dcbed3de979d93d16f7f9fdbffc83b6972c1f1a553b11cffffce6f7fca05a19"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr041_2.mhc.fa",
+      "status": "present",
+      "bytes": 5205886,
+      "sha256": "85409e711b3ee85656842efe2048891edab664a17e23fd4ab15c51dd9ce1650f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr042_1.mhc.fa",
+      "status": "present",
+      "bytes": 5150698,
+      "sha256": "f9443d81be0c7d9fb805d770d915525c632a0e2faabae1dc40f57cad0eda5245"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr042_2.mhc.fa",
+      "status": "present",
+      "bytes": 5214710,
+      "sha256": "7656a2b6179597682fc27fad73f4f67a5a0acb6c9ca7e27d53fde2fc8f4ea154"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr043_1.mhc.fa",
+      "status": "present",
+      "bytes": 5203009,
+      "sha256": "cbec5b569841b949af7e074569f2b42b2bfbbf3e7cf0bbc15dec71ade8fa1e1a"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr043_2.mhc.fa",
+      "status": "present",
+      "bytes": 5325995,
+      "sha256": "6069d419635762d7939eb8dca258f98ec17d9ce2585e1d4e5ae194e6bac6a6ef"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr044_1.mhc.fa",
+      "status": "present",
+      "bytes": 5255596,
+      "sha256": "d7613090baadd3e8e4e9f5621576405eb9d1021e019c1b00b94ce4d8a2f873e1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr044_2.mhc.fa",
+      "status": "present",
+      "bytes": 5210835,
+      "sha256": "46078a3b545b0896e3be3f846e9211496b63431fc7d7acabbd5ef0fc2d67a96e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr045_1.mhc.fa",
+      "status": "present",
+      "bytes": 5213605,
+      "sha256": "fb60a4bd70ad1f28cf5ea38ecbbca0c1af7a2dc4c3d4e5b9668a71c4ad568646"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr045_2.mhc.fa",
+      "status": "present",
+      "bytes": 5365737,
+      "sha256": "e059ae7ead37478030f5f319061898623b194bbe4786a71a85370d5d31d953da"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr046_1.mhc.fa",
+      "status": "present",
+      "bytes": 5144216,
+      "sha256": "3bc3ea20c07882e9af3b2e6b9e77d8e926dcb2bb79cb4172a71cad1989809030"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr046_2.mhc.fa",
+      "status": "present",
+      "bytes": 5197597,
+      "sha256": "f17eda20ef411f916fc68add44fd4da5ccb6b65ebac1e48d0eba27bdd93ae4a1"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr047_1.mhc.fa",
+      "status": "present",
+      "bytes": 5378043,
+      "sha256": "2b015f9669b07fa8d49ffe8b46117ac761c84b2396ba5fccc4fb8fac450f49cb"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr047_2.mhc.fa",
+      "status": "present",
+      "bytes": 5246394,
+      "sha256": "6351b270d6bd80e4e601d0f93beb72cf7f193e16274fb5dafa1bf7b54aaa3245"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr048_1.mhc.fa",
+      "status": "present",
+      "bytes": 5271823,
+      "sha256": "84783667b7cd1e45648ec9e6c181b93af2401a7377f69588c22e7bdf503f306f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr048_2.mhc.fa",
+      "status": "present",
+      "bytes": 5224185,
+      "sha256": "a642168001fa6d6e220ee99ed15fe3e61b2fb06229e19f3eac570889a3ad13a0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr049_1.mhc.fa",
+      "status": "present",
+      "bytes": 5217191,
+      "sha256": "2df7585b839138a909101aa50f1f70be49674d14341c7a139c88c0322de25c41"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr049_2.mhc.fa",
+      "status": "present",
+      "bytes": 5302034,
+      "sha256": "f835d7504c13d6af0fc0f6c86e0e3e3934e78b2d2557869cacb5533227662279"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr050_1.mhc.fa",
+      "status": "present",
+      "bytes": 5341418,
+      "sha256": "18368b76f05f4b5047ff8d48549ec77f9b514dcfe9c3ed5fddd9b7dd7b33a5e8"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr050_2.mhc.fa",
+      "status": "present",
+      "bytes": 5229702,
+      "sha256": "ec2e3f419fe11feab58b2585b50400d2d4f3c0e13847a460b9ba4bddffec8aad"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr051_1.mhc.fa",
+      "status": "present",
+      "bytes": 5221735,
+      "sha256": "cc69b4d4310c52bb666d0907716541557262985b311c18b3ccfa418b4ecd4514"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr051_2.mhc.fa",
+      "status": "present",
+      "bytes": 5202440,
+      "sha256": "5aa6b1d7a09cee0a66ed0688efff916ccead2ef19a8047e5be0bc6c2e13c1ca3"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr52_1.mhc.fa",
+      "status": "present",
+      "bytes": 5319605,
+      "sha256": "7bf9d47a998e4ec5361ce748b36b1e30b864d708a312f784c32a032d2ef39fd9"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/apr52_2.mhc.fa",
+      "status": "present",
+      "bytes": 5263478,
+      "sha256": "e3e8f701fcdbd8659cf54f28698decf59fa5bc212b88e53389c7b1a14613079e"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/chm13_0.mhc.fa",
+      "status": "present",
+      "bytes": 5183546,
+      "sha256": "08c079fdf4f64aefbbdd823298ff53b90bef1cf30b0ce38c7639a78dddde67ba"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/hg002_1.mhc.fa",
+      "status": "present",
+      "bytes": 5307388,
+      "sha256": "4f2938d4913555bf0d7cee04cde9aa2caa49c283ed3759139ceb7ed14f24bdac"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/hg002_2.mhc.fa",
+      "status": "present",
+      "bytes": 5211990,
+      "sha256": "eeebd21a10da1e1f314395413752b2282fa26894196456921d0d2a100a850277"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa001_1.mhc.fa",
+      "status": "present",
+      "bytes": 5311017,
+      "sha256": "7647f48987425717a3e47b087fad3439beecb9093aedf09e278491b84d8e8251"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa001_2.mhc.fa",
+      "status": "present",
+      "bytes": 5264189,
+      "sha256": "10729c1936a2e38a8c7d943712263c910ccb708e7564df008470cf68248de1bf"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa002_1.mhc.fa",
+      "status": "present",
+      "bytes": 5190581,
+      "sha256": "53822a90669218560f34d11a5a7aa606648eee19ae265c7a89dcaae2242dbc36"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa002_2.mhc.fa",
+      "status": "present",
+      "bytes": 5188908,
+      "sha256": "d6faa1ebb6f1e408760e9dbe9596f57d646f6f7f3a9e87c7ca3b008e4c194e82"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa003_1.mhc.fa",
+      "status": "present",
+      "bytes": 5314855,
+      "sha256": "1435bb3e34d02ae01579db907631160c279be5f1c67c6938194cf2810e746582"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa003_2.mhc.fa",
+      "status": "present",
+      "bytes": 5313124,
+      "sha256": "4af340ae3b4f2faae62ab31161ca564e5c7c5b38662b32712523b9217e072c72"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa004_1.mhc.fa",
+      "status": "present",
+      "bytes": 5179715,
+      "sha256": "b5d5f36d9464141e168901d757c8f0fbb13d911b582156f8fdb5171747a9a4a2"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa004_2.mhc.fa",
+      "status": "present",
+      "bytes": 4988615,
+      "sha256": "7e9d3b01b1a678ae9f98a0d8580b1430edc2a1ce86a7ed1f44fb9c94f746f86c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa005_1.mhc.fa",
+      "status": "present",
+      "bytes": 5247536,
+      "sha256": "f20096200c963e52255e4ac9b0a2ae0acad25dbb5599db0010aee5b1a4af3a2c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa005_2.mhc.fa",
+      "status": "present",
+      "bytes": 5414385,
+      "sha256": "6180debb2bf06c92d6cfd50c3f9bbbc563f9659e3cbb410f51346bf7ebbd4104"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa006_1.mhc.fa",
+      "status": "present",
+      "bytes": 5323189,
+      "sha256": "fcb56d181088e6cc2a0fdc836a6dbacfff5925178692a36ded55904c73a93778"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa006_2.mhc.fa",
+      "status": "present",
+      "bytes": 5262744,
+      "sha256": "8379125ad2b26578526347e08b3f10b013834e994514b5f711e50f17f22e9d7f"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa007_1.mhc.fa",
+      "status": "present",
+      "bytes": 5220810,
+      "sha256": "67252832bb80b8533b3eddef66e2409adc0b5e0849603d97ca1663f24d95d6d0"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa007_2.mhc.fa",
+      "status": "present",
+      "bytes": 5197985,
+      "sha256": "6aa34ad0ebec06632a77ad8581493c4e4566aec2f5abe010e869eb69ca3e8f85"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa008_1.mhc.fa",
+      "status": "present",
+      "bytes": 5297572,
+      "sha256": "ba83e8b19e1b033d5c584f03a28c56aad0eb102859c882bae4dbe445110f7229"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa008_2.mhc.fa",
+      "status": "present",
+      "bytes": 5180077,
+      "sha256": "a10163f08bc4558cf0074f9f2bc152f489bca97af434b7bb7f6fa2248d85bd5c"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa009_1.mhc.fa",
+      "status": "present",
+      "bytes": 5287204,
+      "sha256": "1416a6c2126f706c052d856f55314e68064033ca310bb07f8c12270a2de281a9"
+    },
+    {
+      "path": "/home/leechuck/hla/mhc_all/ksa009_2.mhc.fa",
+      "status": "present",
+      "bytes": 5131134,
+      "sha256": "cf02d83ebc9780922f9509f75b25f0a6ff6f5eaa02e53984bdd405eaf95a59a4"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/HG01252.mhc.cram",
+      "status": "absent"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/HG01358.mhc.cram",
+      "status": "absent"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/HG01943.mhc.cram",
+      "status": "absent"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/HG02976.mhc.cram",
+      "status": "present",
+      "bytes": 73785912,
+      "sha256": "86437e9f2f7d7dda74ba5b29c54ca4f4bf2e03be7f433cf73af9191ae19a866e"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/NA18608.mhc.cram",
+      "status": "present",
+      "bytes": 72727668,
+      "sha256": "897085899cdd65f0934c8e8a3cbe576d86ccc2e3137cc2243ab42e4fbfd68004"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/NA18620.mhc.cram",
+      "status": "present",
+      "bytes": 77337393,
+      "sha256": "9818778c386e47ee46f59a00a1f98d842afc859acfecbf3cb15072695de20916"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/NA18943.mhc.cram",
+      "status": "present",
+      "bytes": 73283379,
+      "sha256": "f8210d2e3e0a043986fe8a7dd94048710e3ae9fda763f21b2ca3a38877c92301"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/NA19007.mhc.cram",
+      "status": "present",
+      "bytes": 70822229,
+      "sha256": "9de97dadcc47d8eb329458f521e73e77ef9943058a6b772909e3ab1a1453c571"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/NA19159.mhc.cram",
+      "status": "present",
+      "bytes": 75365718,
+      "sha256": "06bd6e424f3098eae0be25751dd93366c4a63cb46380dbf331413893e3af0003"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/HG03130.mhc.cram",
+      "status": "present",
+      "bytes": 88207893,
+      "sha256": "c14622dfd9b7087af6146380b8ae55152a50f399241a603e65ff297d434d0c9b"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/HG03195.mhc.cram",
+      "status": "present",
+      "bytes": 67687799,
+      "sha256": "fb417e29c7e74943f5b89ef6d7a603d78a1f9f8f869370289b72baa29a210243"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/HG03139.mhc.cram",
+      "status": "present",
+      "bytes": 70182141,
+      "sha256": "523516168f0ebe09ce6636cfae7d85c1b9ff2b244e2b9fad0b00c456f71031d0"
+    },
+    {
+      "path": "/home/asianhla/data/upload/1000G_MHC/cram/NA21144.mhc.cram",
+      "status": "present",
+      "bytes": 63494460,
+      "sha256": "6308d8dcbd1840ef05c65523582a52389217f1f4dbb80c5f35c0c4e10648edca"
+    },
+    {
+      "path": "/home/leechuck/hla/ref1kg/local/GRCh38_full_analysis_set_plus_decoy_hla.fa",
+      "status": "present",
+      "bytes": 3263683042,
+      "sha256": "3b103f4742abfd54938fb0333e19ad067635c8eb86f1dbf0ce44b165c4292b50"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "errors": 15,
+  "categories": {
+    "non_C4_prototype_signature_only": 1,
+    "C4_order_or_chromosome_distribution": 1,
+    "C4_marginal_form_dosage": 10,
+    "C4_joint_form_phase_with_matching_marginal_dosage": 3
+  },
+  "unrepresented_errors": 2,
+  "unique_optima_are_not_confidence": true
+}

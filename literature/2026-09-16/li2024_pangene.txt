@@ -1,0 +1,732 @@
+                                                                                                                                                                        TBD, 2024, pp. 1–9
+
+                                                                                                                                                                                  doi: TBD
+                                                                                                                                            Advance Access Publication Date: Day Month Year
+                                                                                                                                                                                    Preprint
+
+
+
+                                            PREPRINT
+
+                                            Exploring gene content with pangene graphs
+                                            Heng Li ,1,2,3,∗ Maximillian Marin 2 and Maha Reda Farhat 2,4
+arXiv:2402.16185v3 [q-bio.GN] 29 May 2024
+
+
+
+
+                                            1
+                                              Dana-Farber Cancer Institute, 450 Brookline Ave, Boston, MA 02215, USA, 2 Harvard Medical School, 10 Shattuck St, Boston, MA 02215, USA,
+                                            3
+                                              Broad Insitute of Harvard and MIT, 415 Main St, Cambridge, MA 02142, USA and 4 Pulmonary and Critical Care Medicine, Massachusetts General
+                                            Hospital, Boston, USA
+                                            ∗
+                                              Corresponding author. hli@ds.dfci.harvard.edu
+
+
+
+
+                                            Abstract
+                                            Motivation: The gene content regulates the biology of an organism. It varies between species and between individuals of the same species.
+                                            Although tools have been developed to identify gene content changes in bacterial genomes, none is applicable to collections of large
+                                            eukaryotic genomes such as the human pangenome.
+                                            Results: We developed pangene, a computational tool to identify gene orientation, gene order and gene copy-number changes in a
+                                            collection of genomes. Pangene aligns a set of input protein sequences to the genomes, resolves redundancies between protein sequences
+                                            and constructs a gene graph with each genome represented as a walk in the graph. It additionally finds subgraphs, which we call bibubbles,
+                                            that capture gene content changes. Applied to the human pangenome, pangene identifies known gene-level variations and reveals complex
+                                            haplotypes that are not well studied before. Pangene also works with high-quality bacterial pangenome and reports similar numbers of core
+                                            and accessory genes in comparison to existing tools.
+                                            Availability and implementation: Source code at https://github.com/lh3/pangene; pre-built pangene graphs can be downloaded from
+                                            https://zenodo.org/records/8118576 and visualized at https://pangene.bioinweb.org.
+
+
+                                            1. Introduction                                                             for whole-genome data. The current human pangenome tooling is
+                                                                                                                        not designed for studying gene variations.
+                                            A human genome contains about 20,000 protein-coding genes. A
+                                                                                                                            In contrast, research on bacterial pangenome focuses on protein-
+                                            small number of them have frequent copy-number or gene order
+                                                                                                                        coding genes instead of genome sequences, to the point that in the
+                                            changes in the human population (Sudmant et al., 2010; Handsaker
+                                                                                                                        literature, a bacterial “pangenome” often refers to the collection of
+                                            et al., 2015). These genes are under fast evolution and may be
+                                                                                                                        protein-coding genes. Several high-quality tools have been developed
+                                            responsible for immune responses, affecting brain functionality (Ju
+                                                                                                                        for constructing the gene content of bacterial genomes (Page et al.,
+                                            et al., 2016) and drug metabolism (Taylor et al., 2020), or associated
+                                                                                                                        2015; Ding et al., 2018; Tonkin-Hill et al., 2020; Gautreau et al.,
+                                            with known diseases (Mercuri et al., 2022). They may have profound
+                                                                                                                        2020; Zhou et al., 2020). In a nutshell, they start with ab initio
+                                            biological and biomedical implications.
+                                                                                                                        gene annotation in each genome, cluster the resulted protein
+                                                Thanks to the recent advances in sequencing technologies
+                                                                                                                        sequences, and then post-process clusters to identify orthologous
+                                            (Wenger et al., 2019) and assembly algorithms (Nurk et al., 2020;
+                                                                                                                        genes and to fix issues caused by imperfect assembly, annotation
+                                            Cheng et al., 2021; Rautiainen et al., 2023), we can routinely achieve
+                                                                                                                        or clustering (Tonkin-Hill et al., 2023). These bacterial pangenome
+                                            haplotype-resolved assembly over genes under copy-number or order
+                                                                                                                        tools however have not considered splicing, multiple isoforms,
+                                            changes. We have also developed algorithms to construct pangenome
+                                                                                                                        frequent segmental duplications and the much larger size of the
+                                            sequence graphs that encode variations between genomes. However,
+                                                                                                                        human genome. They have not been shown to work with human
+                                            how to identify these gene-level variations is not straightforward.
+                                                                                                                        pangenome data.
+                                            Among the three whole-genome pangenome construction tools
+                                                                                                                            Here we developed pangene, a new computational tool to explore
+                                            used by the Human Pangenome Reference Consortium (HPRC),
+                                                                                                                        the gene content of a pangenome. Unlike bacterial pangenome
+                                            minigraph (Li et al., 2020) and minigraph-cactus (Hickey et al.,
+                                                                                                                        pipelines, pangene effectively annotates protein-coding genes by
+                                            2023) are unable to align through complex genomic regions and may
+                                                                                                                        aligning protein sequences to each genome with miniprot (Li,
+                                            miss genes in long segmental duplications; PGGB (Garrison et al.,
+                                                                                                                        2023). As miniprot can align through in-frame stop codons and
+                                            2023) collapses paralogous genes which makes it difficult to study
+                                                                                                                        frameshifts, this procedure simplifies gene annotation and is robust
+                                            individual paralogs. In addition, all three tools do not directly reveal
+                                                                                                                        to insertion/deletion errors in the input genomes. Furthermore,
+                                            how genomic variations affect genes. To study gene-level variations,
+                                                                                                                        pangene constructs a bidirected gene graph and can capture
+                                            HPRC had to manually annotate genes on each haplotype (Liao
+                                                                                                                        inversions missed by bacterial pangenome tools. It also provides an
+                                            et al., 2023) which is a time-consuming process. PGR-TK (Chin
+                                                                                                                        algorithm to identify gene copy-number or gene order variations.
+                                            et al., 2023) reconstructs local haplotype structures from genomic
+                                                                                                                        Pangene is optimized for human genomes and also works for
+                                            sequences but it is does not directly model genes and is not intended
+                                                                                                                        bacterial genomes.
+
+
+                                            © The Author 2024. Published by Oxford University Press. All rights reserved. For permissions, please e-mail: journals.permissions@oup.com
+                                                                                                                                                                                           1
+      2     Pangene graphs
+
+
+Table 1. Notations                                                                         (a)                     B                         C
+                                                                                                                                                                           (b)            L A + B +         (c)                            C
+                                                                                                                                                                                          L B + B +
+                                                                                                   A                                                             E                        L B + C -                            B
+                                                                                                                                                                                                                  A                                 E
+Notation                   Description                                                                                                                                                    L A + D +
+                                                                                                                                                                                          L C - E -
+                                                                                                                                                                                          L D + E -                                D
+                                                                                                                            D
+V                          Set of genes
+v, w, u                    Genes; vertices in a bidirected graph                                                                                                           (e)
+                                                                                                                                                                                                       <C                                      >C
+                                                                                           (d)
+X                          Set of oriented genes; X = V × (>, <)                                                       Be           Ce           Cs                                          >B              <E                    <B                   >E
+                                                                                                         Bs                                                                        >A                                     <A
+                                                                                                                                                        Ee           Es
+x, y, z                    Oriented genes; vertices in a directed graph                          As Ae
+                                                                                                                                                                                                  >D                                    <D
+>v, <v                     Oriented genes
+                                                                                                                   Ds                De
+x                          Reverse complement of x; >v = <v, <v = >v                                                                                                                         (g)
+
+ν(x)                       The gene behind x; ν(>v) = ν(<v) = v                            (f)                                                                                      (f)
+                                                                                                                                B                                                                           B
+
+                                                                                                         2 = { Ds, Ae,
+                                                                                                         Bs, Be, Ce }                    C                            4 = { Es }                        2             C        3
+                                                                                                                                                             E                                                                         E
+                                                                                            1 = { As }                                                                                  1         A                                             4
+                                                                                                                                                                                                                  D
+                                                                                                               A                                 3 = { Cs, Ee, De }
+                                                                                                                                    D
+2. Methods                                                                                                                                                                                                  0 (dummy vertex)
+
+
+Pangene takes a set of protein sequences and multiple genome
+                                                                                           Fig. 2. An example of a gene graph. (a) A gene graph for visualization.
+assemblies as input, and outputs a graph in the GFA format (Li                             (b) The corresponding GFA format. (c) Bidirected graph. (d) Biedged
+et al., 2020). It involves two steps: aligning the set of protein                          graph. (e) Directed graph. (f) Net graph, which loses information.
+sequences to each input assembly with miniprot (Li, 2023), and                             (g) A depth-first traversal of the net graph with “0” representing a
+deriving a graph from the alignment with each contig encoded as                            super node not in the original net graph. (a) through (e) are equivalent
+a walk of genes. Pangene provides utilities to classify genes into core                    representations.
+
+genes that are present in most of the input genomes, or accessory
+genes otherwise. Pangene can also identify generalized “bubbles” in
+the graph, which represent local gene order, gene copy-number or
+gene orientation variations among the input genomes.                                       x = <v, and vice versa. Throughout this article, we will use symbol
+    Given perfect gene annotation and orthology assignment between                         u, v or w to denote a gene and use x, y or z to denote an oriented
+the genes, the pangene graph construction algorithm is conceptually                        gene (Table 1).
+simple: it takes an orthologous group as a vertex and adds an                                  Let T be the set of input contigs. They harbor oriented genes in
+edge between two groups if on an input genome, a gene in one                               X. 2-tuple (x, y) ∈ X × X is said to be supported by contig t ∈ T
+group is adjacent to a gene in the other group (Fig. 1). The                               if y immediately follows x on t or, due to the strand symmetry of
+practical difficulty is to obtain accurate annotation in the presence                      DNA, x immediately follows y.
+of redundant sequences, paralogous genes and errors in assembly or                             A pangene graph is usually visualized as Fig. 2a (Wick et al.,
+alignment.                                                                                 2015) and can be mathematically defined in a few equivalent ways.
+    An important use of pangenome graphs is to identify genomic                            It can be formulated as a directed graph GD = (X, E) where E ⊂
+variations represented as “bubbles”. While bubbles have been                               X × X is the set of edges. In the context of pangene graphs, (x, y)
+extensively studied in directed graphs (Onodera et al., 2013),                             is an edge, also written as x → y, if (x, y) is supported by a contig.
+they have not been rigorously defined on bidirected graphs graphs                          Notably, if x → y is an edge, y → x must also be an edge. In graph
+that are the necessary outputs of assemblers and pangenome                                 theory, this property is called the skew symmetry. Fig. 2e shows an
+constructors. If the field is to move towards the more generalized                         example of a directed pangene graph which can be described in the
+bidirected graph as a representation of genomic variation developing                       GFA format (Fig. 2b). In GD , it is possible that y can reach both
+the concept of bubbles in this context will be necessary. Hence, how                       x and x. When this happens, x or ν(x) is said to be an inversion.
+to define and to find “bubbles” in bidirected graphs will be a major                           A pangene graph can also be thought as a bidirected graph GB =
+topic of this article.                                                                     (V, E) where the definition of E is the same as above. An edge in E is
+                                                                                           effectively associated with two directions. For example, (>v, <w) ∈
+2.1. Defining pangene graphs                                                               E, also written as v><w, suggests the edge between v and w has
+Let V be the set of genes and X = V × {>, <} be the set of oriented                        a first direction “>” towards vertex v and a second direction “<”
+genes. If v ∈ V is a gene, x = (v, >) ∈ X, or simply x = >v, denotes                       towards vertex w. Fig. 2c shows the bidirected equivalence of Fig. 2a.
+an oriented gene and ν(x) = v gives the underlying gene behind                                 In a directed graph, x → y ← z is not a path because x cannot
+oriented gene x. x is the reverse complement of x. i.e., if x = >v,                        reach z. The similar constraint is applied to the bidirected graph
+                                                                                           GB . For example, v>>u<<w is not a path because both v and w
+                                                                                           go into u. v>>u><w is a path, which can also be expressed as a
+(a)                          (c)                                                           path in GD : (>v, >u, <w).
+      DRA    DRB3   DRB1           RSRP1      RHD     TMEM50A    RHCE     MACO1
+                                                                                               As pangene constructs the graph from protein-to-genome
+      DRA    DRB4   DRB1           RSRP1    TMEM50A    RHCE      MACO1
+                                                                                           alignment (Li, 2023), it also attaches alignment scores to edges. Let
+      DRA    DRB5   DRB1           RSRP1     RHD       RHD      TMEM50A   RHCE     MACO1
+                                                                                           Tx→y ⊂ T be the set of contigs that support x → y and S(x|y, t),
+      DRA    DRB1                  RSRP1     RHD      TMEM50A    RHCE     MACO1            t ∈ Tx→y , be the alignment score of x when x → y is supported by
+(b)          DRB3            (d)                                                           contig t. S(x|y) is calculated as
+      DRA           DRB1                               TMEM50A
+             DRB4                   RSRP1      RHD                 RHCE    MACO1
+
+             DRB5
+                                                                                                                                                                    1                     X
+                                                                                                                                    S(x|y) =                                                          S(x|y, t)
+                                                                                                                                                                 |Tx→y |
+Fig. 1. Examples of pangene graphs. (a) Human haplotypes around the                                                                                                                  t∈Tx→y
+HLA-DRB1 gene. (b) The pangene graph around HLA-DRB1. (c) Human
+haplotypes around the RHD gene. RHD has copy-number changes and
+TMEM50A may be inverted. (d) The corresponding pangene graph.
+                                                                                           which is the average score of x among contigs supporting x → y.
+                                                                                                                              Pangene graphs               3
+
+
+                                                                           (a)                                 (d)
+2.2. Obtaining the protein set                                                    TRPM8     MSL3      HJURP          NDUFA6     CYP2D6      CYP2D7       TCF20
+                                                                           chr2
+Pangene requires a set of protein sequences as input which may have               AMELX     MSL3      FRMPD4         NDUFA6    CYP2D6/7?        TCF20
+                                                                           chrX
+redundancies. In principle, if every input genome is annotated, we
+may merge all annotated protein sequences and align to all genomes
+                                                                           (b)
+                                                                                  TRPM8                HJURP   (e)
+with miniprot. This strategy works when there are a small number                                                                    93%
+                                                                                             MSL3
+of diverged genomes. If there are many similar genomes, all with                           84% 84%                                       100%
+                                                                                                                     NDUFA6    CYP2D6           CYP2D7   TCF20
+annotations, a faster way is to cluster protein sequences with CD-                AMELX   100% 100%   FRMPD4
+
+HIT (Li and Godzik, 2006) or MMseqs2 (Schneider et al., 2017), and
+take a representative protein sequence from each cluster to generate       (c)
+                                                                                                               (f)
+                                                                                  TRPM8                HJURP
+the protein set.                                                                                                                           100%
+
+    Most human genomes do not have high-quality gene annotation.                                                                         100%
+                                                                                                                     NDUFA6    CYP2D6           CYP2D7   TCF20
+                                                                                  AMELX     MSL3      FRMPD4
+We may generate the protein set from the reference gene annotation
+supplemented with protein-coding genes or diverged alleles not
+                                                                           Fig. 3. Graph-based annotation adjustment. (a) MSL3 is located on
+present in the reference genome, such as HLA-DRB3. Pangene                 chromosome X but has a weaker hit on chromosome 2 when the gene
+allows one gene to be associated with multiple protein sequences.          is aligned to a male haplotype without chromosome X. (b) The initial
+If protein names follow format <GeneID>:<ProteinID>, pangene will          pangene graph. Percentages indicate alignment identity. (c) The adjusted
+select one protein for each <GeneID> and use <GeneID> as the segment       graph after filtering out the MSL3 hit on chr2. (d) Two haplotypes
+name in the output GFA file.                                               involving CYP2D6 and CYP2D7 which are paralogous genes. The second
+                                                                           haplotype should have CYP2D7 only but because CYP2D6 is longer, the
+                                                                           CYP2D6 alignment score is higher than the CYP2D7 score. (e) The
+2.3. Selecting non-orthologous genes                                       initial pangene graph assuming the second haplotype has CYP2D6. (f)
+The central problem in graph construction is how to consistently           The adjusted graph.
+
+annotate multiple genomes with a subset of input proteins. A naive
+way to annotate a genome is to align all protein sequences to the
+genome and if there are multiple proteins mapped to the same
+locus, select the best scoring protein as the annotation. This simple      with the alignment of paralogous genes (Fig. 3d) and leads to a
+strategy does not work if there are orthologous proteins in the input      graph (Fig. 3e) inconsistent with manuscript annotation (Liao et al.,
+protein set. For example, suppose gene v and w are orthologous to          2023). To improve this case, pangene marks x → y to be low priority
+each other and are thus aligned to the same locus in each genome.          if there exists x → z such that y and z are on the same contig in an
+When some genomes match v better and the rest match w better,              input genome and S(x|y) < S(x|z)·r2 (r2 defaults to 98%). Pangene
+both v and w will be considered as accessory genes that are not            then marks all x alignment that are incident to a low-priority edge
+present in all genomes. However, the preferred choice is to elect one      x → y to have low priority as well and prefers a gene without the
+of them as a core gene.                                                    low-priority mark. In Fig. 3e, x = <CYP2D6, y = <TCF20 and z =
+    Pangene selects non-orthologous genes as follows. For gene v,          <CYP2D7. <CYP2D6 is marked to have low priority on the second
+pangene inspects its best hit in each genome (hashes of gene names         contig. This results in a graph in Fig. 3f that is more consistent with
+are used to break ties) and counts b(v) the number of genomes where        the known evolution at this locus (Liao et al., 2023).
+v is aligned better than all other genes overlapping with v. Pangene           Both cases may also be caused by processed pseudogenes. When
+then traverses each gene v in the descending order of current b(v).        a protein-coding gene has a recent pseudogene that has a near
+If b(v) > 0, select v as a non-orthologous gene and for each genome        identical sequence, the two heuristics may not work due to the score
+where the best mapping of w overlaps with v but is aligned better          ratio threshold. By default, pangene filters out an alignment without
+than v, reduce b(w) by one. This way, if v and w are orthologs, their      splicing as a potential pseudogene alignment if the protein has a
+best mapping positions likely overlap and thus only one of them will       spliced alignment in other samples. Pangene also has an option to
+be selected; if v and w are paralogs, their best mapping positions         drop a protein if it does not have spliced alignment in any sample.
+usually differ and thus both will be selected.                             For human samples, these strategies can reduce false connections
+                                                                           between chromosomes.
+2.4. Adjusting pangene graphs
+Pangene constructs an initial graph using genes selected from
+the last section. It applies additional heuristics to improve gene         2.5. Past work on bubble finding
+annotations based on the graph topology and alignment scoring in           The concept of bubble is perhaps first coined by Zerbino and Birney
+two special cases.                                                         (2008) in the context of assembly graphs. A bubble was initially
+    First, a gene may be wrongly mapped to its paralogs if its best        meant to be simple in that paths through a bubble do not share
+position is missing. Suppose a gene on chromosome X has a second           vertices except the start and the end vertices. Onodera et al. (2013)
+best hit on an autosome. If the alignment score of the autosomal           introduced superbubble to allow more complex acyclic topology and
+hit is lower than the hit to chromosome X by 3% miniprot will              found a quadratic algorithm to identify all superbubbles. The time
+only report the hit on chromosome X. However, because a phased             complexity was improved to O(|E| log |E|) by Sung et al. (2015) and
+male human assembly does not have chromosome X, the gene will              then to linear by Brankovic et al. (2016).
+be mapped to the autosome (Fig. 3a). This false hit will lead to               A subgraph induced by a superbubble is acyclic, but in a pangene
+spurious edges in the initial graph (Fig. 3b). To solve this problem,      graph or a variation graph, we also care about cyclic subgraph.
+pangene marks x → y as a false edge if there exists x → z such             Gärtner et al. (2018) defined weak superbubble without the acyclic
+that y and z are on different contigs in every input genome and            condition, and presented a linear algorithm to identify all weak
+S(x|y) < S(x|z) · r1 (r1 defaults to 95%). Pangene then filters out        superbubbles (Gärtner and Stadler, 2019). Interestingly, more than
+all alignment of x that are incident to a false edge x → y (Fig. 3c).      20 years before this work, Johnson et al. (1994) had already come up
+    Second, similar to the first case, if the best position of a gene is   with a linear algorithm to effectively find weak superbubbles in the
+missing due to a real deletion in evolution, this gene may interfere       context of compiler design, which will be the basis of our algorithm.
+      4        Pangene graphs
+
+
+(a)                                            (b)                                     (c)
+      A                         C
+                                                          L A + B +                                                    A naive algorithm to identify all generalized bibubbles is to
+                      B                                   L A + B -
+                                                          L B + C -                                                 enumerate each pair of oriented genes and then test whether the
+                                                          L B - C -                           A       B        C
+                                                                                                                    pair forms a generalized bibubble based on the definition. This is
+(d)                                      (e)                                           (f)
+                      Be
+                                                                B                            >A       >B       <C   an O(|V |2 · (|V | + |E|)) algorithm, impractical for large graphs. To
+ As       Ae               Ce       Cs
+                                               { As }                         { Cs }                                describe a new algorithm for bubble finding, we will first introduce
+                                                         A            C
+
+                 Bs                                     { Ae, Bs, Be, Ce }                   <A       <B       >C   net graphs and cycle equivalence.
+                                                                    (h)
+(g)
+
+      A                         C                D                        A
+                                                                                                      D             2.7. Biedged graphs and net graphs
+                      B                                                                           B
+                                                                                                           C        Let Z = V × {s, e}, where symbol “s” represents the start of a
+                                                                                                                    gene and symbol “e” represents the end. Given a bidirected graph
+Fig. 4. Example of gene graphs with inversions. (a) A gene graph for
+                                                                                                                    GB = (V,
+                                                                                                                            E), a biedged graph GE = (Z, Eg , El ) is constructed with
+visualization. (>A,<C) is a generalized bibubble. (b) The corresponding
+GFA format. (c) Bidirected graph. (d) Biedged graph. (e) Net graph,
+                                                                                                                    Eg = {(v, s), (v, e)}|v ∈ V and El being the set of undirected
+which loses information. (f) Directed graph. (g) A second gene graph                                                connections between starts or ends of genes in Z (Paten et al., 2018).
+with (>A,>D) being a generalized bibubble. (>A,<C) is not a generalized                                             Fig. 2d shows an example. Note that a valid walk in a biedged graph
+bibubble because U (>A,<C)={B,C} but U (>C,<A)={B}. (h) A third gene                                                cannot pass two consecutive edges in El . Due to this restriction,
+graph without any generalized bibubbles.                                                                            many classical algorithms in graph theory are not applicable to a
+                                                                                                                    biedged graph.
+                                                                                                                       A net graph GN = (P, En ) is constructed by contracting all
+                                                                                                                    edges in El . As a result, a vertex in P is a component connected by
+    Weak superbubble is defined on directed graphs, not on                                                          edges in El and an edge represents a gene in V (Fig. 2e and Fig. 4e).
+bidirected graphs. If we apply the previous algorithms to directed                                                  Because En and V has one-to-one relationship, we will also use v to
+graph GD , we will find most superbubbles twice on opposite strands.                                                denote an edge in GN . A net graph is an undirected graph and is
+More importantly, superbubble cannot capture the visual intuition                                                   not equivalent to the bidirected graph GB . For example in Fig. 2a,
+in the presence of inversions. For example, in Fig. 4a, >A and <C                                                   there is not a walk that goes through both gene C and D, but in
+enclose a subgraph that looks like a bubble, but the equivalent                                                     Fig. 2f, there is a walk involving both genes.
+directed graph (Fig. 4f) does not have a superbubble when >A and <A                                                    In graph theory, a set of edges in GN is a cut-set if cutting
+are taken as different vertices. Dabbaghie et al. (2022) implemented                                                through these edges partitions GN into two disconnected subgraphs.
+the algorithm by Onodera et al. (2013) for sequence graphs, but how                                                 A key observation is that if (x, y) is a bibubble in bidirected graph
+the issues above are handled is not apparent. The closest concept to                                                GB , {ν(x), ν(y)} is a cut-set in GN .
+weak superbubble in bidirected graphs is snarl (Paten et al., 2018),
+which leads to a bidirected subgraph that can be separated from
+                                                                                                                    2.8. Cycle equivalence
+the rest of the graph. Snarl does not require reachability which
+is necessary in defining superbubbles. To this end, there are no                                                    Two edges e1 and e2 in GN are said to be cycle equivalent if every
+equivalent definition of weak superbubble in directed graphs.                                                       cycle containing e1 contains e2 and vice versa. Cycle equivalent
+                                                                                                                    edges form equivalent classes, which can be determined in linear
+                                                                                                                    time (Johnson et al., 1994).
+                                                                                                                         For any pair of e1 and e2 that are cycle equivalent, {e1 , e2 } is a
+2.6. Defining generalized bibubbles
+                                                                                                                    cut-set. To see this, let p11 and p12 are the two vertices incident to
+The definition of “bubble” here tries to capture the visual intuition.                                              e1 . Without losing generality, suppose Gn is a connected graph. If
+It is inspired by Onodera et al. (2013). Let U (x, y) ⊂ V be the set                                                Gn remained connected after removing e1 and e2 , there would exist
+of vertices that are reachable from x without passing through x, x                                                  a vertex q that can reach both p11 and p12 without passing through
+or y. A generalized bidirected bubble, or a generalized bibubble in                                                 e2 (because e2 has been removed). Then e1 would be in a cycle with
+short, is a pair (x, y) ∈ X × X such that i) U (x, y) = U (y, x) ̸= ∅;                                              q in the original GN but without passing through e2 , violating the
+ii) ∀v ∈ U (x, y), there is a walk from x to y that passes v; iii)                                                  cycle equivalence of e1 and e2 .
+there does not exist z ∈ U (x, y) × {>, <} that satisfies U (x, z) =                                                     Conversely, if {e1 , e2 } is a cut-set, e1 and e2 are cycle equivalent.
+U (z, x) or U (z, y) = U (y, z). Due to the skew symmetry, if (x, y) is                                             To prove this, let {e1 , e2 } partition the vertex set P into P1 and P2 .
+a generalized bibubble, (y, x) is also a generalized bibubble.                                                      If e1 and e2 were not cycle equivalent, there must exist a cycle that
+    In the definition of U (x, y), we intentionally allow walks passing                                             only contains e1 but not e2 . Then cutting both e1 and e2 would still
+through y; otherwise U (>A,<C) in Fig. 4g would become {B}, making                                                  keep P1 and P2 connected due to this cycle, violating that {e1 , e2 }
+(>A,<C) a generalized bibubble. This example also suggests (x, y)                                                   is a cut-set.
+would not be a generalized bibubble if x ∈ U (x, y) or y ∈ U (x, y).                                                     To this end, {e1 , e2 } is a cut-set if and only if e1 and e2 are cycle
+Condition ii) above aims to exclude examples such as Fig. 4h.                                                       equivalent. Then if (x, y) is a generalized bibubble in GB , ν(x) and
+Condition iii) requires a bibubble to be minimal. As a result, it                                                   ν(y) are cycle equivalent in GN . The reverse is not always true. For
+is not possible for (x, y) and (x, z) both to be generalized bibubbles                                              example, in Fig. 2f, “C” and “D” are cycle equivalent, but (>C,>D) or
+unless y = z. Generalized bibubbles are also nested in that if (x, x′ )                                             in any orientation is not a generalized bibubble. Similarly, “A” and
+and (y, y ′ ) are generalized bibubbles and U (x, x′ ) ∩ U (y, y ′ ) ̸= ∅,                                          “B” are cycle equivalent in Fig. 5c but they do not enclose generalized
+then U (x, x′ ) ⊂ U (y, y ′ ) or U (y, y ′ ) ⊂ U (x, x′ ).                                                          bibubbles.
+    For a generalized bibubble (x, y), let U (x, y) = V \ U (x, y) \
+{ν(x), ν(y)}. No vertex in U (x, y) can reach vertices U (x, y) because
+otherwise w ∈ U (x, y) reachable from x (or from y) would not pass                                                  2.9. Identifying generalized bibubbles
+through y (or x) and would be added to U (x, y) (or U (y, x)) – this                                                Given a bidirected graph GB , pangene transforms it to a net graph
+would violate the definition of U (x, y). This observation indicates                                                GN and assigns a class number to each gene v such that v and w are
+that removing ν(x) and ν(y) would separate U (x, y) from the rest                                                   in the same class if they are cycle equivalent in GN . For each oriented
+of the graph.                                                                                                       gene x that has multiple edges, pangene applies a breadth-first
+                                                                                                                                                  Pangene graphs       5
+
+
+(a)           A       B   C     B             D               E       E                                 have gene-level variations (Sudmant et al., 2010; Boettger et al.,
+                                                                                                        2012; Handsaker et al., 2015). While these genes have not been
+(b)               C             (c)               3       C           (d)           3       C           manually annotated for HPRC samples, we could check whether
+                                                                                                        pangene captured known events such as the MAPT inversion and
+                                              B                                 B
+              B                                       2                                 2
+                                                                                                        the ORM1 copy-number changes.
+                                          A               D                 A               D
+          A           D   E           1                                1
+                                                                                                            Due to the lack of genome-wide ground truth in human data,
+                                                                  E                                 E
+                                                              4                                 4       we could only manually evaluate pangene in individual subgraphs.
+                                                                            0 (dummy vertex)
+                                                                                                        To get a better sense of overall statistics, we additionally applied
+                                                                                                        pangene to two bacterial datasets and compared the results to
+Fig. 5. Example of gene graphs that complicate net graph based bubble
+finding. (a) Gene annotation on a contig. (b) The corresponding pangene
+                                                                                                        existing bacterial pangenome tools.
+graph. (c) Net graph with the dummy vertex “0” connected to “1” only.
+(d) Net graph with the dummy vertex connected to genes at the ends of
+the contig.                                                                                             3.1. Structural variants between two human genomes
+                                                                                                        We downloaded GenCode comprehensive human annotation v45,
+                                                                                                        retained the protein-coding transcripts tagged with “Ensembl canonical”
+                                                                                                        and filtered out readthrough transcripts (a transcript that joins two
+search (BFS) to traverse up to m genes (100 by default) reachable
+                                                                                                        adjacent genes) and mitochondrial genes. Only one transcript was
+from x. During BFS, pangene collects y in the same equivalent class
+                                                                                                        selected per gene. Because GenCode does not include HLA-DRB3,
+and does not traverse beyond y. It then checks each (x, y) using the
+                                                                                                        HLA-DRB4 and several KIR genes, we manually added 20 HLA-
+definition of generalized bibubble. Because x can only appear in one
+                                                                                                        DRB genes and alleles from the IPD-IMGT/HLA database and 15
+generalized bibubble, pangene stops testing other (x, ·) pairs if it has
+                                                                                                        KIR genes from the IPD-KIR database. In the end, we constructed
+found a generalized bibubble.
+                                                                                                        a protein set with 19,421 sequences.
+    The time complexity in the worst case is O(|V | + |E| + b · m2 ),
+                                                                                                            We aligned the proteins to the human reference genome
+where b is the number of genes with multiple incoming or outgoing
+                                                                                                        GRCh38 (Schneider et al., 2017) and T2T-CHM13 (Nurk et al.,
+edges and m is effectively the maximum bibubble size. On real
+                                                                                                        2022) with miniprot (Li, 2023) v0.12 under option “--outs=0.97
+pangene graphs, the time complexity is close to O(|V | + |E| + b · m).
+                                                                                                        -Iu” and constructed a pangene graph. The resulting graph contains
+It takes pangene less than one second to find ∼200 generalized
+                                                                                                        19,088 genes and 19,390 edges. We identified 91 generalized bubbles
+bibubbles in a human graph including 20 thousand genes.
+                                                                                                        in the graph that contain 100 genes or fewer. The bibubbles involved
+    In addition to cycle equivalence, Johnson et al. (1994) described
+                                                                                                        691 genes affected by gene copy, gene order or gene orientation
+another linear algorithm to find single-entry-single-exist (SESE)
+                                                                                                        changes between the two genome. These genes included many known
+regions in GN provided that GN contains a vertex p0 that puts
+                                                                                                        events such as PDPR, SMN2, CTAGE9, HPR, ORM1, CCL4,
+every other vertex in GN in a cycle with p0 . A SESE region is
+                                                                                                        NCF1 and Amylase (Handsaker et al., 2015; Sudmant et al., 2010).
+intuitively a bubble-like subgraph in GN . Pangene also implemented
+                                                                                                        Some of the large gene clusters affected by structural changes, such
+this algorithm. It introduced p0 that connects all vertices with
+                                                                                                        as SMN2 and Amylase, would not be easily captured by whole-
+degree one in GN and connects the first and the last gene on
+                                                                                                        genome alignment as they are not represented by colinear genome
+each reference chromosome (Fig. 2f and Fig. 5d). Because a SESE
+                                                                                                        alignments.
+region does not always correspond to a generalized bibubble in GB ,
+pangene still has to test each SESE region using the definition of
+generalized bibubble. The time complexity of this second algorithm                                      3.2. Analyzing 100 human haplotypes
+is O(|V | + |E| + b′ m2 ) where b′ is the number of SESE regions in
+                                                                                                        We obtained the assembly of CN1 (Yang et al., 2023), YAO (He
+GN . It is faster in theory, but pangene still uses the first algorithm
+                                                                                                        et al., 2023) and 47 samples released by the Human Reference
+by default as the placement of p0 is heuristic which caused one false
+                                                                                                        Pangenome Consortium (Liao et al., 2023). Together with GRCh38
+negative in a human pangene graph.
+                                                                                                        and T2T-CHM13, this gave us 100 human haplotypes. We aligned
+                                                                                                        the same set of proteins to the 100 haplotypes. Pangene took
+                                                                                                        less than one minute to construct a graph and less than one
+3. Results                                                                                              second to identify 266 generalized bibubbles in the graph. Many
+We applied pangene to HPRC samples and manually inspected                                               of the bibubbles were supported by one contig only. Pruning
+subgraphs around CYP2D6, RHD, C4, HLA-DRB1 and KIR genes                                                edges supported by one contig resulted in a graph containing 209
+which have been curated for these samples (Liao et al., 2023; Zhou                                      generalized bibubbles. Further dropping about 2,000 single-coding-
+et al., 2024). We also looked at many other genes that are known to                                     exon genes led to a graph containing 163 bibubbles. These included
+
+
+
+GRCh38
+
+
+HG00741
+
+
+Bonobo
+
+
+Gorilla
+
+
+Orangutan
+
+
+
+Fig. 6. Human and great ape haplotypes around LRRC37A* genes. A red vertical bar indicates the two genes on each side are not adjacent on the
+genome. In the plot, each genome contains two blocks of genes. The genomic distance between the two blocks is 17.3 Mb in human, 61.3 Mb in bonobo,
+17.6 Mb in gorilla or 2.8 Mb in orangutan. GRCh38 has LRRC37A and LRRC37A2 in 17q21.31 and LRRC37A3 in 17q24.1. HG00741 has a known
+inversion around MAPT. All great apes have only one LRRC37A* gene. Chimpanzee and bonobo have the same gene haplotype. The two orangutan
+subspecies also have the same haplotype. The LRRC37A3 alignment in gorilla has two in-frame stop codons. It is challenging to distinguish LRRC37A*
+paralogs as they are similar in sequence and lack synteny with nearby genes.
+   6     Pangene graphs
+
+
+                                                                           Table 2. Number of detected genes in bacterial pangenomes
+manually confirmed gene-level variations around CYP2D6, C4 and
+RHD (Liao et al., 2023) and around HLA-DBR1 (Zhou et al., 2024).                                      Panaroo        pangene        PPanGGOLiN
+     Pangene effectively annotates each input genome. For a sanity
+check, we compared the pangene gene annotation to the GENCODE              Mtb: #total genes             4,207          4,216                  4,744
+annotation. Out of 19,043 protein coding genes in both annotations,        Mtb: #core genes              3,769          3,774                  3,660
+only four gene locations are different. In one example, pangene            Ecoli: #total genes          14,342         13,902                 14,291
+assigned NUDT4B to NUDT4. Pangene misses NUDT4B because                    Ecoli: #core genes            3,065          3,118                  3,038
+it is a single-exon gene, and pangene puts NUDT4B at the NUDT4
+locus because the protein sequence of NUDT4 is a strict substring          Panaroo, pangene and PPanGGOLiN were applied to two sets of gapless
+of NUDT4B.                                                                 bacterial assemblies: 152 M. tuberculosis (Mtb) strains and 50 E. coli
+                                                                           strains. Mtb genes were annotated by Prokka and Ecoli genes were
+     We also compared the pangene annotation to the T2T-CHM13
+                                                                           annotated by NCBI and downloaded from GenBank. A “core” gene is a
+annotation generated by Ensembl. There are 41 differences out              gene that is inferred to be present in ≥99% of assemblies in each dataset.
+18,676 genes present in both annotations. These include four genes         Panaroo was invoked in the strict mode with paralogs merged (option
+CSAG2, CSAG3, MAGEA6 and MAGEA3 that are close to each                     “--clean-mode strict --merge paralogs”).
+other. Pangene gives better protein-to-genome alignment for the four
+genes. We speculate that Ensembl may be annotating these genes
+based on synteny with GRCh38, but synteny here might be broken
+due to an apparent inversion around the genes. For another example,        contributor. We will use the 17q21.31 inversion around MAPT as
+in the RCCX gene cluster (Carrozza et al., 2021), pangene annotates        an example.
+CYP21A2 ahead of TNXB but Ensembl puts CYP21A2 inside an                      The 17q21.31 inversion is polymorphic in the human
+intron of TNXB, which seems to be an error. Ensembl also misses            population (Boettger et al., 2012; Steinberg et al., 2012). In the
+C4A, another gene in RCCX. We believe pangene is doing better              graph derived from the 100 human haplotypes, pangene identifid a
+in these cases. Most other genes among the 41 differences come             generalized bibubble corresponding to this inversion. The bibubble
+from huge complex gene clusters. We cannot tell what the correct           contained LRRC37A and LRRC37A2 which have similar sequences.
+annotation is.                                                             The two genes have another paralog LRRC37A3 that is ∼18 Mb
+     We next investigated genes with presence/absence variants             away. All great apes only have one copy of the gene. Intriguingly,
+(PAVs). Out of 16,996 multi-exon genes in the graph, 16,315 were           gorilla haplotypes are similar to human haplotypes at 17q24.1 but
+on the autosomes of GRCh38. 3.4% of them were absent from one              chimpanzee and orangutan haplotypes involve genes at 17q21.31
+or more haplotypes and 0.4% (n=58) were only present in ≤50%               (Fig. 6). As a result, the pangene graph including great apes
+of haplotypes. Among the 58 genes, TRIM64, for example, is                 connected genes in 17q24.1 and 17q21.31 and broke the 17q21.31
+close paralogous to TRIM64B. On most haplotypes, TRIM64B was               bibubble in the human-only graph. Involving outgroup species may
+aligned better than TRIM64 and pangene annotated two TRIM64B               hurt the finding of localized bibubbles.
+genes but no TRIM64. Therefore TRIM64 became a PAV. When
+we excluded genes having paralogs of ≥95% identity from the list,
+only 14 were left. This list included three KIR genes and HLA-             3.4. Analyzing 152 M. tuberculosis strains
+DRB4 that are known to be PAVs (Zhou et al., 2024). We checked             We downloaded the M. tuberculosis reference strain H37Rv and its
+a few remaining genes in the list. PRH1 and GSTM1 were in                  gene annotation from RefSeq (AC:GCF 000195955.2) and obtained
+relatively simple regions and look like real PAVs. Both of them            the complete long-read assemblies of 151 other strains (Peker et al.,
+have paralogs of identity below 95%. GSTT2 has a close paralog             2021; Marin et al., 2022; Hall et al., 2023). Following the instruction
+GSTT2B that CD-HIT failed to identify – it seemed an algorithm             of Panaroo (Tonkin-Hill et al., 2020), we ran Prodigal (Hyatt et al.,
+glitch. The flanking region around NOTCH2NLR looked complex                2010) v2.6.3 on the reference strain to train the Prodigal model and
+and was poorly assembled in most haplotypes. This may explain the          ran Prokka (Seemann, 2014) v1.14.6 with the pretrained model to
+low occurrence rate of this gene. Overall, almost all human genes or       predict protein coding genes in all strains. We used CD-HIT (Li
+their close paralogs are present in the majority of human haplotypes.      and Godzik, 2006; Fu et al., 2012) v4.8.1 with option “-c 0.98”
+It is rare to see a protein-coding gene with sequences completely          to cluster non-reference protein sequences, which resulted in 6,744
+missing without paralogs as backups.                                       clusters. We mapped these proteins to each M. tuberculosis genome
+     Our analysis is insensitive to thresholds r1 and r2 in Section 2.4.   using miniprot with option “-S” to disable splicing. We finally ran
+Reducing r1 from 95% to 90% and r2 from 98% to 96% only affects            pangene with “-p.001” to keep all genes regardless of their frequency
+9 out of 266 bibubbles.                                                    in the pangenome.
+                                                                               Pangene constructed a graph consisting of 4,216 genes, 3,652
+                                                                           of which were present in all 152 genomes (Table 2; Fig. 7). To
+                                                                           check if pangene captured the gene content in these strains, we
+3.3. Incorporating 10 great ape haplotypes                                 compared the pangene result to Panaroo v1.3.4. We aligned the
+We also constructed a graph including ten haplotype assemblies             Panaroo proteins to the pangene proteins with MMseqs2 (Steinegger
+of great apes, including chimpanzee, bonobo, gorilla and two               and Söding, 2017) v13.45111 and identified 46 Panaroo proteins
+orangutan subspecies (Makova et al., 2023). We filtered out single-        do not hit to pangene proteins at the default E-value threshold of
+exon genes and pruned edges supported by one contig. This graph            10−3 . We mapped the 46 proteins to H37Rv with miniprot and
+contained 239 generalized bibubbles, 131 of which were polymorphic         found 43 of them can be aligned and 76% of the aligned regions
+among the 100 human samples. The fewer polymorphic bibubbles in            overlap with annotated CDS in RefSeq. Manually investigating the
+human (in comparison to 163 identified without great ape samples)          overlaps revealed that most of the 43 proteins were aligned to
+were caused by the merging of small bibubbles, by the increased            the opposite strand of some RefSeq genes or in different reading
+difficulty in resolving paralogs given more remote outgroups, or           frames. Identifying homology based on the genomic locations of
+by chromosome-scale inversions or translocations that disrupted            input proteins, pangene did not include them into the final graph.
+the local bubble topology. The last cause seemed to be the major           Conversely, 40 pangene proteins do not hit to Panaroo proteins.
+                                                                                                                                          Pangene graphs        7
+
+
+        M. tuberculosis (core)                           M. tuberculosis (pan)                  4. Discussions
+         pangene                                       pangene
+            69                                                                  108
+                                  49                      67                                    Pangene constructs a graph to jointly represent the gene content
+                                                                                                of multiple high-quality genomes. It provides approximate gene
+                                                  62                                            annotation and orthology assignment as a byproduct. Given
+                                                                                                bacterial genomes, it plays a similar role to other bacterial
+137                  3,408                                              3,761
+                                                                                                pangenome tools for identifying core and accessory genes (Tonkin-
+                                                                                                Hill et al., 2023). Pangene is unique in that it also works for
+                                                                                                eukaryotic genomes and captures localized gene-level variants.
+                                  PPanGGOLiN     Panaroo
+       Panaroo                        77           68                                           Pangene complements whole-genome alignment based pangenome
+                                                                                   PPanGGOLiN
+         38                  37                             109
+                                                                                       536      tools and gives a more concise high-level view of gene content
+                 E. coli (core)                                    E. coli (pan)                changes.
+          pangene                                        pangene
+                                                                                                     Constructing a pangene graph is challenging because the
+             84                                            340                                  biologically correct graph is unknown. We tend to think a “correct”
+                                                                                                graph should model the evolution history in principle. However,
+                                                   230                                 531      evolution is complex in the presence of convergent/divergent
+                                       9                                                        evolution in the long time scale and non-homologous recombinations
+                     2,920                                          11,095                      and non-allelic gene conversions (Vollger et al., 2023) in the short
+  28
+                                                                                                time scale. We do not know the evolution history of most complex
+                                               Panaroo                                          loci except several well-studied cases. Furthermore, we take each
+Panaroo                                          205
+  12                                                                                            gene as an atomic unit but biologically, a gene may be subjected
+                                  PPanGGOLiN
+          29                                                                    PPanGGOLiN
+                                       9
+                                                                  498               334         to structural changes such as losing/gaining exons or fusing with
+                                                                                                another gene. These events are difficult to model even if we had the
+Fig. 7. Comparing three bacterial pangenome construction tools. In each                         exact annotation in all input genomes.
+venn diagram, pangene, Panaroo and PPanGGOLiN proteins are merged
+                                                                                                     The pangene graph construction algorithm is ad hoc. We have
+and clustered with MMseqs2 (easy-cluster -c 0.9 --min-seq-id 0.5). The
+                                                                                                manually tuned various heuristics to correctly encode known gene-
+diagram shows the number of clusters in each intersection. MMseqs2
+merges paralogous genes, so the number of clusters for each tool is smaller                     level variants in human, but may have overlooked other cases that
+than the number of genes in Table 2. Venn diagrams were generated with                          pangene may fail to represent. Ideally, we would prefer to model
+BioVenn (Hulsen et al., 2008).                                                                  graph construction to a global optimization problem. We have not
+                                                                                                been able to find such a formulation that can reliably encode known
+                                                                                                variations. This limitation is not specific to pangene; it is also
+                                                                                                applied to other pangenome construction tools.
+    We additionally ran PPanGGOLiN (Gautreau et al., 2020)                                           As protein-to-genome alignment can identify orthology within
+v1.2.105 with the Prokka annotation as the input. PPanGGOLiN                                    mammals or even vertebrates (Li, 2023), we could in principle
+collected 4,744 genes in the pangenome with 3,463 present in all.                               apply pangene to more distantly related species. We did construct
+277 genes did not hit to genes selected by pangene. 274 of these                                a gene graph from the human and mouse reference genomes.
+genes could be aligned to H37Rv by miniprot and 90% of the                                      The graph revealed synteny blocks visible from the human-mouse
+aligned regions overlap with annotated CDS in RefSeq. We note                                   whole-genome alignment, but the topology of the whole graph
+that although overlapping genes in different open reading frames                                looked complex due to frequent large-scale rearrangements over
+are rare in H37Rv (0.2% of coding regions), these genes may occur                               long evolutionary distance. Many generalized bibubbles identified
+in other strains and may have functional implications (Vargas et al.,                           from this graph were due to real orthologous alignments missed by
+2023; Snobre et al., 2024). PPanGGOLiN’s preference to count such                               miniprot. We will need another way at higher level to investigate
+genes in the pangenome is not necessarily a weakness.                                           such a graph. Another practical challenge in building a cross-species
+                                                                                                graph is to select the set of input proteins. When constructing
+                                                                                                the great ape graph, we tried to merge human and great ape
+3.5. Analyzing 50 E. coli strains                                                               protein sequences. In the resultant graph, we observed thousands
+M. tuberculosis has low diversity with each strain similar to each                              of alignments in the intergenic or intronic regions of GRCh38 which
+other (Marin et al., 2022). To understand how pangene performs                                  degraded the overall quality of the graph. The issue will become
+given more diverse strains, we collected 50 E. coli genomes with                                more prominent when we take diverse genomes without high-quality
+complete assemblies (Shaw et al., 2021).                                                        gene annotation as input. Nevertheless, we note that cross-species
+    We followed the same procedure to run pangenome tools. To                                   whole-genome alignment is also challenging and is perhaps no better
+get clean graph, pangene by default filters out genes that had >10                              than pangene. We still believe with improvements, pangene can
+edges or connected >3 distant loci in the graph. This filter only                               construct a cross-species graph that helps to reveal evolution in
+removed six genes in M. tuberculosis dataset but it filtered out 848                            longer term.
+genes in E. coli. We added option “-p.001 -g50 -r10” to retain                                       On the theoretical side, this article presented a rigorous
+more high-copy genes and genes connecting multiple loci. Although                               definition of “bubble” in a bidirected graph but it did not find an
+pangene collected fewer genes (Table 2), only 72 Panaroo genes do                               efficient algorithm to identify such generalized bibubbles. While the
+not hit to genes collected by pangene and the pangene pangenome                                 current implementation in pangene works for gene graphs containing
+size after clustering is not noticeably smaller than the Panaroo and                            ∼20,000 genes, it will be slow for a minigraph-cactus or PGGB
+the PPanGGOLiN pangenomes (Fig. 7). The differences between the                                 graph that contains tens of millions of nodes. How to efficiently
+tools might be determined by subtle thresholds on how to resolve                                identify generalized bibubbles remains an open and critical problem.
+homology and may not reflect the capability of each algorithm.                                  Furthermore, “bubbles” cannot represent rearrangements at the
+                                                                                                chromosome scale. How to explore a multi-species gene graph or
+   8      Pangene graphs
+
+
+
+an alignment graph in general may be another interesting research               Gautreau, G. et al. (2020). PPanGGOLiN: Depicting microbial diversity via
+topic.                                                                             a partitioned pangenome graph. PLoS Comput Biol, 16:e1007732.
+                                                                                Hall, M. B., Rabodoarivelo, M. S., Koch, A., et al. (2023). Evaluation of
+                                                                                   Nanopore sequencing for Mycobacterium tuberculosis drug susceptibility
+Acknowledgements                                                                   testing and outbreak investigation: a genomic analysis. Lancet Microbe,
+                                                                                   4:e84–e92.
+We are grateful to Pouria Salehi and Luke O’Connor for the helpful              Handsaker, R. E. et al. (2015). Large multiallelic copy number variations in
+discussions about the definition of variants in a sequence graph.                  humans. Nat Genet, 47:296–303.
+                                                                                He, Y., Chu, Y., Guo, S., et al. (2023). T2T-YAO: A telomere-to-telomere
+                                                                                   assembled diploid reference genome for han chinese. Genomics Proteomics
+Author contributions                                                               Bioinformatics.
+H.L. conceived the project, implemented the algorithms, analyzed                Hickey, G., Monlong, J., Ebler, J., et al. (2023). Pangenome graph
+                                                                                   construction from genome alignments with minigraph-cactus.               Nat
+the data and drafted the manuscript. M.M. and M.R.F. compiled
+                                                                                   Biotechnol.
+the bacteria datasets and contributed to data validation and
+                                                                                Hulsen, T., de Vlieg, J., and Alkema, W. (2008). BioVenn - a web
+interpretation.
+                                                                                   application for the comparison and visualization of biological lists using
+                                                                                   area-proportional venn diagrams. BMC Genomics, 9:488.
+                                                                                Hyatt, D. et al. (2010).         Prodigal: prokaryotic gene recognition and
+Conflict of interest                                                               translation initiation site identification. BMC Bioinformatics, 11:119.
+None declared.                                                                  Johnson, R., Pearson, D., and Pingali, K. (1994).                 The program
+                                                                                   structure tree: Computing control regions in linear time. In Sarkar,
+                                                                                   V., Ryder, B. G., and Soffa, M. L., editors, Proceedings of the
+Funding                                                                            ACM SIGPLAN’94 Conference on Programming Language Design and
+                                                                                   Implementation (PLDI), Orlando, Florida, USA, June 20-24, 1994, pages
+This work is supported by National Institute of Health grant                       171–185. ACM.
+R01HG010040 and U01HG010961 (to H.L.), T15LM007092 (to                          Ju, X.-C., Hou, Q.-Q., Sheng, A.-L., et al. (2016). The hominoid-specific
+M.M.) and R01AI155765 (to M.R.F.), and by Chan-Zuckerberg                          gene TBC1D3 promotes generation of basal neural progenitors and induces
+Initiative (to H.L.).                                                              cortical folding in mice. Elife, 5.
+                                                                                Li, H. (2023). Protein-to-genome alignment with miniprot. Bioinformatics,
+                                                                                   39:btad014.
+Data availability                                                               Li, H. et al. (2020). The design and construction of reference pangenome
+                                                                                   graphs with minigraph. Genome Biol, 21:265.
+Pangene source code available at https://github.com/lh3/pangene;
+                                                                                Li, W. and Godzik, A. (2006). CD-HIT: a fast program for clustering and
+pre-built pangene graphs can be downloaded from https://
+                                                                                   comparing large sets of protein or nucleotide sequences. Bioinformatics,
+zenodo.org/records/8118576 and visualized at https://pangene.
+                                                                                   22:1658–9.
+bioinweb.org.
+                                                                                Liao, W.-W., Asri, M., Ebler, J., et al. (2023). A draft human pangenome
+                                                                                   reference. Nature, 617:312–324.
+                                                                                Makova, K. D., Pickett, B. D., Harris, R. S., et al. (2023). The complete
+References                                                                         sequence and comparative analysis of ape sex chromosomes. bioRxiv.
+Boettger, L. M., Handsaker, R. E., Zody, M. C., and McCarroll, S. A. (2012).    Marin, M. et al. (2022). Benchmarking the empirical accuracy of short-read
+   Structural haplotypes and recent evolution of the human 17q21.31 region.        sequencing across the m. tuberculosis genome. Bioinformatics, 38:1781–
+   Nat Genet, 44:881–5.                                                            1787.
+Brankovic, L., Iliopoulos, C. S., Kundu, R., et al. (2016).           Linear-   Mercuri, E., Sumner, C. J., Muntoni, F., Darras, B. T., and Finkel, R. S.
+   time superbubble identification algorithm for genome assembly. Theor.           (2022). Spinal muscular atrophy. Nat Rev Dis Primers, 8:52.
+   Comput. Sci., 609:374–383.                                                   Nurk, S. et al. (2022). The complete sequence of a human genome. Science,
+Carrozza, C., Foca, L., De Paolis, E., and Concolino, P. (2021). Genes and         376:44–53.
+   pseudogenes: Complexity of the RCCX locus and disease. Front Endocrinol      Nurk, S., Walenz, B. P., Rhie, A., et al. (2020). HiCanu: accurate assembly
+   (Lausanne), 12:709758.                                                          of segmental duplications, satellites, and allelic variants from high-fidelity
+Cheng, H., Concepcion, G. T., Feng, X., et al. (2021). Haplotype-resolved de       long reads. Genome Res, 30:1291–1305.
+   novo assembly using phased assembly graphs with hifiasm. Nat Methods,        Onodera, T., Sadakane, K., and Shibuya, T. (2013). Detecting superbubbles
+   18:170–175.                                                                     in assembly graphs. In WABI, pages 338–348.
+Chin, C.-S., Behera, S., Khalak, A., et al. (2023). Multiscale analysis         Page, A. J., Cummins, C. A., Hunt, M., et al. (2015). Roary: rapid large-scale
+   of pangenomes enables improved representation of genomic diversity for          prokaryote pan genome analysis. Bioinformatics, 31:3691–3.
+   repetitive and clinically relevant genes. Nat Methods, 20:1213–1221.         Paten, B., Eizenga, J. M., Rosen, Y. M., et al. (2018). Superbubbles,
+Dabbaghie, F., Ebler, J., and Marschall, T. (2022). BubbleGun: enumerating         ultrabubbles, and cacti. J Comput Biol, 25:649–663.
+   bubbles and superbubbles in genome graphs. Bioinformatics, 38:4217–          Peker, N., Schuele, L., Kok, N., et al. (2021). Evaluation of whole-genome
+   4219.                                                                           sequence data analysis approaches for short- and long-read sequencing of
+Ding, W., Baumdicker, F., and Neher, R. A. (2018). panx: pan-genome                mycobacterium tuberculosis. Microb Genom, 7.
+   analysis and exploration. Nucleic Acids Res, 46:e5.                          Rautiainen, M., Nurk, S., Walenz, B. P., et al. (2023). Telomere-to-telomere
+Fu, L. et al. (2012). CD-HIT: accelerated for clustering the next-generation       assembly of diploid chromosomes with Verkko. Nat Biotechnol.
+   sequencing data. Bioinformatics, 28:3150–2.                                  Schneider, V. A. et al. (2017). Evaluation of GRCh38 and de novo haploid
+Garrison, E., Guarracino, A., Heumos, S., et al. (2023). Building pangenome        genome assemblies demonstrates the enduring quality of the reference
+   graphs. bioRxiv.                                                                assembly. Genome Res, 27:849–864.
+Gärtner, F., Müller, L., and Stadler, P. F. (2018). Superbubbles revisited.   Seemann, T. (2014).          Prokka: rapid prokaryotic genome annotation.
+   Algorithms Mol Biol, 13:16.                                                     Bioinformatics, 30:2068–9.
+Gärtner, F. and Stadler, P. F. (2019). Direct superbubble detection.           Shaw, L. P. et al. (2021). Niche and local geography shape the pangenome
+   Algorithms, 12:81.                                                              of wastewater- and livestock-associated Enterobacteriaceae. Sci Adv, 7.
+                                                                                                                              Pangene graphs         9
+
+
+
+Snobre, J., Meehan, C. J., Mulders, W., et al. (2024). Frameshift                  Proc Natl Acad Sci U S A, 120:e2301394120.
+   mutations in Rv0678 preserve bedaquiline susceptibility in Mycobacterium      Vollger, M. R., Dishuck, P. C., Harvey, W. T., et al. (2023). Increased
+   tuberculosis by maintaining protein integrity. SSRN.                            mutation and gene conversion within human segmental duplications.
+Steinberg, K. M., Antonacci, F., Sudmant, P. H., et al. (2012). Structural         Nature, 617:325–334.
+   diversity and african origin of the 17q21.31 inversion polymorphism. Nat      Wenger, A. M., Peluso, P., Rowell, W. J., et al. (2019). Accurate circular
+   Genet, 44:872–80.                                                               consensus long-read sequencing improves variant detection and assembly
+Steinegger, M. and Söding, J. (2017). Mmseqs2 enables sensitive protein           of a human genome. Nat Biotechnol, 37:1155–1162.
+   sequence searching for the analysis of massive data sets. Nat Biotechnol,     Wick, R. R., Schultz, M. B., Zobel, J., and Holt, K. E. (2015). Bandage:
+   35:1026–1028.                                                                   interactive visualization of de novo genome assemblies. Bioinformatics,
+Sudmant, P. H. et al. (2010). Diversity of human copy number variation and         31:3350–2.
+   multicopy genes. Science, 330:641–6.                                          Yang, C., Zhou, Y., Song, Y., et al. (2023). The complete and fully-phased
+Sung, W.-K., Sadakane, K., Shibuya, T., et al. (2015). An o(m log m)-              diploid genome of a male han chinese. Cell Res, 33:745–761.
+   time algorithm for detecting superbubbles. IEEE/ACM Trans Comput              Zerbino, D. R. and Birney, E. (2008). Velvet: algorithms for de novo short
+   Biol Bioinform, 12:770–7.                                                       read assembly using de Bruijn graphs. Genome Res, 18:821–9.
+Taylor, C., Crosby, I., Yip, V., et al. (2020). A review of the important role   Zhou, Y., Song, L., and Li, H. (2024). Full resolution HLA and KIR genes
+   of CYP2D6 in pharmacogenomics. Genes (Basel), 11.                               annotation for human genome assemblies. bioRxiv.
+Tonkin-Hill, G., Corander, J., and Parkhill, J. (2023). Challenges in            Zhou, Z., Charlesworth, J., and Achtman, M. (2020).               Accurate
+   prokaryote pangenomics. Microb Genom, 9.                                        reconstruction of bacterial pan- and core genomes with PEPPAN. Genome
+Tonkin-Hill, G. et al. (2020). Producing polished prokaryotic pangenomes           Res, 30:1667–1679.
+   with the panaroo pipeline. Genome Biol, 21:180.
+Vargas, Jr, R., Luna, M. J., Freschi, L., et al. (2023). Phase variation as a
+   major mechanism of adaptation in Mycobacterium tuberculosis complex.
+

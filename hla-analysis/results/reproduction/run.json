@@ -1,0 +1,97 @@
+[
+  {
+    "script": "sequence_catalogue.py",
+    "exit_code": 0,
+    "elapsed_seconds": 7.099
+  },
+  {
+    "script": "coding_candidates.py",
+    "exit_code": 0,
+    "elapsed_seconds": 19.775
+  },
+  {
+    "script": "benchmark.py",
+    "exit_code": 0,
+    "elapsed_seconds": 202.863
+  },
+  {
+    "script": "within_type_catalogue.py",
+    "exit_code": 0,
+    "elapsed_seconds": 1.415
+  },
+  {
+    "script": "experimental_discordances.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.623
+  },
+  {
+    "script": "benchmark_uncertainty.py",
+    "exit_code": 0,
+    "elapsed_seconds": 2.302
+  },
+  {
+    "script": "bundle_increment.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.963
+  },
+  {
+    "script": "freeze_panel.py",
+    "exit_code": 0,
+    "elapsed_seconds": 1.006
+  },
+  {
+    "script": "assess_contrasts.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.813
+  },
+  {
+    "script": "prepare_read_markers.py",
+    "exit_code": 0,
+    "elapsed_seconds": 9.729
+  },
+  {
+    "script": "prepare_flank_markers.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.436
+  },
+  {
+    "script": "summarize_read_support.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.311
+  },
+  {
+    "script": "independent_assembly_checks.py",
+    "exit_code": 0,
+    "elapsed_seconds": 4.506
+  },
+  {
+    "script": "published_sequence_check.py",
+    "exit_code": 0,
+    "elapsed_seconds": 1.568
+  },
+  {
+    "script": "rccx_catalogue.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.666
+  },
+  {
+    "script": "rccx_report.py",
+    "exit_code": 0,
+    "elapsed_seconds": 1.579
+  },
+  {
+    "script": "summarize_additional_validation.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.374
+  },
+  {
+    "script": "check_results.py",
+    "exit_code": 0,
+    "elapsed_seconds": 1.261
+  },
+  {
+    "script": "final_report.py",
+    "exit_code": 0,
+    "elapsed_seconds": 0.371
+  }
+]

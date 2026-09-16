@@ -1,0 +1,32 @@
+[
+  {
+    "path": "rccx_grch38_sequence.json",
+    "url": "https://api.genome.ucsc.edu/getData/sequence?genome=hg38;chrom=chr6;start=31900000;end=32150000",
+    "sha256": "4ac6148903ecec5beafd4fadf3f3b5388f3e39b5192c4372849962a0dd7e6dd8",
+    "bytes": 250172
+  },
+  {
+    "path": "rccx_refseq_ucsc.json",
+    "url": "https://api.genome.ucsc.edu/getData/track?genome=hg38;track=ncbiRefSeqCurated;chrom=chr6;start=31900000;end=32150000",
+    "sha256": "4da1c3a0d7505a752bc0e86bf97f8f7f1775d24aaa9196dbda5d6b0ac8625913",
+    "bytes": 29978
+  },
+  {
+    "path": "rccx_stk19b_ensembl.json",
+    "url": "https://rest.ensembl.org/lookup/id/ENSG00000250535?content-type=application/json",
+    "sha256": "38471f97c225d79272647a74a56f03e43421a88602a7c8b8e6747bdee8b0ddf3",
+    "bytes": 516
+  },
+  {
+    "path": "HGSVCv3_HLA_alleles.fasta.gz",
+    "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/HGSVC3/working/20241218_phase3-main-pub_data/hhu/mhc/HGSVCv3_HLA_alleles.fasta.gz",
+    "sha256": "c6aa133c4b609d5d246d07356c163e2bcf56c382520460224ac1358a95727872",
+    "bytes": 11170546
+  },
+  {
+    "path": "HGSVCv3_HLA_alleles.README.txt",
+    "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/HGSVC3/working/20241218_phase3-main-pub_data/hhu/mhc/HGSVCv3_HLA_alleles.README.txt",
+    "sha256": "87bde3fe3cd9b67db6029284ec3ecaf320de33070abe5da137796a5f23c8c67c",
+    "bytes": 377
+  }
+]

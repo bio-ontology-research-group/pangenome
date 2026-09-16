@@ -1,0 +1,20 @@
+[
+  {
+    "donor": "HG03195",
+    "assembly_diploid_c4": 4,
+    "c4_mean_depth": 38.84953472827715,
+    "estimated_copy_using_whr1": 4.350135178097579,
+    "estimated_copy_using_tnxb": 4.505012071869677,
+    "assessment": "exploratory_depth_not_validated_copy_number",
+    "limitation": "GRCh38-recruited reads; reference/paralog mapping and coverage bias; two controls expose normalization sensitivity; no haplotype or junction validation"
+  },
+  {
+    "donor": "NA21144",
+    "assembly_diploid_c4": 4,
+    "c4_mean_depth": 34.8375387398509,
+    "estimated_copy_using_whr1": 4.469617379347844,
+    "estimated_copy_using_tnxb": 4.325441544039793,
+    "assessment": "exploratory_depth_not_validated_copy_number",
+    "limitation": "GRCh38-recruited reads; reference/paralog mapping and coverage bias; two controls expose normalization sensitivity; no haplotype or junction validation"
+  }
+]

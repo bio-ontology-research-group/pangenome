@@ -1,0 +1,4 @@
+leave_family_out gene_bundles_fixed_panel rescued 0 false calls 1
+leave_family_out classII_bundles_fixed_panel rescued 0 false calls 1
+leave_cohort_out gene_bundles_fixed_panel rescued 0 false calls 1
+leave_cohort_out classII_bundles_fixed_panel rescued 0 false calls 2

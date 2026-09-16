@@ -1,0 +1,15 @@
+{
+  "haplotypes": 742,
+  "all_classical_label_eligible": 654,
+  "contrasts": {
+    "drdq_label": 1828,
+    "all_classical_label": 101
+  },
+  "limitations": [
+    "DRB3/4/5 no-annotation states are not validated biological absence",
+    "All available classical label matching uses numeric two-field calls, not expression suffix or full-gene identity",
+    "C4 annotations alone do not describe CYP21/TNX/STK19 module structure",
+    "Flanking sequence differences do not establish regulatory function",
+    "Multiple features from a single haplotype difference are not independent discoveries"
+  ]
+}

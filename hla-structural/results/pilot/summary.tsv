@@ -1,0 +1,9 @@
+locus	method	n	pair_correct	cn_correct	unique_calls	unrepresented_truth
+RCCX	path_multiplicity	18	4	8	18	4
+RCCX	binary_paths	18	8	10	16	4
+RCCX	flat_sequence_catalogue	18	4	8	18	4
+RCCX	assembly_profile_oracle	18	13	18	18	4
+DRB	path_multiplicity	18	18	18	18	0
+DRB	binary_paths	18	18	18	18	0
+DRB	flat_sequence_catalogue	18	18	18	18	0
+DRB	assembly_profile_oracle	18	18	18	18	0

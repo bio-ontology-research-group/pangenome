@@ -1,0 +1,124 @@
+[
+  {
+    "file": "graph_seqfile.txt",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/mhcgraph/seqfile.txt",
+    "bytes": 41422,
+    "sha256": "7057f648c5689d299026f3d1a8106e31897e3ee944ce8d7910c947c0e70b78b9",
+    "retrieved_utc": "2026-09-16T00:05:28.756765+00:00"
+  },
+  {
+    "file": "graph_contig_names.tsv",
+    "host": "ddbj",
+    "remote_path": "/home/asianhla/data/upload/HLA/mhc_graph/contig_names.tsv",
+    "bytes": 47351,
+    "sha256": "d73b56bef03c2a1a586293a7e1050531708b53f3e8523d1d147179f8082a1440",
+    "retrieved_utc": "2026-09-16T00:05:29.534643+00:00"
+  },
+  {
+    "file": "hla_calls.tsv",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/viz5/hla_calls.tsv",
+    "bytes": 7941670,
+    "sha256": "44871fc26d88a4edbb0b158559929a6dd6d46dbce483468337387e0804360062",
+    "retrieved_utc": "2026-09-16T00:05:31.229115+00:00"
+  },
+  {
+    "file": "mhc_extraction_summary.tsv",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/viz5/mhc_extraction_summary.tsv",
+    "bytes": 104835,
+    "sha256": "ed9b8f8a649af4c27310df1dc530a030aa31c9019b37fb107badb34f2f818f88",
+    "retrieved_utc": "2026-09-16T00:05:31.953814+00:00"
+  },
+  {
+    "file": "classII.regions.tsv",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/classII5/classII.regions.tsv",
+    "bytes": 80779,
+    "sha256": "9a82a56160419f17435f8d6acf260347e93cdd749568f007552f709b82371c8a",
+    "retrieved_utc": "2026-09-16T00:05:32.725851+00:00"
+  },
+  {
+    "file": "classII_haplotype_strings.tsv",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/viz5/data/classII_haplotype_strings.tsv",
+    "bytes": 111743,
+    "sha256": "9c4108137e5d0f6e9a56776ecfea3cac20f0a2d8533b532bce266cb1d5d334b6",
+    "retrieved_utc": "2026-09-16T00:05:33.494250+00:00"
+  },
+  {
+    "file": "hprc_r2_populations.tsv",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/viz5/data/hprc_r2_populations.tsv",
+    "bytes": 12852,
+    "sha256": "95ccd58a5ad220df6df51e7c93008448a80d116ce8d0b3a88763afb6923cea89",
+    "retrieved_utc": "2026-09-16T00:05:34.160308+00:00"
+  },
+  {
+    "file": "classII.ctg.summary.tsv",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/classII5/out/classII.ctg.summary.tsv",
+    "bytes": 70774,
+    "sha256": "f656e54dbbc06f5af6f7ce297c41a8f2b4b45b9ecaa2e29ca5b0b9532620bd08",
+    "retrieved_utc": "2026-09-16T00:05:34.927320+00:00"
+  },
+  {
+    "file": "novel_alleles_table.tsv",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/viz5/data/novel_alleles_table.tsv",
+    "bytes": 1115,
+    "sha256": "f36ece7a77d5257047755fcfdd8563014f83cd853230e7f22a9badaae9c4a26a",
+    "retrieved_utc": "2026-09-16T00:05:35.663052+00:00"
+  },
+  {
+    "file": "extract_span.py",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/cwl/scripts/extract_span.py",
+    "bytes": 3399,
+    "sha256": "8f8b436862b5996bf2206b0fb323fcce615a2f659e68cb880dd37c61e1482e02",
+    "retrieved_utc": "2026-09-16T00:05:36.404194+00:00"
+  },
+  {
+    "file": "classII_bundles.py",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/cwl/analysis/classII_bundles.py",
+    "bytes": 9095,
+    "sha256": "99d7f1e2bdbd01ea4f1bc5728ff2774540df83f3cb91aa5e7d4dd4b4d621887e",
+    "retrieved_utc": "2026-09-16T00:05:37.040306+00:00"
+  },
+  {
+    "file": "classII.nwk",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/classII5/out/classII.nwk",
+    "bytes": 23793,
+    "sha256": "62627e80ec6461cef21b529d4c35241fa13b2e68a2d2de0262a63b544c4e7612",
+    "retrieved_utc": "2026-09-16T00:05:37.762731+00:00"
+  },
+  {
+    "file": "classII.bed",
+    "host": "ddbj",
+    "remote_path": "/home/leechuck/hla/classII5/out/classII.bed",
+    "bytes": 8084165,
+    "sha256": "d59f7d43fdf9ab5c8b406fa12f1505e0af9011b15f9440216bbba475d8725df5",
+    "retrieved_utc": "2026-09-16T00:05:39.356338+00:00"
+  },
+  {
+    "file": "graph_full_path_lengths.tsv",
+    "host": "ddbj",
+    "remote_path": "/home/asianhla/data/upload/HLA/mhc_graph/MHC.full.gbz",
+    "command": "/home/leechuck/hla/cactus/cactus-bin-v3.3.0/bin/vg paths -t 1 -E -x /home/asianhla/data/upload/HLA/mhc_graph/MHC.full.gbz",
+    "bytes": 20799,
+    "sha256": "2382790a4c7ab009abc2d56da361a592330557bb608210343d09e7276d96f712",
+    "retrieved_utc": "2026-09-16T00:07:08.997454+00:00"
+  },
+  {
+    "file": "graph_clipped_path_lengths.tsv",
+    "host": "ddbj",
+    "remote_path": "/home/asianhla/data/upload/HLA/mhc_graph/MHC.gbz",
+    "command": "/home/leechuck/hla/cactus/cactus-bin-v3.3.0/bin/vg paths -t 1 -E -x /home/asianhla/data/upload/HLA/mhc_graph/MHC.gbz",
+    "bytes": 21176,
+    "sha256": "3bd018e9766302271d95e274e20c59b12c064be273ec48cb0e80bedcecb22eda",
+    "retrieved_utc": "2026-09-16T00:07:25.200615+00:00"
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "file": "HLA-A.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-A.ord",
+    "sha256": "c0634979bc03066595b037ee5a677a769ed8ff20a92550f634cafae3915b38a7",
+    "retrieved": "2026-09-16T00:43:16.291170+00:00"
+  },
+  {
+    "file": "HLA-A.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-A.fa",
+    "sha256": "33f32b808fe3cfd6e4fa3e3a8bcbb002b814c87fbc86001aa6366265b4cbf55f",
+    "retrieved": "2026-09-16T00:43:17.487737+00:00"
+  },
+  {
+    "file": "HLA-A.regions.tsv",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-A.regions.tsv",
+    "sha256": "5220e2b5b0bef5d287bfab55edafe28c246fd855544cd1c6641b5da38035076a",
+    "retrieved": "2026-09-16T00:43:18.201516+00:00"
+  },
+  {
+    "file": "HLA-B.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-B.ord",
+    "sha256": "7f56ab159b2227dbe9fc0dc5a535523ad6484e2a357d6fc03fc9be302821277d",
+    "retrieved": "2026-09-16T00:43:18.883845+00:00"
+  },
+  {
+    "file": "HLA-B.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-B.fa",
+    "sha256": "fa8a7bb0aeb6b83e81806cceb4c448d7708332cd83b9039dbf8255a572d90ceb",
+    "retrieved": "2026-09-16T00:43:20.303335+00:00"
+  },
+  {
+    "file": "HLA-B.regions.tsv",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-B.regions.tsv",
+    "sha256": "a3ab802b77ec651f014fc4d3b4420f7f810d50dff17e8cfca8999015844cae02",
+    "retrieved": "2026-09-16T00:43:21.052340+00:00"
+  },
+  {
+    "file": "HLA-C.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-C.ord",
+    "sha256": "6a16fe3d9e0fc7ea356d93150416e81765ae23a3e09e517ac1a6b56af22d70e8",
+    "retrieved": "2026-09-16T00:43:21.731548+00:00"
+  },
+  {
+    "file": "HLA-C.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-C.fa",
+    "sha256": "8a5e60379d58442d1c5e0e591b4ffa4cc00c86c0c6b01471a1b975cf6df91bc6",
+    "retrieved": "2026-09-16T00:43:23.069709+00:00"
+  },
+  {
+    "file": "HLA-C.regions.tsv",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-C.regions.tsv",
+    "sha256": "695e7f4747978acb03a36a24e91219da91cf5424f73e1cab90bc43c3fd49d9d8",
+    "retrieved": "2026-09-16T00:43:23.788382+00:00"
+  },
+  {
+    "file": "HLA-DRB1.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB1.ord",
+    "sha256": "05b393ddf2cce3d2144eb83c643f9e0cfff3c76534d1df10625ab103599a322c",
+    "retrieved": "2026-09-16T00:43:24.519573+00:00"
+  },
+  {
+    "file": "HLA-DRB1.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB1.fa",
+    "sha256": "b222140f834e8d1df8e713b19ac213acfd6f9eb7b68104ea3372f920f585f100",
+    "retrieved": "2026-09-16T00:43:26.512037+00:00"
+  },
+  {
+    "file": "HLA-DRB1.regions.tsv",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB1.regions.tsv",
+    "sha256": "4c347a5b3cae2513b73e81abc2635e3a5dbd4f201c966489fbfde2603b713bc2",
+    "retrieved": "2026-09-16T00:43:27.305852+00:00"
+  },
+  {
+    "file": "HLA-DQA1.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DQA1.ord",
+    "sha256": "335d1619f31097c0ab9b4c475cd673584d8296a72264e07d2ceb360db911fef1",
+    "retrieved": "2026-09-16T00:43:28.008021+00:00"
+  },
+  {
+    "file": "HLA-DQA1.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DQA1.fa",
+    "sha256": "630dc2ce0d83c25ad402832982490fe35e66bc70f7d25b26eaae2937f5c369d4",
+    "retrieved": "2026-09-16T00:43:29.651159+00:00"
+  },
+  {
+    "file": "HLA-DQA1.regions.tsv",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DQA1.regions.tsv",
+    "sha256": "60a5090c3a08a661313048bed53b1dfad462c7d549479b55e9217476c02dcfb1",
+    "retrieved": "2026-09-16T00:43:30.418399+00:00"
+  },
+  {
+    "file": "HLA-DQB1.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DQB1.ord",
+    "sha256": "e1eb7423fde93fded17be7aa0444fafddcfa9d1b92774fe6cf662d76452d83bb",
+    "retrieved": "2026-09-16T00:43:31.184251+00:00"
+  },
+  {
+    "file": "HLA-DQB1.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DQB1.fa",
+    "sha256": "992b27381973d955af7c6e02f5594bbe1db2e41818d066680b26332287d2edb4",
+    "retrieved": "2026-09-16T00:43:32.798767+00:00"
+  },
+  {
+    "file": "HLA-DQB1.regions.tsv",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DQB1.regions.tsv",
+    "sha256": "6ef0731a779146d5c86d5dc3f47fc2ef3bf68efc90cb46f9cf36b82e0f0175b2",
+    "retrieved": "2026-09-16T00:43:33.570795+00:00"
+  },
+  {
+    "file": "HLA-DPA1.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DPA1.ord",
+    "sha256": "88a29353f10756873a7dfae48adff85d52beae18d5c4bd9681422947eb8f7c07",
+    "retrieved": "2026-09-16T00:43:34.278643+00:00"
+  },
+  {
+    "file": "HLA-DPA1.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DPA1.fa",
+    "sha256": "2dbf38dc6d33c452b145f02616a9348b2432f017ffebb693e18cfc07313e8c6c",
+    "retrieved": "2026-09-16T00:43:36.207913+00:00"
+  },
+  {
+    "file": "HLA-DPA1.regions.tsv",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DPA1.regions.tsv",
+    "sha256": "6fe2e6c955bb935a2af68c4c38070fdec24d6aeb1e50df4448108fe19d150a0b",
+    "retrieved": "2026-09-16T00:43:36.936681+00:00"
+  },
+  {
+    "file": "HLA-DPB1.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DPB1.ord",
+    "sha256": "f796f036ec369c02b2bd973c6aef50037659c3c1145e0d314e6af8229de9c646",
+    "retrieved": "2026-09-16T00:43:37.636786+00:00"
+  },
+  {
+    "file": "HLA-DPB1.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DPB1.fa",
+    "sha256": "2811e2363ef93a13f0926b3849eca25f18b556faafa073ea781f2963a529bc37",
+    "retrieved": "2026-09-16T00:43:39.625974+00:00"
+  },
+  {
+    "file": "HLA-DPB1.regions.tsv",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DPB1.regions.tsv",
+    "sha256": "d602ceffb9c92805631ce8ad6335685cbb1fb1932dcff41594dd12ac82055216",
+    "retrieved": "2026-09-16T00:43:40.334423+00:00"
+  },
+  {
+    "file": "HLA-DRB3.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB3.ord",
+    "sha256": "278bdfd2c6bc7d775eeb452e2e9cea9c371bead135df9d43655cb528e8da6617",
+    "retrieved": "2026-09-16T00:43:41.042380+00:00"
+  },
+  {
+    "file": "HLA-DRB3.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB3.fa",
+    "sha256": "12e7e50bf2752be50ab99e84d765ee02c08bc2981fed4601fa279586e28376c2",
+    "retrieved": "2026-09-16T00:43:42.311648+00:00"
+  },
+  {
+    "file": "HLA-DRB3.regions.tsv",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB3.regions.tsv",
+    "sha256": "0692e4e342ff54703fb27381857a04dec38ea7e18921b93c5b9f19ad4a65ee7b",
+    "retrieved": "2026-09-16T00:43:43.011528+00:00"
+  },
+  {
+    "file": "HLA-DRB4.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB4.ord",
+    "sha256": "1d9dd7d4acf5463b68bc3fc053e44d13df6926869e5e8909b8a57cf2404a4c4a",
+    "retrieved": "2026-09-16T00:43:43.750606+00:00"
+  },
+  {
+    "file": "HLA-DRB4.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB4.fa",
+    "sha256": "fd3afce6170e2b8f308c33ddbd06b969f20ff6fd12d4c139aa8609cd36a86274",
+    "retrieved": "2026-09-16T00:43:44.904402+00:00"
+  },
+  {
+    "file": "HLA-DRB4.regions.tsv",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB4.regions.tsv",
+    "sha256": "4f2a96190c9b326444914781e9f955a3c7d336bd9c0817b4e91f3be9c7840fe5",
+    "retrieved": "2026-09-16T00:43:45.636220+00:00"
+  },
+  {
+    "file": "HLA-DRB5.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB5.ord",
+    "sha256": "198f46f19677a45735563690a1302ffefa5b805dd2e0b9a04db1900910daa876",
+    "retrieved": "2026-09-16T00:43:46.302512+00:00"
+  },
+  {
+    "file": "HLA-DRB5.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB5.fa",
+    "sha256": "5e2e8fced59831b4fde6a45ccf307320e7563f148dd881d5bde3e3927d4f8ec7",
+    "retrieved": "2026-09-16T00:43:47.210872+00:00"
+  },
+  {
+    "file": "HLA-DRB5.regions.tsv",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB5.regions.tsv",
+    "sha256": "994653f5d653836d64654bf4b21a7db747a0c28c1d846176c2f1d7d4a6c5df0d",
+    "retrieved": "2026-09-16T00:43:47.901393+00:00"
+  }
+]

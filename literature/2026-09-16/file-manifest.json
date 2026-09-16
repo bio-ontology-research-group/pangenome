@@ -1,0 +1,137 @@
+[
+  {
+    "file": "chin2023_pgrtk.txt",
+    "bytes": 71044,
+    "sha256": "af9a406c9416406018b899876c65eae2d1a9fe41c2a228c14e98922e0f00fb91"
+  },
+  {
+    "file": "chin2023_pgrtk.xml",
+    "bytes": 150519,
+    "sha256": "56c0691a0d26e3c3058c8a0743a5c3e944b424da08be4e4214dbb9d66ab2ceb4"
+  },
+  {
+    "file": "ddbj_classII_cluster_purity.tsv",
+    "bytes": 264,
+    "sha256": "2de013f03110da6b8d9503404011aa1e3d6d32120f9f236fa7f7d36615059e02"
+  },
+  {
+    "file": "ddbj_graph_README.md",
+    "bytes": 2889,
+    "sha256": "2d8ab749762c072cf78294cdff1d4a640cc50071a099f434b93d561c82bbc798"
+  },
+  {
+    "file": "ddbj_workflow_README.md",
+    "bytes": 10220,
+    "sha256": "88128b2ecb6f76e14700966ab31977cc9e9f4b4313a3af4a98de6d33532a7068"
+  },
+  {
+    "file": "dilthey2015_prg.metadata.json",
+    "bytes": 1523,
+    "sha256": "0aef69ac4a01d00d78b78f7de73284f2e9eb3c5f12992961e01b624ba4daf2a6"
+  },
+  {
+    "file": "dilthey2015_prg.txt",
+    "bytes": 40783,
+    "sha256": "5907dcb784eaf1c0d4bdb6838ea2773b0a84fb9a5e32cb748a099c32773625a3"
+  },
+  {
+    "file": "dilthey2015_prg.xml",
+    "bytes": 91146,
+    "sha256": "87dc84ca043a3f5926e8c39a8b44dc490f0192945dbc25db0cfe245e79a2b312"
+  },
+  {
+    "file": "dilthey2019_hlala.txt",
+    "bytes": 9948,
+    "sha256": "40c57053556aa9b5195a5c1f1fbf1d8bb6a21b1f4a2c730edda9809ca40fd4bc"
+  },
+  {
+    "file": "dilthey2019_hlala.xml",
+    "bytes": 48776,
+    "sha256": "ba442a6bfef7f0b79005965244980e5573af93dbc632e23a586d28887a87cfcf"
+  },
+  {
+    "file": "download-manifest.json",
+    "bytes": 2329,
+    "sha256": "66eaf691cb24dc90b00565740a10291522ea6d09493af4882042c812aa8450b3"
+  },
+  {
+    "file": "huijse2023_panmhc.pdf",
+    "bytes": 2373801,
+    "sha256": "28c2bdb4c75f149128f2026ec432785ed1905e765798a56bd3412fa256092f6b"
+  },
+  {
+    "file": "huijse2023_panmhc.txt",
+    "bytes": 103791,
+    "sha256": "2c99bee896f3298741ddd5692b525cf8e35d390c62db976eeda4d7d103313f5d"
+  },
+  {
+    "file": "lee2018_kourami.pdf",
+    "bytes": 1199201,
+    "sha256": "21952f8451e1d4d620eaa45e70f95355bd02db542a38dfe19fa0fd462f296abb"
+  },
+  {
+    "file": "lee2018_kourami.txt",
+    "bytes": 102877,
+    "sha256": "32898fd38b94bd740c2bddcf74e5222fb27fc7eea13ef65685da2a5164c201ef"
+  },
+  {
+    "file": "li2024_pangene.pdf",
+    "bytes": 932164,
+    "sha256": "2b6fe174d17f54aaef7e7b7ca76ad5289f61ed34712cbd46898a153e847fefd6"
+  },
+  {
+    "file": "li2024_pangene.txt",
+    "bytes": 90626,
+    "sha256": "cab3812f385c68e2dbdb8f9d2c70fbeb4a22b4687037a63509c05ba177a3c01e"
+  },
+  {
+    "file": "li2024_pangene.xml",
+    "bytes": 162175,
+    "sha256": "43fbbbfe40f5cda9b8917f57cfd2f2b64c48b0f6f37359340f9f8d54bb2df381"
+  },
+  {
+    "file": "sekar2016_c4.txt",
+    "bytes": 40916,
+    "sha256": "abb3d4a3be3e01b293071f6da7acb7f9e0b7eb562a8e6e86e2003f8e9d15a38a"
+  },
+  {
+    "file": "sekar2016_c4.xml",
+    "bytes": 132691,
+    "sha256": "04cf4d54bb1b59b39ed23110b5cacbdaeab9cfa0246e2995467450b05cf94c99"
+  },
+  {
+    "file": "ukb2023_hla.txt",
+    "bytes": 86781,
+    "sha256": "6dcadc4067febe5d307bda5d859cdd97f7487c002f95c02c6d2ee85056ca77a3"
+  },
+  {
+    "file": "ukb2023_hla.xml",
+    "bytes": 221217,
+    "sha256": "40b721c6af868d2736912cf6da72cd439b29b67def79087b70acc61f7b67810c"
+  },
+  {
+    "file": "wang2026_1kcp.metadata.json",
+    "bytes": 1609,
+    "sha256": "410bbe1dc59fe2bf9467d82620d4a26194d9d6c9ef74bc4184e61466d53603ba"
+  },
+  {
+    "file": "wang2026_1kcp.txt",
+    "bytes": 101491,
+    "sha256": "2d6d4d925e37ef6cc8d03694712c721be75c1eed9a9ff0fb0f7404cf6dad2581"
+  },
+  {
+    "file": "wang2026_1kcp.xml",
+    "bytes": 305327,
+    "sha256": "e08f8ccd3f74cff42b8f4c3e6c7c8fcac60344b895d84fb51840b1ea6cadb992"
+  },
+  {
+    "file": "zhou2024_immuannot.txt",
+    "bytes": 42856,
+    "sha256": "22e9effd2fe3b99ca78d9a77d38553864118e2d7fd32ca0b4ee51cbdb4b52aea"
+  },
+  {
+    "file": "zhou2024_immuannot.xml",
+    "bytes": 145059,
+    "sha256": "d059953a3461cb3d60bd563a1ba880a83e7b7bba9030c3f59bf71086d4f26a0f"
+  }
+]

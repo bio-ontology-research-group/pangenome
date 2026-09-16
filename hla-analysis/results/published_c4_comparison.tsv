@@ -1,0 +1,5 @@
+donor	panel_unphased_c4	published_unphased_c4	match	interpretation
+HG00733	C4AL;C4AL|C4BL	C4AL;C4AL|C4BL	1	Unordered diploid C4 annotation comparison; assembly identity and full RCCX structure not established
+HG02818	C4AL|C4BS;C4AL|C4BS	C4AL|C4BS;C4AL|C4BS	1	Unordered diploid C4 annotation comparison; assembly identity and full RCCX structure not established
+NA19036	C4AL|C4BS;C4AL|C4BS	C4AL|C4BS;C4AL|C4BS	1	Unordered diploid C4 annotation comparison; assembly identity and full RCCX structure not established
+NA19240	C4AL|C4BS;C4AL|C4BS|C4BS	C4AL|C4BS;C4AL|C4BS|C4BS	1	Unordered diploid C4 annotation comparison; assembly identity and full RCCX structure not established

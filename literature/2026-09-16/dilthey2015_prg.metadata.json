@@ -1,0 +1,57 @@
+{
+  "version": "6.9",
+  "hitCount": 1,
+  "request": {
+    "queryString": "DOI:10.1038/ng.3257",
+    "resultType": "lite",
+    "cursorMark": "*",
+    "pageSize": 25,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "25915597",
+        "source": "MED",
+        "pmid": "25915597",
+        "pmcid": "PMC4449272",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC4449272"
+          ]
+        },
+        "doi": "10.1038/ng.3257",
+        "title": "Improved genome inference in the MHC using a population reference graph.",
+        "authorString": "Dilthey A, Cox C, Iqbal Z, Nelson MR, McVean G.",
+        "journalTitle": "Nat Genet",
+        "issue": "6",
+        "journalVolume": "47",
+        "pubYear": "2015",
+        "journalIssn": "1061-4036; 1546-1718; ",
+        "pageInfo": "682-688",
+        "pubType": "research support, non-u.s. gov't; research-article; journal article",
+        "isOpenAccess": "Y",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "Y",
+        "citedByCount": 164,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasLabsLinks": "Y",
+        "hasTMAccessionNumbers": "Y",
+        "tmAccessionTypeList": {
+          "accessionType": [
+            "gen",
+            "ensembl"
+          ]
+        },
+        "firstIndexDate": "2015-04-29",
+        "firstPublicationDate": "2015-04-27"
+      }
+    ]
+  }
+}

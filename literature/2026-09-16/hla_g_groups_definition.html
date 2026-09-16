@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>G Groups</title>
+    <meta charset="utf-8"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg"/>
+    <link rel="shortcut icon" href="/img/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"/>
+    <meta name="apple-mobile-web-app-title" content="HLA.Alleles.org"/>
+    <link rel="manifest" href="/img/site.webmanifest"/>
+  </head>
+  <body>
+    
+    <div class="d-flex flex-column min-vh-100">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="navimage"></div>
+        <div class="container">
+          <div class="flex-column">
+            <div class="flex-row">
+              <a class="navbar-brand" href="/index.html">
+                <img src="/img/hla_logo.svg" class="hlalogo" alt="HLA Logo"/>
+                <span class="hlatitle">HLA Nomenclature</span>
+              </a>
+              <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="flex-row">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="/pages/about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Nomenclature</a
+                    >
+
+                      <div
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/nomenclature/naming_alleles"
+                        >Naming Alleles</a
+                      >
+                        <!--<a
+                        class="dropdown-item"
+                        href="/pages/nomenclature/assigning_suffixes"
+                        >Assigning Suffixes</a
+                      > -->
+                        
+                        <a
+                        class="dropdown-item"
+                        href="/pages/nomenclature/nomenclature_reports"
+                        >Nomenclature Reports</a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/nomenclature/nomenclature_updates"
+                        >Nomenclature Updates</a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/nomenclature/nomenclature_committee"
+                        >Nomenclature Committee</a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/nomenclature/hla_workshops"
+                        >HLA Workshops</a
+                      >
+                        <div class="dropdown-divider"></div>
+                        <a
+                        class="dropdown-item"
+                        href="/pages/nomenclature/nomenclature_before_2010"
+                        >Nomenclature Before 2010</a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/nomenclature/nomenclature_update_april_2010"
+                        >Nomenclature Update, April 2010</a
+                      >
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Genes</a
+                    >
+                      <div
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                        <a class="dropdown-item" href="/pages/genes/genes_map">Genes Map</a>
+                        <a class="dropdown-item" href="/pages/genes/genes_list">Genes List</a>
+                        <a class="dropdown-item" href="/pages/genes/statistics">Statistics</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://www.ebi.ac.uk/ipd/imgt/hla/alleles/nulls/">Alleles with null or aberrant expression (external link)</a>
+                        <a class="dropdown-item" href="https://www.ebi.ac.uk/ipd/imgt/hla/alleles/questionable/">Alleles with questionable expression (external link)</a>
+                        <a class="dropdown-item" href="https://www.ebi.ac.uk/ipd/imgt/hla/alleles/deleted/">Deleted alleles (external link)</a>
+                        <a class="dropdown-item" href="/pages/genes/suffix_changes">Suffix Changes</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Antigens</a
+                    >
+                      <div
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/antigens/naming_hla_antigens"
+                        >Naming HLA Antigens</a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/antigens/hla_antigens"
+                        >HLA Antigens<span class="text-muted"><em> (updated)</em></span></a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/antigens/broads_and_splits"
+                        >Broads and Splits<span class="text-muted"><em> (updated)</em></span></a
+                      >
+                        <a class="dropdown-item" href="/pages/antigens/bw4_bw6"
+                        >Bw4 and Bw6</a
+                      >
+                      <a class="dropdown-item" href="/pages/antigens/associated_antigens"
+                        >Associated Antigens<span class="text-muted"><em> (new)</em></span></a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/antigens/previous_equivalents"
+                        >Previous Equivalents</a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/antigens/hla_DQA_DQ_heterodimer_antigens"
+                        >HLA-DQA~DQ Heterodimer Antigens<span class="text-muted"><em> (new)</em></span></a
+                      >
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >P&G Groups</a
+                    >
+                      <div
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                        <a class="dropdown-item" href="/pages/p&g_groups/p_groups"
+                        >P Groups</a
+                      >
+                        <a class="dropdown-item" href="/pages/p&g_groups/g_groups"
+                        >G Groups</a
+                      >
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="/pages/wmda/wmda"
+                      >WMDA</a
+                    >
+                    <li class="nav-item dropdown">
+                      <a
+                      class="nav-link dropdown-toggle text-light"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Other</a
+                    >
+                      <div
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/other/hla_dictionary"
+                        >HLA Dictionary</a
+                      >
+                        <a class="dropdown-item" href="/pages/other/definitions"
+                        >Definitions</a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/other/sequence_formats"
+                        >Sequence Formats</a
+                      >
+                        <a class="dropdown-item" href="/pages/other/drb_haplotypes">DRB Haplotypes</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/pages/other/citations"
+                        >Citations</a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/other/contact"
+                        >Contact Us</a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/other/licence_and_disclaimer"
+                        >Licence and Disclaimer</a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/other/policies"
+                        >Policies</a
+                      >
+                        <a
+                        class="dropdown-item"
+                        href="/pages/other/changelog"
+                        >Changelog</a
+                      >
+                        <!--<a class="dropdown-item" href="/pages/other/faq">FAQ</a> -->
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="/pages/misc_lists"
+                      >Misc Lists</a
+                    >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="/pages/sponsors"
+                      >Sponsors</a
+                    >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ml-5 flex-column">
+            <a href="/pages/sponsors"><img id="slideshow" class="nav-sponsor justify-content-left" alt="Sponsor Logo"></a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="breadcontainer container">
+<div class="breadcontainer container">
+  <div class="breadcrumbs">
+    
+      <ul class="pl-o">
+        <!-- Home link -->
+        <li class="d-inline unstyled mt-5">
+          <a href="/index.html">HLA Nomenclature</a>
+        </li>
+
+        <!-- Parent -->
+        
+          <li class="d-inline unstyled">
+            / P&amp;G Groups
+          </li>
+        
+
+        <!-- Current page -->
+        
+          <li class="d-inline unstyled active">
+            / G Groups
+          </li>
+        
+      </ul>
+    
+  </div>
+</div>
+</div>
+      <div class="container flex-grow-1">
+        
+          <div class="titlebox d-flex justify-content-left headingtext">
+            <div class="backing">
+              <h1 class="text-left text-dark">G Groups</h1>
+            </div>
+          </div>
+        
+        
+        
+        
+          
+
+
+<div class="backing"><p class="h4 text-left text-dark">G Codes For Reporting of Ambiguous Allele Typings</p>
+  
+    <p class="content">HLA alleles that have identical nucleotide sequences across the exons encoding the peptide binding domains (exon 2 and 3 for HLA class I and exon 2 only for HLA class II alleles), will be designated by an upper case ‘G’ which follows the first 3 fields of the allele designation of the lowest numbered allele in the group. The group designation will contain a minimum of six digits.<br></br></p>
+
+  
+    <p class="content">The algorithm used to generate the G groups does include alleles which contain unsequenced regions. For the alleles in question, the sequence of an alternate allele has been used to extend the sequence over this region. Where possible a genomic or silent variant of the unsequenced allele are used, when this is not possible an alternate allele from within the same first field group is used and only used when there is a high probability that the sequence used would be shown to be correct if the region was fully sequenced. The list of alleles containing unsequenced regions and the alternate alleles used to infer the missing sequence are detailed in the Ambiguous Typing files available at from the <a href='https://www.ebi.ac.uk/ipd/imgt/hla/ambiguity/'>IPD-IMGT/HLA Database</a>.<br></br></p>
+
+  
+    <p class="content">Following the modification or deletion of an allele sequence a G group may contain only a single allele. In these cases the G group is retained and can refer to single allele, the G group may expand at a later date if new alleles are shown to have an identical nucleotide sequences across the exons encoding the peptide binding domains.<br></br></p>
+
+  
+    <p class="content">In the case of unsequenced regions that cannot be accurately be inferred from known sequences with a high level of confidence the allele has been omitted from the analysis.<br></br></p>
+
+  
+    <p class="content">We recognise that future sequencing of unsequenced regions may reveal disparity between the predicted sequence and the newly sequenced region. We therefore welcome any further information which will help improve analysis of these regions.<br></br></p>
+
+  
+    <p class="content">A link to the g_groups.txt file can be found <a href="https://raw.githubusercontent.com/ANHIG/IMGTHLA/Latest/wmda/hla_nom_g.txt">here</a>.</p>
+
+
+</div>
+<script src="/js/g_group.js"></script>
+<div id="hlaTableContainer" class="container-fluid"></div>
+<p>Filter:
+  <select id="geneFilter">
+    <option value="All">All Genes</option>
+  </select>
+</p>
+<div class="table-responsive mt-1 mb-3">
+  <table class="table table-striped">
+    <thead class="theadblue">
+      <tr>
+        <th class="w-25 align-top text-light">Group Designation</th>
+        <th class="w-50 align-top text-light">Alleles Within Group</th>
+      </tr>
+    </thead>
+    <tbody id="gTable"></tbody>
+  </table>
+</div>
+        
+        <p class="last-updated text-right content">
+         Last updated: 14-Apr-2026
+        </p>
+      </div>
+
+      
+      <footer class="footer-dark mt-3">
+        <div class="footerimage"></div>
+        <div class="footer-content container">
+          <div class="row">
+            <div class="col-md-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold text-light">
+                HLA.Alleles.org
+              </h6>
+              <a
+                class="text-light"
+                href="https://www.anthonynolan.org/"
+                >Copyright © Anthony Nolan Research Institute 2024. Terms of
+                use</a
+              >
+              <ul class="list-unstyled text-light pt-3">
+                <li>Contact us:</li>
+                <li>Tel: +44 (0)20 7284 8307</li>
+                <li>Email: ipdsubs@anthonynolan.org</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold text-light">
+                Sponsors
+              </h6>
+              <a href="/pages/sponsors"><img id="slideshow" class="footer-sponsor" alt="Footer sponsor Logo"></a>
+            </div>
+            <div class="col-md-3">
+              <h6 class="text-uppercase text-light mb-4 font-weight-bold">
+                Useful links:
+              </h6>
+              <ul class="list-unstyled">
+                <li class="py-2">
+                  <a class="text-light" href="/pages/misc_lists">Misc Lists</a>
+                </li>
+                <li class="py-2">
+                  <a class="text-light" href="/pages/antigens/hla_antigens/"
+                    >Antigens</a
+                  >
+                </li>
+                <li class="py-2">
+                  <a
+                    class="text-light"
+                    href="/pages/nomenclature/naming_alleles"
+                    >Naming Alleles</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-3">
+              <h6 class="text-uppercase text-light mb-4 font-weight-bold">
+              Other Links:
+            </h6>
+              <ul class="list-unstyled">
+                <li class="py-2">
+                  <a class="text-light" href="https://www.ebi.ac.uk/ipd/imgt/hla/"
+                  >IPD-IMGT/HLA Database</a
+                >
+                </li>
+                <li class="py-2">
+                  <a class="text-light" href="https://github.com/ANHIG/IMGTHLA/"
+                  >Github</a
+                >
+                </li>
+                <li class="py-2">
+                  <a class="text-light" href="/pages/other/contact"
+                  >How to contact us</a
+                >
+                <li class="py-2">
+                  <a class="text-light" href="/pages/other/licence_and_disclaimer"
+                  >Licence and Disclaimer</a
+                >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+          })
+        </script>
+        <script src="/js/sponsors.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110113084-1"></script>
+      </div>
+    </body>
+  </html>

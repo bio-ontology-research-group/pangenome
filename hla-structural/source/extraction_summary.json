@@ -1,0 +1,12 @@
+{
+  "graph": "/home/asianhla/data/upload/HLA/mhc_graph/MHC.full.gfa.gz",
+  "record_counts": {
+    "H": 1,
+    "S": 418024,
+    "L": 579338,
+    "W": 816
+  },
+  "intervals": 1182,
+  "eligible": 1182,
+  "sequence_mismatches": 0
+}

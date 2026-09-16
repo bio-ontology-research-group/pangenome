@@ -1,0 +1,110 @@
+HG00146 RCCX markers 1107 depth 14.5
+HG00146 DRB markers 8348 depth 14.5
+HG00232 RCCX markers 1107 depth 18.0
+HG00232 DRB markers 8348 depth 18.5
+HG00321 RCCX markers 1107 depth 20.0
+HG00321 DRB markers 8348 depth 18.0
+HG00329 RCCX markers 1107 depth 11.5
+HG00329 DRB markers 8346 depth 11.0
+HG01786 RCCX markers 1107 depth 18.0
+HG01786 DRB markers 8348 depth 17.5
+HG02392 RCCX markers 1107 depth 11.5
+HG02392 DRB markers 8347 depth 11.0
+HG03139 RCCX markers 1107 depth 12.0
+HG03139 DRB markers 8348 depth 11.5
+HG03195 RCCX markers 1107 depth 10.5
+HG03195 DRB markers 8348 depth 10.5
+HG03225 RCCX markers 1107 depth 12.0
+HG03225 DRB markers 8348 depth 10.5
+HG03784 RCCX markers 1107 depth 11.0
+HG03784 DRB markers 8348 depth 10.5
+NA18505 RCCX markers 1107 depth 11.0
+NA18505 DRB markers 8348 depth 10.5
+NA18948 RCCX markers 1106 depth 10.25
+NA18948 DRB markers 8348 depth 10.5
+NA18952 RCCX markers 1106 depth 11.75
+NA18952 DRB markers 8348 depth 10.5
+NA18974 RCCX markers 1107 depth 12.5
+NA18974 DRB markers 8348 depth 12.0
+NA19007 RCCX markers 1107 depth 10.5
+NA19007 DRB markers 8348 depth 9.5
+NA19159 RCCX markers 1107 depth 12.5
+NA19159 DRB markers 8348 depth 11.5
+NA21106 RCCX markers 1107 depth 17.75
+NA21106 DRB markers 8348 depth 16.0
+NA21144 RCCX markers 1107 depth 10.0
+NA21144 DRB markers 8348 depth 8.5
+[
+  {
+    "locus": "RCCX",
+    "method": "path_multiplicity",
+    "n": 18,
+    "pair_correct": 4,
+    "cn_correct": 8,
+    "unique_calls": 18,
+    "unrepresented_truth": 4
+  },
+  {
+    "locus": "RCCX",
+    "method": "binary_paths",
+    "n": 18,
+    "pair_correct": 8,
+    "cn_correct": 10,
+    "unique_calls": 16,
+    "unrepresented_truth": 4
+  },
+  {
+    "locus": "RCCX",
+    "method": "flat_sequence_catalogue",
+    "n": 18,
+    "pair_correct": 4,
+    "cn_correct": 8,
+    "unique_calls": 18,
+    "unrepresented_truth": 4
+  },
+  {
+    "locus": "RCCX",
+    "method": "assembly_profile_oracle",
+    "n": 18,
+    "pair_correct": 13,
+    "cn_correct": 18,
+    "unique_calls": 18,
+    "unrepresented_truth": 4
+  },
+  {
+    "locus": "DRB",
+    "method": "path_multiplicity",
+    "n": 18,
+    "pair_correct": 18,
+    "cn_correct": 18,
+    "unique_calls": 18,
+    "unrepresented_truth": 0
+  },
+  {
+    "locus": "DRB",
+    "method": "binary_paths",
+    "n": 18,
+    "pair_correct": 18,
+    "cn_correct": 18,
+    "unique_calls": 18,
+    "unrepresented_truth": 0
+  },
+  {
+    "locus": "DRB",
+    "method": "flat_sequence_catalogue",
+    "n": 18,
+    "pair_correct": 18,
+    "cn_correct": 18,
+    "unique_calls": 18,
+    "unrepresented_truth": 0
+  },
+  {
+    "locus": "DRB",
+    "method": "assembly_profile_oracle",
+    "n": 18,
+    "pair_correct": 18,
+    "cn_correct": 18,
+    "unique_calls": 18,
+    "unrepresented_truth": 0
+  }
+]

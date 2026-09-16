@@ -1,0 +1,18 @@
+[
+  {
+    "sample": "HG03139",
+    "annotated_gene_bases": 12882,
+    "mean_depth": 0.0,
+    "median_depth": 0.0,
+    "fraction_depth_ge5": 0.0,
+    "zero_depth_fraction": 1.0
+  },
+  {
+    "sample": "HG03195",
+    "annotated_gene_bases": 12882,
+    "mean_depth": 20.096180717279925,
+    "median_depth": 20.0,
+    "fraction_depth_ge5": 0.9986027014438752,
+    "zero_depth_fraction": 0.0
+  }
+]

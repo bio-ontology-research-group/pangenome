@@ -1,0 +1,3 @@
+classical_combination	signature	donors	original_assembly_donors	haplotypes	status
+HLA-DRB1*15:03|HLA-DQA1*01:02|HLA-DQB1*06:02	HLA-DRA+>HLA-DRB1->HLA-DQA1+>HLA-DQB1->HLA-DQA2+>HLA-DQB2-	1	1	HG03139#2	annotation_candidate_requires_sequence_validation
+HLA-DRB1*15:03|HLA-DQA1*01:02|HLA-DQB1*06:02	HLA-DRA+>HLA-DRB5->HLA-DRB1->HLA-DQA1+>HLA-DQB1->HLA-DQA2+>HLA-DQB2-	15	15	HG01255#2;HG01891#1;HG02145#1;HG02258#1;HG02451#2;HG02486#1;HG02976#1;HG03041#2;HG03195#2;HG03270#1;HG06807#1;HG06807#2;NA18505#2;NA19338#2;NA21309#1;apr023#1	annotation_candidate_requires_sequence_validation

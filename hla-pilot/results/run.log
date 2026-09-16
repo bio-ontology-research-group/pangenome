@@ -1,0 +1,21 @@
+Extracting fixed 31-mer features: HLA-DRB1
+Extracting fixed 31-mer features: HLA-DQA1
+Extracting fixed 31-mer features: HLA-DQB1
+{
+  "haplotypes": 742,
+  "donors": 371,
+  "family_groups": 367,
+  "prediction_rows": 8800,
+  "structural_haplotypes": 717,
+  "structural_combinations_with_multiple_signatures": 1,
+  "bundle_status": "transductive: bundles fitted on whole panel",
+  "kmer_status": "fixed canonical k=31; crc32 selection modulo 32; exact retained strings; gene plus existing flanks",
+  "limitations": [
+    "Not a read-based typer",
+    "Pedigree incomplete outside 1000G",
+    "Old IPD annotation labels",
+    "Novel and missing labels excluded per locus",
+    "No parameter tuning",
+    "Structural candidates unvalidated"
+  ]
+}

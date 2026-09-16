@@ -1,0 +1,3 @@
+donor	assembly_diploid_c4	c4_mean_depth	estimated_copy_using_whr1	estimated_copy_using_tnxb	assessment	limitation
+HG03195	4	38.84953472827715	4.350135178097579	4.505012071869677	exploratory_depth_not_validated_copy_number	GRCh38-recruited reads; reference/paralog mapping and coverage bias; two controls expose normalization sensitivity; no haplotype or junction validation
+NA21144	4	34.8375387398509	4.469617379347844	4.325441544039793	exploratory_depth_not_validated_copy_number	GRCh38-recruited reads; reference/paralog mapping and coverage bias; two controls expose normalization sensitivity; no haplotype or junction validation

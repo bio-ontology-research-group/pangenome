@@ -1,0 +1,11 @@
+sample	hap	gene	cohort	closest	desc	private	other hap	reads
+apr003	1	HLA-A	APR	A*24:02:102:01	4 subst.: Val>Leu, Phe>Tyr, Ser>Pro, Lys>Asn	1	no	no public reads
+apr011	1	HLA-C	APR	C*03:02:02:01	3 subst.: Ile>Leu, Ala>Gly, Gly>Cys	0	no	no public reads
+apr001	1	HLA-DRB1	APR	DRB1*16:01:01:01	5 subst.: Gln>His, Val>Val, Leu>Arg, Met>Val, Arg>Arg	0	no	no public reads
+apr038	1	HLA-DRB1	APR	DRB1*14:06:01	5 subst. + indels: Arg>Lys, Val>Ala, Arg>Arg, Cys>Cys, His>Gln	1	no	no public reads
+apr002	1	HLA-DQB1	APR	DQB1*02:02:01:01	1 subst.: Leu>Leu	0	yes	no public reads
+apr015	2	HLA-DPB1	APR	DPB1*10:01:01:01	1 subst.: Leu>Leu	1	no	no public reads
+HG02717	1	HLA-DQB1	HPRC-Rest (GWD)	DQB1*02:02:01:01	Ala>Asp; = DQB1*02:180:02 (IMGT/HLA 3.56): not novel	0	no	8/14 assembly base, 6 other hap
+NA20346	2	HLA-DPA1	HPRC-Rest (ASW)	DPA1*01:03:01:18Q	Ala>Met; novel in 3.65 (closest 03:02:02, 1 subst.)	1	no	24/51 assembly base, 27 other hap
+ksa004	1	HLA-A	JaSaPaGe-Saudi	A*02:01:01:134Q	3 indels only (1-bp deletion, 2 insertions)	-	-	no public reads
+HG03516	2	HLA-DPA1	HPRC-Rest (ESN)	DPA1*03:01:01:01	1-bp insertion only	-	-	-

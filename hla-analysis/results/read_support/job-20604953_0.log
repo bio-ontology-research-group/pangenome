@@ -1,0 +1,3 @@
+[E::hts_open_format] Failed to open file "/home/asianhla/data/upload/1000G_MHC/cram/HG01252.mhc.cram" : No such file or directory
+samtools collate: Cannot open input file "/home/asianhla/data/upload/1000G_MHC/cram/HG01252.mhc.cram": No such file or directory
+Failed to read header for "-"

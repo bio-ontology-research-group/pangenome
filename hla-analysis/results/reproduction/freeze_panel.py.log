@@ -1,0 +1,29 @@
+{
+  "panel_haplotypes": 754,
+  "retained_haplotypes": 742,
+  "retained_donors": 371,
+  "strict_structural_haplotypes": 591,
+  "pedigree_status_haplotypes": {
+    "not_an_independent_benchmark_donor": 12,
+    "1000G_record": 456,
+    "unverified_outside_1000G": 286
+  },
+  "typing_eligible_by_locus": {
+    "HLA-A": 726,
+    "HLA-B": 741,
+    "HLA-C": 739,
+    "HLA-DRB1": 712,
+    "HLA-DQA1": 738,
+    "HLA-DQB1": 733,
+    "HLA-DPA1": 735,
+    "HLA-DPB1": 738,
+    "HLA-DRB5": 124,
+    "HLA-DRB3": 302,
+    "HLA-DRB4": 180
+  },
+  "limitations": [
+    "Donor reconciliation uses names and public pedigree, not genome-wide identity/kinship estimation",
+    "Strict structural eligibility is a conservative source/contiguity screen, not per-base assembly validation",
+    "Typing uses supplied gene sequences and fixed whole-panel bundles; downstream graph clipping does not alter these input sequences, while upstream clipping may"
+  ]
+}

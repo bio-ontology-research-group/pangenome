@@ -1,0 +1,3 @@
+method	endpoint	n	correct	wilson_low	wilson_high	assumption
+pilot_calibrated_CN_constrained_paths	cn_correct	88	88	0.9581729333351078	0.9999999999999999	88 distinct recorded families; approximate independent-donor binomial interval
+pilot_calibrated_CN_constrained_paths	pair_correct	88	73	0.7376312908544664	0.8938917788436729	88 distinct recorded families; approximate independent-donor binomial interval

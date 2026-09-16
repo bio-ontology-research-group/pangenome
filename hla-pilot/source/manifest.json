@@ -1,0 +1,67 @@
+[
+  {
+    "file": "classII.ord",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/classII5/out/classII.ord",
+    "sha256": "106b89da3244a320aa37b0bf893a77e0e57af20473261c1bd7d196435693e7ad"
+  },
+  {
+    "file": "cohorts.py",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/cwl/analysis/cohorts.py",
+    "sha256": "17670b11e4958883c6a6573da814149e27796807193592dd1cfb9d2cbadb8211"
+  },
+  {
+    "file": "1000G_HLA.txt",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/cwl/ground_truth/1000G_2014/20140702_hla_diversity.txt",
+    "sha256": "0455d0302ac12a29ab87091cab5e3e557416f6301e89fb122eef8d49cd5644ec"
+  },
+  {
+    "file": "1000G_HLA_README.txt",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/cwl/ground_truth/1000G_2014/README_20140702_hla_diversity.txt",
+    "sha256": "96d43549e41deb87d26ce990633ed110f95d84e71da82eb1758fb74479d5665a"
+  },
+  {
+    "file": "HLA-DRB1.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB1.fa",
+    "sha256": "b222140f834e8d1df8e713b19ac213acfd6f9eb7b68104ea3372f920f585f100"
+  },
+  {
+    "file": "HLA-DQA1.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DQA1.fa",
+    "sha256": "630dc2ce0d83c25ad402832982490fe35e66bc70f7d25b26eaae2937f5c369d4"
+  },
+  {
+    "file": "HLA-DQB1.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DQB1.fa",
+    "sha256": "992b27381973d955af7c6e02f5594bbe1db2e41818d066680b26332287d2edb4"
+  },
+  {
+    "file": "HG03139_2.mhc.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/mhc_all/HG03139_2.mhc.fa",
+    "sha256": "2b6fc18dbb6ad31575a51f175a486f5274bea6638ae981e891cacafc164261e1"
+  },
+  {
+    "file": "HG03195_2.mhc.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/mhc_all/HG03195_2.mhc.fa",
+    "sha256": "bda2845e3b4146b5f76591eeaaffab2f10122d012b9af09c39707d89b8816871"
+  },
+  {
+    "file": "HLA-DRB5.fa",
+    "host": "ddbj",
+    "source": "/home/leechuck/hla/results-stage5/HLA-DRB5.fa",
+    "sha256": "5e2e8fced59831b4fde6a45ccf307320e7563f148dd881d5bde3e3927d4f8ec7"
+  },
+  {
+    "file": "1000G.ped",
+    "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000G_2504_high_coverage/20130606_g1k_3202_samples_ped_population.txt",
+    "sha256": "4e164b717433fc9bfc16e29b20e5b4659b4216185b3275322d421fe3d323c132"
+  }
+]

@@ -1,0 +1,10 @@
+[M::mm_idx_gen::0.015*1.18] collected minimizers
+[M::mm_idx_gen::0.026*1.47] sorted minimizers
+[M::main::0.026*1.47] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.029*1.43] mid_occ = 50
+[M::mm_idx_stat] kmer size: 19; skip: 10; is_hpc: 0; #seq: 1
+[M::mm_idx_stat::0.031*1.40] distinct minimizers: 38553 (94.23% are singletons); average occurrences: 1.089; average spacing: 5.478; total length: 230030
+[M::worker_pipeline::0.442*1.03] mapped 1 sequences
+[M::main] Version: 2.27-r1193
+[M::main] CMD: minimap2 -t 2 -cx asm20 --cs=long hla-pilot/results/HG03139_DR_block.fa hla-pilot/results/HG03195_DR_block.fa
+[M::main] Real time: 0.445 sec; CPU: 0.458 sec; Peak RSS: 0.240 GB

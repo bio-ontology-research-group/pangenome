@@ -1,0 +1,117 @@
+{
+  "utc": "2026-09-16T03:01:35.201581+00:00",
+  "factor": 1.1526268115942029,
+  "definition": "median(pilot conserved-C4 marker estimate / assembly total copies); round corrected dosage; constrain candidate path pair total copy number",
+  "pilot_records": [
+    {
+      "donor": "HG00146",
+      "family": "HG00146",
+      "estimated_copies": 2.413793103448276,
+      "assembly_copies": 2
+    },
+    {
+      "donor": "HG00232",
+      "family": "HG00232",
+      "estimated_copies": 5.888888888888889,
+      "assembly_copies": 5
+    },
+    {
+      "donor": "HG00321",
+      "family": "HG00321",
+      "estimated_copies": 3.4,
+      "assembly_copies": 3
+    },
+    {
+      "donor": "HG00329",
+      "family": "HG00329",
+      "estimated_copies": 5.956521739130435,
+      "assembly_copies": 5
+    },
+    {
+      "donor": "HG01786",
+      "family": "HG01785",
+      "estimated_copies": 4.555555555555555,
+      "assembly_copies": 4
+    },
+    {
+      "donor": "HG02392",
+      "family": "HG02392",
+      "estimated_copies": 6.956521739130435,
+      "assembly_copies": 6
+    },
+    {
+      "donor": "HG03139",
+      "family": "HG03139",
+      "estimated_copies": 3.6666666666666665,
+      "assembly_copies": 3
+    },
+    {
+      "donor": "HG03195",
+      "family": "HG03195",
+      "estimated_copies": 4.571428571428571,
+      "assembly_copies": 4
+    },
+    {
+      "donor": "HG03225",
+      "family": "HG03225",
+      "estimated_copies": 4.583333333333333,
+      "assembly_copies": 4
+    },
+    {
+      "donor": "HG03784",
+      "family": "HG03784",
+      "estimated_copies": 6.2272727272727275,
+      "assembly_copies": 5
+    },
+    {
+      "donor": "NA18505",
+      "family": "NA18503",
+      "estimated_copies": 3.3636363636363638,
+      "assembly_copies": 3
+    },
+    {
+      "donor": "NA18948",
+      "family": "NA18948",
+      "estimated_copies": 7.512195121951219,
+      "assembly_copies": 6
+    },
+    {
+      "donor": "NA18952",
+      "family": "NA18952",
+      "estimated_copies": 6.808510638297872,
+      "assembly_copies": 6
+    },
+    {
+      "donor": "NA18974",
+      "family": "NA18974",
+      "estimated_copies": 7.04,
+      "assembly_copies": 6
+    },
+    {
+      "donor": "NA19007",
+      "family": "NA19007",
+      "estimated_copies": 3.8095238095238093,
+      "assembly_copies": 3
+    },
+    {
+      "donor": "NA19159",
+      "family": "NA19159",
+      "estimated_copies": 6.56,
+      "assembly_copies": 6
+    },
+    {
+      "donor": "NA21106",
+      "family": "NA21106",
+      "estimated_copies": 4.394366197183099,
+      "assembly_copies": 4
+    },
+    {
+      "donor": "NA21144",
+      "family": "NA21144",
+      "estimated_copies": 4.3,
+      "assembly_copies": 4
+    }
+  ],
+  "script_sha256": "42e08de12bc6de3c53dfec812d7045cc2850a0c3c47fc71f609bba01981b5b78",
+  "validation_outcomes_reviewed": false
+}

@@ -1,0 +1,181 @@
+donor	locus	feature	truth	markers	estimate	rounded_call	correct	status
+HG00146	RCCX	total	2	306	2.413793103448276	2	1	uncalibrated_dosage
+HG00146	RCCX	C4AL	1	0			0	insufficient_markers
+HG00146	RCCX	C4AS	0	0			0	insufficient_markers
+HG00146	RCCX	C4BL	0	0			0	insufficient_markers
+HG00146	RCCX	C4BS	1	0			0	insufficient_markers
+HG00146	DRB	total	3	0			0	insufficient_markers
+HG00146	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+HG00146	DRB	HLA-DRB3	1	465	0.8275862068965517	1	1	uncalibrated_dosage
+HG00146	DRB	HLA-DRB4	0	1314	0.0	0	1	uncalibrated_dosage
+HG00146	DRB	HLA-DRB5	0	728	0.0	0	1	uncalibrated_dosage
+HG00232	RCCX	total	5	306	5.888888888888889	6	0	uncalibrated_dosage
+HG00232	RCCX	C4AL	4	0			0	insufficient_markers
+HG00232	RCCX	C4AS	0	0			0	insufficient_markers
+HG00232	RCCX	C4BL	1	0			0	insufficient_markers
+HG00232	RCCX	C4BS	0	0			0	insufficient_markers
+HG00232	DRB	total	4	0			0	insufficient_markers
+HG00232	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+HG00232	DRB	HLA-DRB3	1	465	0.8648648648648649	1	1	uncalibrated_dosage
+HG00232	DRB	HLA-DRB4	0	1314	0.0	0	1	uncalibrated_dosage
+HG00232	DRB	HLA-DRB5	1	728	0.972972972972973	1	1	uncalibrated_dosage
+HG00321	RCCX	total	3	306	3.4	3	1	uncalibrated_dosage
+HG00321	RCCX	C4AL	2	0			0	insufficient_markers
+HG00321	RCCX	C4AS	0	0			0	insufficient_markers
+HG00321	RCCX	C4BL	0	0			0	insufficient_markers
+HG00321	RCCX	C4BS	1	0			0	insufficient_markers
+HG00321	DRB	total	3	0			0	insufficient_markers
+HG00321	DRB	HLA-DRB1	2	234	2.0	2	1	uncalibrated_dosage
+HG00321	DRB	HLA-DRB3	0	465	0.0	0	1	uncalibrated_dosage
+HG00321	DRB	HLA-DRB4	0	1314	0.0	0	1	uncalibrated_dosage
+HG00321	DRB	HLA-DRB5	1	728	1.0555555555555556	1	1	uncalibrated_dosage
+HG00329	RCCX	total	5	306	5.956521739130435	6	0	uncalibrated_dosage
+HG00329	RCCX	C4AL	2	0			0	insufficient_markers
+HG00329	RCCX	C4AS	1	0			0	insufficient_markers
+HG00329	RCCX	C4BL	2	0			0	insufficient_markers
+HG00329	RCCX	C4BS	0	0			0	insufficient_markers
+HG00329	DRB	total	3	0			0	insufficient_markers
+HG00329	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+HG00329	DRB	HLA-DRB3	1	465	0.9090909090909091	1	1	uncalibrated_dosage
+HG00329	DRB	HLA-DRB4	0	1314	0.0	0	1	uncalibrated_dosage
+HG00329	DRB	HLA-DRB5	0	728	0.0	0	1	uncalibrated_dosage
+HG01786	RCCX	total	4	306	4.555555555555555	5	0	uncalibrated_dosage
+HG01786	RCCX	C4AL	3	0			0	insufficient_markers
+HG01786	RCCX	C4AS	0	0			0	insufficient_markers
+HG01786	RCCX	C4BL	0	0			0	insufficient_markers
+HG01786	RCCX	C4BS	1	0			0	insufficient_markers
+HG01786	DRB	total	4	0			0	insufficient_markers
+HG01786	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+HG01786	DRB	HLA-DRB3	2	465	1.7714285714285714	2	1	uncalibrated_dosage
+HG01786	DRB	HLA-DRB4	0	1314	0.0	0	1	uncalibrated_dosage
+HG01786	DRB	HLA-DRB5	0	728	0.0	0	1	uncalibrated_dosage
+HG02392	RCCX	total	6	306	6.956521739130435	7	0	uncalibrated_dosage
+HG02392	RCCX	C4AL	3	0			0	insufficient_markers
+HG02392	RCCX	C4AS	0	0			0	insufficient_markers
+HG02392	RCCX	C4BL	0	0			0	insufficient_markers
+HG02392	RCCX	C4BS	3	0			0	insufficient_markers
+HG02392	DRB	total	4	0			0	insufficient_markers
+HG02392	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+HG02392	DRB	HLA-DRB3	0	465	0.0	0	1	uncalibrated_dosage
+HG02392	DRB	HLA-DRB4	0	1314	0.0	0	1	uncalibrated_dosage
+HG02392	DRB	HLA-DRB5	2	728	2.0	2	1	uncalibrated_dosage
+HG03139	RCCX	total	3	306	3.6666666666666665	4	0	uncalibrated_dosage
+HG03139	RCCX	C4AL	2	0			0	insufficient_markers
+HG03139	RCCX	C4AS	0	0			0	insufficient_markers
+HG03139	RCCX	C4BL	0	0			0	insufficient_markers
+HG03139	RCCX	C4BS	1	0			0	insufficient_markers
+HG03139	DRB	total	2	0			0	insufficient_markers
+HG03139	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+HG03139	DRB	HLA-DRB3	0	465	0.0	0	1	uncalibrated_dosage
+HG03139	DRB	HLA-DRB4	0	1374	0.0	0	1	uncalibrated_dosage
+HG03139	DRB	HLA-DRB5	0	728	0.0	0	1	uncalibrated_dosage
+HG03195	RCCX	total	4	306	4.571428571428571	5	0	uncalibrated_dosage
+HG03195	RCCX	C4AL	2	0			0	insufficient_markers
+HG03195	RCCX	C4AS	0	0			0	insufficient_markers
+HG03195	RCCX	C4BL	0	0			0	insufficient_markers
+HG03195	RCCX	C4BS	2	0			0	insufficient_markers
+HG03195	DRB	total	3	0			0	insufficient_markers
+HG03195	DRB	HLA-DRB1	2	234	2.0	2	1	uncalibrated_dosage
+HG03195	DRB	HLA-DRB3	0	465	0.0	0	1	uncalibrated_dosage
+HG03195	DRB	HLA-DRB4	0	1374	0.0	0	1	uncalibrated_dosage
+HG03195	DRB	HLA-DRB5	1	728	0.9523809523809523	1	1	uncalibrated_dosage
+HG03225	RCCX	total	4	306	4.583333333333333	5	0	uncalibrated_dosage
+HG03225	RCCX	C4AL	2	0			0	insufficient_markers
+HG03225	RCCX	C4AS	0	0			0	insufficient_markers
+HG03225	RCCX	C4BL	0	0			0	insufficient_markers
+HG03225	RCCX	C4BS	2	0			0	insufficient_markers
+HG03225	DRB	total	3	0			0	insufficient_markers
+HG03225	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+HG03225	DRB	HLA-DRB3	1	465	0.8571428571428571	1	1	uncalibrated_dosage
+HG03225	DRB	HLA-DRB4	0	1374	0.0	0	1	uncalibrated_dosage
+HG03225	DRB	HLA-DRB5	0	728	0.0	0	1	uncalibrated_dosage
+HG03784	RCCX	total	5	306	6.2272727272727275	6	0	uncalibrated_dosage
+HG03784	RCCX	C4AL	2	0			0	insufficient_markers
+HG03784	RCCX	C4AS	1	0			0	insufficient_markers
+HG03784	RCCX	C4BL	2	0			0	insufficient_markers
+HG03784	RCCX	C4BS	0	0			0	insufficient_markers
+HG03784	DRB	total	4	0			0	insufficient_markers
+HG03784	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+HG03784	DRB	HLA-DRB3	2	465	1.8095238095238095	2	1	uncalibrated_dosage
+HG03784	DRB	HLA-DRB4	0	1314	0.0	0	1	uncalibrated_dosage
+HG03784	DRB	HLA-DRB5	0	728	0.0	0	1	uncalibrated_dosage
+NA18505	RCCX	total	3	306	3.3636363636363638	3	1	uncalibrated_dosage
+NA18505	RCCX	C4AL	2	0			0	insufficient_markers
+NA18505	RCCX	C4AS	0	0			0	insufficient_markers
+NA18505	RCCX	C4BL	0	0			0	insufficient_markers
+NA18505	RCCX	C4BS	1	0			0	insufficient_markers
+NA18505	DRB	total	4	0			0	insufficient_markers
+NA18505	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+NA18505	DRB	HLA-DRB3	1	465	0.8571428571428571	1	1	uncalibrated_dosage
+NA18505	DRB	HLA-DRB4	0	1314	0.0	0	1	uncalibrated_dosage
+NA18505	DRB	HLA-DRB5	1	728	1.0476190476190477	1	1	uncalibrated_dosage
+NA18948	RCCX	total	6	306	7.512195121951219	8	0	uncalibrated_dosage
+NA18948	RCCX	C4AL	4	0			0	insufficient_markers
+NA18948	RCCX	C4AS	0	0			0	insufficient_markers
+NA18948	RCCX	C4BL	1	0			0	insufficient_markers
+NA18948	RCCX	C4BS	1	0			0	insufficient_markers
+NA18948	DRB	total	3	0			0	insufficient_markers
+NA18948	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+NA18948	DRB	HLA-DRB3	0	465	0.0	0	1	uncalibrated_dosage
+NA18948	DRB	HLA-DRB4	1	1314	0.6666666666666666	1	1	uncalibrated_dosage
+NA18948	DRB	HLA-DRB5	0	728	0.0	0	1	uncalibrated_dosage
+NA18952	RCCX	total	6	306	6.808510638297872	7	0	uncalibrated_dosage
+NA18952	RCCX	C4AL	4	0			0	insufficient_markers
+NA18952	RCCX	C4AS	0	0			0	insufficient_markers
+NA18952	RCCX	C4BL	2	0			0	insufficient_markers
+NA18952	RCCX	C4BS	0	0			0	insufficient_markers
+NA18952	DRB	total	4	0			0	insufficient_markers
+NA18952	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+NA18952	DRB	HLA-DRB3	1	465	0.8571428571428571	1	1	uncalibrated_dosage
+NA18952	DRB	HLA-DRB4	1	1314	0.7619047619047619	1	1	uncalibrated_dosage
+NA18952	DRB	HLA-DRB5	0	728	0.0	0	1	uncalibrated_dosage
+NA18974	RCCX	total	6	306	7.04	7	0	uncalibrated_dosage
+NA18974	RCCX	C4AL	2	0			0	insufficient_markers
+NA18974	RCCX	C4AS	2	0			0	insufficient_markers
+NA18974	RCCX	C4BL	2	0			0	insufficient_markers
+NA18974	RCCX	C4BS	0	0			0	insufficient_markers
+NA18974	DRB	total	4	0			0	insufficient_markers
+NA18974	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+NA18974	DRB	HLA-DRB3	0	465	0.0	0	1	uncalibrated_dosage
+NA18974	DRB	HLA-DRB4	1	1314	0.75	1	1	uncalibrated_dosage
+NA18974	DRB	HLA-DRB5	1	728	1.0	1	1	uncalibrated_dosage
+NA19007	RCCX	total	3	306	3.8095238095238093	4	0	uncalibrated_dosage
+NA19007	RCCX	C4AL	2	0			0	insufficient_markers
+NA19007	RCCX	C4AS	0	0			0	insufficient_markers
+NA19007	RCCX	C4BL	0	0			0	insufficient_markers
+NA19007	RCCX	C4BS	1	0			0	insufficient_markers
+NA19007	DRB	total	3	0			0	insufficient_markers
+NA19007	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+NA19007	DRB	HLA-DRB3	0	465	0.0	0	1	uncalibrated_dosage
+NA19007	DRB	HLA-DRB4	1	1314	0.7368421052631579	1	1	uncalibrated_dosage
+NA19007	DRB	HLA-DRB5	0	728	0.0	0	1	uncalibrated_dosage
+NA19159	RCCX	total	6	306	6.56	7	0	uncalibrated_dosage
+NA19159	RCCX	C4AL	2	0			0	insufficient_markers
+NA19159	RCCX	C4AS	1	0			0	insufficient_markers
+NA19159	RCCX	C4BL	0	0			0	insufficient_markers
+NA19159	RCCX	C4BS	3	0			0	insufficient_markers
+NA19159	DRB	total	4	0			0	insufficient_markers
+NA19159	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+NA19159	DRB	HLA-DRB3	1	465	0.8695652173913043	1	1	uncalibrated_dosage
+NA19159	DRB	HLA-DRB4	1	1314	0.6956521739130435	1	1	uncalibrated_dosage
+NA19159	DRB	HLA-DRB5	0	728	0.0	0	1	uncalibrated_dosage
+NA21106	RCCX	total	4	306	4.394366197183099	4	1	uncalibrated_dosage
+NA21106	RCCX	C4AL	3	0			0	insufficient_markers
+NA21106	RCCX	C4AS	0	0			0	insufficient_markers
+NA21106	RCCX	C4BL	1	0			0	insufficient_markers
+NA21106	RCCX	C4BS	0	0			0	insufficient_markers
+NA21106	DRB	total	4	0			0	insufficient_markers
+NA21106	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+NA21106	DRB	HLA-DRB3	0	465	0.0	0	1	uncalibrated_dosage
+NA21106	DRB	HLA-DRB4	0	1314	0.0	0	1	uncalibrated_dosage
+NA21106	DRB	HLA-DRB5	2	728	2.125	2	1	uncalibrated_dosage
+NA21144	RCCX	total	4	306	4.3	4	1	uncalibrated_dosage
+NA21144	RCCX	C4AL	1	0			0	insufficient_markers
+NA21144	RCCX	C4AS	0	0			0	insufficient_markers
+NA21144	RCCX	C4BL	1	0			0	insufficient_markers
+NA21144	RCCX	C4BS	2	0			0	insufficient_markers
+NA21144	DRB	total	4	0			0	insufficient_markers
+NA21144	DRB	HLA-DRB1	2	233	2.0	2	1	uncalibrated_dosage
+NA21144	DRB	HLA-DRB3	1	465	0.8235294117647058	1	1	uncalibrated_dosage
+NA21144	DRB	HLA-DRB4	1	1314	0.7058823529411765	1	1	uncalibrated_dosage
+NA21144	DRB	HLA-DRB5	0	728	0.0	0	1	uncalibrated_dosage

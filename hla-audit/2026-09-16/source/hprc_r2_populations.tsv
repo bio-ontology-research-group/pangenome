@@ -1,0 +1,233 @@
+sample	population	superpopulation	analysis_group	description
+HG00097	GBR	EUR	HPRC-Rest	British from England and Scotland
+HG00099	GBR	EUR	HPRC-Rest	British from England and Scotland
+HG00126	GBR	EUR	HPRC-Rest	British from England and Scotland
+HG00128	GBR	EUR	HPRC-Rest	British from England and Scotland
+HG00133	GBR	EUR	HPRC-Rest	British from England and Scotland
+HG00140	GBR	EUR	HPRC-Rest	British from England and Scotland
+HG00146	GBR	EUR	HPRC-Rest	British from England and Scotland
+hg002	AJ	EUR(AJ)	HPRC-Jewish	Ashkenazi Jewish, GIAB son (NA24385)
+HG00232	GBR	EUR	HPRC-Rest	British from England and Scotland
+HG00235	GBR	EUR	HPRC-Rest	British from England and Scotland
+HG00253	GBR	EUR	HPRC-Rest	British from England and Scotland
+HG00272	FIN	EUR	HPRC-Rest	Finnish in Finland
+HG00280	FIN	EUR	HPRC-Rest	Finnish in Finland
+HG00290	FIN	EUR	HPRC-Rest	Finnish in Finland
+HG00320	FIN	EUR	HPRC-Rest	Finnish in Finland
+HG00321	FIN	EUR	HPRC-Rest	Finnish in Finland
+HG00323	FIN	EUR	HPRC-Rest	Finnish in Finland
+HG00329	FIN	EUR	HPRC-Rest	Finnish in Finland
+HG00344	FIN	EUR	HPRC-Rest	Finnish in Finland
+HG00350	FIN	EUR	HPRC-Rest	Finnish in Finland
+HG00408	CHS	EAS	HPRC-EastAsian	Han Chinese South, China
+HG00423	CHS	EAS	HPRC-EastAsian	Han Chinese South, China
+HG00438	CHS	EAS	HPRC-EastAsian	Han Chinese South, China
+HG005	CHS-GIAB	EAS	HPRC-EastAsian	Han Chinese, GIAB son (NA24631)
+HG00544	CHS	EAS	HPRC-EastAsian	Han Chinese South, China
+HG00558	CHS	EAS	HPRC-EastAsian	Han Chinese South, China
+HG00597	CHS	EAS	HPRC-EastAsian	Han Chinese South, China
+HG00609	CHS	EAS	HPRC-EastAsian	Han Chinese South, China
+HG00621	CHS	EAS	HPRC-EastAsian	Han Chinese South, China
+HG00639	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG00642	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG00658	CHS	EAS	HPRC-EastAsian	Han Chinese South, China
+HG00673	CHS	EAS	HPRC-EastAsian	Han Chinese South, China
+HG00706	CHS	EAS	HPRC-EastAsian	Han Chinese South, China
+HG00733	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG00735	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG00738	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG00741	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG01071	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG01074	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG01081	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG01099	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG01106	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG01109	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG01123	CLM	AMR	HPRC-Rest	Colombian in Medellin, Colombia
+HG01150	CLM	AMR	HPRC-Rest	Colombian in Medellin, Colombia
+HG01167	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG01175	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG01192	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG01243	PUR	AMR	HPRC-Rest	Puerto Rican in Puerto Rico
+HG01252	CLM	AMR	HPRC-Rest	Colombian in Medellin, Colombia
+HG01255	CLM	AMR	HPRC-Rest	Colombian in Medellin, Colombia
+HG01258	CLM	AMR	HPRC-Rest	Colombian in Medellin, Colombia
+HG01261	CLM	AMR	HPRC-Rest	Colombian in Medellin, Colombia
+HG01346	CLM	AMR	HPRC-Rest	Colombian in Medellin, Colombia
+HG01358	CLM	AMR	HPRC-Rest	Colombian in Medellin, Colombia
+HG01361	CLM	AMR	HPRC-Rest	Colombian in Medellin, Colombia
+HG01433	CLM	AMR	HPRC-Rest	Colombian in Medellin, Colombia
+HG01496	CLM	AMR	HPRC-Rest	Colombian in Medellin, Colombia
+HG01530	IBS	EUR	HPRC-Rest	Iberian Populations in Spain
+HG01784	IBS	EUR	HPRC-Rest	Iberian Populations in Spain
+HG01786	IBS	EUR	HPRC-Rest	Iberian Populations in Spain
+HG01884	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG01891	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG01928	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG01934	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG01940	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG01943	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG01952	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG01960	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG01969	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG01975	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG01978	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG01981	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG01993	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG02004	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG02015	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02027	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02040	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02055	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG02056	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02071	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02074	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02080	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02083	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02109	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG02129	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02132	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02135	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02145	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG02148	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG02155	CDX	EAS	HPRC-EastAsian	Chinese Dai in Xishuangbanna
+HG02165	CDX	EAS	HPRC-EastAsian	Chinese Dai in Xishuangbanna
+HG02178	CDX	EAS	HPRC-EastAsian	Chinese Dai in Xishuangbanna
+HG02257	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG02258	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG02273	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG02280	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG02293	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG02300	PEL	AMR	HPRC-Rest	Peruvian in Lima, Peru
+HG02391	CDX	EAS	HPRC-EastAsian	Chinese Dai in Xishuangbanna
+HG02392	CDX	EAS	HPRC-EastAsian	Chinese Dai in Xishuangbanna
+HG02451	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG02486	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG02514	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02523	KHV	EAS	HPRC-EastAsian	Kinh in Ho Chi Minh City, Vietnam
+HG02559	ACB	AFR	HPRC-Rest	African Caribbean in Barbados
+HG02572	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02583	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02602	PJL	SAS	HPRC-Rest	Punjabi in Lahore, Pakistan
+HG02615	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02622	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02630	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02647	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02668	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02698	PJL	SAS	HPRC-Rest	Punjabi in Lahore, Pakistan
+HG02717	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02723	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02735	PJL	SAS	HPRC-Rest	Punjabi in Lahore, Pakistan
+HG02738	PJL	SAS	HPRC-Rest	Punjabi in Lahore, Pakistan
+HG02809	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02818	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02841	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02886	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG02922	ESN	AFR	HPRC-Rest	Esan in Nigeria
+HG02965	ESN	AFR	HPRC-Rest	Esan in Nigeria
+HG02976	ESN	AFR	HPRC-Rest	Esan in Nigeria
+HG02984	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG03017	PJL	SAS	HPRC-Rest	Punjabi in Lahore, Pakistan
+HG03041	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG03050	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG03098	MSL	AFR	HPRC-Rest	Mende in Sierra Leone
+HG03130	ESN	AFR	HPRC-Rest	Esan in Nigeria
+HG03139	ESN	AFR	HPRC-Rest	Esan in Nigeria
+HG03195	ESN	AFR	HPRC-Rest	Esan in Nigeria
+HG03209	MSL	AFR	HPRC-Rest	Mende in Sierra Leone
+HG03225	MSL	AFR	HPRC-Rest	Mende in Sierra Leone
+HG03239	PJL	SAS	HPRC-Rest	Punjabi in Lahore, Pakistan
+HG03270	ESN	AFR	HPRC-Rest	Esan in Nigeria
+HG03369	ESN	AFR	HPRC-Rest	Esan in Nigeria
+HG03453	MSL	AFR	HPRC-Rest	Mende in Sierra Leone
+HG03470	MSL	AFR	HPRC-Rest	Mende in Sierra Leone
+HG03471	MSL	AFR	HPRC-Rest	Mende in Sierra Leone
+HG03486	MSL	AFR	HPRC-Rest	Mende in Sierra Leone
+HG03516	ESN	AFR	HPRC-Rest	Esan in Nigeria
+HG03521	ESN	AFR	HPRC-Rest	Esan in Nigeria
+HG03540	GWD	AFR	HPRC-Rest	Gambian in Western Division Ð Mandinka
+HG03579	MSL	AFR	HPRC-Rest	Mende in Sierra Leone
+HG03583	MSL	AFR	HPRC-Rest	Mende in Sierra Leone
+HG03654	PJL	SAS	HPRC-Rest	Punjabi in Lahore, Pakistan
+HG03669	PJL	SAS	HPRC-Rest	Punjabi in Lahore, Pakistan
+HG03688	STU	SAS	HPRC-Rest	Sri Lankan Tamil in the UK
+HG03704	PJL	SAS	HPRC-Rest	Punjabi in Lahore, Pakistan
+HG03710	PJL	SAS	HPRC-Rest	Punjabi in Lahore, Pakistan
+HG03742	ITU	SAS	HPRC-Rest	Indian Telugu in the UK
+HG03784	ITU	SAS	HPRC-Rest	Indian Telugu in the UK
+HG03804	BEB	SAS	HPRC-Rest	Bengali in Bangladesh
+HG03816	BEB	SAS	HPRC-Rest	Bengali in Bangladesh
+HG03831	BEB	SAS	HPRC-Rest	Bengali in Bangladesh
+HG03834	BEB	SAS	HPRC-Rest	Bengali in Bangladesh
+HG03874	ITU	SAS	HPRC-Rest	Indian Telugu in the UK
+HG03927	BEB	SAS	HPRC-Rest	Bengali in Bangladesh
+HG03942	BEB	SAS	HPRC-Rest	Bengali in Bangladesh
+HG04115	STU	SAS	HPRC-Rest	Sri Lankan Tamil in the UK
+HG04157	BEB	SAS	HPRC-Rest	Bengali in Bangladesh
+HG04160	BEB	SAS	HPRC-Rest	Bengali in Bangladesh
+HG04184	BEB	SAS	HPRC-Rest	Bengali in Bangladesh
+HG04187	BEB	SAS	HPRC-Rest	Bengali in Bangladesh
+HG04199	STU	SAS	HPRC-Rest	Sri Lankan Tamil in the UK
+HG04204	STU	SAS	HPRC-Rest	Sri Lankan Tamil in the UK
+HG04228	STU	SAS	HPRC-Rest	Sri Lankan Tamil in the UK
+HG06807	ASL	AFR	HPRC-Rest	African Americans living in St. Louis, Missouri
+NA18505	YRI	AFR	HPRC-Rest	Yoruba in Ibadan, Nigeria
+NA18508	YRI	AFR	HPRC-Rest	Yoruba in Ibadan, Nigeria
+NA18522	YRI	AFR	HPRC-Rest	Yoruba in Ibadan, Nigeria
+NA18565	CHB	EAS	HPRC-EastAsian	Han Chinese in Beijing, China
+NA18570	CHB	EAS	HPRC-EastAsian	Han Chinese in Beijing, China
+NA18608	CHB	EAS	HPRC-EastAsian	Han Chinese in Beijing, China
+NA18620	CHB	EAS	HPRC-EastAsian	Han Chinese in Beijing, China
+NA18747	CHB	EAS	HPRC-EastAsian	Han Chinese in Beijing, China
+NA18879	YRI	AFR	HPRC-Rest	Yoruba in Ibadan, Nigeria
+NA18906	YRI	AFR	HPRC-Rest	Yoruba in Ibadan, Nigeria
+NA18940	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18943	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18944	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18945	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18948	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18952	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18959	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18960	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18967	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18970	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18971	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18974	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18976	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18982	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA18983	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA19036	LWK	AFR	HPRC-Rest	Luhya in Webuye, Kenya
+NA19043	LWK	AFR	HPRC-Rest	Luhya in Webuye, Kenya
+NA19087	JPT	EAS	HPRC-Japanese	Japanese in Tokyo, Japan
+NA19159	YRI	AFR	HPRC-Rest	Yoruba in Ibadan, Nigeria
+NA19185	YRI	AFR	HPRC-Rest	Yoruba in Ibadan, Nigeria
+NA19240	YRI	AFR	HPRC-Rest	Yoruba in Ibadan, Nigeria
+NA19338	LWK	AFR	HPRC-Rest	Luhya in Webuye, Kenya
+NA19391	LWK	AFR	HPRC-Rest	Luhya in Webuye, Kenya
+NA19443	LWK	AFR	HPRC-Rest	Luhya in Webuye, Kenya
+NA19468	LWK	AFR	HPRC-Rest	Luhya in Webuye, Kenya
+NA19682	MXL	AMR	HPRC-Rest	Mexican Ancestry in Los Angeles, California, USA
+NA19700	ASW	AFR	HPRC-Rest	African Ancestry in Southwest USA
+NA19776	MXL	AMR	HPRC-Rest	Mexican Ancestry in Los Angeles, California, USA
+NA19835	ASW	AFR	HPRC-Rest	African Ancestry in Southwest USA
+NA19909	ASW	AFR	HPRC-Rest	African Ancestry in Southwest USA
+NA20129	ASW	AFR	HPRC-Rest	African Ancestry in Southwest USA
+NA20282	ASW	AFR	HPRC-Rest	African Ancestry in Southwest USA
+NA20346	ASW	AFR	HPRC-Rest	African Ancestry in Southwest USA
+NA20503	TSI	EUR	HPRC-Rest	Toscani in Italia
+NA20752	TSI	EUR	HPRC-Rest	Toscani in Italia
+NA20762	TSI	EUR	HPRC-Rest	Toscani in Italia
+NA20799	TSI	EUR	HPRC-Rest	Toscani in Italia
+NA20805	TSI	EUR	HPRC-Rest	Toscani in Italia
+NA20806	TSI	EUR	HPRC-Rest	Toscani in Italia
+NA20809	TSI	EUR	HPRC-Rest	Toscani in Italia
+NA20827	TSI	EUR	HPRC-Rest	Toscani in Italia
+NA20850	GIH	SAS	HPRC-Rest	Gujarati Indians in Houston, Texas, USA
+NA20870	GIH	SAS	HPRC-Rest	Gujarati Indians in Houston, Texas, USA
+NA20905	GIH	SAS	HPRC-Rest	Gujarati Indians in Houston, Texas, USA
+NA21093	GIH	SAS	HPRC-Rest	Gujarati Indians in Houston, Texas, USA
+NA21102	GIH	SAS	HPRC-Rest	Gujarati Indians in Houston, Texas, USA
+NA21106	GIH	SAS	HPRC-Rest	Gujarati Indians in Houston, Texas, USA
+NA21110	GIH	SAS	HPRC-Rest	Gujarati Indians in Houston, Texas, USA
+NA21144	GIH	SAS	HPRC-Rest	Gujarati Indians in Houston, Texas, USA
+NA21309	MKK	AFR	HPRC-Rest	Maasai in Kinyawa, Kenya
